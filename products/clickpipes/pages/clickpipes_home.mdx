@@ -1,0 +1,58 @@
+---
+mode: "custom"
+---
+
+import ClickPipesAnimationV2 from '../../../components/ClickPipesAnimation/ClickPipesAnimation.tsx';
+
+<style>
+  {`
+      /* Hide all anchor links on the homepage */
+    [data-radix-popper-content-wrapper]:has(span[id^="radix-"]) {
+      display: none !important;
+    }
+  `}
+</style>
+
+{/* Hero Section */}
+<section className="hero">
+  <div className="hero-text">
+    <h1>ClickPipes</h1>
+    <p>An integration engine that makes ingesting massive volumes of data from a diverse set of sources as simple as clicking a few buttons.</p>
+    {/* <p className="hero-buttons-text">Get started with:</p> */}
+  </div>
+  <div className="hero-aside">
+    <ClickPipesAnimationV2 />
+  </div>
+</section>
+
+{/* ClickPipes Categories */}
+<section className="sidekick divider">
+  <div className="sidekick-text">
+    <h2>Explore ClickPipes</h2>
+    <p>Choose a category to get started with ClickPipes integrations.</p>
+  </div>
+
+  <div className="product-grid clickpipes-categories">
+    <a href="/click-pipes/integrations/clickpipes/object-storage" className="product-item">
+      <img src="/assets/product-switcher/clickpipes-light.svg" alt="Cloud object stores" />
+      <h3>Cloud object stores</h3>
+    </a>
+
+    <a href="/click-pipes/integrations/clickpipes/postgres" className="product-item">
+      <img src="/assets/product-switcher/clickpipes-light.svg" alt="Databases & data lakehouses" />
+      <h3>Databases & data lakehouses</h3>
+    </a>
+
+    <a href="/click-pipes/integrations/clickpipes/kinesis" className="product-item">
+      <img src="/assets/product-switcher/clickpipes-light.svg" alt="Amazon databases" />
+      <h3>Amazon databases</h3>
+    </a>
+
+    <a href="/click-pipes/integrations/clickpipes/kafka/create-your-first-kafka-clickpipe" className="product-item">
+      <img src="/assets/product-switcher/clickpipes-light.svg" alt="Event streams" />
+      <h3>Event streams</h3>
+    </a>
+  </div>
+</section>
+
+

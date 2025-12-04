@@ -1,0 +1,121 @@
+tabs:
+  home:
+    display-name: Home
+    icon: house
+    skip-slug: true
+  get-started:
+    display-name: Get started
+    skip-slug: true
+  language-integrations:
+    display-name: Language integrations
+    skip-slug: true
+  developer-guides:
+    display-name: Developer guides
+    skip-slug: true
+  technical-reference:
+    display-name: Technical reference
+    skip-slug: true
+  integrations:
+    display-name: Integrations
+    skip-slug: true
+  about:
+    display-name: About chDB
+    skip-slug: true
+
+navigation:
+  - tab: home
+    layout:
+      - section: Home
+        skip-slug: true
+        contents:
+          - page: Home
+            path: ./pages/chdb_home.mdx
+
+  - tab: get-started
+    layout:
+      - section: Get started
+        skip-slug: true
+        contents:
+          - page: chDB
+            path: ./pages/index.md
+          - page: Getting started
+            path: ./pages/getting-started.md
+
+  - tab: language-integrations
+    layout:
+      - section: Language integrations
+        path: ./pages/install/index.md
+        collapsed: false
+        contents:
+          - page: Python
+            path: ./pages/install/python.md
+          - page: Node.js
+            path: ./pages/install/nodejs.md
+          - page: Go
+            path: ./pages/install/go.md
+          - page: Rust
+            path: ./pages/install/rust.md
+          - page: Bun
+            path: ./pages/install/bun.md
+          - page: C
+            path: ./pages/install/c.md
+
+  - tab: developer-guides
+    layout:
+      - section: Developer guides
+        path: ./pages/guides/index.md
+        collapsed: false
+        contents:
+          - page: JupySQL
+            path: ./pages/guides/jupysql.md
+          - page: Querying Pandas DataFrames
+            path: ./pages/guides/querying-pandas.md
+          - page: Querying Apache Arrow
+            path: ./pages/guides/querying-apache-arrow.md
+          - page: Querying S3 buckets
+            path: ./pages/guides/querying-s3-bucket.md
+          - page: Querying Parquet
+            path: ./pages/guides/querying-parquet.md
+          - page: Query remote ClickHouse
+            path: ./pages/guides/query-remote-clickhouse.md
+          - page: ClickHouse Local
+            path: ./pages/guides/clickhouse-local.md
+
+  - tab: technical-reference
+    layout:
+      - section: Technical reference
+        path: ./pages/reference/index.md
+        collapsed: false
+        contents:
+          - page: Data formats
+            path: ./pages/reference/data-formats.md
+          - page: SQL reference
+            path: ./pages/reference/sql-reference.md
+          - page: Python API
+            path: ./pages/api/python.md
+
+  - tab: integrations
+    layout:
+      - section: Integrations
+        collapsed: false
+        contents:
+          - link: JupySQL
+            href: https://jupysql.ploomber.io/en/latest/integrations/chdb.html
+          - link: chdb-lambda
+            href: https://github.com/chdb-io/chdb-lambda
+          - link: chdb-cli
+            href: https://github.com/chdb-io/chdb-go?tab=readme-ov-file#chdb-go-cli
+
+  - tab: about
+    layout:
+      - section: About chDB
+        collapsed: false
+        contents:
+          - link: Discord
+            href: https://discord.gg/Njw5YXSPPc
+          - link: Birth of chDB
+            href: https://auxten.com/the-birth-of-chdb/
+          - link: Joining ClickHouse, Inc.
+            href: https://clickhouse.com/blog/welcome-chdb-to-clickhouse
+          - link: Team and contributors
+            href: https://github.com/chdb-io/chdb#contributors

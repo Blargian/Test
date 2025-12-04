@@ -1,0 +1,49 @@
+---
+mode: "custom"
+max-toc-depth: 3
+slug: integrations
+---
+
+import {IntegrationGrid} from '../../../components/IntegrationGrid/IntegrationGrid'
+
+<style>
+  {`
+      /* Hide all anchor links on the homepage */
+    [data-radix-popper-content-wrapper]:has(span[id^="radix-"]) {
+      display: none !important;
+    }
+
+    /* Dark background for integrations hero image in both light and dark mode */
+    .hero-aside-integrations img {
+      background-color: #171717 !important;
+      border-radius: 12px !important;
+      padding: 2rem !important;
+    }
+  `}
+</style>
+
+{/* Hero Section */}
+<section className="hero hero-integrations">
+  <div className="hero-text">
+    <h1>Start building with 100+ ClickHouse integrations</h1>
+    <p>Connect the tools and services that you love with ClickHouse.</p>
+    {/* <p className="hero-buttons-text">Get started with:</p> */}
+  </div>
+  <div className="hero-aside hero-aside-integrations">
+    <Frame background="subtle" caption="ClickHouse integrations ecosystem"><img src="/images/integrations-hero.svg" alt="ClickHouse integrations visualization"/></Frame>
+  </div>
+</section>
+
+{/* Building Blocks Section */}
+<section className="sidekick divider">
+Connect ClickHouse with your favorite tools and services to build powerful data pipelines and analytics workflows.
+ClickHouse integrations are organized by their support level:
+
+|| Tier | Description |
+|-|------|-------------|
+|<Icon icon="rocket" /> |ClickHouse integrations | Built or maintained by ClickHouse, they are supported by ClickHouse and live in the ClickHouse GitHub organization |
+|<Icon icon="handshake" /> |Partner integrations | Built or maintained, and supported by, third-party software vendors |
+|<Icon icon="user-group" /> |Community integrations | Built or maintained and supported by community members. No direct support is available besides the public GitHub repositories and community Slack channels |
+
+    <IntegrationGrid/>
+</section>

@@ -1,0 +1,39 @@
+#tabs:
+#  home:
+#    display-name: Home
+#    icon: house
+#    href: /home
+#  cloud:
+#    display-name: Cloud
+#    icon: cloud
+#    href: /cloud
+#  oss:
+#    display-name: Open source
+#    icon: database
+#    href: /oss
+#  clickstack:
+#    display-name: ClickStack
+#    icon: eye
+#    href: /clickstack
+#  reference:
+#    display-name: Reference
+#    icon: folder-gear
+#    href: /reference
+#  integrations:
+#    display-name: Integrations
+#    icon: puzzle-piece-simple
+#    href: /integrations
+#  support:
+#    display-name: Support center
+#    icon: square-info
+#    href: /support/home
+
+navigation:
+  - page: Home
+    path: ./common_pages/home.mdx
+#  - tab: cloud
+#  - tab: oss
+#  - tab: clickstack
+#  - tab: reference
+#  - tab: integrations
+#  - tab: support

@@ -1,0 +1,11 @@
+---
+description: 'Install ClickHouse on MacOS'
+keywords: ['ClickHouse', 'install', 'MacOS']
+sidebar_label: 'MacOS'
+slug: /install/macOS
+title: 'Install ClickHouse using Homebrew'
+hide_title: true
+doc_type: 'guide'
+---
+
+<Markdown src="/snippets/_macos.md" />

@@ -1,0 +1,275 @@
+tabs:
+  home:
+    display-name: Home
+    icon: house
+  language-clients:
+    display-name: Language clients
+    icon: laptop-code
+  data-ingestion:
+    display-name: Data ingestion
+    icon: arrows-to-dot
+  data-visualization:
+    display-name: Data visualization
+    icon: chart-simple
+  data-integration:
+    display-name: Data integration
+    icon: plug
+  data-management:
+    display-name: Data management
+    icon: list-check
+  sql-client:
+    display-name: SQL clients
+    icon: database
+
+navigation:
+  - tab: home
+    layout:
+      - section: Home
+        contents:
+          - page: Home
+            path: ./pages/integrations_home.mdx
+  - tab: language-clients
+    layout:
+      - section: Language clients
+        contents:
+          - page: Go
+            path: ./pages/language-clients/go/index.md
+          - page: JavaScript
+            path: ./pages/language-clients/js.md
+#          - section: Java
+#            contents:
+#              - page: JDBC
+#                path: ./pages/language-clients/java/jdbc/jdbc.mdx
+#              - page: R2DBC
+#                path: ./pages/language-clients/java/r2dbc.md
+          - section: Python
+            contents:
+              - page: Introduction
+                path: ./pages/language-clients/python/index.md
+              - page: Driver API
+                path: ./pages/language-clients/python/driver-api.md
+              - page: Additional options
+                path: ./pages/language-clients/python/additional-options.md
+              - page: Advanced querying
+                path: ./pages/language-clients/python/advanced-querying.md
+              - page: Advanced inserting
+                path: ./pages/language-clients/python/advanced-inserting.md
+              - page: Advanced usage
+                path: ./pages/language-clients/python/advanced-usage.md
+              - page: SQLAlchemy
+                path: ./pages/language-clients/python/sqlalchemy.md
+          - page: Rust
+            path: ./pages/language-clients/rust.md
+          - page: C#
+            path: ./pages/language-clients/csharp.md
+          - page: C++
+            path: ./pages/language-clients/cpp.md
+          - section: Third-party clients
+            contents:
+              - page: Moose OLAP (TypeScript / Python)
+                path: ./pages/language-clients/third-party/moose-olap.md
+              - page: Client libraries
+                path: ./pages/language-clients/third-party/client-libraries.md
+
+  - tab: data-ingestion
+    layout:
+      - section: AWS
+        collapsed: true
+        contents:
+          - page: Integrating S3 with ClickHouse
+            path: ./pages/data-ingestion/AWS/integrating-s3-with-clickhouse.md
+          - page: Optimizing for performance
+            path: ./pages/data-ingestion/AWS/performance.md
+          - page: AWS Glue
+            path: ./pages/data-ingestion/AWS/glue.md
+      - section: GCP
+        collapsed: true
+        contents:
+          - page: Google Cloud Storage (GCS)
+            path: ./pages/data-ingestion/GCP/index.md
+          - section: Google Dataflow
+            collapsed: true
+            contents:
+              - page: Integrating Dataflow with ClickHouse
+                path: ./pages/data-ingestion/GCP/google-dataflow/dataflow.md
+              - page: Java Runner
+                path: ./pages/data-ingestion/GCP/google-dataflow/java-runner.md
+              - page: Templates
+                path: ./pages/data-ingestion/GCP/google-dataflow/templates.md
+              - section: Dataflow templates
+                collapsed: true
+                contents:
+                  - page: BigQuery to ClickHouse
+                    path: ./pages/data-ingestion/GCP/google-dataflow/templates/bigquery-to-clickhouse.md
+      - section: Azure
+        collapsed: true
+        contents:
+          - section: Azure Data Factory
+            collapsed: true
+            contents:
+              - page: Overview
+                path: ./pages/data-ingestion/azure/azure-data-factory/overview.md
+              - page: Using the azureBlobStorage table function
+                path: ./pages/data-ingestion/azure/azure-data-factory/using_azureblobstorage.md
+              - page: Using the HTTP interface
+                path: ./pages/data-ingestion/azure/azure-data-factory/using_http_interface.md
+          - page: Azure Synapse
+            path: ./pages/data-ingestion/azure/azure-synapse.md
+      - page: Airbyte
+        path: ./pages/data-ingestion/etl-tools/airbyte-and-clickhouse.md
+      - page: Apache Beam
+        path: ./pages/data-ingestion/etl-tools/apache-beam.md
+      - section: Apache Spark
+        collapsed: true
+        contents:
+          - page: Integrating Apache Spark with ClickHouse
+            path: ./pages/data-ingestion/apache-spark/index.md
+          - page: Spark Native Connector
+            path: ./pages/data-ingestion/apache-spark/spark-jdbc.md
+          - page: Spark JDBC
+            path: ./pages/data-ingestion/apache-spark/spark-native-connector.md
+      - page: Bladepipe
+        path: ./pages/data-ingestion/etl-tools/bladepipe-and-clickhouse.md
+      - link: Cassandra (Dictionary source)
+        href: /sql-reference/dictionaries#cassandra
+      - section: dbt
+        collapsed: true
+        contents:
+          - page: Overview
+            path: ./pages/data-ingestion/etl-tools/dbt/index.md
+          - page: Features and configurations
+            path: ./pages/data-ingestion/etl-tools/dbt/features-and-configurations.md
+          - page: Guides
+            path: ./pages/data-ingestion/etl-tools/dbt/index.md
+      - page: EMQX
+        path: ./pages/data-ingestion/emqx/index.md
+      - page: JDBC
+        path: ./pages/data-ingestion/jdbc-with-clickhouse.md
+      - section: Kafka
+        collapsed: true
+        contents:
+          - page: Integrating Kafka with ClickHouse
+            path: ./pages/data-ingestion/kafka/index.md
+          - page: ClickHouse Kafka Connect Sink
+            path: ./pages/data-ingestion/kafka/kafka-clickhouse-connect-sink.md
+          - page: Kafka Connector Sink on Confluent Cloud
+            path: ./pages/data-ingestion/kafka/confluent/confluent-cloud.md
+          - page: Kafka Connector Sink on Confluent Platform
+            path: ./pages/data-ingestion/kafka/confluent/custom-connector.md
+          - page: Amazon MSK with Kafka Connector Sink
+            path: ./pages/data-ingestion/kafka/msk/index.md
+          - page: Vector with Kafka
+            path: ./pages/data-ingestion/kafka/kafka-vector.md
+          - page: Kafka Table Engine
+            path: ./pages/data-ingestion/kafka/kafka-table-engine.md
+          - page: Confluent Platform
+            path: ./pages/data-ingestion/kafka/confluent/index.md
+          - page: HTTP Sink Connector for Confluent Platform
+            path: ./pages/data-ingestion/kafka/confluent/kafka-connect-http.md
+          - page: Kafka Connect JDBC Connector
+            path: ./pages/data-ingestion/kafka/kafka-connect-jdbc.md
+          - page: Integrating ClickHouse with Kafka using Named Collections
+            path: ./pages/data-ingestion/kafka/kafka-table-engine-named-collections.md
+      - page: MinIO
+        path: ./pages/data-ingestion/s3-minio.md
+      - page: MySQL
+        path: ./pages/data-ingestion/mysql.md
+      - page: NiFi
+        path: ./pages/data-ingestion/etl-tools/nifi-and-clickhouse.md
+      - page: PostgreSQL
+        path: ./pages/data-ingestion/postgresql/connecting-to-postgresql.md
+      - link: Table engines
+        href: /reference/engines
+      - page: Vector
+        path: ./pages/data-ingestion/etl-tools/vector-to-clickhouse.md
+  - tab: data-integration
+    layout:
+      - section: Integrations
+        contents:
+          - page: Retool
+            path: ./pages/data-integrations/integrations/retool.md
+          - page: Easypanel
+            path: ./pages/data-integrations/integrations/easypanel.md
+          - page: Splunk
+            path: ./pages/data-integrations/integrations/splunk.md
+      - section: SQL clients
+        contents:
+          - page: DataGrip
+            path: ./pages/data-integrations/sql-clients/datagrip.md
+          - page: DBeaver
+            path: ./pages/data-integrations/sql-clients/dbeaver.md
+          - page: DbVisualizer
+            path: ./pages/data-integrations/sql-clients/dbvisualizer.md
+          - page: Juypter notebooks
+            path: ./pages/data-integrations/sql-clients/jupysql.md
+          - page: QStudio
+            path: ./pages/data-integrations/sql-clients/qstudio.md
+          - page: TABLUM.IO
+            path: ./pages/data-integrations/sql-clients/tablum.md
+          - page: marimo
+            path: ./pages/data-integrations/sql-clients/marimo.md
+      - section: Interfaces
+        contents:
+          - page: HTTP interface (TCP)
+            path: ./pages/data-integrations/drivers-and-interfaces/http.md
+          - page: Native interface (TCP)
+            path: ./pages/data-integrations/drivers-and-interfaces/native-clients-interfaces-index.md
+          - page: JDBC driver
+            path: ./pages/data-integrations/drivers-and-interfaces/jdbc.md
+          - page: MySQL interface
+            path: ./pages/data-integrations/drivers-and-interfaces/mysql.md
+          - page: ODBC driver
+            path: ./pages/data-integrations/drivers-and-interfaces/odbc.md
+          - page: PostgreSQL interface
+            path: ./pages/data-integrations/drivers-and-interfaces/postgresql.md
+          - page: Prometheus protocols
+            path: ./pages/data-integrations/drivers-and-interfaces/prometheus.md
+          - page: SSH interface
+            path: ./pages/data-integrations/drivers-and-interfaces/ssh.md
+          - page: gRPC interface
+            path: ./pages/data-integrations/drivers-and-interfaces/grpc.md
+          - page: Arrow Flight interface
+            path: ./pages/data-integrations/drivers-and-interfaces/arrowflight.md
+  - tab: data-visualization
+    layout:
+      - page: Power BI
+        path: ./pages/data-visualization/clickhouse/powerbi-and-clickhouse.md
+      - page: Splunk
+        path: ./pages/data-visualization/clickhouse/splunk-and-clickhouse.md
+      - page: Quicksight
+        path: ./pages/data-visualization/clickhouse/quicksight-and-clickhouse.md
+      - page: Superset
+        path: ./pages/data-visualization/clickhouse/superset-and-clickhouse.md
+      - section: Tableau
+        collapsed: true
+        contents:
+          - page: Tableau Desktop
+            path: ./pages/data-visualization/clickhouse/tableau/tableau-and-clickhouse.md
+          - page: Tableau Online
+            path: ./pages/data-visualization/clickhouse/tableau/tableau-online-and-clickhouse.md
+          - page: Connection tips
+            path: ./pages/data-visualization/clickhouse/tableau/tableau-connection-tips.md
+          - page: Analysis tips
+            path: ./pages/data-visualization/clickhouse/tableau/tableau-analysis-tips.md
+          - section: Grafana
+            collapsed: true
+            contents:
+              - page: Quick start
+                path: ./pages/data-visualization/clickhouse/grafana/index.md
+              - page: Query builder
+                path: ./pages/data-visualization/clickhouse/grafana/query-builder.md
+              - page: Plugin configuration
+                path: ./pages/data-visualization/clickhouse/grafana/config.md
+      - page: Lightdash
+        path: ./pages/data-visualization/partner/lightdash-and-clickhouse.md
+      - page: Looker
+        path: ./pages/data-visualization/partner/looker-and-clickhouse.md
+      - page: Looker studio
+        path: ./pages/data-visualization/partner/looker-studio-and-clickhouse.md
+      - page: Metabase
+        path: ./pages/data-visualization/partner/metabase-and-clickhouse.md
+      - page: Omni
+        path: ./pages/data-visualization/partner/omni-and-clickhouse.md
+      - section: Third-party
+        contents:
+          - folder: ./pages/data-visualization/community-integrations

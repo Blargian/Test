@@ -1,0 +1,453 @@
+.nav-logo {
+    height: 3rem;
+}
+
+/* ============================================
+   Page Title Alignment Fix
+   ============================================ */
+
+/* Parent container - make it a row layout */
+#page-title:has(+ #page-context-menu) {
+    align-self: flex-start !important;
+    width: auto !important;
+    text-align: left !important;
+}
+
+/* If they share a parent, make the parent a row */
+#page-title {
+    align-self: flex-start !important;
+    text-align: left !important;
+}
+
+/* Parent should be row layout with space between */
+#page-title:is(:first-child) {
+    flex: 1 !important;
+}
+
+#page-context-menu {
+    margin-left: auto !important;
+    align-self: center !important;
+}
+
+/* If parent contains both, make it row */
+:has(> #page-title):has(> #page-context-menu) {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-bottom: 16px !important;
+}
+
+
+/* ============================================
+   Navigation Link Text Shadow
+   ============================================ */
+
+/* Light mode - remove green, use neutral colors */
+html:not(.dark) a.bg-primary\/10.text-primary,
+html:not(.dark) a[class*="bg-primary/10"][class*="text-primary"] {
+    text-shadow: -0.2px 0 0 #E6E7E9, 0.2px 0 0 #E6E7E9 !important;
+    color: #1f1f1c !important;
+    background-color: rgba(31, 31, 28, 0.08) !important;
+}
+
+/* Dark mode - remove green, use neutral colors */
+html.dark a.dark\:bg-primary-light\/10.dark\:text-primary-light,
+html.dark a[class*="dark:bg-primary-light/10"][class*="dark:text-primary-light"] {
+    text-shadow: -0.2px 0 0 #414141, 0.2px 0 0 #414141 !important;
+    color: #E6E7E9 !important;
+    background-color: rgba(230, 231, 233, 0.1) !important;
+}
+
+/* ============================================
+   Eyebrow Element Color Override
+   ============================================ */
+
+/* Light mode - neutral gray instead of green */
+html:not(.dark) .eyebrow {
+    color: #6B7280 !important;
+}
+
+/* Dark mode - neutral gray instead of green */
+html.dark .eyebrow {
+    color: #9CA3AF !important;
+}
+
+/* ============================================
+   Text Primary Color Override
+   ============================================ */
+
+/* Light mode - neutral dark gray instead of green */
+html:not(.dark) .text-primary {
+    color: #1f1f1c !important;
+}
+
+/* Dark mode - neutral light gray instead of green */
+html.dark .text-primary,
+html.dark .dark\:text-primary-light {
+    color: #E6E7E9 !important;
+}
+
+
+
+
+
+
+
+
+/* ============================================
+   Card styling (Light & Dark Mode)
+   ============================================ */
+
+/* Override card hover border color in dark mode */
+.dark .card:hover {
+    border-color: #fdff75 !important;
+}
+
+/* Override topbar CTA button styling */
+
+/* Dark mode - #fdff75 background and black text */
+.dark #topbar-cta-button .bg-primary-dark {
+    background-color: #fdff75 !important;
+}
+
+.dark #topbar-cta-button span,
+.dark #topbar-cta-button svg {
+    color: black !important;
+}
+
+/* Light mode - #323232 background and white text */
+#topbar-cta-button .bg-primary-dark {
+    background-color: #323232 !important;
+}
+
+#topbar-cta-button span,
+#topbar-cta-button svg {
+    color: white !important;
+}
+
+/* ============================================
+   Product Icon Images (Light & Dark Mode)
+   ============================================ */
+
+/* Hide original img src and use background images instead */
+.nav-dropdown-products-selector-item img {
+    /* Hide the src attribute */
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+}
+
+/* Create a wrapper for background images */
+.nav-dropdown-products-selector-item {
+    position: relative !important;
+}
+
+.nav-dropdown-products-selector-item::before {
+    content: "" !important;
+    display: block !important;
+    width: 48px !important;
+    height: 48px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin-bottom: 4px !important;
+    /* Default fallback */
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/home-dark.svg") !important;
+}
+
+/* Home - Dark (1st item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(1) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(1) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/home-dark.svg") !important;
+}
+
+/* Cloud - Dark (2nd item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(2) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(2) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/cloud-dark.svg") !important;
+}
+
+/* OSS - Dark (3rd item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(3) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(3) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/oss-dark.svg") !important;
+}
+
+/* ClickStack - Dark (4th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(4) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(4) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/clickstack-dark.svg") !important;
+}
+
+/* Language clients - Dark (5th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(5) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(5) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/integrations-dark.svg") !important;
+}
+
+/* ClickPipes - Dark (6th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(6) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(6) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/clickpipes-dark.svg") !important;
+}
+
+/* Integrations - Dark (7th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(7) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(7) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/integrations-dark.svg") !important;
+}
+
+/* chDB - Dark (8th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(8) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(8) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/chdb-dark.svg") !important;
+}
+
+/* Reference - Dark (9th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(9) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(9) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/reference-dark.svg") !important;
+}
+
+/* Support center - Dark (10th item) */
+:is(.dark) .nav-dropdown-products-selector-content>a:nth-child(10) .nav-dropdown-products-selector-item::before,
+:is([data-theme="dark"]) .nav-dropdown-products-selector-content>a:nth-child(10) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/support-dark.svg") !important;
+}
+
+/* Light mode product icons */
+
+/* Home - Light (1st item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(1) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/home-light.svg") !important;
+}
+
+/* Cloud - Light (2nd item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(2) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/cloud-light.svg") !important;
+}
+
+/* OSS - Light (3rd item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(3) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/oss-light.svg") !important;
+}
+
+/* ClickStack - Light (4th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(4) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/clickstack-light.svg") !important;
+}
+
+/* Language clients - Light (5th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(5) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/integrations-light.svg") !important;
+}
+
+/* ClickPipes - Light (6th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(6) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/clickpipes-light.svg") !important;
+}
+
+/* Integrations - Light (7th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(7) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/integrations-light.svg") !important;
+}
+
+/* chDB - Light (8th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(8) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/chdb-light.svg") !important;
+}
+
+/* Reference - Light (9th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(9) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/reference-light.svg") !important;
+}
+
+/* Support center - Light (10th item) */
+html:not(.dark) .nav-dropdown-products-selector-content>a:nth-child(10) .nav-dropdown-products-selector-item::before {
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/support-light.svg") !important;
+}
+
+
+
+/* ============================================
+   Product Selector Menu Styling
+   Based on ClickHouse Fern Docs Design
+   ============================================ */
+
+/* Mintlify Product Selector Dropdown Container */
+.nav-dropdown-products-selector-content {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(120px, 1fr)) !important;
+    gap: 16px !important;
+    padding: 16px !important;
+    max-width: 600px !important;
+}
+
+/* Individual product item wrapper links */
+.nav-dropdown-products-selector-content>a.link {
+    display: block !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Individual product item cards */
+.nav-dropdown-products-selector-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 20px 12px !important;
+    text-align: center !important;
+
+    /* Glassmorphic styling */
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+
+    /* Smooth transitions */
+    transition: all 0.2s ease-in-out !important;
+
+    /* Reset grid layout from Mintlify's default */
+    grid-template-columns: 1fr !important;
+}
+
+/* Product item hover state */
+.nav-dropdown-products-selector-content>a.link:hover .nav-dropdown-products-selector-item,
+.nav-dropdown-products-selector-item:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Product item active/pressed state */
+.nav-dropdown-products-selector-content>a.link:active .nav-dropdown-products-selector-item,
+.nav-dropdown-products-selector-item:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Product icon styling */
+.nav-dropdown-products-selector-item img,
+.nav-dropdown-products-selector-item .product-icon {
+    width: 48px !important;
+    height: 48px !important;
+    object-fit: contain !important;
+    margin-bottom: 4px !important;
+}
+
+/* Product title and description container */
+.nav-dropdown-products-selector-item>div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2px !important;
+}
+
+/* Product title */
+.nav-dropdown-products-selector-item p:first-child {
+    margin: 0 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    color: inherit !important;
+}
+
+/* Product description */
+.nav-dropdown-products-selector-item p:last-child {
+    margin: 0 !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 0.8 !important;
+}
+
+/* Hide the arrow icon that Mintlify adds by default */
+.nav-dropdown-products-selector-item svg {
+    display: none !important;
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+    .nav-dropdown-products-selector-item {
+        background-color: rgba(0, 0, 0, 0.02) !important;
+        border-color: rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .nav-dropdown-products-selector-content>a.link:hover .nav-dropdown-products-selector-item,
+    .nav-dropdown-products-selector-item:hover {
+        background-color: rgba(0, 0, 0, 0.04) !important;
+        border-color: rgba(0, 0, 0, 0.12) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .nav-dropdown-products-selector-item p:last-child {
+        color: rgba(0, 0, 0, 0.6) !important;
+    }
+}
+
+/* Responsive design - 3 columns on tablets */
+@media (max-width: 1024px) {
+    .nav-dropdown-products-selector-content {
+        grid-template-columns: repeat(3, minmax(110px, 1fr)) !important;
+        max-width: 480px !important;
+    }
+}
+
+/* Responsive design - 2 columns on mobile landscape */
+@media (max-width: 768px) {
+    .nav-dropdown-products-selector-content {
+        grid-template-columns: repeat(2, minmax(140px, 1fr)) !important;
+        gap: 12px !important;
+        max-width: 360px !important;
+    }
+
+    .nav-dropdown-products-selector-item {
+        padding: 18px 10px !important;
+    }
+}
+
+/* Responsive design - 1 column on small mobile */
+@media (max-width: 480px) {
+    .nav-dropdown-products-selector-content {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        max-width: 280px !important;
+    }
+
+    .nav-dropdown-products-selector-item {
+        padding: 16px !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+
+    .nav-dropdown-products-selector-item>div {
+        align-items: flex-start !important;
+    }
+
+    .nav-dropdown-products-selector-item img,
+    .nav-dropdown-products-selector-item .product-icon {
+        width: 40px !important;
+        height: 40px !important;
+        margin-bottom: 0 !important;
+        margin-right: 12px !important;
+    }
+}
+
+/* ============================================
+   Page Title Alignment
+   ============================================ */
+
+/* Left-align h1 elements with id="page-title" */
+#page-title,
+h1#page-title,
+h1[id="page-title"] {
+    text-align: left !important;
+}

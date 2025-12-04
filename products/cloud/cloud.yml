@@ -1,0 +1,428 @@
+tabs:
+  home:
+    display-name: Home
+    icon: house
+    skip-slug: true
+  getting-started:
+    display-name: Get started
+    icon: rocket
+    skip-slug: true
+  features:
+    display-name: Features
+    icon: fa-list-check
+    skip-slug: true
+  guides:
+    display-name: Guides
+    icon: book
+    skip-slug: true
+  best-practices:
+    display-name: Best practices
+    icon: star
+    skip-slug: true
+  cloud-reference:
+    display-name: Cloud reference
+    icon: cloud
+    skip-slug: true
+  cloud-api:
+    display-name: Cloud-API
+    icon: code
+    skip-slug: true
+  reference:
+    display-name: Reference
+    icon: folder-gear
+    href: /reference
+    skip-slug: true
+
+navigation:
+  - tab: home
+    layout:
+      - section: Home
+        skip-slug: true
+        contents:
+          - page: Home
+            path: ./pages/cloud_home.mdx
+
+  - tab: getting-started
+    layout:
+      - section: Quick Start
+        skip-slug: true
+        contents:
+          - page: What is ClickHouse Cloud?
+            path: ./pages/getting-started/intro.mdx
+          - page: Quick start guide
+            path: ./pages/getting-started/quick-start.mdx
+      - section: Use cases
+        skip-slug: true
+        contents:
+          - page: Use cases
+            path: ./pages/getting-started/use_cases/00_overview.mdx
+          - page: Real-time analytics
+            path: ./pages/getting-started/use_cases/01_real-time-analytics.md
+          - page: Observability
+            path: ./pages/getting-started/use_cases/02_observability.md
+          - page: Data warehousing
+            path: ./pages/getting-started/use_cases/03_data_warehousing.md
+          - section: Machine learning & generative AI
+            skip-slug: true
+            contents:
+              - page: Machine learning
+                path: ./pages/getting-started/use_cases/04_machine_learning_and_genAI/01_machine_learning.md
+              - page: Agent facing analytics
+                path: ./pages/getting-started/use_cases/04_machine_learning_and_genAI/02_agent_facing_analytics.md
+      - section: Migration guides
+        skip-slug: true
+        contents:
+          - page: Overview
+            path: ./pages/getting-started/migration_guides/01_overview.md
+          - section: PostgreSQL
+            skip-slug: true
+            path: ./pages/getting-started/migration_guides/02_postgres/index.md
+            contents:
+              - page: Overview
+                path: ./pages/getting-started/migration_guides/02_postgres/01_overview.md
+              - section: Migration guide
+                skip-slug: true
+                contents:
+                  - page: Part 1
+                    path: ./pages/getting-started/migration_guides/02_postgres/migration_guide/01_migration_guide_part1.md
+                  - page: Part 2
+                    path: ./pages/getting-started/migration_guides/02_postgres/migration_guide/02_migration_guide_part2.md
+                  - page: Part 3
+                    path: ./pages/getting-started/migration_guides/02_postgres/migration_guide/03_migration_guide_part3.md
+              - page: Appendix
+                path: ./pages/getting-started/migration_guides/02_postgres/appendix.md
+          - section: BigQuery
+            skip-slug: true
+            path: ./pages/getting-started/migration_guides/03_bigquery/index.md
+            contents:
+              - page: Overview
+                path: ./pages/getting-started/migration_guides/03_bigquery/01_overview.md
+              - page: Migration guide
+                path: ./pages/getting-started/migration_guides/03_bigquery/02_migrating-to-clickhouse-cloud.md
+              - page: Loading data
+                path: ./pages/getting-started/migration_guides/03_bigquery/03_loading-data.md
+          - section: Snowflake
+            skip-slug: true
+            contents:
+              - page: Overview
+                path: ./pages/getting-started/migration_guides/04_snowflake/01_overview.md
+              - page: Migration guide
+                path: ./pages/getting-started/migration_guides/04_snowflake/02_migration_guide.md
+              - page: SQL translation reference
+                path: ./pages/getting-started/migration_guides/04_snowflake/03_sql_translation_reference.md
+          - section: Elasticsearch
+            skip-slug: true
+            contents:
+              - page: Overview
+                path: ./pages/getting-started/migration_guides/05_elastic/01_overview.md
+          - section: Redshift
+            skip-slug: true
+            contents:
+              - page: Overview
+                path: ./pages/getting-started/migration_guides/06_redshift/01_overview.md
+              - page: Migration guide
+                path: ./pages/getting-started/migration_guides/06_redshift/02_migration_guide.md
+              - page: SQL translation reference
+                path: ./pages/getting-started/migration_guides/06_redshift/03_sql_translation_reference.md
+          - section: OSS to Cloud
+            skip-slug: true
+            contents:
+              - page: ClickHouse OSS
+                path: ./pages/getting-started/migration_guides/07_OSS_to_Cloud/01_clickhouse-to-cloud.md
+          - section: Other methods
+            skip-slug: true
+            contents:
+              - page: Using clickhouse-local
+                path: ./pages/getting-started/migration_guides/08_other_methods/01_clickhouse-local-etl.md
+              - page: Using a 3rd-party ETL Tool
+                path: ./pages/getting-started/migration_guides/08_other_methods/02_etl-tool-to-clickhouse.md
+              - page: Move data from cloud object storage to ClickHouse Cloud
+                path: ./pages/getting-started/migration_guides/08_other_methods/03_object-storage-to-clickhouse.md
+
+  - tab: features
+    layout:
+      - section: Features
+        skip-slug: true
+        contents:
+          - page: ClickHouse Cloud tiers
+            path: ./pages/features/01_cloud_tiers.md
+          - page: Integrations
+            path: ./pages/features/02_integrations.md
+          - section: SQL console
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: SQL console
+                path: ./pages/features/03_sql_console_features/01_sql-console.md
+              - page: Query insights
+                path: ./pages/features/03_sql_console_features/02_query-insights.md
+              - page: Query API endpoints
+                path: ./pages/features/03_sql_console_features/03_query-endpoints.md
+              - page: Dashboards
+                path: ./pages/features/03_sql_console_features/04_dashboards.md
+              - page: HyperDX
+                path: ./pages/features/03_sql_console_features/hyperdx.md
+          - section: Infrastructure
+            skip-slug: true
+            collapsed: true
+            contents:
+              - section: Automatic scaling
+                skip-slug: true
+                contents:
+                  - page: Automatic scaling
+                    path: ./pages/features/04_infrastructure/automatic_scaling/01_auto_scaling.md
+                  - page: Make Before Break (MBB)
+                    path: ./pages/features/04_infrastructure/automatic_scaling/02_make_before_break.md
+              - page: Deployment options
+                path: ./pages/features/04_infrastructure/deployment-options.md
+              - page: Replica-aware routing
+                path: ./pages/features/04_infrastructure/replica-aware-routing.md
+              - page: Shared catalog
+                path: ./pages/features/04_infrastructure/shared-catalog.md
+              - page: Shared MergeTree
+                path: ./pages/features/04_infrastructure/shared-merge-tree.md
+              - page: Warehouses
+                path: ./pages/features/04_infrastructure/warehouses.md
+          - section: Admin
+            skip-slug: true
+            collapsed: true
+            contents:
+              - section: Cloud API
+                skip-slug: true
+                contents:
+                  - page: Overview
+                    path: ./pages/features/05_admin_features/api/api-overview.md
+                  - page: Managing API keys
+                    path: ./pages/features/05_admin_features/api/openapi.md
+                  - page: Programmatic API access with Postman
+                    path: ./pages/features/05_admin_features/api/postman.md
+              - page: Overview
+                path: ./pages/features/05_admin_features/upgrades.md
+          - page: Security
+            path: ./pages/features/06_security.md
+          - section: Monitoring
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: Advanced dashboard
+                path: ./pages/features/07_monitoring/advanced_dashboard.md
+              - page: Notifications
+                path: ./pages/features/07_monitoring/notifications.md
+              - page: Prometheus
+                path: ./pages/features/07_monitoring/prometheus.md
+          - page: Backups
+            path: ./pages/features/08_backups.md
+          - page: Cloud support
+            path: ./pages/features/09_support.md
+  - tab: guides
+    layout:
+      - section: SQL console
+        skip-slug: true
+        collapsed: true
+        contents:
+          - page: Gather your connection details
+            path: ./pages/guides/SQL_console/connection_details.md
+          - page: Query API endpoints
+            path: ./pages/guides/SQL_console/query-endpoints.md
+      - section: Backups
+        skip-slug: true
+        collapsed: true
+        contents:
+          - page: Review and restore backups
+            path: ./pages/guides/backups/01_review-and-restore-backups.md
+          - page: Configure backup schedules
+            path: ./pages/guides/backups/02_configurable-backups.md
+          - section: Bring Your Own Backup
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: Export backups
+                path: ./pages/guides/backups/03_bring_your_own_backup/01_export-backups-to-own-cloud-account.md
+              - page: Backup or restore using UI
+                path: ./pages/guides/backups/03_bring_your_own_backup/02_backup_restore_from_ui.md
+              - page: Backup or restore using commands
+                path: ./pages/guides/backups/03_bring_your_own_backup/03_backup_restore_using_commands.md
+      - section: Best practices
+        skip-slug: true
+        collapsed: true
+        contents:
+          - page: Multi-tenancy
+            path: ./pages/guides/best_practices/multitenancy.md
+          - page: Service limits
+            path: ./pages/guides/best_practices/usagelimits.md
+      - page: Cloud compatibility
+        path: ./pages/guides/cloud-compatibility.md
+      - section: Data sources
+        skip-slug: true
+        collapsed: true
+        contents:
+          - page: Cloud IP-addresses
+            path: ./pages/guides/data_sources/01_cloud-endpoints-api.md
+          - page: Accessing S3 data securely
+            path: ./pages/guides/data_sources/02_accessing-s3-data-securely.md
+      - section: Infrastructure
+        skip-slug: true
+        collapsed: true
+        contents:
+          - section: Deployment modes
+            collapsed: true
+            contents:
+              - page: ClickHouse Private
+                path: ./pages/guides/infrastructure/01_deployment_options/02_clickhouse-private.md
+              - page: ClickHouse Government
+                path: ./pages/guides/infrastructure/01_deployment_options/03_clickhouse-government.md
+              - section: Bring Your Own Cloud (BYOC)
+                skip-slug: true
+                collapsed: true
+                contents:
+                  - page: Overview
+                    path: ./pages/guides/infrastructure/01_deployment_options/byoc/01_overview.md
+                  - page: Architecture
+                    path: ./pages/guides/infrastructure/01_deployment_options/byoc/02_architecture.md
+                  - section: Onboarding
+                    skip-slug: true
+                    collapsed: true
+                    contents:
+                      - page: AWS
+                        path: ./pages/guides/infrastructure/01_deployment_options/byoc/03_onboarding/01_aws.md
+                  - section: FAQ
+                    skip-slug: true
+                    collapsed: true
+                    contents:
+                      - page: AWS
+                        path: ./pages/guides/infrastructure/01_deployment_options/byoc/04_faq/01_aws.md
+                  - section: Observability
+                    skip-slug: true
+                    collapsed: true
+                    contents:
+                      - page: AWS
+                        path: ./pages/guides/infrastructure/01_deployment_options/byoc/05_observability/01_aws.md
+      - section: Security
+        skip-slug: true
+        collapsed: true
+        contents:
+          - section: Cloud access management
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: Manage my account
+                path: ./pages/guides/security/01_cloud_access_management/01_manage-my-account.md
+              - page: Manage cloud users
+                path: ./pages/guides/security/01_cloud_access_management/02_manage-cloud-users.md
+              - page: Manage SQL console role assignments
+                path: ./pages/guides/security/01_cloud_access_management/03_manage-sql-console-role-assignments.md
+              - page: Manage database users
+                path: ./pages/guides/security/01_cloud_access_management/04_manage-database-users.md
+              - page: SAML SSO setup
+                path: ./pages/guides/security/01_cloud_access_management/04_saml-sso-setup.md
+              - page: Common access management queries
+                path: ./pages/guides/security/01_cloud_access_management/05_common-access-management-queries.md
+          - section: Connectivity
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: Setting IP filters
+                path: ./pages/guides/security/02_connectivity/01_setting-ip-filters.md
+              - section: Private networking
+                skip-slug: true
+                collapsed: true
+                contents:
+                  - page: AWS PrivateLink
+                    path: ./pages/guides/security/02_connectivity/private_networking/02_aws-privatelink.md
+                  - page: GCP private service connect
+                    path: ./pages/guides/security/02_connectivity/private_networking/03_gcp-private-service-connect.md
+                  - page: Azure Private Link
+                    path: ./pages/guides/security/02_connectivity/private_networking/04_azure-privatelink.md
+      - page: Data masking
+        path: ./pages/guides/security/03_data-masking.md
+      - page: Data encryption
+        path: ./pages/guides/security/04_cmek.md
+      - section: Compliance
+        skip-slug: true
+        collapsed: true
+        contents:
+          - page: HIPAA onboarding
+            path: ./pages/guides/security/06_compliance/hipaa-onboarding.md
+          - page: PCI onboarding
+            path: ./pages/guides/security/06_compliance/pci-onboarding.md
+
+  - tab: cloud-reference
+    layout:
+      - section: Changelogs
+        skip-slug: true
+        contents:
+          - page: Cloud changelog
+            path: ./pages/reference/01_changelog/01_changelog.md
+          - changelog: ./pages/reference/01_changelog/02_release_notes
+            title: Release Notes
+            slug: release-notes
+      - page: Architecture
+        path: ./pages/reference/02_architecture.md
+      - section: Billing
+        skip-slug: true
+        contents:
+          - page: Overview
+            path: ./pages/reference/03_billing/01_billing_overview.md
+          - section: Marketplace
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: Market place billing
+                path: ./pages/reference/03_billing/02_marketplace/overview.md
+              - page: AWS Marketplace Committed Contract
+                path: ./pages/reference/03_billing/02_marketplace/aws-marketplace-committed.md
+              - page: AWS Marketplace PAYG
+                path: ./pages/reference/03_billing/02_marketplace/aws-marketplace-payg.md
+              - page: Azure Marketplace Committed Contract
+                path: ./pages/reference/03_billing/02_marketplace/azure-marketplace-committed.md
+              - page: Azure Marketplace PAYG
+                path: ./pages/reference/03_billing/02_marketplace/azure-marketplace-payg.md
+              - page: GCP Marketplace Committed Contract
+                path: ./pages/reference/03_billing/02_marketplace/gcp-marketplace-committed.md
+              - page: GCP Marketplace PAYG
+                path: ./pages/reference/03_billing/02_marketplace/gcp-marketplace-payg.md
+              - page: Migrate billing from pay-as-you-go (PAYG) to a committed spend contract in a cloud marketplace
+                path: ./pages/reference/03_billing/02_marketplace/migrate-marketplace-payg-committed.md
+          - section: ClickPipes
+            skip-slug: true
+            collapsed: true
+            contents:
+              - page: PostgreSQL CDC
+                path: ./pages/reference/03_billing/03_clickpipes/clickpipes_for_cdc.md
+              - page: Streaming and object storage
+                path: ./pages/reference/03_billing/03_clickpipes/clickpipes_for_streaming_and_object_storage.md
+          - page: Data transfer
+            path: ./pages/reference/03_billing/04_network-data-transfer.mdx
+          - page: Payment thresholds
+            path: ./pages/reference/03_billing/05_payment-thresholds.md
+          - page: ClickHouse Cloud billing compliance
+            path: ./pages/reference/03_billing/06_billing_compliance.md
+      - page: Supported Cloud regions
+        path: ./pages/reference/05_supported-regions.md
+      - page: Service uptime and SLA
+        path: ./pages/reference/06_service-uptime.md
+      - page: Configuring settings
+        path: ./pages/reference/08_settings.md
+      - section: Security
+        skip-slug: true
+        collapsed: true
+        contents:
+          - page: Console roles and permissions
+            path: ./pages/reference/09_security/01_console-roles.md
+          - page: Console audit log events
+            path: ./pages/reference/09_security/02_audit-logging.md
+          - page: Compliance overview
+            path: ./pages/reference/09_security/03_compliance-overview.md
+      - page: Personal data access
+        path: ./pages/reference/10_personal-data-access.md
+      - page: Data resiliency
+        path: ./pages/reference/data-resiliency.md
+      - page: Account closure
+        path: ./pages/reference/11_account-close.md
+
+  - tab: cloud-api
+    layout:
+      - api: ClickHouse Cloud API
+        api-name: cloud
+
+  - tab: reference

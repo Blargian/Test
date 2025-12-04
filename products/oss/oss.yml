@@ -1,0 +1,440 @@
+# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
+
+tabs:
+  home:
+    display-name: Home
+    icon: house
+  getting-started:
+    display-name: Get started
+    icon: rocket
+  concepts:
+    display-name: Concepts
+    icon: lightbulb
+  guides:
+    display-name: Guides
+    icon: book
+  reference:
+    display-name: Reference
+    icon: folder-gear
+    href: /reference
+  development:
+    display-name: Development & Contributing
+    icon: brackets-curly
+  changelog:
+    display-name: Changelog
+    icon: code-merge
+
+navigation:
+  - tab: home
+    layout:
+        - section: Home
+          contents:
+            - page: Home
+              path: ./pages/oss_home.mdx
+
+  - tab: getting-started
+    layout:
+      - section: About ClickHouse
+        collapsed: true
+        contents:
+          - page: About
+            path: ./pages/get_started/about/intro.md
+          - page: What is OLAP?
+            path: ./pages/get_started/about/olap.md
+          - page: How is ClickHouse so fast?
+            path: ./pages/get_started/about/why-clickhouse-is-so-fast.mdx
+          - page: What makes ClickHouse unique?
+            path: ./pages/get_started/about/distinctive-features.md
+          - page: Deployment modes
+            path: ./pages/get_started/about/deployment-modes.md
+      - section: Starter guides
+        collapsed: true
+        contents:
+          - page: Quick start
+            path: ./pages/get_started/oss.mdx
+          - page: Creating tables
+            path: ./pages/get_started/starter_guides/creating-tables.md
+          - page: Inserting rows
+            path: ./pages/get_started/starter_guides/inserting-data.md
+          - page: Selecting rows
+            path: ./pages/get_started/starter_guides/writing-queries.md
+          - page: Updating and deleting rows
+            path: ./pages/get_started/starter_guides/mutations.md
+          - page: Generating random test data
+            path: ./pages/get_started/starter_guides/generating-test-data.md
+          - page: Troubleshooting
+            path: ./pages/get_started/starter_guides/troubleshooting.md
+      - section: Install
+        collapsed: true
+        contents:
+          - page: Install overview
+            path: ./pages/get_started/install/install.mdx
+          - page: Debian/Ubuntu
+            path: ./pages/get_started/install/debian_ubuntu.md
+          - page: Redhat/CentOS
+            path: ./pages/get_started/install/redhat.md
+          - page: Other Linux
+            path: ./pages/get_started/install/other_linux.md
+          - page: MacOS
+            path: ./pages/get_started/install/macos.md
+          - page: Windows
+            path: ./pages/get_started/install/windows.md
+          - page: Docker
+            path: ./pages/get_started/install/docker.md
+          - page: Quick install
+            path: ./pages/get_started/install/quick-install-curl.md
+          - page: Advanced install
+            path: ./pages/get_started/install/advanced.md
+      - folder: ./pages/get_started/sample_datasets
+        collapsed: true
+
+  - tab: concepts
+    layout:
+      - section: Core concepts
+        contents:
+          - page: Glossary
+            path: ../common_pages/concepts/glossary.md
+          - page: Table parts
+            path: ../common_pages/concepts/parts.md
+          - page: Table partitions
+            path: ../common_pages/concepts/partitions.mdx
+          - page: Part merges
+            path: ../common_pages/concepts/merges.mdx
+          - page: Primary indexes
+            path: ../common_pages/concepts/primary-indexes.mdx
+          - page: Query parallelism
+            path: ../common_pages/concepts/query-parallelism.md
+          - page: Architecture overview
+            path: ../common_pages/concepts/academic_overview.mdx
+
+  - tab: guides
+    layout:
+      - section: Best practices
+        collapsed: true
+        contents:
+          - page: Primary key selection
+            path: ../common_pages/best_practices/choosing_a_primary_key.md
+          - page: Data type selection
+            path: ../common_pages/best_practices/select_data_type.md
+          - page: Materialized views usage
+            path: ../common_pages/best_practices/use_materialized_views.md
+          - page: JOIN optimization
+            path: ../common_pages/best_practices/minimize_optimize_joins.md
+          - page: Partitioning key selection
+            path: ../common_pages/best_practices/partitioning_keys.mdx
+          - page: Insert strategy selection
+            path: ../common_pages/best_practices/selecting_an_insert_strategy.md
+          - page: Data skipping indexes
+            path: ../common_pages/best_practices/using_data_skipping_indices.md
+          - page: Avoid mutations
+            path: ../common_pages/best_practices/avoid_mutations.md
+          - page: Avoid OPTIMIZE FINAL
+            path: ../common_pages/best_practices/avoid_optimize_final.md
+          - page: Avoid nullable columns
+            path: ../common_pages/best_practices/avoidnullablecolumns.md
+          - page: Using JSON
+            path: ../common_pages/best_practices/json_type.md
+      - section: OSS best practices
+        collapsed: true
+        contents:
+          - page: Sizing and hardware recommendations
+            path: ./pages/oss_specific_guides/best_practices/sizing-and-hardware-recommendations.md
+          - page: OSS usage recommendations
+            path: ./pages/oss_specific_guides/best_practices/tips.md
+      - section: Server configuration
+        collapsed: true
+        contents:
+          - page: Configuration files
+            path: ./pages/oss_specific_guides/server_config/configuration-files.md
+          - page: Startup scripts
+            path: ./pages/oss_specific_guides/server_config/startup-scripts.md
+          - page: External disks for storing data
+            path: ./pages/oss_specific_guides/server_config/storing-data.md
+          - page: Quotas
+            path: ./pages/oss_specific_guides/server_config/quotas.md
+          - page: Allocation profiling
+            path: ./pages/oss_specific_guides/server_config/allocation-profiling.md
+          - page: Caching
+            path: ./pages/oss_specific_guides/server_config/caches.md
+          - page: Workload scheduling
+            path: ./pages/oss_specific_guides/server_config/workload-scheduling.md
+          - page: Named collections
+            path: ./pages/oss_specific_guides/server_config/named-collections.md
+          - page: Composable protocols
+            path: ./pages/oss_specific_guides/server_config/composable-protocols.md
+      - section: Server settings
+        collapsed: true
+        contents:
+          - page: Settings Overview
+            path: ./pages/oss_specific_guides/settings/overview.md
+          - page: Constraints on settings
+            path: ./pages/oss_specific_guides/settings/constraints-on-settings.md
+          - page: Query-level Session Settings
+            path: ./pages/oss_specific_guides/settings/settings-query-level.md
+          - page: Settings profiles
+            path: ./pages/oss_specific_guides/settings/settings-profiles.md
+          - page: User Settings
+            path: ./pages/oss_specific_guides/settings/settings-users.md
+          - page: Permissions for queries
+            path: ./pages/oss_specific_guides/settings/permissions-for-queries.md
+          - page: Restrictions on query complexity
+            path: ./pages/oss_specific_guides/settings/query-complexity.md
+          - page: TCP connection limits
+            path: ./pages/oss_specific_guides/settings/tcp-connection-limits.md
+          - page: Handling server overload
+            path: ./pages/oss_specific_guides/settings/server-overload.md
+          - page: Memory overcommit
+            path: ./pages/oss_specific_guides/settings/memory-overcommit.md
+            icon: flask
+      - section: Deployment and scaling
+        collapsed: true
+        contents:
+          - page: Introduction
+            path: ./pages/oss_specific_guides/deployment_and_scaling/terminology.md
+          - section: Keeper topics
+            contents:
+              - page: Configuring ClickHouse Keeper
+                path: ./pages/oss_specific_guides/deployment_and_scaling/keeper/index.md
+              - page: Secure communication with ZooKeeper
+                path: ./pages/oss_specific_guides/deployment_and_scaling/keeper/ssl-zookeeper.md
+          - page: Table shards and replicas
+            path: ./pages/oss_specific_guides/deployment_and_scaling/shards.mdx
+          - section: Examples
+            contents:
+              - page: Replication
+                path: ./pages/oss_specific_guides/deployment_and_scaling/examples/01_1_shard_2_replicas.md
+              - page: Scaling
+                path: ./pages/oss_specific_guides/deployment_and_scaling/examples/02_2_shards_1_replica.md
+              - page: Replication and scaling
+                path: ./pages/oss_specific_guides/deployment_and_scaling/examples/03_2_shards_2_replicas.md
+          - page: Separating storage and compute
+            path: ./pages/oss_specific_guides/deployment_and_scaling/separation-storage-compute.md
+          - page: Rebalancing shards
+            path: ./pages/oss_specific_guides/deployment_and_scaling/scaling-clusters.md
+          - page: Cluster discovery
+            path: ./pages/oss_specific_guides/deployment_and_scaling/cluster-discovery.md
+            icon: flask
+      - section: Monitoring & Introspection
+        collapsed: true
+        contents:
+          - page: Monitoring
+            path: ./pages/oss_specific_guides/deployment_and_scaling/monitoring/monitoring.md
+          - page: Tracing ClickHouse with OpenTelemetry
+            path: ./pages/oss_specific_guides/deployment_and_scaling/monitoring/opentelemetry.md
+          - page: Debugging memory issues
+            path: ../common_pages/general_guides/debugging-memory-issues.md
+          - page: Query analyzer
+            path: ../common_pages/general_guides/monitoring/understanding-query-execution-with-the-analyzer.md
+          - page: Analyzer
+            path: ../common_pages/general_guides/monitoring/analyzer.md
+          - page: Query profiling
+            path: ../common_pages/general_guides/monitoring/sampling-query-profiler.md
+          - page: Test your hardware
+            path: ../common_pages/general_guides/monitoring/performance-test.md
+      - section: Backup and restoration
+        collapsed: true
+        contents:
+          - page: Overview
+            path: ./pages/oss_specific_guides/deployment_and_scaling/backup/00_overview.md
+          - page: Local disk / S3 disk
+            path: ./pages/oss_specific_guides/deployment_and_scaling/backup/01_local_disk.md
+          - page: S3 endpoint
+            path: ./pages/oss_specific_guides/deployment_and_scaling/backup/02_s3_endpoint.md
+          - page: AzureBlobStorage
+            path: ./pages/oss_specific_guides/deployment_and_scaling/backup/03_azure_blob_storage.md
+          - page: Alternative methods
+            path: ./pages/oss_specific_guides/deployment_and_scaling/backup/04_alternative_methods.md
+      - section: Data modelling
+        collapsed: true
+        contents:
+          - page: Schema design
+            path: ../common_pages/general_guides/data_modelling/schema-design.md
+          - page: Introduction to primary indexes
+            path: ../common_pages/general_guides/data_modelling/sparse-primary-indexes.md
+          - section: Dictionaries
+            collapsed: true
+            contents:
+              - page: Dictionaries
+                path: ../common_pages/general_guides/data_modelling/dictionaries/index.md
+              - page: Defining dictionaries
+                path: ../common_pages/general_guides/data_modelling/dictionaries/defining_dictionaries.md
+          - section: Materialized views
+            collapsed: true
+            contents:
+              - page: Incremental materialized views
+                path: ../common_pages/general_guides/data_modelling/materialized_views/incremental-materialized-view.md
+              - page: Refreshable materialized views
+                path: ../common_pages/general_guides/data_modelling/materialized_views/refreshable-materialized-view.md
+              - page: Cascading materialized views
+                path: ../common_pages/general_guides/data_modelling/materialized_views/cascading-materialized-views.md
+          - page: Projections
+            path: ../common_pages/general_guides/data_modelling/projections/1_projections.md
+          - page: Materialized views vs projections
+            path: ../common_pages/general_guides/data_modelling/materialized-views-versus-projections.md
+          - section: Compression
+            collapsed: true
+            contents:
+              - page: Overview
+                path: ../common_pages/general_guides/data_modelling/compression/compression-in-clickhouse.md
+              - page: Compression modes
+                path: ../common_pages/general_guides/data_modelling/compression/compression-modes.md
+          - page: Denormalizing data
+            path: ../common_pages/general_guides/data_modelling/denormalization.md
+          - page: Backfilling data
+            path: ../common_pages/general_guides/data_modelling/backfilling.md
+      - section: INSERT data
+        collapsed: true
+        contents:
+          - page: Bulk inserts
+            path: ../common_pages/general_guides/insert/bulkinserts.md
+          - page: Asynchronous inserts
+            path: ../common_pages/general_guides/insert/asyncinserts.md
+          - page: Deduplicating inserts on retries
+            path: ../common_pages/general_guides/insert/deduplicating-inserts-on-retries.md
+          - page: Deduplication strategies
+            path: ../common_pages/general_guides/insert/deduplication.md
+          - page: Transactional (ACID) support
+            icon: flask
+            path: ../common_pages/general_guides/insert/transactions.md
+      - section: UPDATE data
+        collapsed: true
+        contents:
+          - page: Overview
+            path: ../common_pages/general_guides/update/overview.mdx
+          - page: Update mutations
+            path: ../common_pages/general_guides/update/update_mutations.mdx
+          - page: On-the-fly mutations
+            path: ../common_pages/general_guides/update/on-fly-mutations.md
+          - page: ReplacingMergeTree
+            path: ../common_pages/general_guides/update/replacing-merge-tree.md
+      - section: DELETE data
+        collapsed: true
+        contents:
+          - page: Overview
+            path: ../common_pages/general_guides/delete/overview.mdx
+          - page: Lightweight deletes
+            path: ../common_pages/general_guides/delete/lightweight-delete.md
+          - page: Delete mutations
+            path: ../common_pages/general_guides/delete/delete_mutations.mdx
+          - page: Truncate table
+            path: ../common_pages/general_guides/delete/truncate.md
+          - page: Drop partition
+            path: ../common_pages/general_guides/delete/drop_partition.mdx
+          - page: Time To Live (TTL)
+            path: ../common_pages/general_guides/delete/ttl.md
+      - section: SELECT data
+        collapsed: true
+        contents:
+          - page: Using JOINs in ClickHouse
+            path: ../common_pages/general_guides/select/joining-tables.md
+      - section: Performance & optimization
+        collapsed: true
+        contents:
+          - page: Optimizing queries
+            path: ../common_pages/general_guides/performance_and_optimizations/query-optimization.md
+          - page: Data skipping indexes
+            path: ../common_pages/general_guides/performance_and_optimizations/skipping-indexes.md
+          - page: Data skipping index examples
+            path: ../common_pages/general_guides/performance_and_optimizations/skipping-indexes-examples.md
+          - page: PREWHERE optimization
+            path: ../common_pages/general_guides/performance_and_optimizations/prewhere.md
+          - section: Cache types
+            collapsed: true
+            contents:
+              - page: Query cache
+                path: ../common_pages/general_guides/performance_and_optimizations/query-cache.md
+              - page: Query condition cache
+                path: ../common_pages/general_guides/performance_and_optimizations/query-condition-cache.md
+              - page: Userspace page cache
+                path: ../common_pages/general_guides/performance_and_optimizations/userspace-page-cache.md
+
+
+        # - section: Advanced guides
+        # collapsed: true
+        # contents:
+        #   - page: Dynamic column selection
+        #     path: ../common_pages/general_guides/advanced_guides/
+        #   - page: Merge table function
+        #     path: ../common_pages/general_guides/advanced_guides/
+        #   - page: Alternative query languages
+        #     path: ../common_pages/general_guides/advanced_guides/
+
+  - tab: reference
+  - tab: development
+    layout:
+      - section: Introduction
+        contents:
+          - page: Prerequisites
+            path: ./pages/development/developer-instruction.md
+          - page: Architecture overview
+            path: ./pages/development/architecture.md
+      - section: Building
+        contents:
+          - page: On Linux
+            path: ./pages/development/build.md
+          - page: On MacOS for MacOS
+            path: ./pages/development/build-osx.md
+          - page: On Linux for MacOS
+            path: ./pages/development/build-cross-osx.md
+          - page: On Linux for AARCH64
+            path: ./pages/development/build-cross-arm.md
+          - page: On Linux for RISC-V 64
+            path: ./pages/development/build-cross-riscv.md
+          - page: On Linux for s390x (zLinux)
+            path: ./pages/development/build-cross-s390x.md
+          - page: On Linux for LoongArch64
+            path: ./pages/development/build-cross-loongarch.md
+      - section: Contributing
+        contents:
+          - page: Testing
+            path: ./pages/development/tests.md
+          - page: Continuous Integration (CI)
+            path: ./pages/development/continuous-integration.md
+          - page: Third-party libraries
+            path: ./pages/development/contrib.md
+          - page: C++ style guide
+            path: ./pages/development/style.md
+          - page: Building and Benchmarking DEFLATE_QPL
+            path: ./pages/development/building_and_benchmarking_deflate_qpl.md
+          - page: Rust libraries
+            path: ./pages/development/integrating_rust_libraries.md
+          - page: Profile guided optimization (PGO)
+            path: ./pages/development/profile-guided-optimization.md
+          - section: Native protocol
+            contents:
+              - page: Basics
+                path: ./pages/development/native_protocol/basics.md
+              - page: Native client packages
+                path: ./pages/development/native_protocol/client.md
+              - page: Server packets
+                path: ./pages/development/native_protocol/server.md
+              - page: Column types
+                path: ./pages/development/native_protocol/columns.md
+              - page: CityHash
+                path: ./pages/development/native_protocol/hash.md
+  - tab: changelog
+    layout:
+      - section: Changelog
+        contents:
+          - page: "2025"
+            path: ./pages/changelogs/2025.md
+          - page: "2024"
+            path: ./pages/changelogs/2024.md
+          - page: "2023"
+            path: ./pages/changelogs/2023.md
+          - page: "2022"
+            path: ./pages/changelogs/2022.md
+          - page: "2021"
+            path: ./pages/changelogs/2021.md
+          - page: "2020"
+            path: ./pages/changelogs/2020.md
+          - page: "2019"
+            path: ./pages/changelogs/2019.md
+          - page: "2018"
+            path: ./pages/changelogs/2018.md
+          - page: "2017"
+            path: ./pages/changelogs/2017.md
+      - page: Security changelog
+        path: ./pages/changelogs/security-changelog.md
+      - page: Roadmap
+        path: ./pages/changelogs/roadmap.md

@@ -1,0 +1,118 @@
+tabs:
+  home:
+    display-name: Home
+    icon: house
+  getting-started:
+    display-name: Get started
+    icon: rocket
+  features:
+    display-name: Features
+    icon: fa-list-check
+  guides:
+    display-name: Guides
+    icon: book
+  hyperdx-api:
+    display-name: HyperDX API
+    icon: code
+    skip-slug: true
+
+navigation:
+  - tab: home
+    layout:
+      - section: Home
+        contents:
+          - page: Home
+            path: ./pages/clickstack_home.mdx
+
+  - tab: getting-started
+    layout:
+      - section: Introduction
+        contents:
+          - page: About
+            path: ./pages/overview.md
+          - page: Getting started
+            path: ./pages/getting-started.md
+      - section: Sample datasets
+        contents:
+          - page: Sample Logs, Traces and Metrics
+            path: ./pages/example-datasets/sample-data.md
+          - page: Monitoring Kubernetes
+            path: ./pages/example-datasets/kubernetes.md
+          - page: Local Logs & Metrics
+            path: ./pages/example-datasets/local-data.md
+          - page: Remote Demo Dataset
+            path: ./pages/example-datasets/remote-demo-data.md
+      - page: Architecture
+        path: ./pages/architecture.md
+      - section: Integration quick start
+        contents:
+          - page: Nginx Logs
+            path: ./pages/integration-examples/nginx-logs.md
+          - page: Nginx Traces
+            path: ./pages/integration-examples/nginx-traces.md
+          - page: Redis Logs
+            path: ./pages/integration-examples/redis-logs.md
+          - page: Redis Metrics
+            path: ./pages/integration-examples/redis-metrics.md
+
+  - tab: features
+    layout:
+      - section: Deployment options
+        path: ./pages/deployment/overview.md
+        contents:
+          - page: All in one
+            path: ./pages/deployment/all-in-one.md
+          - page: ClickHouse Cloud
+            path: ./pages/deployment/hyperdx-clickhouse-cloud.md
+          - page: Helm
+            path: ./pages/deployment/helm.md
+          - page: Docker Compose
+            path: ./pages/deployment/docker-compose.md
+          - page: HyperDX only
+            path: ./pages/deployment/hyperdx-only.md
+          - page: Local Mode Only
+            path: ./pages/deployment/local-mode-only.md
+      - page: Search
+        path: ./pages/search.md
+      - page: Dashboards
+        path: ./pages/dashboards.md
+      - page: Event Patterns
+        path: ./pages/event_patterns.md
+      - page: Event Deltas
+        path: ./pages/event_deltas.md
+      - page: Alerts
+        path: ./pages/alerts.md
+
+  - tab: guides
+    layout:
+      - section: Ingesting data
+        contents:
+          - page: Overview
+            path: ./pages/ingesting-data/overview.md
+      - section: Migration guides
+        contents:
+          - section: Migrating from Elastic
+            contents:
+              - page: Overview
+                path: ./pages/migration/elastic/intro.md
+              - page: Equivalent concepts
+                path: ./pages/migration/elastic/concepts.md
+              - page: Types
+                path: ./pages/migration/elastic/types.md
+              - page: Search
+                path: ./pages/migration/elastic/search.md
+              - page: Migrating data
+                path: ./pages/migration/elastic/migrating-data.md
+              - page: Migrating agents
+                path: ./pages/migration/elastic/migrating-agents.md
+              - page: Migrating SDKs
+                path: ./pages/migration/elastic/migrating-sdks.md
+      - page: Going to Production
+        path: ./pages/production.md
+      - page: Managing TTL
+        path: ./pages/ttl.md
+
+  - tab: hyperdx-api
+    layout:
+      - api: HyperDX API
+        api-name: hyperdx

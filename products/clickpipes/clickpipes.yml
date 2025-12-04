@@ -1,0 +1,206 @@
+tabs:
+  home:
+    display-name: Home
+    icon: house
+    skip-slug: true
+  cloud-object-stores:
+    display-name: Cloud object stores
+    skip-slug: true
+  databases-data-lakehouses:
+    display-name: Databases & data lakehouses
+    skip-slug: true
+  amazon-databases:
+    display-name: Amazon databases
+    skip-slug: true
+  event-streams:
+    display-name: Event streams
+    skip-slug: true
+
+navigation:
+  - tab: home
+    layout:
+      - section: Home
+        skip-slug: true
+        contents:
+          - page: Home
+            path: ./pages/clickpipes_home.mdx
+  - tab: cloud-object-stores
+    layout:
+      - section: Object storage ClickPipes
+        path: ./pages/cloud-object-stores/object-storage/index.md
+        collapsed: true
+        contents:
+          - page: Creating your first object storage ClickPipe
+            path: ./pages/cloud-object-stores/object-storage/01_create_clickpipe_for_object_storage.md
+          - page: Reference
+            path: ./pages/cloud-object-stores/object-storage/02_reference.md
+          - page: Frequently Asked Questions
+            path: ./pages/cloud-object-stores/object-storage/03_faq.md
+  - tab: databases-data-lakehouses
+    layout:
+      - section: Postgres
+        collapsed: true
+        contents:
+          - page: Ingesting data from Postgres to ClickHouse
+            path: ./pages/database-datalake/postgres/index.md
+          - page: Deduplication strategies (using CDC)
+            path: ./pages/database-datalake/postgres/deduplication.md
+          - page: Ordering keys
+            path: ./pages/database-datalake/postgres/ordering_keys.md
+          - page: Handling TOAST Columns
+            path: ./pages/database-datalake/postgres/toast.md
+          - page: Connecting to PostgreSQL
+            path: ./pages/database-datalake/postgres/connecting-to-postgresql.md
+          - page: Inserting data
+            path: ./pages/database-datalake/postgres/inserting-data.md
+          - page: Schema changes
+            path: ./pages/database-datalake/postgres/schema-changes.md
+          - page: FAQ
+            path: ./pages/database-datalake/postgres/faq.md
+          - page: Parallel initial load
+            path: ./pages/database-datalake/postgres/parallel_initial_load.md
+          - page: Lifecycle
+            path: ./pages/database-datalake/postgres/lifecycle.md
+          - section: Operations
+            contents:
+              - page: Add table
+                path: ./pages/database-datalake/postgres/add_table.md
+              - page: Pause and resume
+                path: ./pages/database-datalake/postgres/pause_and_resume.md
+              - page: Remove table
+                path: ./pages/database-datalake/postgres/remove_table.md
+              - page: Table resync
+                path: ./pages/database-datalake/postgres/table_resync.md
+              - page: Resync
+                path: ./pages/database-datalake/postgres/resync.md
+              - page: Controlling sync
+                path: ./pages/database-datalake/postgres/controlling_sync.md
+              - page: Scaling
+                path: ./pages/database-datalake/postgres/scaling.md
+          - section: Source
+            contents:
+              - page: RDS
+                path: ./pages/database-datalake/postgres/source/rds.md
+              - page: Aurora
+                path: ./pages/database-datalake/postgres/source/aurora.md
+              - page: Supabase
+                path: ./pages/database-datalake/postgres/source/supabase.md
+              - page: Google Cloud SQL
+                path: ./pages/database-datalake/postgres/source/google-cloudsql.md
+              - page: Azure Flexible Server Postgres
+                path: ./pages/database-datalake/postgres/source/azure-flexible-server-postgres.md
+              - page: Neon Postgres
+                path: ./pages/database-datalake/postgres/source/neon-postgres.md
+              - page: Crunchy Postgres
+                path: ./pages/database-datalake/postgres/source/crunchy-postgres.md
+              - page: Generic
+                path: ./pages/database-datalake/postgres/source/generic.md
+              - page: Timescale
+                path: ./pages/database-datalake/postgres/source/timescale.md
+              - page: PlanetScale
+                path: ./pages/database-datalake/postgres/source/planetscale.md
+      - section: MongoDB
+        collapsed: true
+        contents:
+          - page: Overview
+            path: ./pages/database-datalake/mongodb/index.md
+          - page: Datatypes
+            path: ./pages/database-datalake/mongodb/datatypes.md
+          - page: Quickstart
+            path: ./pages/database-datalake/mongodb/quickstart.md
+          - page: Lifecycle
+            path: ./pages/database-datalake/mongodb/lifecycle.md
+          - page: FAQ
+            path: ./pages/database-datalake/mongodb/faq.md
+          - section: Operations
+            contents:
+              - page: Add table
+                path: ./pages/database-datalake/mongodb/add_table.md
+              - page: Remove table
+                path: ./pages/database-datalake/mongodb/remove_table.md
+              - page: Pause and resume
+                path: ./pages/database-datalake/mongodb/pause_and_resume.md
+              - page: Table resync
+                path: ./pages/database-datalake/mongodb/table_resync.md
+              - page: Resync
+                path: ./pages/database-datalake/mongodb/resync.md
+          - section: Source
+            contents:
+              - page: Atlas
+                path: ./pages/database-datalake/mongodb/source/atlas.md
+              - page: Generic
+                path: ./pages/database-datalake/mongodb/source/generic.md
+      - section: MySQL
+        collapsed: true
+        contents:
+          - page: Overview
+            path: ./pages/database-datalake/mysql/index.md
+          - page: FAQ
+            path: ./pages/database-datalake/mysql/faq.md
+          - page: Datatypes
+            path: ./pages/database-datalake/mysql/datatypes.md
+          - page: Parallel initial load
+            path: ./pages/database-datalake/mysql/parallel_initial_load.md
+          - page: Schema changes
+            path: ./pages/database-datalake/mysql/schema-changes.md
+          - page: Lifecycle
+            path: ./pages/database-datalake/mysql/lifecycle.md
+          - section: Operations
+            contents:
+              - page: Add table
+                path: ./pages/database-datalake/mysql/add_table.md
+              - page: Pause and resume
+                path: ./pages/database-datalake/mysql/pause_and_resume.md
+              - page: Remove table
+                path: ./pages/database-datalake/mysql/remove_table.md
+              - page: Table resync
+                path: ./pages/database-datalake/mysql/table_resync.md
+              - page: Resync
+                path: ./pages/database-datalake/mysql/resync.md
+              - page: Controlling sync
+                path: ./pages/database-datalake/mysql/controlling_sync.md
+          - section: Source
+            contents:
+              - page: RDS
+                path: ./pages/database-datalake/mysql/source/rds.md
+              - page: Aurora
+                path: ./pages/database-datalake/mysql/source/aurora.md
+              - page: GCP
+                path: ./pages/database-datalake/mysql/source/gcp.md
+              - page: Generic
+                path: ./pages/database-datalake/mysql/source/generic.md
+              - page: RDS MariaDB
+                path: ./pages/database-datalake/mysql/source/rds_maria.md
+              - page: Generic MariaDB
+                path: ./pages/database-datalake/mysql/source/generic_maria.md
+  - tab: amazon-databases
+    layout:
+      - section: AWS
+        collapsed: true
+        contents:
+          - page: ClickPipes for Amazon Kinesis
+            path: ./pages/amazon-databases/kinesis.md
+          - page: Kinesis Role-Based Access
+            path: ./pages/amazon-databases/secure-kinesis.md
+          - page: AWS IAM DB Authentication (RDS/Aurora)
+            path: ./pages/amazon-databases/secure-rds.md
+          - page: AWS PrivateLink for ClickPipes
+            path: ./pages/amazon-databases/aws-privatelink.md
+      - page: DynamoDB
+        path: ./pages/amazon-databases/dynamodb.md
+  - tab: event-streams
+    layout:
+      - section: Kafka ClickPipes
+        path: ./pages/event-streams/kafka/index.md
+        collapsed: true
+        contents:
+          - page: Creating your first Kafka ClickPipe
+            path: ./pages/event-streams/kafka/01_create-kafka-clickpipe.md
+          - page: Schema registries for Kafka ClickPipe
+            path: ./pages/event-streams/kafka/02_schema-registries.md
+          - page: Reference
+            path: ./pages/event-streams/kafka/03_reference.md
+          - page: Best practices
+            path: ./pages/event-streams/kafka/04_best_practices.md
+          - page: Kafka ClickPipes FAQ
+            path: ./pages/event-streams/kafka/05_faq.md

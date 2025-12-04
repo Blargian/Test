@@ -1,0 +1,488 @@
+---
+mode: "custom"
+max-toc-depth: 3
+slug: home
+---
+
+<style>
+  {`
+      /* Hide all anchor links on the homepage */
+    [data-radix-popper-content-wrapper]:has(span[id^="radix-"]) {
+      display: none !important;
+    }
+
+    /* Make buttons slightly smaller */
+    .cloud-button, .cloud-button-secondary {
+      padding: 0.625rem 1.25rem !important;
+      font-size: 0.875rem !important;
+    }
+
+    /* Fix hero image cropping */
+    .hero-aside {
+      overflow: visible !important;
+    }
+
+    .hero-aside > img {
+      min-width: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      object-fit: contain !important;
+    }
+
+    /* Custom cards grid layout */
+    .docs-tour-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      .docs-tour-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .docs-tour-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Individual card styling */
+    .docs-tour-card {
+      background-color: #faf9fb;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+    }
+
+    .docs-tour-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .dark .docs-tour-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .dark .docs-tour-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Card image */
+    .docs-tour-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Card content */
+    .docs-tour-card-content {
+      padding: 1rem;
+    }
+
+    .docs-tour-card-content h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .docs-tour-card-content p {
+      margin: 0 0 0.75rem 0;
+      color: var(--grayscale-a11);
+      font-size: 0.875rem;
+    }
+
+    .docs-tour-card-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .docs-tour-card-content ul li {
+      margin-bottom: 0.375rem;
+      font-size: 0.875rem;
+    }
+
+    .docs-tour-card-content ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    .docs-tour-card-content a {
+      color: var(--accent-a10);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .docs-tour-card-content a:hover {
+      color: var(--accent-a11);
+      text-decoration: underline;
+    }
+
+    /* Reduce padding on hero and sidekick sections on home page */
+    .hero {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+      align-items: center !important;
+      min-height: auto !important;
+      height: auto !important;
+      margin-bottom: 0 !important;
+      gap: 0 !important;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .hero h1 .tilted {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 0.25rem;
+    }
+
+    .hero p {
+      margin-bottom: 1rem !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .hero-text {
+      justify-content: center !important;
+      flex: 0 0 33.333% !important;
+      max-width: 33.333% !important;
+      text-align: center !important;
+    }
+
+    .hero-aside {
+      justify-content: center !important;
+      align-items: center !important;
+      min-height: auto !important;
+      height: auto !important;
+      padding: 0 !important;
+      flex: 0 0 66.667% !important;
+      max-width: 66.667% !important;
+    }
+
+    .sidekick.divider {
+      padding-top: 0 !important;
+      padding-bottom: 1rem !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      border-top: none !important;
+    }
+
+    /* Add spacing between docs tour cards and next section */
+    .docs-tour-cards {
+      margin-bottom: 2rem;
+    }
+
+    /* Product grid cards background */
+    .product-item {
+      background-color: #faf9fb !important;
+    }
+
+    .dark .product-item {
+      background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+
+    /* Make product grid in hero section compact and square */
+    .hero-aside .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .hero-aside .product-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      height: 100px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .hero-aside .product-item img {
+      width: 48px !important;
+      height: 48px !important;
+      min-width: 48px !important;
+      max-width: 48px !important;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-aside .product-item h3 {
+      font-size: 0.875rem;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-aside .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-aside .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  `}
+</style>
+
+{/* Gemini Style Interface */}
+<section className="sidekick divider">
+  <div className="gemini-container">
+    
+    {/* The Big Rectangular Card */}
+    <div className="gemini-display">
+      
+      {/* Static Header inside the card */}
+      <div className="gemini-header">
+        <h1>
+          <span className="typewriter-container">
+            <span className="typewriter-text" id="typewriter-text">Guides</span>
+            <span className="typewriter-cursor"></span>
+          </span>
+          <br />
+          for the fastest real-time analytical database
+        </h1>
+      </div>
+
+      {/* Dynamic Content Viewport */}
+      <div className="gemini-content-viewport">
+        
+        {/* Slide 1: Search & Ask */}
+        <div id="card-search" className="gemini-card active">
+          <div className="gemini-card-inner">
+            <div className="search-card-content">
+              <button className="search-hero-btn" onClick={() => triggerSearch()}>
+                <div className="btn-content">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  Search docs
+                </div>
+                <span className="hero-action-shortcut">⌘K</span>
+              </button>
+              
+              <button className="search-hero-btn" onClick={() => triggerAskAI()}>
+                <div className="btn-content">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                  </svg>
+                  Ask AI
+                </div>
+                <span className="hero-action-shortcut">⌘/</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Slide 2: Learning by Goal */}
+        <div id="card-goal" className="gemini-card">
+          <div className="gemini-card-inner">
+            <div className="docs-tour-cards">
+                <div className="docs-tour-card">
+                    <img src="/images/get_started.png" alt="Get started" noZoom="true"/>
+                    <div className="docs-tour-card-content">
+                        <h3>Get started</h3>
+                        <p>New here? Get started with these resources:</p>
+                        <ul>
+                            <li><a href="/open-source/intro">What is ClickHouse?</a></li>
+                            <li><a href="/open-source/concepts/why-clickhouse-is-so-fast">Why is ClickHouse so fast?</a></li>
+                            <li><a href="/cloud/get-started/cloud/use-cases/overview">Use cases</a></li>
+                            <li><a href="/open-source/getting-started/example-datasets/amazon-reviews">Sample datasets</a></li>
+                            <li><a href="/open-source/install">Install options</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="docs-tour-card">
+                    <img src="/images/learn.png" alt="Learn" noZoom="true"/>
+                    <div className="docs-tour-card-content">
+                        <h3>Learn</h3>
+                        <p>Taking your next steps? Learn more with these resources:</p>
+                        <ul>
+                            <li><a href="/open-source/parts">Core concepts</a></li>
+                            <li><a href="/open-source/best-practices/choosing-a-primary-key">Best practices</a></li>
+                            <li><a href="/open-source/optimize/query-optimization">Performance and optimization guides</a></li>
+                            <li><a href="/cloud/integrations/migration/overview">Migration guides</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="docs-tour-card">
+                    <img src="/images/reference.png" alt="Reference" noZoom="true"/>
+                    <div className="docs-tour-card-content">
+                        <h3>Reference</h3>
+                        <p>Already an expert? These are the docs you'll need:</p>
+                        <ul>
+                            <li><a href="/reference/sql-reference/statements">SQL reference</a></li>
+                            <li><a href="/reference/sql-reference/data-types/int-uint">Data types</a></li>
+                            <li><a href="/reference/engines">Engines</a></li>
+                            <li><a href="/reference/sql-reference/functions/overview">Functions</a></li>
+                            <li><a href="/reference/operations/settings/settings">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Slide 3: Explore by Use Case */}
+        <div id="card-use-case" className="gemini-card">
+          <div className="gemini-card-inner">
+            <div className="use-case-grid">
+              <a href="/cloud/get-started/cloud/use-cases/overview" className="docs-tour-card">
+                <div className="docs-tour-card-content">
+                  <h3>Real-time Analytics</h3>
+                  <p>Power user-facing dashboards and real-time analytics applications with sub-second latency.</p>
+                </div>
+              </a>
+
+              <a href="/open-source/concepts/why-clickhouse-is-so-fast" className="docs-tour-card">
+                <div className="docs-tour-card-content">
+                  <h3>Log Management</h3>
+                  <p>Store and analyze massive volumes of logs with high compression and fast query speeds.</p>
+                </div>
+              </a>
+
+              <a href="/reference/engines/table-engines/mergetree-family/annindexes" className="docs-tour-card">
+                <div className="docs-tour-card-content">
+                  <h3>Vector Search</h3>
+                  <p>Combine vector search with SQL for powerful AI and semantic search applications.</p>
+                </div>
+              </a>
+              
+               <a href="/reference/sql-reference/functions/time-series-analysis-functions" className="docs-tour-card">
+                <div className="docs-tour-card-content">
+                  <h3>Time Series</h3>
+                  <p>Efficiently store and query time-series data for monitoring and observability.</p>
+                </div>
+              </a>
+              
+               <a href="/integrations" className="docs-tour-card">
+                <div className="docs-tour-card-content">
+                  <h3>Data Warehousing</h3>
+                  <p>Modernize your data warehouse with a fast, scalable, and cost-effective solution.</p>
+                </div>
+              </a>
+              
+               <a href="/ch-db/chdb" className="docs-tour-card">
+                <div className="docs-tour-card-content">
+                  <h3>Embedded Analytics</h3>
+                  <p>Embed ClickHouse directly into your Python, Go, or Node.js applications with chDB.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Bottom Navigation */}
+    <div className="gemini-nav">
+      <button className="gemini-nav-btn active" onClick={() => switchCard('search')} id="nav-search">
+        Search
+      </button>
+      
+      <button className="gemini-nav-btn" onClick={() => switchCard('goal')} id="nav-goal">
+        Explore by goal
+      </button>
+      
+      <button className="gemini-nav-btn" onClick={() => switchCard('use-case')} id="nav-use-case">
+        Explore by use case
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<script>
+{`
+  // Helper functions
+  window.triggerSearch = function() {
+    const searchBtn = document.querySelector('button[aria-label="Search"]');
+    if (searchBtn) {
+      searchBtn.click();
+    } else {
+      window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }));
+    }
+  };
+
+  window.triggerAskAI = function() {
+    window.dispatchEvent(new KeyboardEvent('keydown', { key: '/', metaKey: true }));
+  };
+
+  // Typewriter Logic
+  const words = ["Guides", "Tutorials", "Reference docs", "Best practices"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typeTimer;
+
+  function typeWriter() {
+    const heading = document.getElementById("typewriter-text");
+    if (!heading) return;
+    
+    const currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+      heading.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      heading.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 50 : 100;
+    
+    if (!isDeleting && charIndex === currentWord.length) {
+      isDeleting = true;
+      typeSpeed = 2000; // Pause at end of word
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      typeSpeed = 500; // Pause before typing next word
+    }
+    
+    typeTimer = setTimeout(typeWriter, typeSpeed);
+  }
+  
+  // Card Switching Logic
+  window.switchCard = function(cardId) {
+    // Hide all cards
+    document.querySelectorAll('.gemini-card').forEach(el => el.classList.remove('active'));
+    // Deactivate all nav buttons
+    document.querySelectorAll('.gemini-nav-btn').forEach(el => el.classList.remove('active'));
+    
+    // Show selected card
+    const card = document.getElementById('card-' + cardId);
+    if (card) card.classList.add('active');
+    
+    // Activate selected nav button
+    const btn = document.getElementById('nav-' + cardId);
+    if (btn) btn.classList.add('active');
+  }
+
+  // Init
+  if (typeof window !== 'undefined') {
+    // Start typewriter
+    setTimeout(typeWriter, 1000);
+  }
+`}
+</script>
+

@@ -1,122 +1,787 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "ClickHouse Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#fdff75"
+  },
+  "background": {
+    "color": {
+      "dark": "#1f1f1c",
+      "light": "#FFFFFF"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Guides",
-        "groups": [
+        "product": "Home",
+        "description": "ClickHouse docs",
+        "tabs": [
           {
-            "group": "Getting started",
+            "tab": "Home",
+            "icon": "house",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "products/common_pages/home"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "product": "Cloud",
+        "description": "Managed ClickHouse",
+        "tabs": [
           {
-            "group": "API documentation",
+            "tab": "Home",
+            "icon": "house",
             "pages": [
-              "api-reference/introduction"
+              "products/cloud/pages/cloud_home"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "tab": "Get started",
+            "icon": "rocket",
+            "groups": [
+              {
+                "group": "Quick Start",
+                "pages": [
+                  "products/cloud/pages/getting-started/intro",
+                  "products/cloud/pages/getting-started/quick-start"
+                ]
+              },
+              {
+                "group": "Use cases",
+                "pages": [
+                  "products/cloud/pages/getting-started/use_cases/00_overview",
+                  "products/cloud/pages/getting-started/use_cases/01_real-time-analytics",
+                  "products/cloud/pages/getting-started/use_cases/02_observability",
+                  "products/cloud/pages/getting-started/use_cases/03_data_warehousing",
+                  {
+                    "group": "Machine learning & generative AI",
+                    "pages": [
+                      "products/cloud/pages/getting-started/use_cases/04_machine_learning_and_genAI/01_machine_learning",
+                      "products/cloud/pages/getting-started/use_cases/04_machine_learning_and_genAI/02_agent_facing_analytics"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Migration guides",
+                "pages": [
+                  "products/cloud/pages/getting-started/migration_guides/01_overview",
+                  {
+                    "group": "PostgreSQL",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/02_postgres/01_overview",
+                      {
+                        "group": "Migration guide",
+                        "pages": [
+                          "products/cloud/pages/getting-started/migration_guides/02_postgres/migration_guide/01_migration_guide_part1",
+                          "products/cloud/pages/getting-started/migration_guides/02_postgres/migration_guide/02_migration_guide_part2",
+                          "products/cloud/pages/getting-started/migration_guides/02_postgres/migration_guide/03_migration_guide_part3"
+                        ]
+                      },
+                      "products/cloud/pages/getting-started/migration_guides/02_postgres/appendix"
+                    ]
+                  },
+                  {
+                    "group": "BigQuery",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/03_bigquery/01_overview",
+                      "products/cloud/pages/getting-started/migration_guides/03_bigquery/02_migrating-to-clickhouse-cloud",
+                      "products/cloud/pages/getting-started/migration_guides/03_bigquery/03_loading-data"
+                    ]
+                  },
+                  {
+                    "group": "Snowflake",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/04_snowflake/01_overview",
+                      "products/cloud/pages/getting-started/migration_guides/04_snowflake/02_migration_guide",
+                      "products/cloud/pages/getting-started/migration_guides/04_snowflake/03_sql_translation_reference"
+                    ]
+                  },
+                  {
+                    "group": "Elasticsearch",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/05_elastic/01_overview"
+                    ]
+                  },
+                  {
+                    "group": "Redshift",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/06_redshift/01_overview",
+                      "products/cloud/pages/getting-started/migration_guides/06_redshift/02_migration_guide",
+                      "products/cloud/pages/getting-started/migration_guides/06_redshift/03_sql_translation_reference"
+                    ]
+                  },
+                  {
+                    "group": "OSS to Cloud",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/07_OSS_to_Cloud/01_clickhouse-to-cloud"
+                    ]
+                  },
+                  {
+                    "group": "Other methods",
+                    "pages": [
+                      "products/cloud/pages/getting-started/migration_guides/08_other_methods/01_clickhouse-local-etl",
+                      "products/cloud/pages/getting-started/migration_guides/08_other_methods/02_etl-tool-to-clickhouse",
+                      "products/cloud/pages/getting-started/migration_guides/08_other_methods/03_object-storage-to-clickhouse"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Features",
+            "icon": "list-check",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "products/cloud/pages/features/01_cloud_tiers",
+              "products/cloud/pages/features/02_integrations",
+              {
+                "group": "SQL console",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/features/03_sql_console_features/01_sql-console",
+                  "products/cloud/pages/features/03_sql_console_features/02_query-insights",
+                  "products/cloud/pages/features/03_sql_console_features/03_query-endpoints",
+                  "products/cloud/pages/features/03_sql_console_features/04_dashboards",
+                  "products/cloud/pages/features/03_sql_console_features/hyperdx"
+                ]
+              },
+              {
+                "group": "Infrastructure",
+                "collapsed": true,
+                "pages": [
+                  {
+                    "group": "Automatic scaling",
+                    "pages": [
+                      "products/cloud/pages/features/04_infrastructure/automatic_scaling/01_auto_scaling",
+                      "products/cloud/pages/features/04_infrastructure/automatic_scaling/02_make_before_break"
+                    ]
+                  },
+                  "products/cloud/pages/features/04_infrastructure/deployment-options",
+                  "products/cloud/pages/features/04_infrastructure/replica-aware-routing",
+                  "products/cloud/pages/features/04_infrastructure/shared-catalog",
+                  "products/cloud/pages/features/04_infrastructure/shared-merge-tree",
+                  "products/cloud/pages/features/04_infrastructure/warehouses"
+                ]
+              },
+              {
+                "group": "Admin",
+                "collapsed": true,
+                "pages": [
+                  {
+                    "group": "Cloud API",
+                    "pages": [
+                      "products/cloud/pages/features/05_admin_features/api/api-overview",
+                      "products/cloud/pages/features/05_admin_features/api/openapi",
+                      "products/cloud/pages/features/05_admin_features/api/postman"
+                    ]
+                  },
+                  "products/cloud/pages/features/05_admin_features/upgrades"
+                ]
+              },
+              "products/cloud/pages/features/06_security",
+              {
+                "group": "Monitoring",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/features/07_monitoring/advanced_dashboard",
+                  "products/cloud/pages/features/07_monitoring/notifications",
+                  "products/cloud/pages/features/07_monitoring/prometheus"
+                ]
+              },
+              "products/cloud/pages/features/08_backups",
+              "products/cloud/pages/features/09_support"
+            ]
+          },
+          {
+            "tab": "Guides",
+            "icon": "book",
+            "pages": [
+              {
+                "group": "SQL console",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/guides/SQL_console/connection_details",
+                  "products/cloud/pages/guides/SQL_console/query-endpoints"
+                ]
+              },
+              {
+                "group": "Backups",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/guides/backups/01_review-and-restore-backups",
+                  "products/cloud/pages/guides/backups/02_configurable-backups",
+                  {
+                    "group": "Bring Your Own Backup",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/guides/backups/03_bring_your_own_backup/01_export-backups-to-own-cloud-account",
+                      "products/cloud/pages/guides/backups/03_bring_your_own_backup/02_backup_restore_from_ui",
+                      "products/cloud/pages/guides/backups/03_bring_your_own_backup/03_backup_restore_using_commands"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Best practices",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/guides/best_practices/multitenancy",
+                  "products/cloud/pages/guides/best_practices/usagelimits"
+                ]
+              },
+              "products/cloud/pages/guides/cloud-compatibility",
+              {
+                "group": "Data sources",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/guides/data_sources/01_cloud-endpoints-api",
+                  "products/cloud/pages/guides/data_sources/02_accessing-s3-data-securely"
+                ]
+              },
+              {
+                "group": "Infrastructure",
+                "collapsed": true,
+                "pages": [
+                  {
+                    "group": "Deployment modes",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/guides/infrastructure/01_deployment_options/02_clickhouse-private",
+                      "products/cloud/pages/guides/infrastructure/01_deployment_options/03_clickhouse-government",
+                      {
+                        "group": "Bring Your Own Cloud (BYOC)",
+                        "collapsed": true,
+                        "pages": [
+                          "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/01_overview",
+                          "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/02_architecture",
+                          {
+                            "group": "Onboarding",
+                            "collapsed": true,
+                            "pages": [
+                              "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/03_onboarding/01_aws"
+                            ]
+                          },
+                          {
+                            "group": "FAQ",
+                            "collapsed": true,
+                            "pages": [
+                              "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/04_faq/01_aws"
+                            ]
+                          },
+                          {
+                            "group": "Observability",
+                            "collapsed": true,
+                            "pages": [
+                              "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/05_observability/01_aws"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Security",
+                "collapsed": true,
+                "pages": [
+                  {
+                    "group": "Cloud access management",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/guides/security/01_cloud_access_management/01_manage-my-account",
+                      "products/cloud/pages/guides/security/01_cloud_access_management/02_manage-cloud-users",
+                      "products/cloud/pages/guides/security/01_cloud_access_management/03_manage-sql-console-role-assignments",
+                      "products/cloud/pages/guides/security/01_cloud_access_management/04_manage-database-users",
+                      "products/cloud/pages/guides/security/01_cloud_access_management/04_saml-sso-setup",
+                      "products/cloud/pages/guides/security/01_cloud_access_management/05_common-access-management-queries"
+                    ]
+                  },
+                  {
+                    "group": "Connectivity",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/guides/security/02_connectivity/01_setting-ip-filters",
+                      {
+                        "group": "Private networking",
+                        "collapsed": true,
+                        "pages": [
+                          "products/cloud/pages/guides/security/02_connectivity/private_networking/02_aws-privatelink",
+                          "products/cloud/pages/guides/security/02_connectivity/private_networking/03_gcp-private-service-connect",
+                          "products/cloud/pages/guides/security/02_connectivity/private_networking/04_azure-privatelink"
+                        ]
+                      }
+                    ]
+                  },
+                  "products/cloud/pages/guides/security/03_data-masking",
+                  "products/cloud/pages/guides/security/04_cmek",
+                  {
+                    "group": "Compliance",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/guides/security/06_compliance/hipaa-onboarding",
+                      "products/cloud/pages/guides/security/06_compliance/pci-onboarding"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Cloud reference",
+            "icon": "cloud",
+            "pages": [
+              {
+                "group": "Changelogs",
+                "pages": [
+                  "products/cloud/pages/reference/01_changelog/01_changelog"
+                ]
+              },
+              "products/cloud/pages/reference/02_architecture",
+              {
+                "group": "Billing",
+                "pages": [
+                  "products/cloud/pages/reference/03_billing/01_billing_overview",
+                  {
+                    "group": "Marketplace",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/reference/03_billing/02_marketplace/overview",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/aws-marketplace-committed",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/aws-marketplace-payg",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/azure-marketplace-committed",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/azure-marketplace-payg",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/gcp-marketplace-committed",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/gcp-marketplace-payg",
+                      "products/cloud/pages/reference/03_billing/02_marketplace/migrate-marketplace-payg-committed"
+                    ]
+                  },
+                  {
+                    "group": "ClickPipes",
+                    "collapsed": true,
+                    "pages": [
+                      "products/cloud/pages/reference/03_billing/03_clickpipes/clickpipes_for_cdc",
+                      "products/cloud/pages/reference/03_billing/03_clickpipes/clickpipes_for_streaming_and_object_storage"
+                    ]
+                  },
+                  "products/cloud/pages/reference/03_billing/04_network-data-transfer",
+                  "products/cloud/pages/reference/03_billing/05_payment-thresholds",
+                  "products/cloud/pages/reference/03_billing/06_billing_compliance"
+                ]
+              },
+              "products/cloud/pages/reference/05_supported-regions",
+              "products/cloud/pages/reference/06_service-uptime",
+              "products/cloud/pages/reference/08_settings",
+              {
+                "group": "Security",
+                "collapsed": true,
+                "pages": [
+                  "products/cloud/pages/reference/09_security/01_console-roles",
+                  "products/cloud/pages/reference/09_security/02_audit-logging",
+                  "products/cloud/pages/reference/09_security/03_compliance-overview"
+                ]
+              },
+              "products/cloud/pages/reference/10_personal-data-access",
+              "products/cloud/pages/reference/data-resiliency",
+              "products/cloud/pages/reference/11_account-close"
+            ]
+          }
+        ]
+      },
+      {
+        "product": "chDB",
+        "description": "Fast, reliable, and scalable in-process database",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": [
+              "products/chdb/pages/chdb_home"
+            ]
+          },
+          {
+            "tab": "Get started",
+            "icon": "rocket",
+            "pages": [
+              "products/chdb/pages/index",
+              "products/chdb/pages/getting-started"
+            ]
+          },
+          {
+            "tab": "Language integrations",
+            "icon": "laptop-code",
+            "pages": [
+              "products/chdb/pages/install/python",
+              "products/chdb/pages/install/nodejs",
+              "products/chdb/pages/install/go",
+              "products/chdb/pages/install/rust",
+              "products/chdb/pages/install/bun",
+              "products/chdb/pages/install/c"
+            ]
+          },
+          {
+            "tab": "Developer guides",
+            "icon": "book",
+            "pages": [
+              "products/chdb/pages/guides/jupysql",
+              "products/chdb/pages/guides/querying-pandas",
+              "products/chdb/pages/guides/querying-apache-arrow",
+              "products/chdb/pages/guides/querying-s3-bucket",
+              "products/chdb/pages/guides/querying-parquet",
+              "products/chdb/pages/guides/query-remote-clickhouse",
+              "products/chdb/pages/guides/clickhouse-local"
+            ]
+          },
+          {
+            "tab": "Technical reference",
+            "icon": "gears",
+            "pages": [
+              "products/chdb/pages/reference/data-formats",
+              "products/chdb/pages/reference/sql-reference",
+              "products/chdb/pages/api/python"
+            ]
+          }
+        ]
+      },
+      {
+        "product": "ClickPipes",
+        "description": "Managed CDC",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": [
+              "products/clickpipes/pages/clickpipes_home"
+            ]
+          },
+          {
+            "tab": "Cloud object stores",
+            "icon": "cloud",
+            "pages": [
+              {
+                "group": "Object storage ClickPipes",
+                "collapsed": true,
+                "pages": [
+                  "products/clickpipes/pages/cloud-object-stores/object-storage/01_create_clickpipe_for_object_storage",
+                  "products/clickpipes/pages/cloud-object-stores/object-storage/02_reference",
+                  "products/clickpipes/pages/cloud-object-stores/object-storage/03_faq"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Databases & data lakehouses",
+            "icon": "database",
+            "pages": [
+              {
+                "group": "Postgres",
+                "collapsed": true,
+                "pages": [
+                  "products/clickpipes/pages/database-datalake/postgres/index",
+                  "products/clickpipes/pages/database-datalake/postgres/deduplication",
+                  "products/clickpipes/pages/database-datalake/postgres/ordering_keys",
+                  "products/clickpipes/pages/database-datalake/postgres/toast",
+                  "products/clickpipes/pages/database-datalake/postgres/connecting-to-postgresql",
+                  "products/clickpipes/pages/database-datalake/postgres/inserting-data",
+                  "products/clickpipes/pages/database-datalake/postgres/schema-changes",
+                  "products/clickpipes/pages/database-datalake/postgres/faq",
+                  "products/clickpipes/pages/database-datalake/postgres/parallel_initial_load",
+                  "products/clickpipes/pages/database-datalake/postgres/lifecycle",
+                  {
+                    "group": "Operations",
+                    "pages": [
+                      "products/clickpipes/pages/database-datalake/postgres/add_table",
+                      "products/clickpipes/pages/database-datalake/postgres/pause_and_resume",
+                      "products/clickpipes/pages/database-datalake/postgres/remove_table",
+                      "products/clickpipes/pages/database-datalake/postgres/table_resync",
+                      "products/clickpipes/pages/database-datalake/postgres/resync",
+                      "products/clickpipes/pages/database-datalake/postgres/controlling_sync",
+                      "products/clickpipes/pages/database-datalake/postgres/scaling"
+                    ]
+                  },
+                  {
+                    "group": "Source",
+                    "pages": [
+                      "products/clickpipes/pages/database-datalake/postgres/source/rds",
+                      "products/clickpipes/pages/database-datalake/postgres/source/aurora",
+                      "products/clickpipes/pages/database-datalake/postgres/source/supabase",
+                      "products/clickpipes/pages/database-datalake/postgres/source/google-cloudsql",
+                      "products/clickpipes/pages/database-datalake/postgres/source/azure-flexible-server-postgres",
+                      "products/clickpipes/pages/database-datalake/postgres/source/neon-postgres",
+                      "products/clickpipes/pages/database-datalake/postgres/source/crunchy-postgres",
+                      "products/clickpipes/pages/database-datalake/postgres/source/generic",
+                      "products/clickpipes/pages/database-datalake/postgres/source/timescale",
+                      "products/clickpipes/pages/database-datalake/postgres/source/planetscale"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "MongoDB",
+                "collapsed": true,
+                "pages": [
+                  "products/clickpipes/pages/database-datalake/mongodb/index",
+                  "products/clickpipes/pages/database-datalake/mongodb/datatypes",
+                  "products/clickpipes/pages/database-datalake/mongodb/quickstart",
+                  "products/clickpipes/pages/database-datalake/mongodb/lifecycle",
+                  "products/clickpipes/pages/database-datalake/mongodb/faq",
+                  {
+                    "group": "Operations",
+                    "pages": [
+                      "products/clickpipes/pages/database-datalake/mongodb/add_table",
+                      "products/clickpipes/pages/database-datalake/mongodb/remove_table",
+                      "products/clickpipes/pages/database-datalake/mongodb/pause_and_resume",
+                      "products/clickpipes/pages/database-datalake/mongodb/table_resync",
+                      "products/clickpipes/pages/database-datalake/mongodb/resync"
+                    ]
+                  },
+                  {
+                    "group": "Source",
+                    "pages": [
+                      "products/clickpipes/pages/database-datalake/mongodb/source/atlas",
+                      "products/clickpipes/pages/database-datalake/mongodb/source/generic"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "MySQL",
+                "collapsed": true,
+                "pages": [
+                  "products/clickpipes/pages/database-datalake/mysql/index",
+                  "products/clickpipes/pages/database-datalake/mysql/faq",
+                  "products/clickpipes/pages/database-datalake/mysql/datatypes",
+                  "products/clickpipes/pages/database-datalake/mysql/parallel_initial_load",
+                  "products/clickpipes/pages/database-datalake/mysql/schema-changes",
+                  "products/clickpipes/pages/database-datalake/mysql/lifecycle",
+                  {
+                    "group": "Operations",
+                    "pages": [
+                      "products/clickpipes/pages/database-datalake/mysql/add_table",
+                      "products/clickpipes/pages/database-datalake/mysql/pause_and_resume",
+                      "products/clickpipes/pages/database-datalake/mysql/remove_table",
+                      "products/clickpipes/pages/database-datalake/mysql/table_resync",
+                      "products/clickpipes/pages/database-datalake/mysql/resync",
+                      "products/clickpipes/pages/database-datalake/mysql/controlling_sync"
+                    ]
+                  },
+                  {
+                    "group": "Source",
+                    "pages": [
+                      "products/clickpipes/pages/database-datalake/mysql/source/rds",
+                      "products/clickpipes/pages/database-datalake/mysql/source/aurora",
+                      "products/clickpipes/pages/database-datalake/mysql/source/gcp",
+                      "products/clickpipes/pages/database-datalake/mysql/source/generic",
+                      "products/clickpipes/pages/database-datalake/mysql/source/rds_maria",
+                      "products/clickpipes/pages/database-datalake/mysql/source/generic_maria"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Amazon databases",
+            "icon": "aws",
+            "pages": [
+              {
+                "group": "AWS",
+                "collapsed": true,
+                "pages": [
+                  "products/clickpipes/pages/amazon-databases/kinesis",
+                  "products/clickpipes/pages/amazon-databases/secure-kinesis",
+                  "products/clickpipes/pages/amazon-databases/secure-rds",
+                  "products/clickpipes/pages/amazon-databases/aws-privatelink"
+                ]
+              },
+              "products/clickpipes/pages/amazon-databases/dynamodb"
+            ]
+          },
+          {
+            "tab": "Event streams",
+            "icon": "stream",
+            "pages": [
+              {
+                "group": "Kafka ClickPipes",
+                "collapsed": true,
+                "pages": [
+                  "products/clickpipes/pages/event-streams/kafka/01_create-kafka-clickpipe",
+                  "products/clickpipes/pages/event-streams/kafka/02_schema-registries",
+                  "products/clickpipes/pages/event-streams/kafka/03_reference",
+                  "products/clickpipes/pages/event-streams/kafka/04_best_practices",
+                  "products/clickpipes/pages/event-streams/kafka/05_faq"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "product": "ClickStack",
+        "description": "The ClickHouse observability stack",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": [
+              "products/clickstack/pages/clickstack_home"
+            ]
+          },
+          {
+            "tab": "Get started",
+            "icon": "rocket",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "products/clickstack/pages/overview",
+                  "products/clickstack/pages/getting-started"
+                ]
+              },
+              {
+                "group": "Sample datasets",
+                "pages": [
+                  "products/clickstack/pages/example-datasets/sample-data",
+                  "products/clickstack/pages/example-datasets/kubernetes",
+                  "products/clickstack/pages/example-datasets/local-data",
+                  "products/clickstack/pages/example-datasets/remote-demo-data"
+                ]
+              },
+              {
+                "group": "Architecture",
+                "pages": [
+                  "products/clickstack/pages/architecture"
+                ]
+              },
+              {
+                "group": "Integration quick start",
+                "pages": [
+                  "products/clickstack/pages/integration-examples/nginx-logs",
+                  "products/clickstack/pages/integration-examples/nginx-traces",
+                  "products/clickstack/pages/integration-examples/redis-logs",
+                  "products/clickstack/pages/integration-examples/redis-metrics"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Features",
+            "icon": "list-check",
+            "pages": [
+              {
+                "group": "Deployment options",
+                "pages": [
+                  "products/clickstack/pages/deployment/all-in-one",
+                  "products/clickstack/pages/deployment/hyperdx-clickhouse-cloud",
+                  "products/clickstack/pages/deployment/helm",
+                  "products/clickstack/pages/deployment/docker-compose",
+                  "products/clickstack/pages/deployment/hyperdx-only",
+                  "products/clickstack/pages/deployment/local-mode-only"
+                ]
+              },
+              "products/clickstack/pages/search",
+              "products/clickstack/pages/dashboards",
+              "products/clickstack/pages/event_patterns",
+              "products/clickstack/pages/event_deltas",
+              "products/clickstack/pages/alerts"
+            ]
+          },
+          {
+            "tab": "Guides",
+            "icon": "book",
+            "pages": [
+              {
+                "group": "Ingesting data",
+                "pages": [
+                  "products/clickstack/pages/ingesting-data/overview"
+                ]
+              },
+              {
+                "group": "Migration guides",
+                "pages": [
+                  {
+                    "group": "Migrating from Elastic",
+                    "pages": [
+                      "products/clickstack/pages/migration/elastic/intro",
+                      "products/clickstack/pages/migration/elastic/concepts",
+                      "products/clickstack/pages/migration/elastic/types",
+                      "products/clickstack/pages/migration/elastic/search",
+                      "products/clickstack/pages/migration/elastic/migrating-data",
+                      "products/clickstack/pages/migration/elastic/migrating-agents",
+                      "products/clickstack/pages/migration/elastic/migrating-sdks"
+                    ]
+                  }
+                ]
+              },
+              "products/clickstack/pages/production",
+              "products/clickstack/pages/ttl"
+            ]
+          }
+        ]
+      },
+      {
+        "product": "Support center",
+        "description": "Troubleshooting and support docs",
+        "tabs": [
+          {
+            "tab": "Home",
+            "icon": "house",
+            "pages": [
+              "products/support/pages/support_home"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "fonts": {
+    "family": "Inter"
+  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "44.4k",
+        "icon": "github",
+        "href": "https://github.com/ClickHouse/ClickHouse"
+      },
+      {
+        "label": "Sign in",
+        "href": "https://clickhouse.cloud"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get started",
+      "href": "https://clickhouse.cloud"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/clickhouse",
+      "github": "https://github.com/ClickHouse/ClickHouse",
+      "linkedin": "https://linkedin.com/company/clickhouse"
     }
   }
 }
