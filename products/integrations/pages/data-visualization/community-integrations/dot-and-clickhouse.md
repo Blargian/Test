@@ -7,7 +7,7 @@ title: 'Dot'
 doc_type: 'guide'
 ---
 
-import CommunityMaintainedBadge from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
+import {CommunityMaintainedBadge} from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
 
 <CommunityMaintainedBadge/>
 

@@ -12,7 +12,7 @@ integration:
   - website: 'https://airbyte.com/'
 ---
 
-import PartnerBadge from '/snippets/components/Badges/PartnerBadge.jsx'
+import {PartnerBadge} from '/snippets/components/Badges/PartnerBadge.jsx'
 
 <PartnerBadge/>
 

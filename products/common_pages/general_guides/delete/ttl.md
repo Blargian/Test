@@ -9,7 +9,7 @@ show_related_blogs: true
 doc_type: 'guide'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 ## Overview of TTL [#overview-of-ttl]
 

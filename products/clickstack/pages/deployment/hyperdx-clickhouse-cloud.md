@@ -9,8 +9,8 @@ doc_type: 'guide'
 keywords: ['clickstack', 'deployment', 'setup', 'configuration', 'observability']
 ---
 
-import PrivatePreviewBadge from '/snippets/components/Badges/PrivatePreviewBadge.jsx'
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
+import {PrivatePreviewBadge} from '/snippets/components/Badges/PrivatePreviewBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 
 [//]: # (import { TrackedLink } from '@site/src/components/GalaxyTrackedLink/GalaxyTrackedLink';)
 

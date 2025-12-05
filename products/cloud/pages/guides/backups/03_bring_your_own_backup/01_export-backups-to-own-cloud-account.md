@@ -6,7 +6,7 @@ description: 'Describes how to export backups to your own Cloud account'
 doc_type: 'guide'
 ---
 
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
 
 <EnterprisePlanFeatureBadge/>
 

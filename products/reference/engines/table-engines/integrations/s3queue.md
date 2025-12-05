@@ -9,7 +9,7 @@ title: 'S3Queue table engine'
 doc_type: 'reference'
 ---
 
-import {ScalePlanFeatureBadge} from '../../../../../components/Badges/ScalePlanFeatureBadge'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 This engine provides integration with [Amazon S3](https://aws.amazon.com/s3/) ecosystem and allows streaming import. This engine is similar to the [Kafka](../../../engines/table-engines/integrations/kafka.md), [RabbitMQ](../../../engines/table-engines/integrations/rabbitmq.md) engines, but provides S3-specific features.
 

@@ -7,7 +7,7 @@ title: 'ytsaurus table function'
 doc_type: 'reference'
 ---
 
-import {ExperimentalBadge} from '../../../../components/Badges/ExperimentalBadge'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
 
 <ExperimentalBadge/>
 

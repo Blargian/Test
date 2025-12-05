@@ -1,4 +1,4 @@
-import SystemLogParameters from '/snippets/products/reference/settings/server-settings/_snippets/_system-log-parameters.mdx';
+import SystemLogParameters from '/snippets/products/reference/settings/server-settings/system-log-parameters.mdx';
 
 ## asynchronous_metric_log [#asynchronous_metric_log]
 

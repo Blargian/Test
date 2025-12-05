@@ -7,7 +7,7 @@ title: 'Omni'
 doc_type: 'guide'
 ---
 
-import PartnerBadge from '/snippets/components/Badges/PartnerBadge.jsx'
+import {PartnerBadge} from '/snippets/components/Badges/PartnerBadge.jsx'
 
 import GatherYourDetailsHttp from '/snippets/_gather_your_details_http.mdx';
 

@@ -5,8 +5,8 @@ title: 'MergeTree tables settings'
 doc_type: 'reference'
 ---
 
-import {ExperimentalBadge} from '../../../components/Badges/ExperimentalBadge'
-import {BetaBadge} from '../../../components/Badges/BetaBadge'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 
 System table `system.merge_tree_settings` shows the globally set MergeTree settings.
 

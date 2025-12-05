@@ -7,8 +7,8 @@ doc_type: 'guide'
 keywords: ['upgrades', 'version management', 'cloud features', 'maintenance', 'updates']
 ---
 
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 With ClickHouse Cloud you never have to worry about patching and upgrades. We roll out upgrades that include fixes, new features and performance improvements on a periodic basis. For the full list of what is new in ClickHouse refer to our [Cloud changelog](/whats-new/cloud).
 

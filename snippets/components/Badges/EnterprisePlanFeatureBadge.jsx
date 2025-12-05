@@ -1,4 +1,3 @@
-import React from "react"
 
 const EnterprisePlanFeatureBadge = ({feature='This feature', support=false, linking_verb_are = false}) => {
     return (
@@ -13,4 +12,4 @@ const EnterprisePlanFeatureBadge = ({feature='This feature', support=false, link
     )
 }
 
-export default EnterprisePlanFeatureBadge
+export { EnterprisePlanFeatureBadge }

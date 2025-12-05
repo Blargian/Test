@@ -12,8 +12,8 @@ integration:
 keywords: ['mysql', 'database integration', 'external table', 'data source', 'sql database']
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
-import ExperimentalBadge from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
 
 
 This page covers using the `MySQL` table engine, for reading from a MySQL table.

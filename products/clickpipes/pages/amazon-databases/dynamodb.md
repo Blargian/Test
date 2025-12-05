@@ -9,8 +9,8 @@ show_related_blogs: true
 doc_type: 'guide'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
-import ExperimentalBadge from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
 
 <ExperimentalBadge/>
 

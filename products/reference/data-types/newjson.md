@@ -9,21 +9,9 @@ title: 'JSON Data Type'
 doc_type: 'reference'
 ---
 
-import {CardSecondary} from '@clickhouse/click-ui/bundled';
-import Link from '@docusaurus/Link'
-
-<Link to="/docs/best-practices/use-json-where-appropriate" style={{display: 'flex', textDecoration: 'none', width: 'fit-content'}}>
-<CardSecondary
-  badgeState="success"
-  badgeText=""
-  description="Check out our JSON best practice guide for examples, advanced features and considerations for using the JSON type."
-  icon="book"
-  infoText="Read more"
-  infoUrl="/docs/best-practices/use-json-where-appropriate"
-  title="Looking for a guide?"
-/>
-</Link>
-<br/>
+<Card title="Looking for a guide?" icon="book" href="/docs/best-practices/use-json-where-appropriate">
+  Check out our JSON best practice guide for examples, advanced features and considerations for using the JSON type.
+</Card>
 
 The `JSON` type stores JavaScript Object Notation (JSON) documents in a single column.
 
@@ -43,6 +31,7 @@ To declare a column of `JSON` type, you can use the following syntax:
     SKIP REGEXP 'paths_regexp'
 )
 ```
+
 Where the parameters in the syntax above are defined as:
 
 | Parameter                   | Description                                                                                                                                                                                                                                                                                                                                                | Default Value |

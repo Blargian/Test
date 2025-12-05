@@ -1,4 +1,3 @@
-import React from "react"
 
 const ScalePlanFeatureBadge = ({feature='This feature', linking_verb_are = false}) => {
     return (
@@ -13,4 +12,4 @@ const ScalePlanFeatureBadge = ({feature='This feature', linking_verb_are = false
     )
 }
 
-export default ScalePlanFeatureBadge
+export { ScalePlanFeatureBadge }

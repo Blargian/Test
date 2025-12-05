@@ -11,7 +11,7 @@ integration:
 keywords: ['DataGrip', 'database IDE', 'JetBrains', 'SQL client', 'integrated development environment']
 ---
 
-import CommunityMaintainedBadge from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
+import {CommunityMaintainedBadge} from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
 
 import GatherYourDetailsHttp from '/snippets/_gather_your_details_http.mdx';
 

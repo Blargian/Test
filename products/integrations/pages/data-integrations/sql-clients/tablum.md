@@ -10,7 +10,7 @@ integration:
 keywords: ['tablum', 'sql client', 'database tool', 'query tool', 'desktop app']
 ---
 
-import CommunityMaintainedBadge from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
+import {CommunityMaintainedBadge} from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
 
 <CommunityMaintainedBadge/>
 

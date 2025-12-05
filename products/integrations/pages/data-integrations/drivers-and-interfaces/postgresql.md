@@ -7,7 +7,7 @@ title: 'PostgreSQL Interface'
 doc_type: 'reference'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 <CloudNotSupportedBadge/>
 

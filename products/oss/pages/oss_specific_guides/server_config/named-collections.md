@@ -7,7 +7,7 @@ title: 'Named collections'
 doc_type: 'reference'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 <CloudNotSupportedBadge />
 

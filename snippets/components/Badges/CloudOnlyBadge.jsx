@@ -1,4 +1,3 @@
-import React from "react"
 
 const Icon = () => {
     return (
@@ -19,4 +18,4 @@ const CloudOnlyBadge = () => {
     )
 }
 
-export default CloudOnlyBadge
+export { CloudOnlyBadge }

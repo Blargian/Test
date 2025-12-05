@@ -7,7 +7,7 @@ description: 'Deploy ClickHouse on your own cloud infrastructure'
 doc_type: 'reference'
 ---
 
-import DeprecatedBadge from '/snippets/components/Badges/DeprecatedBadge.jsx'
+import {DeprecatedBadge} from '/snippets/components/Badges/DeprecatedBadge.jsx'
 
 ## Observability [#observability]
 

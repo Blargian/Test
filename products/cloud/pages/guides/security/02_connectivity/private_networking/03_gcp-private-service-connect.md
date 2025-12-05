@@ -7,7 +7,7 @@ doc_type: 'guide'
 keywords: ['Private Service Connect']
 ---
 
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 <ScalePlanFeatureBadge feature="GCP PSC"/>
 

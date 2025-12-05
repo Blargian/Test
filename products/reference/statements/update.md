@@ -8,7 +8,7 @@ title: 'The Lightweight UPDATE Statement'
 doc_type: 'reference'
 ---
 
-import {BetaBadge} from '../../../components/Badges/BetaBadge'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 
 <BetaBadge/>
 

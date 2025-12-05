@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CUICard = ({ children, className, ...props }) => (
   <div
     className={`cui-card ${className || ''}`}

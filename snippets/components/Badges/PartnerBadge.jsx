@@ -1,4 +1,3 @@
-import React from "react"
 
 const Icon = () => {
     return (
@@ -24,4 +23,4 @@ const PartnerBadge = () => {
     )
 }
 
-export default PartnerBadge
+export { PartnerBadge }

@@ -1,6 +1,6 @@
-import React from 'react';
 
-const ClickStackAnimation = ({ className, ...props }) => {
+
+export const ClickStackAnimation = ({ className, ...props }) => {
   return (
     <div className={`clickstack-animation-wrapper ${className || ''}`} style={{ height: '537px' }} {...props}>
       <div className="clickstack-animation-inner" style={{ aspectRatio: '537 / 537', transform: 'scale(1)' }}>
@@ -125,5 +125,3 @@ const ClickStackAnimation = ({ className, ...props }) => {
     </div>
   );
 };
-
-export default ClickStackAnimation;

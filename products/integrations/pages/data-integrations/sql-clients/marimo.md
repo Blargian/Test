@@ -7,7 +7,7 @@ doc_type: 'guide'
 keywords: ['marimo', 'notebook', 'data analysis', 'python', 'visualization']
 ---
 
-import CommunityMaintainedBadge from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
+import {CommunityMaintainedBadge} from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
 
 <CommunityMaintainedBadge/>
 

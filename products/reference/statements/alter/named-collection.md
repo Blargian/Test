@@ -6,7 +6,7 @@ title: 'ALTER NAMED COLLECTION'
 doc_type: 'reference'
 ---
 
-import {CloudNotSupportedBadge} from '../../../../components/Badges/CloudNotSupportedBadge'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 <CloudNotSupportedBadge />
 

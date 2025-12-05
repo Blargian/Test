@@ -11,7 +11,7 @@ doc_type: 'reference'
 
 <Badge intent="success">Input</Badge>
 
-import DataTypesMatching from './_snippets/data-types-matching.md'
+import DataTypeMapping from '/snippets/products/reference/formats/Avro/_snippets/data-types-matching.mdx'
 
 ## Description [#description]
 

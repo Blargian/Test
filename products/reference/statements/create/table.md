@@ -8,7 +8,7 @@ title: 'CREATE TABLE'
 doc_type: 'reference'
 ---
 
-import {CloudNotSupportedBadge} from '../../../../components/Badges/CloudNotSupportedBadge'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 Creates a new table. This query can have various syntax forms depending on a use case.
 

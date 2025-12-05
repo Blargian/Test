@@ -9,7 +9,7 @@ doc_type: 'guide'
 keywords: ['clickstack', 'deployment', 'setup', 'configuration', 'observability']
 ---
 
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 import JsonSupport from '/snippets/_json_support.mdx';
 
 Similar to the [all-in-one image](/use-cases/observability/clickstack/deployment/docker-compose), this comprehensive Docker image bundles all ClickStack components:

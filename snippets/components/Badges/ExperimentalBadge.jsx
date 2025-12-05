@@ -1,4 +1,3 @@
-import React from "react"
 
 const Icon = () => {
     return (
@@ -20,4 +19,4 @@ const ExperimentalBadge = () => {
     )
 }
 
-export default ExperimentalBadge
+export { ExperimentalBadge }

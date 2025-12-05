@@ -1,4 +1,3 @@
-import React from "react"
 
 const Icon = () => {
     return (
@@ -21,4 +20,4 @@ const PrivatePreviewBadge = () => {
     )
 }
 
-export default PrivatePreviewBadge
+export { PrivatePreviewBadge }

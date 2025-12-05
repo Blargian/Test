@@ -9,7 +9,7 @@ doc_type: 'guide'
 keywords: ['ClickStack Docker Compose', 'Docker Compose ClickHouse', 'HyperDX Docker deployment', 'ClickStack deployment guide', 'OpenTelemetry Docker Compose']
 ---
 
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 import JsonSupport from '/snippets/_json_support.mdx';
 
 All ClickStack components are distributed separately as individual Docker images:

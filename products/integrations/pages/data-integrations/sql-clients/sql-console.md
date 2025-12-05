@@ -8,7 +8,7 @@ doc_type: 'guide'
 keywords: ['sql console', 'query interface', 'web ui', 'sql editor', 'cloud console']
 ---
 
-import ExperimentalBadge from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
 
 SQL console is the fastest and easiest way to explore and query your databases in ClickHouse Cloud. You can use the SQL console to:
 

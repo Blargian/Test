@@ -11,7 +11,7 @@ doc_type: 'reference'
 
 <Badge intent="success">Output</Badge>
 
-import PrettyFormatSettings from './_snippets/common-pretty-format-settings.md';
+import CommonPrettyFormatSettings from '/snippets/products/reference/formats/Pretty/_snippets/common-pretty-format-settings.mdx';
 
 ## Description [#description]
 

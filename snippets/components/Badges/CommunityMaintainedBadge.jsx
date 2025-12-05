@@ -1,4 +1,3 @@
-import React from "react"
 
 const Icon = () => {
     return (
@@ -18,4 +17,4 @@ const CommunityMaintainedBadge = () => {
     )
 }
 
-export default CommunityMaintainedBadge
+export { CommunityMaintainedBadge }

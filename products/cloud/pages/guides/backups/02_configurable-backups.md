@@ -7,8 +7,8 @@ keywords: ['backups', 'cloud backups', 'restore']
 doc_type: 'guide'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 <ScalePlanFeatureBadge feature="Configurable Backups" linking_verb_are="True"/>
 

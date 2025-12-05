@@ -7,7 +7,7 @@ title: 'Full-text Search using Text Indexes'
 doc_type: 'reference'
 ---
 
-import {PrivatePreviewBadge} from '../../../../../components/Badges/PrivatePreviewBadge'
+import {PrivatePreviewBadge} from '/snippets/components/Badges/PrivatePreviewBadge.jsx'
 
 # Full-text search using text indexes
 

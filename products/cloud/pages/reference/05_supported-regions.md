@@ -7,7 +7,7 @@ slug: /cloud/reference/supported-regions
 doc_type: 'reference'
 ---
 
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
 
 # Supported cloud regions
 

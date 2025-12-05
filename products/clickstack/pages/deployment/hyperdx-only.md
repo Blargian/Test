@@ -9,7 +9,7 @@ doc_type: 'guide'
 keywords: ['HyperDX standalone deployment', 'HyperDX ClickHouse integration', 'deploy HyperDX only', 'HyperDX Docker installation', 'ClickHouse visualization tool']
 ---
 
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 import JsonSupport from '/snippets/_json_support.mdx';
 
 This option is designed for users who already have a running ClickHouse instance populated with observability or event data.

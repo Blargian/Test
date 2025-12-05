@@ -6,9 +6,9 @@ title: 'Other functions'
 doc_type: 'reference'
 ---
 
-import {ExperimentalBadge} from '../../../../components/Badges/ExperimentalBadge'
-import {CloudNotSupportedBadge} from '../../../../components/Badges/CloudNotSupportedBadge'
-import {DeprecatedBadge} from '../../../../components/Badges/DeprecatedBadge'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {DeprecatedBadge} from '/snippets/components/Badges/DeprecatedBadge.jsx'
 
 <Note>
 The function documentation below is generated from the `system.functions` system table.

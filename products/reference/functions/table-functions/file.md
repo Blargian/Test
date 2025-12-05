@@ -10,8 +10,8 @@ title: 'file'
 doc_type: 'reference'
 ---
 
-import {ExperimentalBadge} from '../../../../components/Badges/ExperimentalBadge'
-import {CloudNotSupportedBadge} from '../../../../components/Badges/CloudNotSupportedBadge'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 # file Table Function
 

@@ -1,4 +1,3 @@
-import React from "react"
 
 const Icon = () => {
     return (
@@ -22,4 +21,4 @@ const ClickHouseSupported = () => {
     )
 }
 
-export default ClickHouseSupported
+export { ClickHouseSupported };

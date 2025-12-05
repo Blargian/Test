@@ -7,7 +7,7 @@ doc_type: 'guide'
 keywords: ['clickpipes', 'mongodb', 'cdc', 'data ingestion', 'real-time sync']
 ---
 
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 
 <BetaBadge/>
 

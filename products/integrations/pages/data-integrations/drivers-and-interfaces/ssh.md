@@ -8,8 +8,8 @@ title: 'SSH Interface'
 doc_type: 'reference'
 ---
 
-import ExperimentalBadge from '/snippets/components/Badges/ExperimentalBadge.jsx'
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 <ExperimentalBadge/>
 <CloudNotSupportedBadge/>

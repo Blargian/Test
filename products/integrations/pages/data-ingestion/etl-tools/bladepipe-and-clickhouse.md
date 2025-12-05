@@ -8,7 +8,7 @@ title: 'Connect BladePipe to ClickHouse'
 doc_type: 'guide'
 ---
 
-import PartnerBadge from '/snippets/components/Badges/PartnerBadge.jsx'
+import {PartnerBadge} from '/snippets/components/Badges/PartnerBadge.jsx'
 
 <PartnerBadge/>
 

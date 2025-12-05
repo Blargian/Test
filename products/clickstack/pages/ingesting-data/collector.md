@@ -9,7 +9,7 @@ doc_type: 'guide'
 keywords: ['ClickStack', 'OpenTelemetry collector', 'ClickHouse observability', 'OTel collector configuration', 'OpenTelemetry ClickHouse']
 ---
 
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
 
 This page includes details on configuring the official ClickStack OpenTelemetry (OTel) collector.
 

@@ -10,7 +10,7 @@ keywords: ['Kafka', 'table engine']
 doc_type: 'guide'
 ---
 
-import {ExperimentalBadge} from '../../../../../components/Badges/ExperimentalBadge'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
 
 <Tip>
 If you're on ClickHouse Cloud, we recommend using [ClickPipes](/integrations/clickpipes) instead. ClickPipes natively supports private network connections, scaling ingestion and cluster resources independently, and comprehensive monitoring for streaming Kafka data into ClickHouse.

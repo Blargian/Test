@@ -3,8 +3,8 @@
   "theme": "mint",
   "name": "ClickHouse Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
+    "primary": "#333431",
+    "light": "#333431",
     "dark": "#fdff75"
   },
   "background": {

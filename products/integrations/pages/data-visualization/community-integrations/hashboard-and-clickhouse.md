@@ -8,7 +8,7 @@ title: 'Connecting ClickHouse to Hashboard'
 doc_type: 'guide'
 ---
 
-import CommunityMaintainedBadge from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
+import {CommunityMaintainedBadge} from '/snippets/components/Badges/CommunityMaintainedBadge.jsx'
 
 import GatherYourDetailsNative from '/snippets/_gather_your_details_native.mdx';
 

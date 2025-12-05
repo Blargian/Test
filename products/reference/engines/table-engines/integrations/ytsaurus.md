@@ -8,8 +8,8 @@ keywords: ['YTsaurus', 'table engine']
 doc_type: 'reference'
 ---
 
-import {CloudNotSupportedBadge} from '../../../../../components/Badges/CloudNotSupportedBadge'
-import {ExperimentalBadge} from '../../../../../components/Badges/ExperimentalBadge'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx'
 
 <ExperimentalBadge/>
 <CloudNotSupportedBadge/>

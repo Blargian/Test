@@ -10,7 +10,7 @@ doc_type: 'reference'
 
 <Badge intent="success">Input</Badge> <Badge intent="success">Output</Badge>
 
-import RowBinaryFormatSettings from './_snippets/common-row-binary-format-settings.md'
+import CommonRowBinaryFormatSettings from '/snippets/products/reference/formats/RowBinary/_snippets/common-row-binary-format-settings.mdx'
 
 ## Description [#description]
 

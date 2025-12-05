@@ -11,7 +11,7 @@ doc_type: 'reference'
 
 <Badge intent="success">Input</Badge> <Badge intent="success">Output</Badge>
 
-import {CloudNotSupportedBadge} from '../../../../components/Badges/CloudNotSupportedBadge'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 <CloudNotSupportedBadge/>
 

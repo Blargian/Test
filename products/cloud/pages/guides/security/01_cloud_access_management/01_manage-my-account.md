@@ -7,7 +7,7 @@ doc_type: 'guide'
 keywords: ['account management', 'user profile', 'security', 'cloud console', 'settings']
 ---
 
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
 
 ## Accept an invitation [#accept-invitation]
 

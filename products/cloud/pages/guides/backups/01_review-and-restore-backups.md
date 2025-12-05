@@ -8,8 +8,8 @@ description: 'Provides an overview of backups in ClickHouse Cloud'
 doc_type: 'guide'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 This guide covers how backups work in ClickHouse Cloud, what options you have to configure backups for your service, and how to restore from a backup.
 

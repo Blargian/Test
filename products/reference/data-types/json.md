@@ -8,7 +8,7 @@ title: 'Object Data Type '
 doc_type: 'reference'
 ---
 
-import {DeprecatedBadge} from '../../../components/Badges/DeprecatedBadge'
+import {DeprecatedBadge} from '/snippets/components/Badges/DeprecatedBadge.jsx'
 
 <DeprecatedBadge/>
 

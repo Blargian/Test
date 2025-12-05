@@ -8,7 +8,7 @@ doc_type: 'reference'
 keywords: ['kafka reference', 'clickpipes', 'data sources', 'avro', 'virtual columns']
 ---
 
-import {ExperimentalBadge} from '@site/src/theme/badges/ExperimentalBadge';
+import {ExperimentalBadge} from '/snippets/components/Badges/ExperimentalBadge.jsx';
 
 
 ## Supported data sources [#supported-data-sources]

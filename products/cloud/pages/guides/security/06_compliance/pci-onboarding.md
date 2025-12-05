@@ -7,8 +7,8 @@ doc_type: 'guide'
 keywords: ['pci', 'compliance', 'payment security', 'data protection', 'security']
 ---
 
-import BetaBadge from '/snippets/components/Badges/BetaBadge.jsx'
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {BetaBadge} from '/snippets/components/Badges/BetaBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
 
 <EnterprisePlanFeatureBadge feature="PCI compliance"/>
 

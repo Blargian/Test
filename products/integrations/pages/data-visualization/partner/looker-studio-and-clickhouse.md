@@ -10,7 +10,7 @@ integration:
   - category: 'data_visualization'
 ---
 
-import PartnerBadge from '/snippets/components/Badges/PartnerBadge.jsx'
+import {PartnerBadge} from '/snippets/components/Badges/PartnerBadge.jsx'
 
 import ClickhouseMysqlCloudSetup from '/snippets/_clickhouse_mysql_cloud_setup.mdx';
 import ClickhouseMysqlOnPremiseSetup from '/snippets/_clickhouse_mysql_on_premise_setup.mdx';

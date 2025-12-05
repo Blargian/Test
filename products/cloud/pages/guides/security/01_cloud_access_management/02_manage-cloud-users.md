@@ -7,7 +7,7 @@ doc_type: 'guide'
 keywords: ['cloud users', 'access management', 'security', 'permissions', 'team management']
 ---
 
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
 
 This guide is intended for users with the Organization Admin role in ClickHouse Cloud.
 

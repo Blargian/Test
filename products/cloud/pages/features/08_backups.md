@@ -7,8 +7,8 @@ description: 'Provides an overview of backup features in ClickHouse Cloud'
 doc_type: 'reference'
 ---
 
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
-import EnterprisePlanFeatureBadge from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {EnterprisePlanFeatureBadge} from '/snippets/components/Badges/EnterprisePlanFeatureBadge.jsx'
 
 Database backups provide a safety net by ensuring that if data is lost for any unforeseen reason, the service can be restored to a previous state from the last successful backup.
 This minimizes downtime and prevents business critical data from being permanently lost.

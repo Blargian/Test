@@ -1,6 +1,6 @@
-import React from 'react';
 
-const ClickPipesAnimationV2 = ({ className, ...props }) => {
+
+export const ClickPipesAnimationV2 = ({ className, ...props }) => {
   const LogoItem = ({ src, alt, active, badge }) => {
     return (
         <div className={`relative rounded-md bg-neutral-900 dark:bg-neutral-900 p-4 w-full h-full flex items-center justify-center box-border transition-colors duration-200 hover:bg-neutral-800 dark:hover:bg-neutral-800 ${
@@ -200,5 +200,3 @@ const ClickPipesAnimationV2 = ({ className, ...props }) => {
       </div>
   )
 };
-
-export default ClickPipesAnimationV2;

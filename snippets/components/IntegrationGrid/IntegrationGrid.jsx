@@ -1,5 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import CUICard from '../CUICard/CUICard';
+import CUICard from '/snippets/components/CUICard/CUICard.jsx';
 
 const useDarkMode = () => {
   const [isDark, setIsDark] = useState(false);

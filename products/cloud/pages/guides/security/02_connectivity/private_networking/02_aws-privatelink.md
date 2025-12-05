@@ -6,7 +6,7 @@ keywords: ['PrivateLink']
 doc_type: 'guide'
 ---
 
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 <ScalePlanFeatureBadge feature="AWS PrivateLink"/>
 

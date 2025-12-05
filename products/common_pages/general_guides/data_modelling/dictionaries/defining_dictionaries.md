@@ -7,10 +7,11 @@ title: 'Dictionaries'
 doc_type: 'reference'
 ---
 
-import CloudNotSupportedBadge from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
+import {CloudNotSupportedBadge} from '/snippets/components/Badges/CloudNotSupportedBadge.jsx'
 
 import SnippetDictionaryInCloud from '/snippets/_snippet_dictionary_in_cloud.mdx';
 import SelfManagedOnlyNoRoadmap from '/snippets/_self_managed_only_no_roadmap.mdx';
+
 A dictionary is a mapping (`key -> attributes`) that is convenient for various types of reference lists.
 
 ClickHouse supports special functions for working with dictionaries that can be used in queries. It is easier and more efficient to use dictionaries with functions than a `JOIN` with reference tables.

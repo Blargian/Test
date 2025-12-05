@@ -7,7 +7,7 @@ keywords: ['azure', 'private link', 'privatelink']
 doc_type: 'guide'
 ---
 
-import ScalePlanFeatureBadge from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
+import {ScalePlanFeatureBadge} from '/snippets/components/Badges/ScalePlanFeatureBadge.jsx'
 
 <ScalePlanFeatureBadge feature="Azure Private Link"/>
 

@@ -7,7 +7,7 @@ title: 'Storing ClickHouse Cloud Audit logs into Splunk'
 doc_type: 'guide'
 ---
 
-import PartnerBadge from '/snippets/components/Badges/PartnerBadge.jsx'
+import {PartnerBadge} from '/snippets/components/Badges/PartnerBadge.jsx'
 
 <PartnerBadge/>
 
