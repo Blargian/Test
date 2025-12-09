@@ -20,12 +20,12 @@ This comprehensive Docker image bundles all ClickStack components:
 
 This option includes authentication, enabling the persistence of dashboards, alerts, and saved searches across sessions and users.
 
-### Suitable for [#suitable-for]
+### Suitable for {suitable-for}
 
 * Demos
 * Local testing of the full stack
 
-## Deployment steps [#deployment-steps]
+## Deployment steps {#deployment-steps}
 
 <Steps>
 <Step>
