@@ -31,9 +31,11 @@ If you would like to test the integration before configuring your own existing s
 - Existing Nginx installation
 - Access to modify Nginx configuration files
 
-<Steps toc="false">
+<Steps>
 
-<Step title="Configure Nginx log format">
+<Step>
+
+### Configure Nginx log format
 
 First, configure Nginx to output logs in JSON format for easier parsing. Add this log format definition to your nginx.conf:
 
@@ -69,7 +71,9 @@ After making this change, reload Nginx.
 
 </Step>
 
-<Step title="Create custom OTel collector configuration">
+<Step>
+
+### Create custom OTel collector configuration
 
 ClickStack allows you to extend the base OpenTelemetry Collector configuration by mounting a custom configuration file and setting an environment variable. The custom configuration is merged with the base configuration managed by HyperDX via OpAMP.
 
@@ -121,7 +125,9 @@ This configuration:
 
 </Step>
 
-<Step title="Configure ClickStack to load custom configuration">
+<Step>
+
+### Configure ClickStack to load custom configuration
 
 To enable custom collector configuration in your existing ClickStack deployment, you must:
 
@@ -129,7 +135,7 @@ To enable custom collector configuration in your existing ClickStack deployment,
 2. Set the environment variable CUSTOM_OTELCOL_CONFIG_FILE=/etc/otelcol-contrib/custom.config.yaml
 3. Mount your Nginx log directories so the collector can read them
 
-<Step title="Option 1: Docker Compose">
+#### Option 1: Docker Compose
 
 Update your ClickStack deployment configuration:
 
@@ -146,9 +152,7 @@ services:
       # ... other volumes ...
 ```
 
-</Step>
-
-<Step title="Option 2: Docker Run (All-in-One Image)">
+#### Option 2: Docker Run (All-in-One Image)
 
 If using the all-in-one image with docker run:
 
@@ -164,11 +168,12 @@ docker run --name clickstack \
 <Note>
 Ensure the ClickStack collector has appropriate permissions to read the nginx log files. In production, use read-only mounts (:ro) and follow the principle of least privilege.
 </Note>
-</Step>
 
 </Step>
 
-<Step title="Verifying Logs in HyperDX">
+<Step>
+
+### Verifying Logs in HyperDX
 
 Once configured, log into HyperDX and verify logs are flowing:
 
@@ -189,9 +194,11 @@ This is an example of what you should see:
 
 For users who want to test the nginx integration before configuring their production systems, we provide a sample dataset of pre-generated nginx access logs with realistic traffic patterns.
 
-<Steps toc="false">
+<Steps>
 
-<Step title="Download the sample dataset">
+<Step>
+
+### Download the sample dataset
 
 ```bash
 # Download the logs
@@ -206,7 +213,9 @@ The dataset includes:
 
 </Step>
 
-<Step title="Create test collector configuration">
+<Step>
+
+### Create test collector configuration
 
 Create a file named `nginx-demo.yaml` with the following configuration:
 
@@ -243,7 +252,9 @@ EOF
 
 </Step>
 
-<Step title="Run ClickStack with demo configuration">
+<Step>
+
+### Run ClickStack with demo configuration
 
 Run ClickStack with the demo logs and configuration:
 
@@ -258,7 +269,9 @@ docker run --name clickstack-demo \
 
 </Step>
 
-<Step title="Verify logs in HyperDX">
+<Step>
+
+### Verify logs in HyperDX
 
 Once ClickStack is running (you may have to create an account and login first):
 
@@ -283,13 +296,19 @@ To help you get started monitoring nginx with ClickStack, we provide essential v
 
 <Steps>
 
-<Step title="Download the dashboard configuration">
+<Step>
+
+### Download the dashboard configuration
+
 <Download src="">
   <Button intent="primary">Download</Button>
 </Download>
+
 </Step>
 
-<Step title="Import the pre-built dashboard">
+<Step>
+
+### Import the pre-built dashboard
 
 1. Open HyperDX and navigate to the Dashboards section.
 2. Click "Import Dashboard" in the upper right corner under the ellipses.
@@ -302,7 +321,9 @@ To help you get started monitoring nginx with ClickStack, we provide essential v
 
 </Step>
 
-<Step title="The dashboard will be created with all visualizations pre-configured">
+<Step>
+
+### The dashboard will be created with all visualizations pre-configured
 
 <Note>
 Ensure the time range is set to 2025-10-20 11:00:00 - 2025-10-21 11:00:00. The imported dashboard will not have a time range specified by default.

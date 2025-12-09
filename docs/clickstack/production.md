@@ -131,13 +131,19 @@ Follow the official [MongoDB security checklist](https://www.mongodb.com/docs/ma
 
 The following represents a simple deployment of ClickStack using ClickHouse Cloud which meets best practices.
 
-<Steps headerLevel="h3">
+<Steps>
 
-### Create a service [#create-a-service]
+<Step>
+
+### Create a service
 
 Follow the [getting started guide for ClickHouse Cloud](/getting-started/quick-start/cloud/#1-create-a-clickhouse-service) to create a service.
 
-### Copy connection details [#copy-connection-details]
+</Step>
+
+<Step>
+
+### Copy connection details
 
 To find the connection details for HyperDX, navigate to the ClickHouse Cloud console and click the <b>Connect</b> button on the sidebar recording the HTTP connection details specifically the url.
 
@@ -145,7 +151,11 @@ To find the connection details for HyperDX, navigate to the ClickHouse Cloud con
 
 <img src="/images/use-cases/observability/connect-cloud.png" alt="Connect Cloud"/>
 
-### Create a HyperDX user [#create-a-user]
+</Step>
+
+<Step>
+
+### Create a HyperDX user
 
 We recommend you create a dedicated user for HyperDX. Run the following SQL commands in the [Cloud SQL console](/cloud/get-started/sql-console), providing a secure password which meets complexity requirements:
 
@@ -154,7 +164,11 @@ CREATE USER hyperdx IDENTIFIED WITH sha256_password BY '<YOUR_PASSWORD>' SETTING
 GRANT sql_console_read_only TO hyperdx;
 ```
 
-### Prepare for ingestion user [#prepare-for-ingestion]
+</Step>
+
+<Step>
+
+### Prepare for ingestion user
 
 Create an `otel` database for data and a `hyperdx_ingest` user for ingestion with limited permissions.
 
@@ -164,9 +178,13 @@ CREATE USER hyperdx_ingest IDENTIFIED WITH sha256_password BY 'ClickH0u3eRocks12
 GRANT SELECT, INSERT, CREATE TABLE, CREATE VIEW ON otel.* TO hyperdx_ingest;
 ```
 
-### Deploy ClickStack [#deploy-clickstack]
+</Step>
 
-Deploy ClickStack - the [Helm](/use-cases/observability/clickstack/deployment/helm) or [Docker Compose](/use-cases/observability/clickstack/deployment/docker-compose) (modified to exclude ClickHouse) deployment models are preferred. 
+<Step>
+
+### Deploy ClickStack
+
+Deploy ClickStack - the [Helm](/use-cases/observability/clickstack/deployment/helm) or [Docker Compose](/use-cases/observability/clickstack/deployment/docker-compose) (modified to exclude ClickHouse) deployment models are preferred.
 
 <Note title="Deploying components separately">
 Advanced users can deploy the [OTel collector](/use-cases/observability/clickstack/ingesting-data/opentelemetry#standalone) and [HyperDX](/use-cases/observability/clickstack/deployment/hyperdx-only) separately with their respective standalone deployment modes.
@@ -174,24 +192,38 @@ Advanced users can deploy the [OTel collector](/use-cases/observability/clicksta
 
 Instructions for using ClickHouse Cloud with the Helm chart can be found [here](/use-cases/observability/clickstack/deployment/helm#using-clickhouse-cloud). Equivalent instructions for Docker Compose can be found [here](/use-cases/observability/clickstack/deployment/docker-compose).
 
-### Navigate to the HyperDX UI [#navigate-to-hyperdx-ui]
+</Step>
+
+<Step>
+
+### Navigate to the HyperDX UI
 
 Visit [http://localhost:8080](http://localhost:8080) to access the HyperDX UI.
 
-Create a user, providing a username and password which meets the requirements. 
+Create a user, providing a username and password which meets the requirements.
 
 <img src="/images/use-cases/observability/hyperdx-login.png" alt="HyperDX UI"/>
 
 On clicking `Create` you'll be prompted for connection details.
 
-### Connect to ClickHouse Cloud [#connect-to-clickhouse-cloud]
+</Step>
+
+<Step>
+
+### Connect to ClickHouse Cloud
 
 Using the credentials created earlier, complete the connection details and click `Create`.
 
 <img src="/images/use-cases/observability/hyperdx-cloud.png" alt="HyperDX Cloud"/>
 
-### Send data to ClickStack [#send-data]
+</Step>
+
+<Step>
+
+### Send data to ClickStack
 
 To send data to ClickStack see ["Sending OpenTelemetry data"](/use-cases/observability/clickstack/ingesting-data/opentelemetry#sending-otel-data).
+
+</Step>
 
 </Steps>

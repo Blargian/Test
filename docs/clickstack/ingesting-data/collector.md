@@ -326,13 +326,19 @@ The [JSON type](/interfaces/formats/JSON) type is not backwards compatible with 
 
 To migrate from the Map-based schemas, follow these steps:
 
-<Steps headerLevel="h4">
+<Steps>
 
-#### Stop the OTel collector [#stop-the-collector]
+<Step>
 
-#### Rename existing tables and update sources [#rename-existing-tables-sources]
+#### Stop the OTel collector
 
-Rename existing tables and update data sources in HyperDX. 
+</Step>
+
+<Step>
+
+#### Rename existing tables and update sources
+
+Rename existing tables and update data sources in HyperDX.
 
 For example:
 
@@ -341,19 +347,33 @@ RENAME TABLE otel_logs TO otel_logs_map;
 RENAME TABLE otel_metrics TO otel_metrics_map;
 ```
 
-#### Deploy the collector  [#deploy-the-collector]
+</Step>
+
+<Step>
+
+#### Deploy the collector
 
 Deploy the collector with `OTEL_AGENT_FEATURE_GATE_ARG` set.
 
-#### Restart the HyperDX container with JSON schema support [#restart-the-hyperdx-container]
+</Step>
+
+<Step>
+
+#### Restart the HyperDX container with JSON schema support
 
 ```shell
 export BETA_CH_OTEL_JSON_SCHEMA_ENABLED=true
 ```
 
-#### Create new data sources [#create-new-data-sources]
+</Step>
+
+<Step>
+
+#### Create new data sources
 
 Create new data sources in HyperDX pointing to the JSON tables.
+
+</Step>
 
 </Steps>
 

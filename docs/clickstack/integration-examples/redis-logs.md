@@ -30,9 +30,11 @@ If you would like to test the Redis integration before configuring your own exis
 - Existing Redis installation (version 3.0 or newer)
 - Access to Redis log files
 
-<Steps toc="false">
+<Steps>
 
-<Step title="Verify Redis logging configuration">
+<Step>
+
+### Verify Redis logging configuration
 
 First, check your Redis logging configuration. Connect to Redis and check the log file location:
 
@@ -67,7 +69,9 @@ docker restart <redis-container>
 
 </Step>
 
-<Step title="Create custom OTel collector configuration">
+<Step>
+
+### Create custom OTel collector configuration
 
 ClickStack allows you to extend the base OpenTelemetry Collector configuration by mounting a custom configuration file and setting an environment variable. The custom configuration is merged with the base configuration managed by HyperDX via OpAMP.
 
@@ -84,15 +88,15 @@ receivers:
         regex: '^(?P\d+):(?P\w+) (?P\d{2} \w+ \d{4} \d{2}:\d{2}:\d{2})\.\d+ (?P[.\-*#]) (?P.*)$'
         parse_from: body
         parse_to: attributes
-      
+
       - type: time_parser
         parse_from: attributes.timestamp
         layout: '%d %b %Y %H:%M:%S'
-      
+
       - type: add
         field: attributes.source
         value: "redis"
-      
+
       - type: add
         field: resource["service.name"]
         value: "redis-production"
@@ -124,7 +128,9 @@ This configuration:
 
 </Step>
 
-<Step title="Configure ClickStack to load custom configuration">
+<Step>
+
+### Configure ClickStack to load custom configuration
 
 To enable custom collector configuration in your existing ClickStack deployment, you must:
 
@@ -132,10 +138,7 @@ To enable custom collector configuration in your existing ClickStack deployment,
 2. Set the environment variable `CUSTOM_OTELCOL_CONFIG_FILE=/etc/otelcol-contrib/custom.config.yaml`
 3. Mount your Redis log directory so the collector can read them
 
-</Step>
-<Steps toc="false">
-
-<Step title="Option 1: Docker Compose">
+#### Option 1: Docker Compose
 
 Update your ClickStack deployment configuration:
 
@@ -152,9 +155,7 @@ services:
       # ... other volumes ...
 ```
 
-</Step>
-
-<Step title="Option 2: Docker Run (All-in-One Image)">
+#### Option 2: Docker Run (All-in-One Image)
 
 If you're using the all-in-one image with docker, run:
 
@@ -173,9 +174,9 @@ Ensure the ClickStack collector has appropriate permissions to read the Redis lo
 
 </Step>
 
-</Steps>
+<Step>
 
-<Step title="Verifying Logs in HyperDX">
+### Verifying Logs in HyperDX
 
 Once configured, log into HyperDX and verify that logs are flowing:
 
@@ -184,15 +185,18 @@ Once configured, log into HyperDX and verify that logs are flowing:
 <img src="/images/clickstack/redis/redis-log.png" alt="Log"/>
 
 </Step>
+
 </Steps>
 
 ## Demo dataset [#demo-dataset]
 
 For users who want to test the Redis integration before configuring their production systems, we provide a sample dataset of pre-generated Redis Logs with realistic patterns.
 
-<Steps toc="false">
+<Steps>
 
-<Step title="Download the sample dataset">
+<Step>
+
+### Download the sample dataset
 
 Download the sample log file:
 
@@ -202,7 +206,9 @@ curl -O https://datasets-documentation.s3.eu-west-3.amazonaws.com/clickstack-int
 
 </Step>
 
-<Step title="Create test collector configuration">
+<Step>
+
+### Create test collector configuration
 
 Create a file named `redis-demo.yaml` with the following configuration:
 
@@ -218,15 +224,15 @@ receivers:
         regex: '^(?P<pid>\d+):(?P<role>\w+) (?P<timestamp>\d{2} \w+ \d{4} \d{2}:\d{2}:\d{2})\.\d+ (?P<log_level>[.\-*#]) (?P<message>.*)$'
         parse_from: body
         parse_to: attributes
-      
+
       - type: time_parser
         parse_from: attributes.timestamp
         layout: '%d %b %Y %H:%M:%S'
-      
+
       - type: add
         field: attributes.source
         value: "redis-demo"
-      
+
       - type: add
         field: resource["service.name"]
         value: "redis-demo"
@@ -246,7 +252,9 @@ EOF
 
 </Step>
 
-<Step title="Run ClickStack with demo configuration">
+<Step>
+
+### Run ClickStack with demo configuration
 
 Run ClickStack with the demo logs and configuration:
 
@@ -265,7 +273,9 @@ docker run --name clickstack-demo \
 
 </Step>
 
-<Step title="Verify logs in HyperDX">
+<Step>
+
+### Verify logs in HyperDX
 
 Once ClickStack is running:
 
@@ -281,21 +291,28 @@ If you don't see logs, ensure the time range is set to 2025-10-27 10:00:00 - 202
 <img src="/images/clickstack/redis/redis-log.png" alt="Log"/>
 
 </Step>
+
 </Steps>
 
 ## Dashboards and visualization [#dashboards]
 
 To help you get started monitoring Redis with ClickStack, we provide essential visualizations for Redis Logs.
 
-<Steps toc="false">
+<Steps>
 
-<Step title="Download the dashboard configuration">
+<Step>
+
+### Download the dashboard configuration
+
 <Download src="">
   <Button intent="primary">Download</Button>
 </Download>
+
 </Step>
 
-<Step title="Import Pre-built Dashboard">
+<Step>
+
+### Import Pre-built Dashboard
 
 1. Open HyperDX and navigate to the Dashboards section.
 2. Click "Import Dashboard" in the upper right corner under the ellipses.
@@ -308,7 +325,9 @@ To help you get started monitoring Redis with ClickStack, we provide essential v
 
 </Step>
 
-<Step title="The dashboard will be created with all visualizations pre-configured">
+<Step>
+
+### The dashboard will be created with all visualizations pre-configured
 
 <Note>
 Ensure the time range is set to 2025-10-27 10:00:00 - 2025-10-28 10:00:00. The imported dashboard will not have a time range specified by default.
@@ -317,6 +336,7 @@ Ensure the time range is set to 2025-10-27 10:00:00 - 2025-10-28 10:00:00. The i
 <img src="/images/clickstack/redis/redis-logs-dashboard.png" alt="Example Dashboard"/>
 
 </Step>
+
 </Steps>
 
 ## Troubleshooting [#troubleshooting]
