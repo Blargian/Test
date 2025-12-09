@@ -20,7 +20,7 @@
         "product": "Home",
         "description": "Explore docs by use case, product or learning goal.",
         "pages": [
-          "products/common_pages/home"
+          "docs/common_pages/home"
         ]
       },
       {
@@ -31,7 +31,7 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/cloud/pages/cloud_home"
+              "docs/cloud/home"
             ]
           },
           {
@@ -41,22 +41,22 @@
               {
                 "group": "Quick Start",
                 "pages": [
-                  "products/cloud/pages/getting-started/intro",
-                  "products/cloud/pages/getting-started/quick-start"
+                  "docs/cloud/getting-started/intro",
+                  "docs/cloud/getting-started/quick-start"
                 ]
               },
               {
                 "group": "Use cases",
                 "pages": [
-                  "products/cloud/pages/getting-started/use_cases/00_overview",
-                  "products/cloud/pages/getting-started/use_cases/01_real-time-analytics",
-                  "products/cloud/pages/getting-started/use_cases/02_observability",
-                  "products/cloud/pages/getting-started/use_cases/03_data_warehousing",
+                  "docs/cloud/getting-started/use_cases/00_overview",
+                  "docs/cloud/getting-started/use_cases/01_real-time-analytics",
+                  "docs/cloud/getting-started/use_cases/02_observability",
+                  "docs/cloud/getting-started/use_cases/03_data_warehousing",
                   {
                     "group": "Machine learning & generative AI",
                     "pages": [
-                      "products/cloud/pages/getting-started/use_cases/04_machine_learning_and_genAI/01_machine_learning",
-                      "products/cloud/pages/getting-started/use_cases/04_machine_learning_and_genAI/02_agent_facing_analytics"
+                      "docs/cloud/getting-started/use_cases/04_machine_learning_and_genAI/01_machine_learning",
+                      "docs/cloud/getting-started/use_cases/04_machine_learning_and_genAI/02_agent_facing_analytics"
                     ]
                   }
                 ]
@@ -64,64 +64,64 @@
               {
                 "group": "Migration guides",
                 "pages": [
-                  "products/cloud/pages/getting-started/migration_guides/01_overview",
+                  "docs/cloud/getting-started/migration_guides/01_overview",
                   {
                     "group": "PostgreSQL",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/02_postgres/01_overview",
+                      "docs/cloud/getting-started/migration_guides/02_postgres/01_overview",
                       {
                         "group": "Migration guide",
                         "pages": [
-                          "products/cloud/pages/getting-started/migration_guides/02_postgres/migration_guide/01_migration_guide_part1",
-                          "products/cloud/pages/getting-started/migration_guides/02_postgres/migration_guide/02_migration_guide_part2",
-                          "products/cloud/pages/getting-started/migration_guides/02_postgres/migration_guide/03_migration_guide_part3"
+                          "docs/cloud/getting-started/migration_guides/02_postgres/migration_guide/01_migration_guide_part1",
+                          "docs/cloud/getting-started/migration_guides/02_postgres/migration_guide/02_migration_guide_part2",
+                          "docs/cloud/getting-started/migration_guides/02_postgres/migration_guide/03_migration_guide_part3"
                         ]
                       },
-                      "products/cloud/pages/getting-started/migration_guides/02_postgres/appendix"
+                      "docs/cloud/getting-started/migration_guides/02_postgres/appendix"
                     ]
                   },
                   {
                     "group": "BigQuery",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/03_bigquery/01_overview",
-                      "products/cloud/pages/getting-started/migration_guides/03_bigquery/02_migrating-to-clickhouse-cloud",
-                      "products/cloud/pages/getting-started/migration_guides/03_bigquery/03_loading-data"
+                      "docs/cloud/getting-started/migration_guides/03_bigquery/01_overview",
+                      "docs/cloud/getting-started/migration_guides/03_bigquery/02_migrating-to-clickhouse-cloud",
+                      "docs/cloud/getting-started/migration_guides/03_bigquery/03_loading-data"
                     ]
                   },
                   {
                     "group": "Snowflake",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/04_snowflake/01_overview",
-                      "products/cloud/pages/getting-started/migration_guides/04_snowflake/02_migration_guide",
-                      "products/cloud/pages/getting-started/migration_guides/04_snowflake/03_sql_translation_reference"
+                      "docs/cloud/getting-started/migration_guides/04_snowflake/01_overview",
+                      "docs/cloud/getting-started/migration_guides/04_snowflake/02_migration_guide",
+                      "docs/cloud/getting-started/migration_guides/04_snowflake/03_sql_translation_reference"
                     ]
                   },
                   {
                     "group": "Elasticsearch",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/05_elastic/01_overview"
+                      "docs/cloud/getting-started/migration_guides/05_elastic/01_overview"
                     ]
                   },
                   {
                     "group": "Redshift",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/06_redshift/01_overview",
-                      "products/cloud/pages/getting-started/migration_guides/06_redshift/02_migration_guide",
-                      "products/cloud/pages/getting-started/migration_guides/06_redshift/03_sql_translation_reference"
+                      "docs/cloud/getting-started/migration_guides/06_redshift/01_overview",
+                      "docs/cloud/getting-started/migration_guides/06_redshift/02_migration_guide",
+                      "docs/cloud/getting-started/migration_guides/06_redshift/03_sql_translation_reference"
                     ]
                   },
                   {
                     "group": "OSS to Cloud",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/07_OSS_to_Cloud/01_clickhouse-to-cloud"
+                      "docs/cloud/getting-started/migration_guides/07_OSS_to_Cloud/01_clickhouse-to-cloud"
                     ]
                   },
                   {
                     "group": "Other methods",
                     "pages": [
-                      "products/cloud/pages/getting-started/migration_guides/08_other_methods/01_clickhouse-local-etl",
-                      "products/cloud/pages/getting-started/migration_guides/08_other_methods/02_etl-tool-to-clickhouse",
-                      "products/cloud/pages/getting-started/migration_guides/08_other_methods/03_object-storage-to-clickhouse"
+                      "docs/cloud/getting-started/migration_guides/08_other_methods/01_clickhouse-local-etl",
+                      "docs/cloud/getting-started/migration_guides/08_other_methods/02_etl-tool-to-clickhouse",
+                      "docs/cloud/getting-started/migration_guides/08_other_methods/03_object-storage-to-clickhouse"
                     ]
                   }
                 ]
@@ -132,17 +132,17 @@
             "tab": "Features",
             "icon": "list-check",
             "pages": [
-              "products/cloud/pages/features/01_cloud_tiers",
-              "products/cloud/pages/features/02_integrations",
+              "docs/cloud/features/01_cloud_tiers",
+              "docs/cloud/features/02_integrations",
               {
                 "group": "SQL console",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/features/03_sql_console_features/01_sql-console",
-                  "products/cloud/pages/features/03_sql_console_features/02_query-insights",
-                  "products/cloud/pages/features/03_sql_console_features/03_query-endpoints",
-                  "products/cloud/pages/features/03_sql_console_features/04_dashboards",
-                  "products/cloud/pages/features/03_sql_console_features/hyperdx"
+                  "docs/cloud/features/03_sql_console_features/01_sql-console",
+                  "docs/cloud/features/03_sql_console_features/02_query-insights",
+                  "docs/cloud/features/03_sql_console_features/03_query-endpoints",
+                  "docs/cloud/features/03_sql_console_features/04_dashboards",
+                  "docs/cloud/features/03_sql_console_features/hyperdx"
                 ]
               },
               {
@@ -152,15 +152,15 @@
                   {
                     "group": "Automatic scaling",
                     "pages": [
-                      "products/cloud/pages/features/04_infrastructure/automatic_scaling/01_auto_scaling",
-                      "products/cloud/pages/features/04_infrastructure/automatic_scaling/02_make_before_break"
+                      "docs/cloud/features/04_infrastructure/automatic_scaling/01_auto_scaling",
+                      "docs/cloud/features/04_infrastructure/automatic_scaling/02_make_before_break"
                     ]
                   },
-                  "products/cloud/pages/features/04_infrastructure/deployment-options",
-                  "products/cloud/pages/features/04_infrastructure/replica-aware-routing",
-                  "products/cloud/pages/features/04_infrastructure/shared-catalog",
-                  "products/cloud/pages/features/04_infrastructure/shared-merge-tree",
-                  "products/cloud/pages/features/04_infrastructure/warehouses"
+                  "docs/cloud/features/04_infrastructure/deployment-options",
+                  "docs/cloud/features/04_infrastructure/replica-aware-routing",
+                  "docs/cloud/features/04_infrastructure/shared-catalog",
+                  "docs/cloud/features/04_infrastructure/shared-merge-tree",
+                  "docs/cloud/features/04_infrastructure/warehouses"
                 ]
               },
               {
@@ -170,26 +170,26 @@
                   {
                     "group": "Cloud API",
                     "pages": [
-                      "products/cloud/pages/features/05_admin_features/api/api-overview",
-                      "products/cloud/pages/features/05_admin_features/api/openapi",
-                      "products/cloud/pages/features/05_admin_features/api/postman"
+                      "docs/cloud/features/05_admin_features/api/api-overview",
+                      "docs/cloud/features/05_admin_features/api/openapi",
+                      "docs/cloud/features/05_admin_features/api/postman"
                     ]
                   },
-                  "products/cloud/pages/features/05_admin_features/upgrades"
+                  "docs/cloud/features/05_admin_features/upgrades"
                 ]
               },
-              "products/cloud/pages/features/06_security",
+              "docs/cloud/features/06_security",
               {
                 "group": "Monitoring",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/features/07_monitoring/advanced_dashboard",
-                  "products/cloud/pages/features/07_monitoring/notifications",
-                  "products/cloud/pages/features/07_monitoring/prometheus"
+                  "docs/cloud/features/07_monitoring/advanced_dashboard",
+                  "docs/cloud/features/07_monitoring/notifications",
+                  "docs/cloud/features/07_monitoring/prometheus"
                 ]
               },
-              "products/cloud/pages/features/08_backups",
-              "products/cloud/pages/features/09_support"
+              "docs/cloud/features/08_backups",
+              "docs/cloud/features/09_support"
             ]
           },
           {
@@ -200,23 +200,23 @@
                 "group": "SQL console",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/guides/SQL_console/connection_details",
-                  "products/cloud/pages/guides/SQL_console/query-endpoints"
+                  "docs/cloud/guides/SQL_console/connection_details",
+                  "docs/cloud/guides/SQL_console/query-endpoints"
                 ]
               },
               {
                 "group": "Backups",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/guides/backups/01_review-and-restore-backups",
-                  "products/cloud/pages/guides/backups/02_configurable-backups",
+                  "docs/cloud/guides/backups/01_review-and-restore-backups",
+                  "docs/cloud/guides/backups/02_configurable-backups",
                   {
                     "group": "Bring Your Own Backup",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/guides/backups/03_bring_your_own_backup/01_export-backups-to-own-cloud-account",
-                      "products/cloud/pages/guides/backups/03_bring_your_own_backup/02_backup_restore_from_ui",
-                      "products/cloud/pages/guides/backups/03_bring_your_own_backup/03_backup_restore_using_commands"
+                      "docs/cloud/guides/backups/03_bring_your_own_backup/01_export-backups-to-own-cloud-account",
+                      "docs/cloud/guides/backups/03_bring_your_own_backup/02_backup_restore_from_ui",
+                      "docs/cloud/guides/backups/03_bring_your_own_backup/03_backup_restore_using_commands"
                     ]
                   }
                 ]
@@ -225,17 +225,17 @@
                 "group": "Best practices",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/guides/best_practices/multitenancy",
-                  "products/cloud/pages/guides/best_practices/usagelimits"
+                  "docs/cloud/guides/best_practices/multitenancy",
+                  "docs/cloud/guides/best_practices/usagelimits"
                 ]
               },
-              "products/cloud/pages/guides/cloud-compatibility",
+              "docs/cloud/guides/cloud-compatibility",
               {
                 "group": "Data sources",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/guides/data_sources/01_cloud-endpoints-api",
-                  "products/cloud/pages/guides/data_sources/02_accessing-s3-data-securely"
+                  "docs/cloud/guides/data_sources/01_cloud-endpoints-api",
+                  "docs/cloud/guides/data_sources/02_accessing-s3-data-securely"
                 ]
               },
               {
@@ -246,33 +246,33 @@
                     "group": "Deployment modes",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/guides/infrastructure/01_deployment_options/02_clickhouse-private",
-                      "products/cloud/pages/guides/infrastructure/01_deployment_options/03_clickhouse-government",
+                      "docs/cloud/guides/infrastructure/01_deployment_options/02_clickhouse-private",
+                      "docs/cloud/guides/infrastructure/01_deployment_options/03_clickhouse-government",
                       {
                         "group": "Bring Your Own Cloud (BYOC)",
                         "expanded": false,
                         "pages": [
-                          "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/01_overview",
-                          "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/02_architecture",
+                          "docs/cloud/guides/infrastructure/01_deployment_options/byoc/01_overview",
+                          "docs/cloud/guides/infrastructure/01_deployment_options/byoc/02_architecture",
                           {
                             "group": "Onboarding",
                             "expanded": false,
                             "pages": [
-                              "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/03_onboarding/01_aws"
+                              "docs/cloud/guides/infrastructure/01_deployment_options/byoc/03_onboarding/01_aws"
                             ]
                           },
                           {
                             "group": "FAQ",
                             "expanded": false,
                             "pages": [
-                              "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/04_faq/01_aws"
+                              "docs/cloud/guides/infrastructure/01_deployment_options/byoc/04_faq/01_aws"
                             ]
                           },
                           {
                             "group": "Observability",
                             "expanded": false,
                             "pages": [
-                              "products/cloud/pages/guides/infrastructure/01_deployment_options/byoc/05_observability/01_aws"
+                              "docs/cloud/guides/infrastructure/01_deployment_options/byoc/05_observability/01_aws"
                             ]
                           }
                         ]
@@ -289,38 +289,38 @@
                     "group": "Cloud access management",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/guides/security/01_cloud_access_management/01_manage-my-account",
-                      "products/cloud/pages/guides/security/01_cloud_access_management/02_manage-cloud-users",
-                      "products/cloud/pages/guides/security/01_cloud_access_management/03_manage-sql-console-role-assignments",
-                      "products/cloud/pages/guides/security/01_cloud_access_management/04_manage-database-users",
-                      "products/cloud/pages/guides/security/01_cloud_access_management/04_saml-sso-setup",
-                      "products/cloud/pages/guides/security/01_cloud_access_management/05_common-access-management-queries"
+                      "docs/cloud/guides/security/01_cloud_access_management/01_manage-my-account",
+                      "docs/cloud/guides/security/01_cloud_access_management/02_manage-cloud-users",
+                      "docs/cloud/guides/security/01_cloud_access_management/03_manage-sql-console-role-assignments",
+                      "docs/cloud/guides/security/01_cloud_access_management/04_manage-database-users",
+                      "docs/cloud/guides/security/01_cloud_access_management/04_saml-sso-setup",
+                      "docs/cloud/guides/security/01_cloud_access_management/05_common-access-management-queries"
                     ]
                   },
                   {
                     "group": "Connectivity",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/guides/security/02_connectivity/01_setting-ip-filters",
+                      "docs/cloud/guides/security/02_connectivity/01_setting-ip-filters",
                       {
                         "group": "Private networking",
                         "expanded": false,
                         "pages": [
-                          "products/cloud/pages/guides/security/02_connectivity/private_networking/02_aws-privatelink",
-                          "products/cloud/pages/guides/security/02_connectivity/private_networking/03_gcp-private-service-connect",
-                          "products/cloud/pages/guides/security/02_connectivity/private_networking/04_azure-privatelink"
+                          "docs/cloud/guides/security/02_connectivity/private_networking/02_aws-privatelink",
+                          "docs/cloud/guides/security/02_connectivity/private_networking/03_gcp-private-service-connect",
+                          "docs/cloud/guides/security/02_connectivity/private_networking/04_azure-privatelink"
                         ]
                       }
                     ]
                   },
-                  "products/cloud/pages/guides/security/03_data-masking",
-                  "products/cloud/pages/guides/security/04_cmek",
+                  "docs/cloud/guides/security/03_data-masking",
+                  "docs/cloud/guides/security/04_cmek",
                   {
                     "group": "Compliance",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/guides/security/06_compliance/hipaa-onboarding",
-                      "products/cloud/pages/guides/security/06_compliance/pci-onboarding"
+                      "docs/cloud/guides/security/06_compliance/hipaa-onboarding",
+                      "docs/cloud/guides/security/06_compliance/pci-onboarding"
                     ]
                   }
                 ]
@@ -334,56 +334,56 @@
               {
                 "group": "Changelogs",
                 "pages": [
-                  "products/cloud/pages/reference/01_changelog/01_changelog"
+                  "docs/cloud/reference/01_changelog/01_changelog"
                 ]
               },
-              "products/cloud/pages/reference/02_architecture",
+              "docs/cloud/reference/02_architecture",
               {
                 "group": "Billing",
                 "pages": [
-                  "products/cloud/pages/reference/03_billing/01_billing_overview",
+                  "docs/cloud/reference/03_billing/01_billing_overview",
                   {
                     "group": "Marketplace",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/reference/03_billing/02_marketplace/overview",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/aws-marketplace-committed",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/aws-marketplace-payg",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/azure-marketplace-committed",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/azure-marketplace-payg",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/gcp-marketplace-committed",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/gcp-marketplace-payg",
-                      "products/cloud/pages/reference/03_billing/02_marketplace/migrate-marketplace-payg-committed"
+                      "docs/cloud/reference/03_billing/02_marketplace/overview",
+                      "docs/cloud/reference/03_billing/02_marketplace/aws-marketplace-committed",
+                      "docs/cloud/reference/03_billing/02_marketplace/aws-marketplace-payg",
+                      "docs/cloud/reference/03_billing/02_marketplace/azure-marketplace-committed",
+                      "docs/cloud/reference/03_billing/02_marketplace/azure-marketplace-payg",
+                      "docs/cloud/reference/03_billing/02_marketplace/gcp-marketplace-committed",
+                      "docs/cloud/reference/03_billing/02_marketplace/gcp-marketplace-payg",
+                      "docs/cloud/reference/03_billing/02_marketplace/migrate-marketplace-payg-committed"
                     ]
                   },
                   {
                     "group": "ClickPipes",
                     "expanded": false,
                     "pages": [
-                      "products/cloud/pages/reference/03_billing/03_clickpipes/clickpipes_for_cdc",
-                      "products/cloud/pages/reference/03_billing/03_clickpipes/clickpipes_for_streaming_and_object_storage"
+                      "docs/cloud/reference/03_billing/03_clickpipes/clickpipes_for_cdc",
+                      "docs/cloud/reference/03_billing/03_clickpipes/clickpipes_for_streaming_and_object_storage"
                     ]
                   },
-                  "products/cloud/pages/reference/03_billing/04_network-data-transfer",
-                  "products/cloud/pages/reference/03_billing/05_payment-thresholds",
-                  "products/cloud/pages/reference/03_billing/06_billing_compliance"
+                  "docs/cloud/reference/03_billing/04_network-data-transfer",
+                  "docs/cloud/reference/03_billing/05_payment-thresholds",
+                  "docs/cloud/reference/03_billing/06_billing_compliance"
                 ]
               },
-              "products/cloud/pages/reference/05_supported-regions",
-              "products/cloud/pages/reference/06_service-uptime",
-              "products/cloud/pages/reference/08_settings",
+              "docs/cloud/reference/05_supported-regions",
+              "docs/cloud/reference/06_service-uptime",
+              "docs/cloud/reference/08_settings",
               {
                 "group": "Security",
                 "expanded": false,
                 "pages": [
-                  "products/cloud/pages/reference/09_security/01_console-roles",
-                  "products/cloud/pages/reference/09_security/02_audit-logging",
-                  "products/cloud/pages/reference/09_security/03_compliance-overview"
+                  "docs/cloud/reference/09_security/01_console-roles",
+                  "docs/cloud/reference/09_security/02_audit-logging",
+                  "docs/cloud/reference/09_security/03_compliance-overview"
                 ]
               },
-              "products/cloud/pages/reference/10_personal-data-access",
-              "products/cloud/pages/reference/data-resiliency",
-              "products/cloud/pages/reference/11_account-close"
+              "docs/cloud/reference/10_personal-data-access",
+              "docs/cloud/reference/data-resiliency",
+              "docs/cloud/reference/11_account-close"
             ]
           },
           {
@@ -401,7 +401,7 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/oss/pages/oss_home"
+              "docs/oss/home"
             ]
           },
           {
@@ -412,39 +412,39 @@
                 "group": "About ClickHouse",
                 "expanded": false,
                 "pages": [
-                  "products/oss/pages/get_started/about/intro",
-                  "products/oss/pages/get_started/about/olap",
-                  "products/oss/pages/get_started/about/why-clickhouse-is-so-fast",
-                  "products/oss/pages/get_started/about/distinctive-features",
-                  "products/oss/pages/get_started/about/deployment-modes"
+                  "docs/oss/get_started/about/intro",
+                  "docs/oss/get_started/about/olap",
+                  "docs/oss/get_started/about/why-clickhouse-is-so-fast",
+                  "docs/oss/get_started/about/distinctive-features",
+                  "docs/oss/get_started/about/deployment-modes"
                 ]
               },
               {
                 "group": "Starter guides",
                 "expanded": false,
                 "pages": [
-                  "products/oss/pages/get_started/oss",
-                  "products/oss/pages/get_started/starter_guides/creating-tables",
-                  "products/oss/pages/get_started/starter_guides/inserting-data",
-                  "products/oss/pages/get_started/starter_guides/writing-queries",
-                  "products/oss/pages/get_started/starter_guides/mutations",
-                  "products/oss/pages/get_started/starter_guides/generating-test-data",
-                  "products/oss/pages/get_started/starter_guides/troubleshooting"
+                  "docs/oss/get_started/oss",
+                  "docs/oss/get_started/starter_guides/creating-tables",
+                  "docs/oss/get_started/starter_guides/inserting-data",
+                  "docs/oss/get_started/starter_guides/writing-queries",
+                  "docs/oss/get_started/starter_guides/mutations",
+                  "docs/oss/get_started/starter_guides/generating-test-data",
+                  "docs/oss/get_started/starter_guides/troubleshooting"
                 ]
               },
               {
                 "group": "Install",
                 "expanded": false,
                 "pages": [
-                  "products/oss/pages/get_started/install/install",
-                  "products/oss/pages/get_started/install/debian_ubuntu",
-                  "products/oss/pages/get_started/install/redhat",
-                  "products/oss/pages/get_started/install/other_linux",
-                  "products/oss/pages/get_started/install/macos",
-                  "products/oss/pages/get_started/install/windows",
-                  "products/oss/pages/get_started/install/docker",
-                  "products/oss/pages/get_started/install/quick-install-curl",
-                  "products/oss/pages/get_started/install/advanced"
+                  "docs/oss/get_started/install/install",
+                  "docs/oss/get_started/install/debian_ubuntu",
+                  "docs/oss/get_started/install/redhat",
+                  "docs/oss/get_started/install/other_linux",
+                  "docs/oss/get_started/install/macos",
+                  "docs/oss/get_started/install/windows",
+                  "docs/oss/get_started/install/docker",
+                  "docs/oss/get_started/install/quick-install-curl",
+                  "docs/oss/get_started/install/advanced"
                 ]
               }
             ]
@@ -453,13 +453,13 @@
             "tab": "Concepts",
             "icon": "lightbulb",
             "pages": [
-              "products/common_pages/concepts/glossary",
-              "products/common_pages/concepts/parts",
-              "products/common_pages/concepts/partitions",
-              "products/common_pages/concepts/merges",
-              "products/common_pages/concepts/primary-indexes",
-              "products/common_pages/concepts/query-parallelism",
-              "products/common_pages/concepts/academic_overview"
+              "docs/common_pages/concepts/glossary",
+              "docs/common_pages/concepts/parts",
+              "docs/common_pages/concepts/partitions",
+              "docs/common_pages/concepts/merges",
+              "docs/common_pages/concepts/primary-indexes",
+              "docs/common_pages/concepts/query-parallelism",
+              "docs/common_pages/concepts/academic_overview"
             ]
           },
           {
@@ -470,36 +470,36 @@
                 "group": "Best practices",
                 "expanded": false,
                 "pages": [
-                  "products/common_pages/best_practices/choosing_a_primary_key",
-                  "products/common_pages/best_practices/select_data_type",
-                  "products/common_pages/best_practices/use_materialized_views",
-                  "products/common_pages/best_practices/minimize_optimize_joins",
-                  "products/common_pages/best_practices/partitioning_keys",
-                  "products/common_pages/best_practices/selecting_an_insert_strategy",
-                  "products/common_pages/best_practices/using_data_skipping_indices",
-                  "products/common_pages/best_practices/avoid_mutations",
-                  "products/common_pages/best_practices/avoid_optimize_final",
-                  "products/common_pages/best_practices/avoidnullablecolumns",
-                  "products/common_pages/best_practices/json_type"
+                  "docs/common_pages/best_practices/choosing_a_primary_key",
+                  "docs/common_pages/best_practices/select_data_type",
+                  "docs/common_pages/best_practices/use_materialized_views",
+                  "docs/common_pages/best_practices/minimize_optimize_joins",
+                  "docs/common_pages/best_practices/partitioning_keys",
+                  "docs/common_pages/best_practices/selecting_an_insert_strategy",
+                  "docs/common_pages/best_practices/using_data_skipping_indices",
+                  "docs/common_pages/best_practices/avoid_mutations",
+                  "docs/common_pages/best_practices/avoid_optimize_final",
+                  "docs/common_pages/best_practices/avoidnullablecolumns",
+                  "docs/common_pages/best_practices/json_type"
                 ]
               },
               {
                 "group": "OSS best practices",
                 "expanded": false,
                 "pages": [
-                  "products/oss/pages/oss_specific_guides/best_practices/sizing-and-hardware-recommendations",
-                  "products/oss/pages/oss_specific_guides/best_practices/tips"
+                  "docs/oss/oss_specific_guides/best_practices/sizing-and-hardware-recommendations",
+                  "docs/oss/oss_specific_guides/best_practices/tips"
                 ]
               },
               {
                 "group": "Data modelling",
                 "expanded": false,
                 "pages": [
-                  "products/common_pages/general_guides/data_modelling/schema-design",
-                  "products/common_pages/general_guides/data_modelling/sparse-primary-indexes",
-                  "products/common_pages/general_guides/data_modelling/materialized-views-versus-projections",
-                  "products/common_pages/general_guides/data_modelling/denormalization",
-                  "products/common_pages/general_guides/data_modelling/backfilling"
+                  "docs/common_pages/general_guides/data_modelling/schema-design",
+                  "docs/common_pages/general_guides/data_modelling/sparse-primary-indexes",
+                  "docs/common_pages/general_guides/data_modelling/materialized-views-versus-projections",
+                  "docs/common_pages/general_guides/data_modelling/denormalization",
+                  "docs/common_pages/general_guides/data_modelling/backfilling"
                 ]
               }
             ]
@@ -511,32 +511,32 @@
               {
                 "group": "Introduction",
                 "pages": [
-                  "products/oss/pages/development/developer-instruction",
-                  "products/oss/pages/development/architecture"
+                  "docs/oss/development/developer-instruction",
+                  "docs/oss/development/architecture"
                 ]
               },
               {
                 "group": "Building",
                 "pages": [
-                  "products/oss/pages/development/build",
-                  "products/oss/pages/development/build-osx",
-                  "products/oss/pages/development/build-cross-osx",
-                  "products/oss/pages/development/build-cross-arm",
-                  "products/oss/pages/development/build-cross-riscv",
-                  "products/oss/pages/development/build-cross-s390x",
-                  "products/oss/pages/development/build-cross-loongarch"
+                  "docs/oss/development/build",
+                  "docs/oss/development/build-osx",
+                  "docs/oss/development/build-cross-osx",
+                  "docs/oss/development/build-cross-arm",
+                  "docs/oss/development/build-cross-riscv",
+                  "docs/oss/development/build-cross-s390x",
+                  "docs/oss/development/build-cross-loongarch"
                 ]
               },
               {
                 "group": "Contributing",
                 "pages": [
-                  "products/oss/pages/development/tests",
-                  "products/oss/pages/development/continuous-integration",
-                  "products/oss/pages/development/contrib",
-                  "products/oss/pages/development/style",
-                  "products/oss/pages/development/building_and_benchmarking_deflate_qpl",
-                  "products/oss/pages/development/integrating_rust_libraries",
-                  "products/oss/pages/development/profile-guided-optimization"
+                  "docs/oss/development/tests",
+                  "docs/oss/development/continuous-integration",
+                  "docs/oss/development/contrib",
+                  "docs/oss/development/style",
+                  "docs/oss/development/building_and_benchmarking_deflate_qpl",
+                  "docs/oss/development/integrating_rust_libraries",
+                  "docs/oss/development/profile-guided-optimization"
                 ]
               }
             ]
@@ -548,22 +548,22 @@
               {
                 "group": "Changelog",
                 "pages": [
-                  "products/oss/pages/changelogs/2025",
-                  "products/oss/pages/changelogs/2024",
-                  "products/oss/pages/changelogs/2023",
-                  "products/oss/pages/changelogs/2022",
-                  "products/oss/pages/changelogs/2021",
-                  "products/oss/pages/changelogs/2020",
-                  "products/oss/pages/changelogs/2019",
-                  "products/oss/pages/changelogs/2018",
-                  "products/oss/pages/changelogs/2017"
+                  "docs/oss/changelogs/2025",
+                  "docs/oss/changelogs/2024",
+                  "docs/oss/changelogs/2023",
+                  "docs/oss/changelogs/2022",
+                  "docs/oss/changelogs/2021",
+                  "docs/oss/changelogs/2020",
+                  "docs/oss/changelogs/2019",
+                  "docs/oss/changelogs/2018",
+                  "docs/oss/changelogs/2017"
                 ]
               },
               {
                 "group": "Other",
                 "pages": [
-                  "products/oss/pages/changelogs/security-changelog",
-                  "products/oss/pages/changelogs/roadmap"
+                  "docs/oss/changelogs/security-changelog",
+                  "docs/oss/changelogs/roadmap"
                 ]
               }
             ]
@@ -578,7 +578,7 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/clickpipes/pages/clickpipes_home"
+              "docs/clickpipes/home"
             ]
           },
           {
@@ -589,9 +589,9 @@
                 "group": "Object storage ClickPipes",
                 "expanded": false,
                 "pages": [
-                  "products/clickpipes/pages/cloud-object-stores/object-storage/01_create_clickpipe_for_object_storage",
-                  "products/clickpipes/pages/cloud-object-stores/object-storage/02_reference",
-                  "products/clickpipes/pages/cloud-object-stores/object-storage/03_faq"
+                  "docs/clickpipes/cloud-object-stores/object-storage/01_create_clickpipe_for_object_storage",
+                  "docs/clickpipes/cloud-object-stores/object-storage/02_reference",
+                  "docs/clickpipes/cloud-object-stores/object-storage/03_faq"
                 ]
               }
             ]
@@ -604,41 +604,41 @@
                 "group": "Postgres",
                 "expanded": false,
                 "pages": [
-                  "products/clickpipes/pages/database-datalake/postgres/index",
-                  "products/clickpipes/pages/database-datalake/postgres/deduplication",
-                  "products/clickpipes/pages/database-datalake/postgres/ordering_keys",
-                  "products/clickpipes/pages/database-datalake/postgres/toast",
-                  "products/clickpipes/pages/database-datalake/postgres/connecting-to-postgresql",
-                  "products/clickpipes/pages/database-datalake/postgres/inserting-data",
-                  "products/clickpipes/pages/database-datalake/postgres/schema-changes",
-                  "products/clickpipes/pages/database-datalake/postgres/faq",
-                  "products/clickpipes/pages/database-datalake/postgres/parallel_initial_load",
-                  "products/clickpipes/pages/database-datalake/postgres/lifecycle",
+                  "docs/clickpipes/database-datalake/postgres/index",
+                  "docs/clickpipes/database-datalake/postgres/deduplication",
+                  "docs/clickpipes/database-datalake/postgres/ordering_keys",
+                  "docs/clickpipes/database-datalake/postgres/toast",
+                  "docs/clickpipes/database-datalake/postgres/connecting-to-postgresql",
+                  "docs/clickpipes/database-datalake/postgres/inserting-data",
+                  "docs/clickpipes/database-datalake/postgres/schema-changes",
+                  "docs/clickpipes/database-datalake/postgres/faq",
+                  "docs/clickpipes/database-datalake/postgres/parallel_initial_load",
+                  "docs/clickpipes/database-datalake/postgres/lifecycle",
                   {
                     "group": "Operations",
                     "pages": [
-                      "products/clickpipes/pages/database-datalake/postgres/add_table",
-                      "products/clickpipes/pages/database-datalake/postgres/pause_and_resume",
-                      "products/clickpipes/pages/database-datalake/postgres/remove_table",
-                      "products/clickpipes/pages/database-datalake/postgres/table_resync",
-                      "products/clickpipes/pages/database-datalake/postgres/resync",
-                      "products/clickpipes/pages/database-datalake/postgres/controlling_sync",
-                      "products/clickpipes/pages/database-datalake/postgres/scaling"
+                      "docs/clickpipes/database-datalake/postgres/add_table",
+                      "docs/clickpipes/database-datalake/postgres/pause_and_resume",
+                      "docs/clickpipes/database-datalake/postgres/remove_table",
+                      "docs/clickpipes/database-datalake/postgres/table_resync",
+                      "docs/clickpipes/database-datalake/postgres/resync",
+                      "docs/clickpipes/database-datalake/postgres/controlling_sync",
+                      "docs/clickpipes/database-datalake/postgres/scaling"
                     ]
                   },
                   {
                     "group": "Source",
                     "pages": [
-                      "products/clickpipes/pages/database-datalake/postgres/source/rds",
-                      "products/clickpipes/pages/database-datalake/postgres/source/aurora",
-                      "products/clickpipes/pages/database-datalake/postgres/source/supabase",
-                      "products/clickpipes/pages/database-datalake/postgres/source/google-cloudsql",
-                      "products/clickpipes/pages/database-datalake/postgres/source/azure-flexible-server-postgres",
-                      "products/clickpipes/pages/database-datalake/postgres/source/neon-postgres",
-                      "products/clickpipes/pages/database-datalake/postgres/source/crunchy-postgres",
-                      "products/clickpipes/pages/database-datalake/postgres/source/generic",
-                      "products/clickpipes/pages/database-datalake/postgres/source/timescale",
-                      "products/clickpipes/pages/database-datalake/postgres/source/planetscale"
+                      "docs/clickpipes/database-datalake/postgres/source/rds",
+                      "docs/clickpipes/database-datalake/postgres/source/aurora",
+                      "docs/clickpipes/database-datalake/postgres/source/supabase",
+                      "docs/clickpipes/database-datalake/postgres/source/google-cloudsql",
+                      "docs/clickpipes/database-datalake/postgres/source/azure-flexible-server-postgres",
+                      "docs/clickpipes/database-datalake/postgres/source/neon-postgres",
+                      "docs/clickpipes/database-datalake/postgres/source/crunchy-postgres",
+                      "docs/clickpipes/database-datalake/postgres/source/generic",
+                      "docs/clickpipes/database-datalake/postgres/source/timescale",
+                      "docs/clickpipes/database-datalake/postgres/source/planetscale"
                     ]
                   }
                 ]
@@ -647,26 +647,26 @@
                 "group": "MongoDB",
                 "expanded": false,
                 "pages": [
-                  "products/clickpipes/pages/database-datalake/mongodb/index",
-                  "products/clickpipes/pages/database-datalake/mongodb/datatypes",
-                  "products/clickpipes/pages/database-datalake/mongodb/quickstart",
-                  "products/clickpipes/pages/database-datalake/mongodb/lifecycle",
-                  "products/clickpipes/pages/database-datalake/mongodb/faq",
+                  "docs/clickpipes/database-datalake/mongodb/index",
+                  "docs/clickpipes/database-datalake/mongodb/datatypes",
+                  "docs/clickpipes/database-datalake/mongodb/quickstart",
+                  "docs/clickpipes/database-datalake/mongodb/lifecycle",
+                  "docs/clickpipes/database-datalake/mongodb/faq",
                   {
                     "group": "Operations",
                     "pages": [
-                      "products/clickpipes/pages/database-datalake/mongodb/add_table",
-                      "products/clickpipes/pages/database-datalake/mongodb/remove_table",
-                      "products/clickpipes/pages/database-datalake/mongodb/pause_and_resume",
-                      "products/clickpipes/pages/database-datalake/mongodb/table_resync",
-                      "products/clickpipes/pages/database-datalake/mongodb/resync"
+                      "docs/clickpipes/database-datalake/mongodb/add_table",
+                      "docs/clickpipes/database-datalake/mongodb/remove_table",
+                      "docs/clickpipes/database-datalake/mongodb/pause_and_resume",
+                      "docs/clickpipes/database-datalake/mongodb/table_resync",
+                      "docs/clickpipes/database-datalake/mongodb/resync"
                     ]
                   },
                   {
                     "group": "Source",
                     "pages": [
-                      "products/clickpipes/pages/database-datalake/mongodb/source/atlas",
-                      "products/clickpipes/pages/database-datalake/mongodb/source/generic"
+                      "docs/clickpipes/database-datalake/mongodb/source/atlas",
+                      "docs/clickpipes/database-datalake/mongodb/source/generic"
                     ]
                   }
                 ]
@@ -675,32 +675,32 @@
                 "group": "MySQL",
                 "expanded": false,
                 "pages": [
-                  "products/clickpipes/pages/database-datalake/mysql/index",
-                  "products/clickpipes/pages/database-datalake/mysql/faq",
-                  "products/clickpipes/pages/database-datalake/mysql/datatypes",
-                  "products/clickpipes/pages/database-datalake/mysql/parallel_initial_load",
-                  "products/clickpipes/pages/database-datalake/mysql/schema-changes",
-                  "products/clickpipes/pages/database-datalake/mysql/lifecycle",
+                  "docs/clickpipes/database-datalake/mysql/index",
+                  "docs/clickpipes/database-datalake/mysql/faq",
+                  "docs/clickpipes/database-datalake/mysql/datatypes",
+                  "docs/clickpipes/database-datalake/mysql/parallel_initial_load",
+                  "docs/clickpipes/database-datalake/mysql/schema-changes",
+                  "docs/clickpipes/database-datalake/mysql/lifecycle",
                   {
                     "group": "Operations",
                     "pages": [
-                      "products/clickpipes/pages/database-datalake/mysql/add_table",
-                      "products/clickpipes/pages/database-datalake/mysql/pause_and_resume",
-                      "products/clickpipes/pages/database-datalake/mysql/remove_table",
-                      "products/clickpipes/pages/database-datalake/mysql/table_resync",
-                      "products/clickpipes/pages/database-datalake/mysql/resync",
-                      "products/clickpipes/pages/database-datalake/mysql/controlling_sync"
+                      "docs/clickpipes/database-datalake/mysql/add_table",
+                      "docs/clickpipes/database-datalake/mysql/pause_and_resume",
+                      "docs/clickpipes/database-datalake/mysql/remove_table",
+                      "docs/clickpipes/database-datalake/mysql/table_resync",
+                      "docs/clickpipes/database-datalake/mysql/resync",
+                      "docs/clickpipes/database-datalake/mysql/controlling_sync"
                     ]
                   },
                   {
                     "group": "Source",
                     "pages": [
-                      "products/clickpipes/pages/database-datalake/mysql/source/rds",
-                      "products/clickpipes/pages/database-datalake/mysql/source/aurora",
-                      "products/clickpipes/pages/database-datalake/mysql/source/gcp",
-                      "products/clickpipes/pages/database-datalake/mysql/source/generic",
-                      "products/clickpipes/pages/database-datalake/mysql/source/rds_maria",
-                      "products/clickpipes/pages/database-datalake/mysql/source/generic_maria"
+                      "docs/clickpipes/database-datalake/mysql/source/rds",
+                      "docs/clickpipes/database-datalake/mysql/source/aurora",
+                      "docs/clickpipes/database-datalake/mysql/source/gcp",
+                      "docs/clickpipes/database-datalake/mysql/source/generic",
+                      "docs/clickpipes/database-datalake/mysql/source/rds_maria",
+                      "docs/clickpipes/database-datalake/mysql/source/generic_maria"
                     ]
                   }
                 ]
@@ -715,13 +715,13 @@
                 "group": "AWS",
                 "expanded": false,
                 "pages": [
-                  "products/clickpipes/pages/amazon-databases/kinesis",
-                  "products/clickpipes/pages/amazon-databases/secure-kinesis",
-                  "products/clickpipes/pages/amazon-databases/secure-rds",
-                  "products/clickpipes/pages/amazon-databases/aws-privatelink"
+                  "docs/clickpipes/amazon-databases/kinesis",
+                  "docs/clickpipes/amazon-databases/secure-kinesis",
+                  "docs/clickpipes/amazon-databases/secure-rds",
+                  "docs/clickpipes/amazon-databases/aws-privatelink"
                 ]
               },
-              "products/clickpipes/pages/amazon-databases/dynamodb"
+              "docs/clickpipes/amazon-databases/dynamodb"
             ]
           },
           {
@@ -732,11 +732,11 @@
                 "group": "Kafka ClickPipes",
                 "expanded": false,
                 "pages": [
-                  "products/clickpipes/pages/event-streams/kafka/01_create-kafka-clickpipe",
-                  "products/clickpipes/pages/event-streams/kafka/02_schema-registries",
-                  "products/clickpipes/pages/event-streams/kafka/03_reference",
-                  "products/clickpipes/pages/event-streams/kafka/04_best_practices",
-                  "products/clickpipes/pages/event-streams/kafka/05_faq"
+                  "docs/clickpipes/event-streams/kafka/01_create-kafka-clickpipe",
+                  "docs/clickpipes/event-streams/kafka/02_schema-registries",
+                  "docs/clickpipes/event-streams/kafka/03_reference",
+                  "docs/clickpipes/event-streams/kafka/04_best_practices",
+                  "docs/clickpipes/event-streams/kafka/05_faq"
                 ]
               }
             ]
@@ -751,7 +751,7 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/clickstack/pages/clickstack_home"
+              "docs/clickstack/home"
             ]
           },
           {
@@ -761,32 +761,32 @@
               {
                 "group": "Introduction",
                 "pages": [
-                  "products/clickstack/pages/overview",
-                  "products/clickstack/pages/getting-started"
+                  "docs/clickstack/overview",
+                  "docs/clickstack/getting-started"
                 ]
               },
               {
                 "group": "Sample datasets",
                 "pages": [
-                  "products/clickstack/pages/example-datasets/sample-data",
-                  "products/clickstack/pages/example-datasets/kubernetes",
-                  "products/clickstack/pages/example-datasets/local-data",
-                  "products/clickstack/pages/example-datasets/remote-demo-data"
+                  "docs/clickstack/example-datasets/sample-data",
+                  "docs/clickstack/example-datasets/kubernetes",
+                  "docs/clickstack/example-datasets/local-data",
+                  "docs/clickstack/example-datasets/remote-demo-data"
                 ]
               },
               {
                 "group": "Architecture",
                 "pages": [
-                  "products/clickstack/pages/architecture"
+                  "docs/clickstack/architecture"
                 ]
               },
               {
                 "group": "Integration quick start",
                 "pages": [
-                  "products/clickstack/pages/integration-examples/nginx-logs",
-                  "products/clickstack/pages/integration-examples/nginx-traces",
-                  "products/clickstack/pages/integration-examples/redis-logs",
-                  "products/clickstack/pages/integration-examples/redis-metrics"
+                  "docs/clickstack/integration-examples/nginx-logs",
+                  "docs/clickstack/integration-examples/nginx-traces",
+                  "docs/clickstack/integration-examples/redis-logs",
+                  "docs/clickstack/integration-examples/redis-metrics"
                 ]
               }
             ]
@@ -798,19 +798,19 @@
               {
                 "group": "Deployment options",
                 "pages": [
-                  "products/clickstack/pages/deployment/all-in-one",
-                  "products/clickstack/pages/deployment/hyperdx-clickhouse-cloud",
-                  "products/clickstack/pages/deployment/helm",
-                  "products/clickstack/pages/deployment/docker-compose",
-                  "products/clickstack/pages/deployment/hyperdx-only",
-                  "products/clickstack/pages/deployment/local-mode-only"
+                  "docs/clickstack/deployment/all-in-one",
+                  "docs/clickstack/deployment/hyperdx-clickhouse-cloud",
+                  "docs/clickstack/deployment/helm",
+                  "docs/clickstack/deployment/docker-compose",
+                  "docs/clickstack/deployment/hyperdx-only",
+                  "docs/clickstack/deployment/local-mode-only"
                 ]
               },
-              "products/clickstack/pages/search",
-              "products/clickstack/pages/dashboards",
-              "products/clickstack/pages/event_patterns",
-              "products/clickstack/pages/event_deltas",
-              "products/clickstack/pages/alerts"
+              "docs/clickstack/search",
+              "docs/clickstack/dashboards",
+              "docs/clickstack/event_patterns",
+              "docs/clickstack/event_deltas",
+              "docs/clickstack/alerts"
             ]
           },
           {
@@ -820,7 +820,7 @@
               {
                 "group": "Ingesting data",
                 "pages": [
-                  "products/clickstack/pages/ingesting-data/overview"
+                  "docs/clickstack/ingesting-data/overview"
                 ]
               },
               {
@@ -829,19 +829,19 @@
                   {
                     "group": "Migrating from Elastic",
                     "pages": [
-                      "products/clickstack/pages/migration/elastic/intro",
-                      "products/clickstack/pages/migration/elastic/concepts",
-                      "products/clickstack/pages/migration/elastic/types",
-                      "products/clickstack/pages/migration/elastic/search",
-                      "products/clickstack/pages/migration/elastic/migrating-data",
-                      "products/clickstack/pages/migration/elastic/migrating-agents",
-                      "products/clickstack/pages/migration/elastic/migrating-sdks"
+                      "docs/clickstack/migration/elastic/intro",
+                      "docs/clickstack/migration/elastic/concepts",
+                      "docs/clickstack/migration/elastic/types",
+                      "docs/clickstack/migration/elastic/search",
+                      "docs/clickstack/migration/elastic/migrating-data",
+                      "docs/clickstack/migration/elastic/migrating-agents",
+                      "docs/clickstack/migration/elastic/migrating-sdks"
                     ]
                   }
                 ]
               },
-              "products/clickstack/pages/production",
-              "products/clickstack/pages/ttl"
+              "docs/clickstack/production",
+              "docs/clickstack/ttl"
             ]
           },
           {
@@ -859,49 +859,49 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/chdb/pages/chdb_home"
+              "docs/chdb/home"
             ]
           },
           {
             "tab": "Get started",
             "icon": "rocket",
             "pages": [
-              "products/chdb/pages/index",
-              "products/chdb/pages/getting-started"
+              "docs/chdb/index",
+              "docs/chdb/getting-started"
             ]
           },
           {
             "tab": "Language integrations",
             "icon": "laptop-code",
             "pages": [
-              "products/chdb/pages/install/python",
-              "products/chdb/pages/install/nodejs",
-              "products/chdb/pages/install/go",
-              "products/chdb/pages/install/rust",
-              "products/chdb/pages/install/bun",
-              "products/chdb/pages/install/c"
+              "docs/chdb/install/python",
+              "docs/chdb/install/nodejs",
+              "docs/chdb/install/go",
+              "docs/chdb/install/rust",
+              "docs/chdb/install/bun",
+              "docs/chdb/install/c"
             ]
           },
           {
             "tab": "Developer guides",
             "icon": "book",
             "pages": [
-              "products/chdb/pages/guides/jupysql",
-              "products/chdb/pages/guides/querying-pandas",
-              "products/chdb/pages/guides/querying-apache-arrow",
-              "products/chdb/pages/guides/querying-s3-bucket",
-              "products/chdb/pages/guides/querying-parquet",
-              "products/chdb/pages/guides/query-remote-clickhouse",
-              "products/chdb/pages/guides/clickhouse-local"
+              "docs/chdb/guides/jupysql",
+              "docs/chdb/guides/querying-pandas",
+              "docs/chdb/guides/querying-apache-arrow",
+              "docs/chdb/guides/querying-s3-bucket",
+              "docs/chdb/guides/querying-parquet",
+              "docs/chdb/guides/query-remote-clickhouse",
+              "docs/chdb/guides/clickhouse-local"
             ]
           },
           {
             "tab": "Technical reference",
             "icon": "gears",
             "pages": [
-              "products/chdb/pages/reference/data-formats",
-              "products/chdb/pages/reference/sql-reference",
-              "products/chdb/pages/api/python"
+              "docs/chdb/reference/data-formats",
+              "docs/chdb/reference/sql-reference",
+              "docs/chdb/api/python"
             ]
           }
         ]
@@ -914,44 +914,44 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/integrations/pages/integrations_home"
+              "docs/integrations/home"
             ]
           },
           {
             "tab": "Language clients",
             "icon": "laptop-code",
             "pages": [
-              "products/integrations/pages/language-clients/go/index",
-              "products/integrations/pages/language-clients/js",
+              "docs/integrations/language-clients/go/index",
+              "docs/integrations/language-clients/js",
               {
                 "group": "Java",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/language-clients/java/client"
+                  "docs/integrations/language-clients/java/client"
                 ]
               },
               {
                 "group": "Python",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/language-clients/python/index",
-                  "products/integrations/pages/language-clients/python/driver-api",
-                  "products/integrations/pages/language-clients/python/additional-options",
-                  "products/integrations/pages/language-clients/python/advanced-querying",
-                  "products/integrations/pages/language-clients/python/advanced-inserting",
-                  "products/integrations/pages/language-clients/python/advanced-usage",
-                  "products/integrations/pages/language-clients/python/sqlalchemy"
+                  "docs/integrations/language-clients/python/index",
+                  "docs/integrations/language-clients/python/driver-api",
+                  "docs/integrations/language-clients/python/additional-options",
+                  "docs/integrations/language-clients/python/advanced-querying",
+                  "docs/integrations/language-clients/python/advanced-inserting",
+                  "docs/integrations/language-clients/python/advanced-usage",
+                  "docs/integrations/language-clients/python/sqlalchemy"
                 ]
               },
-              "products/integrations/pages/language-clients/rust",
-              "products/integrations/pages/language-clients/csharp",
-              "products/integrations/pages/language-clients/cpp",
+              "docs/integrations/language-clients/rust",
+              "docs/integrations/language-clients/csharp",
+              "docs/integrations/language-clients/cpp",
               {
                 "group": "Third-party clients",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/language-clients/third-party/moose-olap",
-                  "products/integrations/pages/language-clients/third-party/client-libraries"
+                  "docs/integrations/language-clients/third-party/moose-olap",
+                  "docs/integrations/language-clients/third-party/client-libraries"
                 ]
               }
             ]
@@ -964,28 +964,28 @@
                 "group": "AWS",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/data-ingestion/AWS/integrating-s3-with-clickhouse",
-                  "products/integrations/pages/data-ingestion/AWS/performance",
-                  "products/integrations/pages/data-ingestion/AWS/glue"
+                  "docs/integrations/data-ingestion/AWS/integrating-s3-with-clickhouse",
+                  "docs/integrations/data-ingestion/AWS/performance",
+                  "docs/integrations/data-ingestion/AWS/glue"
                 ]
               },
               {
                 "group": "GCP",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/data-ingestion/GCP/index",
+                  "docs/integrations/data-ingestion/GCP/index",
                   {
                     "group": "Google Dataflow",
                     "expanded": false,
                     "pages": [
-                      "products/integrations/pages/data-ingestion/GCP/google-dataflow/dataflow",
-                      "products/integrations/pages/data-ingestion/GCP/google-dataflow/java-runner",
-                      "products/integrations/pages/data-ingestion/GCP/google-dataflow/templates",
+                      "docs/integrations/data-ingestion/GCP/google-dataflow/dataflow",
+                      "docs/integrations/data-ingestion/GCP/google-dataflow/java-runner",
+                      "docs/integrations/data-ingestion/GCP/google-dataflow/templates",
                       {
                         "group": "Dataflow templates",
                         "expanded": false,
                         "pages": [
-                          "products/integrations/pages/data-ingestion/GCP/google-dataflow/templates/bigquery-to-clickhouse"
+                          "docs/integrations/data-ingestion/GCP/google-dataflow/templates/bigquery-to-clickhouse"
                         ]
                       }
                     ]
@@ -1000,62 +1000,62 @@
                     "group": "Azure Data Factory",
                     "expanded": false,
                     "pages": [
-                      "products/integrations/pages/data-ingestion/azure/azure-data-factory/overview",
-                      "products/integrations/pages/data-ingestion/azure/azure-data-factory/using_azureblobstorage",
-                      "products/integrations/pages/data-ingestion/azure/azure-data-factory/using_http_interface"
+                      "docs/integrations/data-ingestion/azure/azure-data-factory/overview",
+                      "docs/integrations/data-ingestion/azure/azure-data-factory/using_azureblobstorage",
+                      "docs/integrations/data-ingestion/azure/azure-data-factory/using_http_interface"
                     ]
                   },
-                  "products/integrations/pages/data-ingestion/azure/azure-synapse"
+                  "docs/integrations/data-ingestion/azure/azure-synapse"
                 ]
               },
               {
                 "group": "Standalone Integrations",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/data-ingestion/etl-tools/airbyte-and-clickhouse",
-                  "products/integrations/pages/data-ingestion/etl-tools/apache-beam",
+                  "docs/integrations/data-ingestion/etl-tools/airbyte-and-clickhouse",
+                  "docs/integrations/data-ingestion/etl-tools/apache-beam",
                   {
                     "group": "Apache Spark",
                     "expanded": false,
                     "pages": [
-                      "products/integrations/pages/data-ingestion/apache-spark/index",
-                      "products/integrations/pages/data-ingestion/apache-spark/spark-jdbc",
-                      "products/integrations/pages/data-ingestion/apache-spark/spark-native-connector"
+                      "docs/integrations/data-ingestion/apache-spark/index",
+                      "docs/integrations/data-ingestion/apache-spark/spark-jdbc",
+                      "docs/integrations/data-ingestion/apache-spark/spark-native-connector"
                     ]
                   },
-                  "products/integrations/pages/data-ingestion/etl-tools/bladepipe-and-clickhouse",
+                  "docs/integrations/data-ingestion/etl-tools/bladepipe-and-clickhouse",
                   {
                     "group": "dbt",
                     "expanded": false,
                     "pages": [
-                      "products/integrations/pages/data-ingestion/etl-tools/dbt/index",
-                      "products/integrations/pages/data-ingestion/etl-tools/dbt/features-and-configurations"
+                      "docs/integrations/data-ingestion/etl-tools/dbt/index",
+                      "docs/integrations/data-ingestion/etl-tools/dbt/features-and-configurations"
                     ]
                   },
-                  "products/integrations/pages/data-ingestion/emqx/index",
-                  "products/integrations/pages/data-ingestion/jdbc-with-clickhouse",
+                  "docs/integrations/data-ingestion/emqx/index",
+                  "docs/integrations/data-ingestion/jdbc-with-clickhouse",
                   {
                     "group": "Kafka",
                     "expanded": false,
                     "pages": [
-                      "products/integrations/pages/data-ingestion/kafka/index",
-                      "products/integrations/pages/data-ingestion/kafka/kafka-clickhouse-connect-sink",
-                      "products/integrations/pages/data-ingestion/kafka/confluent/confluent-cloud",
-                      "products/integrations/pages/data-ingestion/kafka/confluent/custom-connector",
-                      "products/integrations/pages/data-ingestion/kafka/msk/index",
-                      "products/integrations/pages/data-ingestion/kafka/kafka-vector",
-                      "products/integrations/pages/data-ingestion/kafka/kafka-table-engine",
-                      "products/integrations/pages/data-ingestion/kafka/confluent/index",
-                      "products/integrations/pages/data-ingestion/kafka/confluent/kafka-connect-http",
-                      "products/integrations/pages/data-ingestion/kafka/kafka-connect-jdbc",
-                      "products/integrations/pages/data-ingestion/kafka/kafka-table-engine-named-collections"
+                      "docs/integrations/data-ingestion/kafka/index",
+                      "docs/integrations/data-ingestion/kafka/kafka-clickhouse-connect-sink",
+                      "docs/integrations/data-ingestion/kafka/confluent/confluent-cloud",
+                      "docs/integrations/data-ingestion/kafka/confluent/custom-connector",
+                      "docs/integrations/data-ingestion/kafka/msk/index",
+                      "docs/integrations/data-ingestion/kafka/kafka-vector",
+                      "docs/integrations/data-ingestion/kafka/kafka-table-engine",
+                      "docs/integrations/data-ingestion/kafka/confluent/index",
+                      "docs/integrations/data-ingestion/kafka/confluent/kafka-connect-http",
+                      "docs/integrations/data-ingestion/kafka/kafka-connect-jdbc",
+                      "docs/integrations/data-ingestion/kafka/kafka-table-engine-named-collections"
                     ]
                   },
-                  "products/integrations/pages/data-ingestion/s3-minio",
-                  "products/integrations/pages/data-ingestion/mysql",
-                  "products/integrations/pages/data-ingestion/etl-tools/nifi-and-clickhouse",
-                  "products/integrations/pages/data-ingestion/postgresql/connecting-to-postgresql",
-                  "products/integrations/pages/data-ingestion/etl-tools/vector-to-clickhouse"
+                  "docs/integrations/data-ingestion/s3-minio",
+                  "docs/integrations/data-ingestion/mysql",
+                  "docs/integrations/data-ingestion/etl-tools/nifi-and-clickhouse",
+                  "docs/integrations/data-ingestion/postgresql/connecting-to-postgresql",
+                  "docs/integrations/data-ingestion/etl-tools/vector-to-clickhouse"
                 ]
               }
             ]
@@ -1067,25 +1067,25 @@
               {
                 "group": "ClickHouse integrations",
                 "pages": [
-                  "products/integrations/pages/data-visualization/clickhouse/powerbi-and-clickhouse",
-                  "products/integrations/pages/data-visualization/clickhouse/splunk-and-clickhouse",
-                  "products/integrations/pages/data-visualization/clickhouse/quicksight-and-clickhouse",
-                  "products/integrations/pages/data-visualization/clickhouse/superset-and-clickhouse",
+                  "docs/integrations/data-visualization/clickhouse/powerbi-and-clickhouse",
+                  "docs/integrations/data-visualization/clickhouse/splunk-and-clickhouse",
+                  "docs/integrations/data-visualization/clickhouse/quicksight-and-clickhouse",
+                  "docs/integrations/data-visualization/clickhouse/superset-and-clickhouse",
                   {
                     "group": "Tableau",
                     "expanded": false,
                     "pages": [
-                      "products/integrations/pages/data-visualization/clickhouse/tableau/tableau-and-clickhouse",
-                      "products/integrations/pages/data-visualization/clickhouse/tableau/tableau-online-and-clickhouse",
-                      "products/integrations/pages/data-visualization/clickhouse/tableau/tableau-connection-tips",
-                      "products/integrations/pages/data-visualization/clickhouse/tableau/tableau-analysis-tips",
+                      "docs/integrations/data-visualization/clickhouse/tableau/tableau-and-clickhouse",
+                      "docs/integrations/data-visualization/clickhouse/tableau/tableau-online-and-clickhouse",
+                      "docs/integrations/data-visualization/clickhouse/tableau/tableau-connection-tips",
+                      "docs/integrations/data-visualization/clickhouse/tableau/tableau-analysis-tips",
                       {
                         "group": "Grafana",
                         "expanded": false,
                         "pages": [
-                          "products/integrations/pages/data-visualization/clickhouse/grafana/index",
-                          "products/integrations/pages/data-visualization/clickhouse/grafana/query-builder",
-                          "products/integrations/pages/data-visualization/clickhouse/grafana/config"
+                          "docs/integrations/data-visualization/clickhouse/grafana/index",
+                          "docs/integrations/data-visualization/clickhouse/grafana/query-builder",
+                          "docs/integrations/data-visualization/clickhouse/grafana/config"
                         ]
                       }
                     ]
@@ -1095,31 +1095,31 @@
               {
                 "group": "Partner integrations",
                 "pages": [
-                  "products/integrations/pages/data-visualization/partner/lightdash-and-clickhouse",
-                  "products/integrations/pages/data-visualization/partner/looker-and-clickhouse",
-                  "products/integrations/pages/data-visualization/partner/looker-studio-and-clickhouse",
-                  "products/integrations/pages/data-visualization/partner/metabase-and-clickhouse",
-                  "products/integrations/pages/data-visualization/partner/omni-and-clickhouse"
+                  "docs/integrations/data-visualization/partner/lightdash-and-clickhouse",
+                  "docs/integrations/data-visualization/partner/looker-and-clickhouse",
+                  "docs/integrations/data-visualization/partner/looker-studio-and-clickhouse",
+                  "docs/integrations/data-visualization/partner/metabase-and-clickhouse",
+                  "docs/integrations/data-visualization/partner/omni-and-clickhouse"
                 ]
               },
               {
                 "group": "Community integrations",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/data-visualization/community-integrations/astrato-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/chartbrew-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/databrain-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/deepnote",
-                  "products/integrations/pages/data-visualization/community-integrations/dot-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/draxlr-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/embeddable-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/explo-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/fabi-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/hashboard-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/luzmo-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/mitzu-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/rocketbi-and-clickhouse",
-                  "products/integrations/pages/data-visualization/community-integrations/zingdata-and-clickhouse"
+                  "docs/integrations/data-visualization/community-integrations/astrato-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/chartbrew-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/databrain-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/deepnote",
+                  "docs/integrations/data-visualization/community-integrations/dot-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/draxlr-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/embeddable-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/explo-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/fabi-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/hashboard-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/luzmo-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/mitzu-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/rocketbi-and-clickhouse",
+                  "docs/integrations/data-visualization/community-integrations/zingdata-and-clickhouse"
                 ]
               }
             ]
@@ -1128,13 +1128,13 @@
             "tab": "SQL clients",
             "icon": "database",
             "pages": [
-              "products/integrations/pages/data-integrations/sql-clients/datagrip",
-              "products/integrations/pages/data-integrations/sql-clients/dbeaver",
-              "products/integrations/pages/data-integrations/sql-clients/dbvisualizer",
-              "products/integrations/pages/data-integrations/sql-clients/jupysql",
-              "products/integrations/pages/data-integrations/sql-clients/qstudio",
-              "products/integrations/pages/data-integrations/sql-clients/tablum",
-              "products/integrations/pages/data-integrations/sql-clients/marimo"
+              "docs/integrations/data-integrations/sql-clients/datagrip",
+              "docs/integrations/data-integrations/sql-clients/dbeaver",
+              "docs/integrations/data-integrations/sql-clients/dbvisualizer",
+              "docs/integrations/data-integrations/sql-clients/jupysql",
+              "docs/integrations/data-integrations/sql-clients/qstudio",
+              "docs/integrations/data-integrations/sql-clients/tablum",
+              "docs/integrations/data-integrations/sql-clients/marimo"
             ]
           },
           {
@@ -1145,25 +1145,25 @@
                 "group": "Integrations",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/data-integrations/integrations/retool",
-                  "products/integrations/pages/data-integrations/integrations/easypanel",
-                  "products/integrations/pages/data-integrations/integrations/splunk"
+                  "docs/integrations/data-integrations/integrations/retool",
+                  "docs/integrations/data-integrations/integrations/easypanel",
+                  "docs/integrations/data-integrations/integrations/splunk"
                 ]
               },
               {
                 "group": "Interfaces",
                 "expanded": false,
                 "pages": [
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/http",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/native-clients-interfaces-index",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/jdbc",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/mysql",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/odbc",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/postgresql",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/prometheus",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/ssh",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/grpc",
-                  "products/integrations/pages/data-integrations/drivers-and-interfaces/arrowflight"
+                  "docs/integrations/data-integrations/drivers-and-interfaces/http",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/native-clients-interfaces-index",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/jdbc",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/mysql",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/odbc",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/postgresql",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/prometheus",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/ssh",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/grpc",
+                  "docs/integrations/data-integrations/drivers-and-interfaces/arrowflight"
                 ]
               }
             ]
@@ -1178,7 +1178,7 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/reference/reference_home"
+              "docs/reference/home"
             ]
           },
           {
@@ -1188,122 +1188,122 @@
               {
                 "group": "Syntax",
                 "pages": [
-                  "products/reference/syntax"
+                  "docs/reference/syntax"
                 ]
               },
               {
                 "group": "Statements",
                 "expanded": false,
                 "pages": [
-                  "products/reference/statements/index",
+                  "docs/reference/statements/index",
                   {
                     "group": "ALTER",
                     "expanded": false,
                     "pages": [
-                      "products/reference/statements/alter/index",
-                      "products/reference/statements/alter/apply-deleted-mask",
-                      "products/reference/statements/alter/column",
-                      "products/reference/statements/alter/comment",
-                      "products/reference/statements/alter/constraint",
-                      "products/reference/statements/alter/database-comment",
-                      "products/reference/statements/alter/delete",
-                      "products/reference/statements/alter/named-collection",
-                      "products/reference/statements/alter/order-by",
-                      "products/reference/statements/alter/partition",
-                      "products/reference/statements/alter/projection",
-                      "products/reference/statements/alter/quota",
-                      "products/reference/statements/alter/role",
-                      "products/reference/statements/alter/row-policy",
-                      "products/reference/statements/alter/sample-by",
-                      "products/reference/statements/alter/setting",
-                      "products/reference/statements/alter/settings-profile",
-                      "products/reference/statements/alter/skipping-index",
-                      "products/reference/statements/alter/statistics",
-                      "products/reference/statements/alter/ttl",
-                      "products/reference/statements/alter/update",
-                      "products/reference/statements/alter/user",
-                      "products/reference/statements/alter/view"
+                      "docs/reference/statements/alter/index",
+                      "docs/reference/statements/alter/apply-deleted-mask",
+                      "docs/reference/statements/alter/column",
+                      "docs/reference/statements/alter/comment",
+                      "docs/reference/statements/alter/constraint",
+                      "docs/reference/statements/alter/database-comment",
+                      "docs/reference/statements/alter/delete",
+                      "docs/reference/statements/alter/named-collection",
+                      "docs/reference/statements/alter/order-by",
+                      "docs/reference/statements/alter/partition",
+                      "docs/reference/statements/alter/projection",
+                      "docs/reference/statements/alter/quota",
+                      "docs/reference/statements/alter/role",
+                      "docs/reference/statements/alter/row-policy",
+                      "docs/reference/statements/alter/sample-by",
+                      "docs/reference/statements/alter/setting",
+                      "docs/reference/statements/alter/settings-profile",
+                      "docs/reference/statements/alter/skipping-index",
+                      "docs/reference/statements/alter/statistics",
+                      "docs/reference/statements/alter/ttl",
+                      "docs/reference/statements/alter/update",
+                      "docs/reference/statements/alter/user",
+                      "docs/reference/statements/alter/view"
                     ]
                   },
-                  "products/reference/statements/attach",
-                  "products/reference/statements/check-grant",
-                  "products/reference/statements/check-table",
+                  "docs/reference/statements/attach",
+                  "docs/reference/statements/check-grant",
+                  "docs/reference/statements/check-table",
                   {
                     "group": "CREATE",
                     "expanded": false,
                     "pages": [
-                      "products/reference/statements/create/index",
-                      "products/reference/statements/create/database",
-                      "products/reference/statements/create/dictionary",
-                      "products/reference/statements/create/function",
-                      "products/reference/statements/create/named-collection",
-                      "products/reference/statements/create/quota",
-                      "products/reference/statements/create/role",
-                      "products/reference/statements/create/row-policy",
-                      "products/reference/statements/create/settings-profile",
-                      "products/reference/statements/create/table",
-                      "products/reference/statements/create/user",
-                      "products/reference/statements/create/view"
+                      "docs/reference/statements/create/index",
+                      "docs/reference/statements/create/database",
+                      "docs/reference/statements/create/dictionary",
+                      "docs/reference/statements/create/function",
+                      "docs/reference/statements/create/named-collection",
+                      "docs/reference/statements/create/quota",
+                      "docs/reference/statements/create/role",
+                      "docs/reference/statements/create/row-policy",
+                      "docs/reference/statements/create/settings-profile",
+                      "docs/reference/statements/create/table",
+                      "docs/reference/statements/create/user",
+                      "docs/reference/statements/create/view"
                     ]
                   },
-                  "products/reference/statements/delete",
-                  "products/reference/statements/describe-table",
-                  "products/reference/statements/detach",
-                  "products/reference/statements/distributed-ddl",
-                  "products/reference/statements/drop",
-                  "products/reference/statements/exchange",
-                  "products/reference/statements/execute_as",
-                  "products/reference/statements/exists",
-                  "products/reference/statements/explain",
-                  "products/reference/statements/grant",
-                  "products/reference/statements/in",
-                  "products/reference/statements/insert-into",
-                  "products/reference/statements/kill",
-                  "products/reference/statements/move",
-                  "products/reference/statements/optimize",
-                  "products/reference/statements/parallel_with",
-                  "products/reference/statements/rename",
-                  "products/reference/statements/revoke",
+                  "docs/reference/statements/delete",
+                  "docs/reference/statements/describe-table",
+                  "docs/reference/statements/detach",
+                  "docs/reference/statements/distributed-ddl",
+                  "docs/reference/statements/drop",
+                  "docs/reference/statements/exchange",
+                  "docs/reference/statements/execute_as",
+                  "docs/reference/statements/exists",
+                  "docs/reference/statements/explain",
+                  "docs/reference/statements/grant",
+                  "docs/reference/statements/in",
+                  "docs/reference/statements/insert-into",
+                  "docs/reference/statements/kill",
+                  "docs/reference/statements/move",
+                  "docs/reference/statements/optimize",
+                  "docs/reference/statements/parallel_with",
+                  "docs/reference/statements/rename",
+                  "docs/reference/statements/revoke",
                   {
                     "group": "SELECT",
                     "expanded": false,
                     "pages": [
-                      "products/reference/statements/select/index",
-                      "products/reference/statements/select/all",
-                      "products/reference/statements/select/apply_modifier",
-                      "products/reference/statements/select/array-join",
-                      "products/reference/statements/select/distinct",
-                      "products/reference/statements/select/except",
-                      "products/reference/statements/select/except_modifier",
-                      "products/reference/statements/select/format",
-                      "products/reference/statements/select/from",
-                      "products/reference/statements/select/group-by",
-                      "products/reference/statements/select/having",
-                      "products/reference/statements/select/intersect",
-                      "products/reference/statements/select/into-outfile",
-                      "products/reference/statements/select/join",
-                      "products/reference/statements/select/limit-by",
-                      "products/reference/statements/select/limit",
-                      "products/reference/statements/select/offset",
-                      "products/reference/statements/select/order-by",
-                      "products/reference/statements/select/prewhere",
-                      "products/reference/statements/select/qualify",
-                      "products/reference/statements/select/replace_modifier",
-                      "products/reference/statements/select/sample",
-                      "products/reference/statements/select/union",
-                      "products/reference/statements/select/where",
-                      "products/reference/statements/select/with"
+                      "docs/reference/statements/select/index",
+                      "docs/reference/statements/select/all",
+                      "docs/reference/statements/select/apply_modifier",
+                      "docs/reference/statements/select/array-join",
+                      "docs/reference/statements/select/distinct",
+                      "docs/reference/statements/select/except",
+                      "docs/reference/statements/select/except_modifier",
+                      "docs/reference/statements/select/format",
+                      "docs/reference/statements/select/from",
+                      "docs/reference/statements/select/group-by",
+                      "docs/reference/statements/select/having",
+                      "docs/reference/statements/select/intersect",
+                      "docs/reference/statements/select/into-outfile",
+                      "docs/reference/statements/select/join",
+                      "docs/reference/statements/select/limit-by",
+                      "docs/reference/statements/select/limit",
+                      "docs/reference/statements/select/offset",
+                      "docs/reference/statements/select/order-by",
+                      "docs/reference/statements/select/prewhere",
+                      "docs/reference/statements/select/qualify",
+                      "docs/reference/statements/select/replace_modifier",
+                      "docs/reference/statements/select/sample",
+                      "docs/reference/statements/select/union",
+                      "docs/reference/statements/select/where",
+                      "docs/reference/statements/select/with"
                     ]
                   },
-                  "products/reference/statements/set-role",
-                  "products/reference/statements/set",
-                  "products/reference/statements/show",
-                  "products/reference/statements/system",
-                  "products/reference/statements/truncate",
-                  "products/reference/statements/undrop",
-                  "products/reference/statements/update",
-                  "products/reference/statements/use",
-                  "products/reference/statements/watch"
+                  "docs/reference/statements/set-role",
+                  "docs/reference/statements/set",
+                  "docs/reference/statements/show",
+                  "docs/reference/statements/system",
+                  "docs/reference/statements/truncate",
+                  "docs/reference/statements/undrop",
+                  "docs/reference/statements/update",
+                  "docs/reference/statements/use",
+                  "docs/reference/statements/watch"
                 ]
               }
             ]
@@ -1316,102 +1316,102 @@
                 "group": "Numeric types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/int-uint",
-                  "products/reference/data-types/float",
-                  "products/reference/data-types/decimal",
-                  "products/reference/data-types/boolean"
+                  "docs/reference/data-types/int-uint",
+                  "docs/reference/data-types/float",
+                  "docs/reference/data-types/decimal",
+                  "docs/reference/data-types/boolean"
                 ]
               },
               {
                 "group": "String types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/string",
-                  "products/reference/data-types/fixedstring"
+                  "docs/reference/data-types/string",
+                  "docs/reference/data-types/fixedstring"
                 ]
               },
               {
                 "group": "Date and time types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/date",
-                  "products/reference/data-types/date32",
-                  "products/reference/data-types/datetime",
-                  "products/reference/data-types/datetime64",
-                  "products/reference/data-types/time",
-                  "products/reference/data-types/time64"
+                  "docs/reference/data-types/date",
+                  "docs/reference/data-types/date32",
+                  "docs/reference/data-types/datetime",
+                  "docs/reference/data-types/datetime64",
+                  "docs/reference/data-types/time",
+                  "docs/reference/data-types/time64"
                 ]
               },
               {
                 "group": "Network types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/ipv4",
-                  "products/reference/data-types/ipv6"
+                  "docs/reference/data-types/ipv4",
+                  "docs/reference/data-types/ipv6"
                 ]
               },
               {
                 "group": "Composite types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/array",
-                  "products/reference/data-types/tuple",
-                  "products/reference/data-types/map",
-                  "products/reference/data-types/nested-data-structures/index"
+                  "docs/reference/data-types/array",
+                  "docs/reference/data-types/tuple",
+                  "docs/reference/data-types/map",
+                  "docs/reference/data-types/nested-data-structures/index"
                 ]
               },
               {
                 "group": "Semi-structured types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/newjson",
-                  "products/reference/data-types/json",
-                  "products/reference/data-types/dynamic",
-                  "products/reference/data-types/variant"
+                  "docs/reference/data-types/newjson",
+                  "docs/reference/data-types/json",
+                  "docs/reference/data-types/dynamic",
+                  "docs/reference/data-types/variant"
                 ]
               },
               {
                 "group": "Nullable and optional types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/nullable",
-                  "products/reference/data-types/lowcardinality"
+                  "docs/reference/data-types/nullable",
+                  "docs/reference/data-types/lowcardinality"
                 ]
               },
               {
                 "group": "Specialized types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/uuid",
-                  "products/reference/data-types/enum",
-                  "products/reference/data-types/geo",
-                  "products/reference/data-types/qbit",
-                  "products/reference/data-types/domains/index"
+                  "docs/reference/data-types/uuid",
+                  "docs/reference/data-types/enum",
+                  "docs/reference/data-types/geo",
+                  "docs/reference/data-types/qbit",
+                  "docs/reference/data-types/domains/index"
                 ]
               },
               {
                 "group": "Aggregate function types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/aggregatefunction",
-                  "products/reference/data-types/simpleaggregatefunction"
+                  "docs/reference/data-types/aggregatefunction",
+                  "docs/reference/data-types/simpleaggregatefunction"
                 ]
               },
               {
                 "group": "Special Data Types",
                 "expanded": false,
                 "pages": [
-                  "products/reference/data-types/special-data-types/index",
-                  "products/reference/data-types/special-data-types/expression",
-                  "products/reference/data-types/special-data-types/interval",
-                  "products/reference/data-types/special-data-types/nothing",
-                  "products/reference/data-types/special-data-types/set"
+                  "docs/reference/data-types/special-data-types/index",
+                  "docs/reference/data-types/special-data-types/expression",
+                  "docs/reference/data-types/special-data-types/interval",
+                  "docs/reference/data-types/special-data-types/nothing",
+                  "docs/reference/data-types/special-data-types/set"
                 ]
               },
               {
                 "group": "Binary encoding",
                 "pages": [
-                  "products/reference/data-types/data-types-binary-encoding"
+                  "docs/reference/data-types/data-types-binary-encoding"
                 ]
               }
             ]
@@ -1423,97 +1423,97 @@
               {
                 "group": "Engines Overview",
                 "pages": [
-                  "products/reference/engines/engines"
+                  "docs/reference/engines/engines"
                 ]
               },
               {
                 "group": "Table Engines",
                 "expanded": false,
                 "pages": [
-                  "products/reference/engines/table-engines/index",
+                  "docs/reference/engines/table-engines/index",
                   {
                     "group": "Integrations",
                     "expanded": false,
                     "pages": [
-                      "products/reference/engines/table-engines/integrations/index",
-                      "products/reference/engines/table-engines/integrations/ExternalDistributed",
-                      "products/reference/engines/table-engines/integrations/arrowflight",
-                      "products/reference/engines/table-engines/integrations/azure-queue",
-                      "products/reference/engines/table-engines/integrations/azureBlobStorage",
-                      "products/reference/engines/table-engines/integrations/deltalake",
-                      "products/reference/engines/table-engines/integrations/embedded-rocksdb",
-                      "products/reference/engines/table-engines/integrations/hdfs",
-                      "products/reference/engines/table-engines/integrations/hive",
-                      "products/reference/engines/table-engines/integrations/hudi",
-                      "products/reference/engines/table-engines/integrations/iceberg",
-                      "products/reference/engines/table-engines/integrations/jdbc",
-                      "products/reference/engines/table-engines/integrations/kafka",
-                      "products/reference/engines/table-engines/integrations/materialized-postgresql",
-                      "products/reference/engines/table-engines/integrations/mongodb",
-                      "products/reference/engines/table-engines/integrations/mysql",
-                      "products/reference/engines/table-engines/integrations/nats",
-                      "products/reference/engines/table-engines/integrations/odbc",
-                      "products/reference/engines/table-engines/integrations/postgresql",
-                      "products/reference/engines/table-engines/integrations/rabbitmq",
-                      "products/reference/engines/table-engines/integrations/redis",
-                      "products/reference/engines/table-engines/integrations/s3",
-                      "products/reference/engines/table-engines/integrations/s3queue",
-                      "products/reference/engines/table-engines/integrations/sqlite",
-                      "products/reference/engines/table-engines/integrations/time-series",
-                      "products/reference/engines/table-engines/integrations/ytsaurus"
+                      "docs/reference/engines/table-engines/integrations/index",
+                      "docs/reference/engines/table-engines/integrations/ExternalDistributed",
+                      "docs/reference/engines/table-engines/integrations/arrowflight",
+                      "docs/reference/engines/table-engines/integrations/azure-queue",
+                      "docs/reference/engines/table-engines/integrations/azureBlobStorage",
+                      "docs/reference/engines/table-engines/integrations/deltalake",
+                      "docs/reference/engines/table-engines/integrations/embedded-rocksdb",
+                      "docs/reference/engines/table-engines/integrations/hdfs",
+                      "docs/reference/engines/table-engines/integrations/hive",
+                      "docs/reference/engines/table-engines/integrations/hudi",
+                      "docs/reference/engines/table-engines/integrations/iceberg",
+                      "docs/reference/engines/table-engines/integrations/jdbc",
+                      "docs/reference/engines/table-engines/integrations/kafka",
+                      "docs/reference/engines/table-engines/integrations/materialized-postgresql",
+                      "docs/reference/engines/table-engines/integrations/mongodb",
+                      "docs/reference/engines/table-engines/integrations/mysql",
+                      "docs/reference/engines/table-engines/integrations/nats",
+                      "docs/reference/engines/table-engines/integrations/odbc",
+                      "docs/reference/engines/table-engines/integrations/postgresql",
+                      "docs/reference/engines/table-engines/integrations/rabbitmq",
+                      "docs/reference/engines/table-engines/integrations/redis",
+                      "docs/reference/engines/table-engines/integrations/s3",
+                      "docs/reference/engines/table-engines/integrations/s3queue",
+                      "docs/reference/engines/table-engines/integrations/sqlite",
+                      "docs/reference/engines/table-engines/integrations/time-series",
+                      "docs/reference/engines/table-engines/integrations/ytsaurus"
                     ]
                   },
                   {
                     "group": "Log Family",
                     "expanded": false,
                     "pages": [
-                      "products/reference/engines/table-engines/log-family/index",
-                      "products/reference/engines/table-engines/log-family/log",
-                      "products/reference/engines/table-engines/log-family/stripelog",
-                      "products/reference/engines/table-engines/log-family/tinylog"
+                      "docs/reference/engines/table-engines/log-family/index",
+                      "docs/reference/engines/table-engines/log-family/log",
+                      "docs/reference/engines/table-engines/log-family/stripelog",
+                      "docs/reference/engines/table-engines/log-family/tinylog"
                     ]
                   },
                   {
                     "group": "MergeTree Family",
                     "expanded": false,
                     "pages": [
-                      "products/reference/engines/table-engines/mergetree-family/index",
-                      "products/reference/engines/table-engines/mergetree-family/mergetree",
-                      "products/reference/engines/table-engines/mergetree-family/aggregatingmergetree",
-                      "products/reference/engines/table-engines/mergetree-family/annindexes",
-                      "products/reference/engines/table-engines/mergetree-family/coalescingmergetree",
-                      "products/reference/engines/table-engines/mergetree-family/collapsingmergetree",
-                      "products/reference/engines/table-engines/mergetree-family/custom-partitioning-key",
-                      "products/reference/engines/table-engines/mergetree-family/graphitemergetree",
-                      "products/reference/engines/table-engines/mergetree-family/invertedindexes",
-                      "products/reference/engines/table-engines/mergetree-family/replacingmergetree",
-                      "products/reference/engines/table-engines/mergetree-family/replication",
-                      "products/reference/engines/table-engines/mergetree-family/summingmergetree",
-                      "products/reference/engines/table-engines/mergetree-family/versionedcollapsingmergetree"
+                      "docs/reference/engines/table-engines/mergetree-family/index",
+                      "docs/reference/engines/table-engines/mergetree-family/mergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/aggregatingmergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/annindexes",
+                      "docs/reference/engines/table-engines/mergetree-family/coalescingmergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/collapsingmergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/custom-partitioning-key",
+                      "docs/reference/engines/table-engines/mergetree-family/graphitemergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/invertedindexes",
+                      "docs/reference/engines/table-engines/mergetree-family/replacingmergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/replication",
+                      "docs/reference/engines/table-engines/mergetree-family/summingmergetree",
+                      "docs/reference/engines/table-engines/mergetree-family/versionedcollapsingmergetree"
                     ]
                   },
                   {
                     "group": "Special",
                     "expanded": false,
                     "pages": [
-                      "products/reference/engines/table-engines/special/index",
-                      "products/reference/engines/table-engines/special/alias",
-                      "products/reference/engines/table-engines/special/buffer",
-                      "products/reference/engines/table-engines/special/dictionary",
-                      "products/reference/engines/table-engines/special/distributed",
-                      "products/reference/engines/table-engines/special/executable",
-                      "products/reference/engines/table-engines/special/external-data",
-                      "products/reference/engines/table-engines/special/file",
-                      "products/reference/engines/table-engines/special/filelog",
-                      "products/reference/engines/table-engines/special/generate",
-                      "products/reference/engines/table-engines/special/join",
-                      "products/reference/engines/table-engines/special/keepermap",
-                      "products/reference/engines/table-engines/special/memory",
-                      "products/reference/engines/table-engines/special/merge",
-                      "products/reference/engines/table-engines/special/null",
-                      "products/reference/engines/table-engines/special/set",
-                      "products/reference/engines/table-engines/special/url",
-                      "products/reference/engines/table-engines/special/view"
+                      "docs/reference/engines/table-engines/special/index",
+                      "docs/reference/engines/table-engines/special/alias",
+                      "docs/reference/engines/table-engines/special/buffer",
+                      "docs/reference/engines/table-engines/special/dictionary",
+                      "docs/reference/engines/table-engines/special/distributed",
+                      "docs/reference/engines/table-engines/special/executable",
+                      "docs/reference/engines/table-engines/special/external-data",
+                      "docs/reference/engines/table-engines/special/file",
+                      "docs/reference/engines/table-engines/special/filelog",
+                      "docs/reference/engines/table-engines/special/generate",
+                      "docs/reference/engines/table-engines/special/join",
+                      "docs/reference/engines/table-engines/special/keepermap",
+                      "docs/reference/engines/table-engines/special/memory",
+                      "docs/reference/engines/table-engines/special/merge",
+                      "docs/reference/engines/table-engines/special/null",
+                      "docs/reference/engines/table-engines/special/set",
+                      "docs/reference/engines/table-engines/special/url",
+                      "docs/reference/engines/table-engines/special/view"
                     ]
                   }
                 ]
@@ -1522,17 +1522,17 @@
                 "group": "Database Engines",
                 "expanded": false,
                 "pages": [
-                  "products/reference/engines/database-engines/index",
-                  "products/reference/engines/database-engines/atomic",
-                  "products/reference/engines/database-engines/backup",
-                  "products/reference/engines/database-engines/datalake",
-                  "products/reference/engines/database-engines/lazy",
-                  "products/reference/engines/database-engines/materialized-postgresql",
-                  "products/reference/engines/database-engines/mysql",
-                  "products/reference/engines/database-engines/postgresql",
-                  "products/reference/engines/database-engines/replicated",
-                  "products/reference/engines/database-engines/shared",
-                  "products/reference/engines/database-engines/sqlite"
+                  "docs/reference/engines/database-engines/index",
+                  "docs/reference/engines/database-engines/atomic",
+                  "docs/reference/engines/database-engines/backup",
+                  "docs/reference/engines/database-engines/datalake",
+                  "docs/reference/engines/database-engines/lazy",
+                  "docs/reference/engines/database-engines/materialized-postgresql",
+                  "docs/reference/engines/database-engines/mysql",
+                  "docs/reference/engines/database-engines/postgresql",
+                  "docs/reference/engines/database-engines/replicated",
+                  "docs/reference/engines/database-engines/shared",
+                  "docs/reference/engines/database-engines/sqlite"
                 ]
               }
             ]
@@ -1545,210 +1545,210 @@
                 "group": "Regular functions",
                 "expanded": false,
                 "pages": [
-                  "products/reference/functions/regular-functions/overview",
-                  "products/reference/functions/regular-functions/arithmetic-functions",
-                  "products/reference/functions/regular-functions/array-functions",
-                  "products/reference/functions/regular-functions/array-join",
-                  "products/reference/functions/regular-functions/bit-functions",
-                  "products/reference/functions/regular-functions/bitmap-functions",
-                  "products/reference/functions/regular-functions/comparison-functions",
-                  "products/reference/functions/regular-functions/conditional-functions",
-                  "products/reference/functions/regular-functions/date-time-functions",
-                  "products/reference/functions/regular-functions/distance-functions",
-                  "products/reference/functions/regular-functions/embedded-dict-functions",
-                  "products/reference/functions/regular-functions/encoding-functions",
-                  "products/reference/functions/regular-functions/encryption-functions",
-                  "products/reference/functions/regular-functions/ext-dict-functions",
-                  "products/reference/functions/regular-functions/files",
-                  "products/reference/functions/regular-functions/financial-functions",
-                  "products/reference/functions/regular-functions/functions-for-nulls",
+                  "docs/reference/functions/regular-functions/overview",
+                  "docs/reference/functions/regular-functions/arithmetic-functions",
+                  "docs/reference/functions/regular-functions/array-functions",
+                  "docs/reference/functions/regular-functions/array-join",
+                  "docs/reference/functions/regular-functions/bit-functions",
+                  "docs/reference/functions/regular-functions/bitmap-functions",
+                  "docs/reference/functions/regular-functions/comparison-functions",
+                  "docs/reference/functions/regular-functions/conditional-functions",
+                  "docs/reference/functions/regular-functions/date-time-functions",
+                  "docs/reference/functions/regular-functions/distance-functions",
+                  "docs/reference/functions/regular-functions/embedded-dict-functions",
+                  "docs/reference/functions/regular-functions/encoding-functions",
+                  "docs/reference/functions/regular-functions/encryption-functions",
+                  "docs/reference/functions/regular-functions/ext-dict-functions",
+                  "docs/reference/functions/regular-functions/files",
+                  "docs/reference/functions/regular-functions/financial-functions",
+                  "docs/reference/functions/regular-functions/functions-for-nulls",
                   {
                     "group": "Geo",
                     "expanded": false,
                     "pages": [
-                      "products/reference/functions/regular-functions/geo/index",
-                      "products/reference/functions/regular-functions/geo/coordinates",
-                      "products/reference/functions/regular-functions/geo/geohash",
-                      "products/reference/functions/regular-functions/geo/h3",
-                      "products/reference/functions/regular-functions/geo/polygon",
-                      "products/reference/functions/regular-functions/geo/s2",
-                      "products/reference/functions/regular-functions/geo/svg"
+                      "docs/reference/functions/regular-functions/geo/index",
+                      "docs/reference/functions/regular-functions/geo/coordinates",
+                      "docs/reference/functions/regular-functions/geo/geohash",
+                      "docs/reference/functions/regular-functions/geo/h3",
+                      "docs/reference/functions/regular-functions/geo/polygon",
+                      "docs/reference/functions/regular-functions/geo/s2",
+                      "docs/reference/functions/regular-functions/geo/svg"
                     ]
                   },
-                  "products/reference/functions/regular-functions/hash-functions",
-                  "products/reference/functions/regular-functions/in-functions",
-                  "products/reference/functions/regular-functions/introspection",
-                  "products/reference/functions/regular-functions/ip-address-functions",
-                  "products/reference/functions/regular-functions/json-functions",
-                  "products/reference/functions/regular-functions/logical-functions",
-                  "products/reference/functions/regular-functions/machine-learning-functions",
-                  "products/reference/functions/regular-functions/math-functions",
-                  "products/reference/functions/regular-functions/nlp-functions",
-                  "products/reference/functions/regular-functions/numeric-indexed-vector-functions",
-                  "products/reference/functions/regular-functions/other-functions",
-                  "products/reference/functions/regular-functions/random-functions",
-                  "products/reference/functions/regular-functions/regular-functions-index",
-                  "products/reference/functions/regular-functions/rounding-functions",
-                  "products/reference/functions/regular-functions/splitting-merging-functions",
-                  "products/reference/functions/regular-functions/string-functions",
-                  "products/reference/functions/regular-functions/string-replace-functions",
-                  "products/reference/functions/regular-functions/string-search-functions",
-                  "products/reference/functions/regular-functions/time-series-functions",
-                  "products/reference/functions/regular-functions/time-window-functions",
-                  "products/reference/functions/regular-functions/tuple-functions",
-                  "products/reference/functions/regular-functions/tuple-map-functions",
-                  "products/reference/functions/regular-functions/type-conversion-functions",
-                  "products/reference/functions/regular-functions/ulid-functions",
-                  "products/reference/functions/regular-functions/uniqtheta-functions",
-                  "products/reference/functions/regular-functions/url-functions",
-                  "products/reference/functions/regular-functions/uuid-functions"
+                  "docs/reference/functions/regular-functions/hash-functions",
+                  "docs/reference/functions/regular-functions/in-functions",
+                  "docs/reference/functions/regular-functions/introspection",
+                  "docs/reference/functions/regular-functions/ip-address-functions",
+                  "docs/reference/functions/regular-functions/json-functions",
+                  "docs/reference/functions/regular-functions/logical-functions",
+                  "docs/reference/functions/regular-functions/machine-learning-functions",
+                  "docs/reference/functions/regular-functions/math-functions",
+                  "docs/reference/functions/regular-functions/nlp-functions",
+                  "docs/reference/functions/regular-functions/numeric-indexed-vector-functions",
+                  "docs/reference/functions/regular-functions/other-functions",
+                  "docs/reference/functions/regular-functions/random-functions",
+                  "docs/reference/functions/regular-functions/regular-functions-index",
+                  "docs/reference/functions/regular-functions/rounding-functions",
+                  "docs/reference/functions/regular-functions/splitting-merging-functions",
+                  "docs/reference/functions/regular-functions/string-functions",
+                  "docs/reference/functions/regular-functions/string-replace-functions",
+                  "docs/reference/functions/regular-functions/string-search-functions",
+                  "docs/reference/functions/regular-functions/time-series-functions",
+                  "docs/reference/functions/regular-functions/time-window-functions",
+                  "docs/reference/functions/regular-functions/tuple-functions",
+                  "docs/reference/functions/regular-functions/tuple-map-functions",
+                  "docs/reference/functions/regular-functions/type-conversion-functions",
+                  "docs/reference/functions/regular-functions/ulid-functions",
+                  "docs/reference/functions/regular-functions/uniqtheta-functions",
+                  "docs/reference/functions/regular-functions/url-functions",
+                  "docs/reference/functions/regular-functions/uuid-functions"
                 ]
               },
               {
                 "group": "Aggregate Functions",
                 "expanded": false,
                 "pages": [
-                  "products/reference/functions/aggregate-functions/index",
-                  "products/reference/functions/aggregate-functions/combinators",
-                  "products/reference/functions/aggregate-functions/grouping_function",
-                  "products/reference/functions/aggregate-functions/parametric-functions",
+                  "docs/reference/functions/aggregate-functions/index",
+                  "docs/reference/functions/aggregate-functions/combinators",
+                  "docs/reference/functions/aggregate-functions/grouping_function",
+                  "docs/reference/functions/aggregate-functions/parametric-functions",
                   {
                     "group": "Reference",
                     "expanded": false,
                     "pages": [
-                      "products/reference/functions/aggregate-functions/reference/index",
-                      "products/reference/functions/aggregate-functions/reference/aggthrow",
-                      "products/reference/functions/aggregate-functions/reference/analysis_of_variance",
-                      "products/reference/functions/aggregate-functions/reference/any",
-                      "products/reference/functions/aggregate-functions/reference/anyheavy",
-                      "products/reference/functions/aggregate-functions/reference/anylast",
-                      "products/reference/functions/aggregate-functions/reference/approxtopk",
-                      "products/reference/functions/aggregate-functions/reference/approxtopsum",
-                      "products/reference/functions/aggregate-functions/reference/argmax",
-                      "products/reference/functions/aggregate-functions/reference/argmin",
-                      "products/reference/functions/aggregate-functions/reference/avg",
-                      "products/reference/functions/aggregate-functions/reference/avgweighted",
-                      "products/reference/functions/aggregate-functions/reference/boundrat",
-                      "products/reference/functions/aggregate-functions/reference/categoricalinformationvalue",
-                      "products/reference/functions/aggregate-functions/reference/contingency",
-                      "products/reference/functions/aggregate-functions/reference/corr",
-                      "products/reference/functions/aggregate-functions/reference/corrmatrix",
-                      "products/reference/functions/aggregate-functions/reference/corrstable",
-                      "products/reference/functions/aggregate-functions/reference/count",
-                      "products/reference/functions/aggregate-functions/reference/covarpop",
-                      "products/reference/functions/aggregate-functions/reference/covarpopmatrix",
-                      "products/reference/functions/aggregate-functions/reference/covarpopstable",
-                      "products/reference/functions/aggregate-functions/reference/covarsamp",
-                      "products/reference/functions/aggregate-functions/reference/covarsampmatrix",
-                      "products/reference/functions/aggregate-functions/reference/covarsampstable",
-                      "products/reference/functions/aggregate-functions/reference/cramersv",
-                      "products/reference/functions/aggregate-functions/reference/cramersvbiascorrected",
-                      "products/reference/functions/aggregate-functions/reference/deltasum",
-                      "products/reference/functions/aggregate-functions/reference/deltasumtimestamp",
-                      "products/reference/functions/aggregate-functions/reference/distinctdynamictypes",
-                      "products/reference/functions/aggregate-functions/reference/distinctjsonpaths",
-                      "products/reference/functions/aggregate-functions/reference/entropy",
-                      "products/reference/functions/aggregate-functions/reference/estimateCompressionRatio",
-                      "products/reference/functions/aggregate-functions/reference/exponentialmovingaverage",
-                      "products/reference/functions/aggregate-functions/reference/exponentialtimedecayedavg",
-                      "products/reference/functions/aggregate-functions/reference/exponentialtimedecayedcount",
-                      "products/reference/functions/aggregate-functions/reference/exponentialtimedecayedmax",
-                      "products/reference/functions/aggregate-functions/reference/exponentialtimedecayedsum",
-                      "products/reference/functions/aggregate-functions/reference/first_value",
-                      "products/reference/functions/aggregate-functions/reference/flame_graph",
-                      "products/reference/functions/aggregate-functions/reference/grouparray",
-                      "products/reference/functions/aggregate-functions/reference/grouparrayarray",
-                      "products/reference/functions/aggregate-functions/reference/grouparrayinsertat",
-                      "products/reference/functions/aggregate-functions/reference/grouparrayintersect",
-                      "products/reference/functions/aggregate-functions/reference/grouparraylast",
-                      "products/reference/functions/aggregate-functions/reference/grouparraymovingavg",
-                      "products/reference/functions/aggregate-functions/reference/grouparraymovingsum",
-                      "products/reference/functions/aggregate-functions/reference/grouparraysample",
-                      "products/reference/functions/aggregate-functions/reference/grouparraysorted",
-                      "products/reference/functions/aggregate-functions/reference/groupbitand",
-                      "products/reference/functions/aggregate-functions/reference/groupbitmap",
-                      "products/reference/functions/aggregate-functions/reference/groupbitmapand",
-                      "products/reference/functions/aggregate-functions/reference/groupbitmapor",
-                      "products/reference/functions/aggregate-functions/reference/groupbitmapxor",
-                      "products/reference/functions/aggregate-functions/reference/groupbitor",
-                      "products/reference/functions/aggregate-functions/reference/groupbitxor",
-                      "products/reference/functions/aggregate-functions/reference/groupconcat",
-                      "products/reference/functions/aggregate-functions/reference/groupuniqarray",
-                      "products/reference/functions/aggregate-functions/reference/intervalLengthSum",
-                      "products/reference/functions/aggregate-functions/reference/kolmogorovsmirnovtest",
-                      "products/reference/functions/aggregate-functions/reference/kurtpop",
-                      "products/reference/functions/aggregate-functions/reference/kurtsamp",
-                      "products/reference/functions/aggregate-functions/reference/largestTriangleThreeBuckets",
-                      "products/reference/functions/aggregate-functions/reference/last_value",
-                      "products/reference/functions/aggregate-functions/reference/mannwhitneyutest",
-                      "products/reference/functions/aggregate-functions/reference/max",
-                      "products/reference/functions/aggregate-functions/reference/maxintersections",
-                      "products/reference/functions/aggregate-functions/reference/maxintersectionsposition",
-                      "products/reference/functions/aggregate-functions/reference/maxmap",
-                      "products/reference/functions/aggregate-functions/reference/meanztest",
-                      "products/reference/functions/aggregate-functions/reference/median",
-                      "products/reference/functions/aggregate-functions/reference/min",
-                      "products/reference/functions/aggregate-functions/reference/minmap",
-                      "products/reference/functions/aggregate-functions/reference/quantile",
-                      "products/reference/functions/aggregate-functions/reference/quantileGK",
-                      "products/reference/functions/aggregate-functions/reference/quantilebfloat16",
-                      "products/reference/functions/aggregate-functions/reference/quantileddsketch",
-                      "products/reference/functions/aggregate-functions/reference/quantiledeterministic",
-                      "products/reference/functions/aggregate-functions/reference/quantileexact",
-                      "products/reference/functions/aggregate-functions/reference/quantileexactweighted",
-                      "products/reference/functions/aggregate-functions/reference/quantileexactweightedinterpolated",
-                      "products/reference/functions/aggregate-functions/reference/quantileinterpolatedweighted",
-                      "products/reference/functions/aggregate-functions/reference/quantileprometheushistogram",
-                      "products/reference/functions/aggregate-functions/reference/quantiles",
-                      "products/reference/functions/aggregate-functions/reference/quantiletdigest",
-                      "products/reference/functions/aggregate-functions/reference/quantiletdigestweighted",
-                      "products/reference/functions/aggregate-functions/reference/quantiletiming",
-                      "products/reference/functions/aggregate-functions/reference/quantiletimingweighted",
-                      "products/reference/functions/aggregate-functions/reference/rankCorr",
-                      "products/reference/functions/aggregate-functions/reference/simplelinearregression",
-                      "products/reference/functions/aggregate-functions/reference/singlevalueornull",
-                      "products/reference/functions/aggregate-functions/reference/skewpop",
-                      "products/reference/functions/aggregate-functions/reference/skewsamp",
-                      "products/reference/functions/aggregate-functions/reference/sparkbar",
-                      "products/reference/functions/aggregate-functions/reference/stddevpop",
-                      "products/reference/functions/aggregate-functions/reference/stddevpopstable",
-                      "products/reference/functions/aggregate-functions/reference/stddevsamp",
-                      "products/reference/functions/aggregate-functions/reference/stddevsampstable",
-                      "products/reference/functions/aggregate-functions/reference/stochasticlinearregression",
-                      "products/reference/functions/aggregate-functions/reference/stochasticlogisticregression",
-                      "products/reference/functions/aggregate-functions/reference/studentttest",
-                      "products/reference/functions/aggregate-functions/reference/studentttestonesample",
-                      "products/reference/functions/aggregate-functions/reference/sum",
-                      "products/reference/functions/aggregate-functions/reference/sumcount",
-                      "products/reference/functions/aggregate-functions/reference/sumkahan",
-                      "products/reference/functions/aggregate-functions/reference/summap",
-                      "products/reference/functions/aggregate-functions/reference/summapwithoverflow",
-                      "products/reference/functions/aggregate-functions/reference/sumwithoverflow",
-                      "products/reference/functions/aggregate-functions/reference/theilsu",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesChangesToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesDeltaToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesDerivToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesGroupArray",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesInstantDeltaToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesInstantRateToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesLastTwoSamples",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesPredictLinearToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesRateToGrid",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesResampleToGridWithStaleness",
-                      "products/reference/functions/aggregate-functions/reference/timeSeriesResetsToGrid",
-                      "products/reference/functions/aggregate-functions/reference/topk",
-                      "products/reference/functions/aggregate-functions/reference/topkweighted",
-                      "products/reference/functions/aggregate-functions/reference/uniq",
-                      "products/reference/functions/aggregate-functions/reference/uniqcombined",
-                      "products/reference/functions/aggregate-functions/reference/uniqcombined64",
-                      "products/reference/functions/aggregate-functions/reference/uniqexact",
-                      "products/reference/functions/aggregate-functions/reference/uniqhll12",
-                      "products/reference/functions/aggregate-functions/reference/uniqthetasketch",
-                      "products/reference/functions/aggregate-functions/reference/varpop",
-                      "products/reference/functions/aggregate-functions/reference/varpopstable",
-                      "products/reference/functions/aggregate-functions/reference/varsamp",
-                      "products/reference/functions/aggregate-functions/reference/varsampstable",
-                      "products/reference/functions/aggregate-functions/reference/welchttest"
+                      "docs/reference/functions/aggregate-functions/reference/index",
+                      "docs/reference/functions/aggregate-functions/reference/aggthrow",
+                      "docs/reference/functions/aggregate-functions/reference/analysis_of_variance",
+                      "docs/reference/functions/aggregate-functions/reference/any",
+                      "docs/reference/functions/aggregate-functions/reference/anyheavy",
+                      "docs/reference/functions/aggregate-functions/reference/anylast",
+                      "docs/reference/functions/aggregate-functions/reference/approxtopk",
+                      "docs/reference/functions/aggregate-functions/reference/approxtopsum",
+                      "docs/reference/functions/aggregate-functions/reference/argmax",
+                      "docs/reference/functions/aggregate-functions/reference/argmin",
+                      "docs/reference/functions/aggregate-functions/reference/avg",
+                      "docs/reference/functions/aggregate-functions/reference/avgweighted",
+                      "docs/reference/functions/aggregate-functions/reference/boundrat",
+                      "docs/reference/functions/aggregate-functions/reference/categoricalinformationvalue",
+                      "docs/reference/functions/aggregate-functions/reference/contingency",
+                      "docs/reference/functions/aggregate-functions/reference/corr",
+                      "docs/reference/functions/aggregate-functions/reference/corrmatrix",
+                      "docs/reference/functions/aggregate-functions/reference/corrstable",
+                      "docs/reference/functions/aggregate-functions/reference/count",
+                      "docs/reference/functions/aggregate-functions/reference/covarpop",
+                      "docs/reference/functions/aggregate-functions/reference/covarpopmatrix",
+                      "docs/reference/functions/aggregate-functions/reference/covarpopstable",
+                      "docs/reference/functions/aggregate-functions/reference/covarsamp",
+                      "docs/reference/functions/aggregate-functions/reference/covarsampmatrix",
+                      "docs/reference/functions/aggregate-functions/reference/covarsampstable",
+                      "docs/reference/functions/aggregate-functions/reference/cramersv",
+                      "docs/reference/functions/aggregate-functions/reference/cramersvbiascorrected",
+                      "docs/reference/functions/aggregate-functions/reference/deltasum",
+                      "docs/reference/functions/aggregate-functions/reference/deltasumtimestamp",
+                      "docs/reference/functions/aggregate-functions/reference/distinctdynamictypes",
+                      "docs/reference/functions/aggregate-functions/reference/distinctjsonpaths",
+                      "docs/reference/functions/aggregate-functions/reference/entropy",
+                      "docs/reference/functions/aggregate-functions/reference/estimateCompressionRatio",
+                      "docs/reference/functions/aggregate-functions/reference/exponentialmovingaverage",
+                      "docs/reference/functions/aggregate-functions/reference/exponentialtimedecayedavg",
+                      "docs/reference/functions/aggregate-functions/reference/exponentialtimedecayedcount",
+                      "docs/reference/functions/aggregate-functions/reference/exponentialtimedecayedmax",
+                      "docs/reference/functions/aggregate-functions/reference/exponentialtimedecayedsum",
+                      "docs/reference/functions/aggregate-functions/reference/first_value",
+                      "docs/reference/functions/aggregate-functions/reference/flame_graph",
+                      "docs/reference/functions/aggregate-functions/reference/grouparray",
+                      "docs/reference/functions/aggregate-functions/reference/grouparrayarray",
+                      "docs/reference/functions/aggregate-functions/reference/grouparrayinsertat",
+                      "docs/reference/functions/aggregate-functions/reference/grouparrayintersect",
+                      "docs/reference/functions/aggregate-functions/reference/grouparraylast",
+                      "docs/reference/functions/aggregate-functions/reference/grouparraymovingavg",
+                      "docs/reference/functions/aggregate-functions/reference/grouparraymovingsum",
+                      "docs/reference/functions/aggregate-functions/reference/grouparraysample",
+                      "docs/reference/functions/aggregate-functions/reference/grouparraysorted",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitand",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitmap",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitmapand",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitmapor",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitmapxor",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitor",
+                      "docs/reference/functions/aggregate-functions/reference/groupbitxor",
+                      "docs/reference/functions/aggregate-functions/reference/groupconcat",
+                      "docs/reference/functions/aggregate-functions/reference/groupuniqarray",
+                      "docs/reference/functions/aggregate-functions/reference/intervalLengthSum",
+                      "docs/reference/functions/aggregate-functions/reference/kolmogorovsmirnovtest",
+                      "docs/reference/functions/aggregate-functions/reference/kurtpop",
+                      "docs/reference/functions/aggregate-functions/reference/kurtsamp",
+                      "docs/reference/functions/aggregate-functions/reference/largestTriangleThreeBuckets",
+                      "docs/reference/functions/aggregate-functions/reference/last_value",
+                      "docs/reference/functions/aggregate-functions/reference/mannwhitneyutest",
+                      "docs/reference/functions/aggregate-functions/reference/max",
+                      "docs/reference/functions/aggregate-functions/reference/maxintersections",
+                      "docs/reference/functions/aggregate-functions/reference/maxintersectionsposition",
+                      "docs/reference/functions/aggregate-functions/reference/maxmap",
+                      "docs/reference/functions/aggregate-functions/reference/meanztest",
+                      "docs/reference/functions/aggregate-functions/reference/median",
+                      "docs/reference/functions/aggregate-functions/reference/min",
+                      "docs/reference/functions/aggregate-functions/reference/minmap",
+                      "docs/reference/functions/aggregate-functions/reference/quantile",
+                      "docs/reference/functions/aggregate-functions/reference/quantileGK",
+                      "docs/reference/functions/aggregate-functions/reference/quantilebfloat16",
+                      "docs/reference/functions/aggregate-functions/reference/quantileddsketch",
+                      "docs/reference/functions/aggregate-functions/reference/quantiledeterministic",
+                      "docs/reference/functions/aggregate-functions/reference/quantileexact",
+                      "docs/reference/functions/aggregate-functions/reference/quantileexactweighted",
+                      "docs/reference/functions/aggregate-functions/reference/quantileexactweightedinterpolated",
+                      "docs/reference/functions/aggregate-functions/reference/quantileinterpolatedweighted",
+                      "docs/reference/functions/aggregate-functions/reference/quantileprometheushistogram",
+                      "docs/reference/functions/aggregate-functions/reference/quantiles",
+                      "docs/reference/functions/aggregate-functions/reference/quantiletdigest",
+                      "docs/reference/functions/aggregate-functions/reference/quantiletdigestweighted",
+                      "docs/reference/functions/aggregate-functions/reference/quantiletiming",
+                      "docs/reference/functions/aggregate-functions/reference/quantiletimingweighted",
+                      "docs/reference/functions/aggregate-functions/reference/rankCorr",
+                      "docs/reference/functions/aggregate-functions/reference/simplelinearregression",
+                      "docs/reference/functions/aggregate-functions/reference/singlevalueornull",
+                      "docs/reference/functions/aggregate-functions/reference/skewpop",
+                      "docs/reference/functions/aggregate-functions/reference/skewsamp",
+                      "docs/reference/functions/aggregate-functions/reference/sparkbar",
+                      "docs/reference/functions/aggregate-functions/reference/stddevpop",
+                      "docs/reference/functions/aggregate-functions/reference/stddevpopstable",
+                      "docs/reference/functions/aggregate-functions/reference/stddevsamp",
+                      "docs/reference/functions/aggregate-functions/reference/stddevsampstable",
+                      "docs/reference/functions/aggregate-functions/reference/stochasticlinearregression",
+                      "docs/reference/functions/aggregate-functions/reference/stochasticlogisticregression",
+                      "docs/reference/functions/aggregate-functions/reference/studentttest",
+                      "docs/reference/functions/aggregate-functions/reference/studentttestonesample",
+                      "docs/reference/functions/aggregate-functions/reference/sum",
+                      "docs/reference/functions/aggregate-functions/reference/sumcount",
+                      "docs/reference/functions/aggregate-functions/reference/sumkahan",
+                      "docs/reference/functions/aggregate-functions/reference/summap",
+                      "docs/reference/functions/aggregate-functions/reference/summapwithoverflow",
+                      "docs/reference/functions/aggregate-functions/reference/sumwithoverflow",
+                      "docs/reference/functions/aggregate-functions/reference/theilsu",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesChangesToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesDeltaToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesDerivToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesGroupArray",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesInstantDeltaToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesInstantRateToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesLastTwoSamples",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesPredictLinearToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesRateToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesResampleToGridWithStaleness",
+                      "docs/reference/functions/aggregate-functions/reference/timeSeriesResetsToGrid",
+                      "docs/reference/functions/aggregate-functions/reference/topk",
+                      "docs/reference/functions/aggregate-functions/reference/topkweighted",
+                      "docs/reference/functions/aggregate-functions/reference/uniq",
+                      "docs/reference/functions/aggregate-functions/reference/uniqcombined",
+                      "docs/reference/functions/aggregate-functions/reference/uniqcombined64",
+                      "docs/reference/functions/aggregate-functions/reference/uniqexact",
+                      "docs/reference/functions/aggregate-functions/reference/uniqhll12",
+                      "docs/reference/functions/aggregate-functions/reference/uniqthetasketch",
+                      "docs/reference/functions/aggregate-functions/reference/varpop",
+                      "docs/reference/functions/aggregate-functions/reference/varpopstable",
+                      "docs/reference/functions/aggregate-functions/reference/varsamp",
+                      "docs/reference/functions/aggregate-functions/reference/varsampstable",
+                      "docs/reference/functions/aggregate-functions/reference/welchttest"
                     ]
                   }
                 ]
@@ -1757,85 +1757,85 @@
                 "group": "Table functions",
                 "expanded": false,
                 "pages": [
-                  "products/reference/functions/table-functions/index",
-                  "products/reference/functions/table-functions/arrowflight",
-                  "products/reference/functions/table-functions/azureBlobStorage",
-                  "products/reference/functions/table-functions/azureBlobStorageCluster",
-                  "products/reference/functions/table-functions/cluster",
-                  "products/reference/functions/table-functions/deltalake",
-                  "products/reference/functions/table-functions/deltalakeCluster",
-                  "products/reference/functions/table-functions/dictionary",
-                  "products/reference/functions/table-functions/executable",
-                  "products/reference/functions/table-functions/file",
-                  "products/reference/functions/table-functions/fileCluster",
-                  "products/reference/functions/table-functions/format",
-                  "products/reference/functions/table-functions/fuzzJSON",
-                  "products/reference/functions/table-functions/fuzzQuery",
-                  "products/reference/functions/table-functions/gcs",
-                  "products/reference/functions/table-functions/generate",
-                  "products/reference/functions/table-functions/generate_series",
-                  "products/reference/functions/table-functions/hdfs",
-                  "products/reference/functions/table-functions/hdfsCluster",
-                  "products/reference/functions/table-functions/hudi",
-                  "products/reference/functions/table-functions/hudiCluster",
-                  "products/reference/functions/table-functions/iceberg",
-                  "products/reference/functions/table-functions/icebergCluster",
-                  "products/reference/functions/table-functions/input",
-                  "products/reference/functions/table-functions/jdbc",
-                  "products/reference/functions/table-functions/loop",
-                  "products/reference/functions/table-functions/merge",
-                  "products/reference/functions/table-functions/mergeTreeIndex",
-                  "products/reference/functions/table-functions/mergeTreeProjection",
-                  "products/reference/functions/table-functions/mongodb",
-                  "products/reference/functions/table-functions/mysql",
-                  "products/reference/functions/table-functions/null",
-                  "products/reference/functions/table-functions/numbers",
-                  "products/reference/functions/table-functions/odbc",
-                  "products/reference/functions/table-functions/paimon",
-                  "products/reference/functions/table-functions/paimonCluster",
-                  "products/reference/functions/table-functions/postgresql",
-                  "products/reference/functions/table-functions/prometheusQuery",
-                  "products/reference/functions/table-functions/prometheusQueryRange",
-                  "products/reference/functions/table-functions/redis",
-                  "products/reference/functions/table-functions/remote",
-                  "products/reference/functions/table-functions/s3",
-                  "products/reference/functions/table-functions/s3Cluster",
-                  "products/reference/functions/table-functions/sqlite",
-                  "products/reference/functions/table-functions/timeSeriesData",
-                  "products/reference/functions/table-functions/timeSeriesMetrics",
-                  "products/reference/functions/table-functions/timeSeriesSelector",
-                  "products/reference/functions/table-functions/timeSeriesTags",
-                  "products/reference/functions/table-functions/url",
-                  "products/reference/functions/table-functions/urlCluster",
-                  "products/reference/functions/table-functions/values",
-                  "products/reference/functions/table-functions/view",
-                  "products/reference/functions/table-functions/ytsaurus",
-                  "products/reference/functions/table-functions/zeros"
+                  "docs/reference/functions/table-functions/index",
+                  "docs/reference/functions/table-functions/arrowflight",
+                  "docs/reference/functions/table-functions/azureBlobStorage",
+                  "docs/reference/functions/table-functions/azureBlobStorageCluster",
+                  "docs/reference/functions/table-functions/cluster",
+                  "docs/reference/functions/table-functions/deltalake",
+                  "docs/reference/functions/table-functions/deltalakeCluster",
+                  "docs/reference/functions/table-functions/dictionary",
+                  "docs/reference/functions/table-functions/executable",
+                  "docs/reference/functions/table-functions/file",
+                  "docs/reference/functions/table-functions/fileCluster",
+                  "docs/reference/functions/table-functions/format",
+                  "docs/reference/functions/table-functions/fuzzJSON",
+                  "docs/reference/functions/table-functions/fuzzQuery",
+                  "docs/reference/functions/table-functions/gcs",
+                  "docs/reference/functions/table-functions/generate",
+                  "docs/reference/functions/table-functions/generate_series",
+                  "docs/reference/functions/table-functions/hdfs",
+                  "docs/reference/functions/table-functions/hdfsCluster",
+                  "docs/reference/functions/table-functions/hudi",
+                  "docs/reference/functions/table-functions/hudiCluster",
+                  "docs/reference/functions/table-functions/iceberg",
+                  "docs/reference/functions/table-functions/icebergCluster",
+                  "docs/reference/functions/table-functions/input",
+                  "docs/reference/functions/table-functions/jdbc",
+                  "docs/reference/functions/table-functions/loop",
+                  "docs/reference/functions/table-functions/merge",
+                  "docs/reference/functions/table-functions/mergeTreeIndex",
+                  "docs/reference/functions/table-functions/mergeTreeProjection",
+                  "docs/reference/functions/table-functions/mongodb",
+                  "docs/reference/functions/table-functions/mysql",
+                  "docs/reference/functions/table-functions/null",
+                  "docs/reference/functions/table-functions/numbers",
+                  "docs/reference/functions/table-functions/odbc",
+                  "docs/reference/functions/table-functions/paimon",
+                  "docs/reference/functions/table-functions/paimonCluster",
+                  "docs/reference/functions/table-functions/postgresql",
+                  "docs/reference/functions/table-functions/prometheusQuery",
+                  "docs/reference/functions/table-functions/prometheusQueryRange",
+                  "docs/reference/functions/table-functions/redis",
+                  "docs/reference/functions/table-functions/remote",
+                  "docs/reference/functions/table-functions/s3",
+                  "docs/reference/functions/table-functions/s3Cluster",
+                  "docs/reference/functions/table-functions/sqlite",
+                  "docs/reference/functions/table-functions/timeSeriesData",
+                  "docs/reference/functions/table-functions/timeSeriesMetrics",
+                  "docs/reference/functions/table-functions/timeSeriesSelector",
+                  "docs/reference/functions/table-functions/timeSeriesTags",
+                  "docs/reference/functions/table-functions/url",
+                  "docs/reference/functions/table-functions/urlCluster",
+                  "docs/reference/functions/table-functions/values",
+                  "docs/reference/functions/table-functions/view",
+                  "docs/reference/functions/table-functions/ytsaurus",
+                  "docs/reference/functions/table-functions/zeros"
                 ]
               },
               {
                 "group": "Window functions",
                 "expanded": false,
                 "pages": [
-                  "products/reference/functions/window-functions/index",
-                  "products/reference/functions/window-functions/cume_dist",
-                  "products/reference/functions/window-functions/dense_rank",
-                  "products/reference/functions/window-functions/first_value",
-                  "products/reference/functions/window-functions/lag",
-                  "products/reference/functions/window-functions/lagInFrame",
-                  "products/reference/functions/window-functions/last_value",
-                  "products/reference/functions/window-functions/lead",
-                  "products/reference/functions/window-functions/leadInFrame",
-                  "products/reference/functions/window-functions/nth_value",
-                  "products/reference/functions/window-functions/percent_rank",
-                  "products/reference/functions/window-functions/rank",
-                  "products/reference/functions/window-functions/row_number"
+                  "docs/reference/functions/window-functions/index",
+                  "docs/reference/functions/window-functions/cume_dist",
+                  "docs/reference/functions/window-functions/dense_rank",
+                  "docs/reference/functions/window-functions/first_value",
+                  "docs/reference/functions/window-functions/lag",
+                  "docs/reference/functions/window-functions/lagInFrame",
+                  "docs/reference/functions/window-functions/last_value",
+                  "docs/reference/functions/window-functions/lead",
+                  "docs/reference/functions/window-functions/leadInFrame",
+                  "docs/reference/functions/window-functions/nth_value",
+                  "docs/reference/functions/window-functions/percent_rank",
+                  "docs/reference/functions/window-functions/rank",
+                  "docs/reference/functions/window-functions/row_number"
                 ]
               },
               {
                 "group": "User Defined Functions",
                 "pages": [
-                  "products/reference/functions/regular-functions/udf"
+                  "docs/reference/functions/regular-functions/udf"
                 ]
               }
             ]
@@ -1852,169 +1852,169 @@
                     "group": "Arrow",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/Arrow/Arrow",
-                      "products/reference/formats/Arrow/ArrowStream"
+                      "docs/reference/formats/Arrow/Arrow",
+                      "docs/reference/formats/Arrow/ArrowStream"
                     ]
                   },
                   {
                     "group": "Avro",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/Avro/Avro",
-                      "products/reference/formats/Avro/AvroConfluent"
+                      "docs/reference/formats/Avro/Avro",
+                      "docs/reference/formats/Avro/AvroConfluent"
                     ]
                   },
-                  "products/reference/formats/BSONEachRow",
+                  "docs/reference/formats/BSONEachRow",
                   {
                     "group": "CSV",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/CSV/CSV",
-                      "products/reference/formats/CSV/CSVWithNames",
-                      "products/reference/formats/CSV/CSVWithNamesAndTypes"
+                      "docs/reference/formats/CSV/CSV",
+                      "docs/reference/formats/CSV/CSVWithNames",
+                      "docs/reference/formats/CSV/CSVWithNamesAndTypes"
                     ]
                   },
-                  "products/reference/formats/CapnProto",
+                  "docs/reference/formats/CapnProto",
                   {
                     "group": "CustomSeparated",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/CustomSeparated/CustomSeparated",
-                      "products/reference/formats/CustomSeparated/CustomSeparatedIgnoreSpaces",
-                      "products/reference/formats/CustomSeparated/CustomSeparatedIgnoreSpacesWithNames",
-                      "products/reference/formats/CustomSeparated/CustomSeparatedIgnoreSpacesWithNamesAndTypes",
-                      "products/reference/formats/CustomSeparated/CustomSeparatedWithNames",
-                      "products/reference/formats/CustomSeparated/CustomSeparatedWithNamesAndTypes"
+                      "docs/reference/formats/CustomSeparated/CustomSeparated",
+                      "docs/reference/formats/CustomSeparated/CustomSeparatedIgnoreSpaces",
+                      "docs/reference/formats/CustomSeparated/CustomSeparatedIgnoreSpacesWithNames",
+                      "docs/reference/formats/CustomSeparated/CustomSeparatedIgnoreSpacesWithNamesAndTypes",
+                      "docs/reference/formats/CustomSeparated/CustomSeparatedWithNames",
+                      "docs/reference/formats/CustomSeparated/CustomSeparatedWithNamesAndTypes"
                     ]
                   },
-                  "products/reference/formats/DWARF",
-                  "products/reference/formats/Form",
-                  "products/reference/formats/Hash",
-                  "products/reference/formats/HiveText",
+                  "docs/reference/formats/DWARF",
+                  "docs/reference/formats/Form",
+                  "docs/reference/formats/Hash",
+                  "docs/reference/formats/HiveText",
                   {
                     "group": "JSON",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/JSON/JSON",
-                      "products/reference/formats/JSON/JSONAsObject",
-                      "products/reference/formats/JSON/JSONAsString",
-                      "products/reference/formats/JSON/JSONColumns",
-                      "products/reference/formats/JSON/JSONColumnsWithMetadata",
-                      "products/reference/formats/JSON/JSONCompact",
-                      "products/reference/formats/JSON/JSONCompactColumns",
-                      "products/reference/formats/JSON/JSONCompactEachRow",
-                      "products/reference/formats/JSON/JSONCompactEachRowWithNames",
-                      "products/reference/formats/JSON/JSONCompactEachRowWithNamesAndTypes",
-                      "products/reference/formats/JSON/JSONCompactEachRowWithProgress",
-                      "products/reference/formats/JSON/JSONCompactStrings",
-                      "products/reference/formats/JSON/JSONCompactStringsEachRow",
-                      "products/reference/formats/JSON/JSONCompactStringsEachRowWithNames",
-                      "products/reference/formats/JSON/JSONCompactStringsEachRowWithNamesAndTypes",
-                      "products/reference/formats/JSON/JSONCompactStringsEachRowWithProgress",
-                      "products/reference/formats/JSON/JSONEachRow",
-                      "products/reference/formats/JSON/JSONEachRowWithProgress",
-                      "products/reference/formats/JSON/JSONLines",
-                      "products/reference/formats/JSON/JSONObjectEachRow",
-                      "products/reference/formats/JSON/JSONStrings",
-                      "products/reference/formats/JSON/JSONStringsEachRow",
-                      "products/reference/formats/JSON/JSONStringsEachRowWithProgress",
-                      "products/reference/formats/JSON/PrettyJSONEachRow",
-                      "products/reference/formats/JSON/format-settings"
+                      "docs/reference/formats/JSON/JSON",
+                      "docs/reference/formats/JSON/JSONAsObject",
+                      "docs/reference/formats/JSON/JSONAsString",
+                      "docs/reference/formats/JSON/JSONColumns",
+                      "docs/reference/formats/JSON/JSONColumnsWithMetadata",
+                      "docs/reference/formats/JSON/JSONCompact",
+                      "docs/reference/formats/JSON/JSONCompactColumns",
+                      "docs/reference/formats/JSON/JSONCompactEachRow",
+                      "docs/reference/formats/JSON/JSONCompactEachRowWithNames",
+                      "docs/reference/formats/JSON/JSONCompactEachRowWithNamesAndTypes",
+                      "docs/reference/formats/JSON/JSONCompactEachRowWithProgress",
+                      "docs/reference/formats/JSON/JSONCompactStrings",
+                      "docs/reference/formats/JSON/JSONCompactStringsEachRow",
+                      "docs/reference/formats/JSON/JSONCompactStringsEachRowWithNames",
+                      "docs/reference/formats/JSON/JSONCompactStringsEachRowWithNamesAndTypes",
+                      "docs/reference/formats/JSON/JSONCompactStringsEachRowWithProgress",
+                      "docs/reference/formats/JSON/JSONEachRow",
+                      "docs/reference/formats/JSON/JSONEachRowWithProgress",
+                      "docs/reference/formats/JSON/JSONLines",
+                      "docs/reference/formats/JSON/JSONObjectEachRow",
+                      "docs/reference/formats/JSON/JSONStrings",
+                      "docs/reference/formats/JSON/JSONStringsEachRow",
+                      "docs/reference/formats/JSON/JSONStringsEachRowWithProgress",
+                      "docs/reference/formats/JSON/PrettyJSONEachRow",
+                      "docs/reference/formats/JSON/format-settings"
                     ]
                   },
                   {
                     "group": "LineAsString",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/LineAsString/LineAsString",
-                      "products/reference/formats/LineAsString/LineAsStringWithNames",
-                      "products/reference/formats/LineAsString/LineAsStringWithNamesAndTypes"
+                      "docs/reference/formats/LineAsString/LineAsString",
+                      "docs/reference/formats/LineAsString/LineAsStringWithNames",
+                      "docs/reference/formats/LineAsString/LineAsStringWithNamesAndTypes"
                     ]
                   },
-                  "products/reference/formats/Markdown",
-                  "products/reference/formats/MsgPack",
-                  "products/reference/formats/MySQLDump",
-                  "products/reference/formats/MySQLWire",
-                  "products/reference/formats/Native",
-                  "products/reference/formats/Npy",
-                  "products/reference/formats/Null",
-                  "products/reference/formats/ODBCDriver2",
-                  "products/reference/formats/ORC",
-                  "products/reference/formats/One",
+                  "docs/reference/formats/Markdown",
+                  "docs/reference/formats/MsgPack",
+                  "docs/reference/formats/MySQLDump",
+                  "docs/reference/formats/MySQLWire",
+                  "docs/reference/formats/Native",
+                  "docs/reference/formats/Npy",
+                  "docs/reference/formats/Null",
+                  "docs/reference/formats/ODBCDriver2",
+                  "docs/reference/formats/ORC",
+                  "docs/reference/formats/One",
                   {
                     "group": "Parquet",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/Parquet/Parquet",
-                      "products/reference/formats/Parquet/ParquetMetadata"
+                      "docs/reference/formats/Parquet/Parquet",
+                      "docs/reference/formats/Parquet/ParquetMetadata"
                     ]
                   },
-                  "products/reference/formats/PostgreSQLWire",
+                  "docs/reference/formats/PostgreSQLWire",
                   {
                     "group": "Pretty",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/Pretty/Pretty",
-                      "products/reference/formats/Pretty/PrettyCompact",
-                      "products/reference/formats/Pretty/PrettyCompactMonoBlock",
-                      "products/reference/formats/Pretty/PrettyCompactNoEscapes",
-                      "products/reference/formats/Pretty/PrettyCompactNoEscapesMonoBlock",
-                      "products/reference/formats/Pretty/PrettyMonoBlock",
-                      "products/reference/formats/Pretty/PrettyNoEscapes",
-                      "products/reference/formats/Pretty/PrettyNoEscapesMonoBlock",
-                      "products/reference/formats/Pretty/PrettySpace",
-                      "products/reference/formats/Pretty/PrettySpaceMonoBlock",
-                      "products/reference/formats/Pretty/PrettySpaceNoEscapes",
-                      "products/reference/formats/Pretty/PrettySpaceNoEscapesMonoBlock"
+                      "docs/reference/formats/Pretty/Pretty",
+                      "docs/reference/formats/Pretty/PrettyCompact",
+                      "docs/reference/formats/Pretty/PrettyCompactMonoBlock",
+                      "docs/reference/formats/Pretty/PrettyCompactNoEscapes",
+                      "docs/reference/formats/Pretty/PrettyCompactNoEscapesMonoBlock",
+                      "docs/reference/formats/Pretty/PrettyMonoBlock",
+                      "docs/reference/formats/Pretty/PrettyNoEscapes",
+                      "docs/reference/formats/Pretty/PrettyNoEscapesMonoBlock",
+                      "docs/reference/formats/Pretty/PrettySpace",
+                      "docs/reference/formats/Pretty/PrettySpaceMonoBlock",
+                      "docs/reference/formats/Pretty/PrettySpaceNoEscapes",
+                      "docs/reference/formats/Pretty/PrettySpaceNoEscapesMonoBlock"
                     ]
                   },
-                  "products/reference/formats/Prometheus",
+                  "docs/reference/formats/Prometheus",
                   {
                     "group": "Protobuf",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/Protobuf/Protobuf",
-                      "products/reference/formats/Protobuf/ProtobufList",
-                      "products/reference/formats/Protobuf/ProtobufSingle"
+                      "docs/reference/formats/Protobuf/Protobuf",
+                      "docs/reference/formats/Protobuf/ProtobufList",
+                      "docs/reference/formats/Protobuf/ProtobufSingle"
                     ]
                   },
-                  "products/reference/formats/RawBLOB",
-                  "products/reference/formats/Regexp",
+                  "docs/reference/formats/RawBLOB",
+                  "docs/reference/formats/Regexp",
                   {
                     "group": "RowBinary",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/RowBinary/RowBinary",
-                      "products/reference/formats/RowBinary/RowBinaryWithDefaults",
-                      "products/reference/formats/RowBinary/RowBinaryWithNames",
-                      "products/reference/formats/RowBinary/RowBinaryWithNamesAndTypes"
+                      "docs/reference/formats/RowBinary/RowBinary",
+                      "docs/reference/formats/RowBinary/RowBinaryWithDefaults",
+                      "docs/reference/formats/RowBinary/RowBinaryWithNames",
+                      "docs/reference/formats/RowBinary/RowBinaryWithNamesAndTypes"
                     ]
                   },
-                  "products/reference/formats/SQLInsert",
+                  "docs/reference/formats/SQLInsert",
                   {
                     "group": "TabSeparated",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/TabSeparated/TSKV",
-                      "products/reference/formats/TabSeparated/TabSeparated",
-                      "products/reference/formats/TabSeparated/TabSeparatedRaw",
-                      "products/reference/formats/TabSeparated/TabSeparatedRawWithNames",
-                      "products/reference/formats/TabSeparated/TabSeparatedRawWithNamesAndTypes",
-                      "products/reference/formats/TabSeparated/TabSeparatedWithNames",
-                      "products/reference/formats/TabSeparated/TabSeparatedWithNamesAndTypes"
+                      "docs/reference/formats/TabSeparated/TSKV",
+                      "docs/reference/formats/TabSeparated/TabSeparated",
+                      "docs/reference/formats/TabSeparated/TabSeparatedRaw",
+                      "docs/reference/formats/TabSeparated/TabSeparatedRawWithNames",
+                      "docs/reference/formats/TabSeparated/TabSeparatedRawWithNamesAndTypes",
+                      "docs/reference/formats/TabSeparated/TabSeparatedWithNames",
+                      "docs/reference/formats/TabSeparated/TabSeparatedWithNamesAndTypes"
                     ]
                   },
                   {
                     "group": "Template",
                     "expanded": false,
                     "pages": [
-                      "products/reference/formats/Template/Template",
-                      "products/reference/formats/Template/TemplateIgnoreSpaces"
+                      "docs/reference/formats/Template/Template",
+                      "docs/reference/formats/Template/TemplateIgnoreSpaces"
                     ]
                   },
-                  "products/reference/formats/Values",
-                  "products/reference/formats/Vertical",
-                  "products/reference/formats/XML"
+                  "docs/reference/formats/Values",
+                  "docs/reference/formats/Vertical",
+                  "docs/reference/formats/XML"
                 ]
               }
             ]
@@ -2026,11 +2026,11 @@
               {
                 "group": "Settings",
                 "pages": [
-                  "products/reference/settings/server-settings/settings",
-                  "products/reference/settings/session-settings",
-                  "products/reference/settings/merge-tree-settings",
-                  "products/reference/settings/format-settings",
-                  "products/reference/settings/beta-and-experimental-features"
+                  "docs/reference/settings/server-settings/settings",
+                  "docs/reference/settings/session-settings",
+                  "docs/reference/settings/merge-tree-settings",
+                  "docs/reference/settings/format-settings",
+                  "docs/reference/settings/beta-and-experimental-features"
                 ]
               }
             ]
@@ -2043,116 +2043,116 @@
                 "group": "System tables",
                 "expanded": false,
                 "pages": [
-                  "products/reference/system-tables/index",
-                  "products/reference/system-tables/asynchronous_insert_log",
-                  "products/reference/system-tables/asynchronous_inserts",
-                  "products/reference/system-tables/asynchronous_loader",
-                  "products/reference/system-tables/asynchronous_metric_log",
-                  "products/reference/system-tables/asynchronous_metrics",
-                  "products/reference/system-tables/azure_queue_settings",
-                  "products/reference/system-tables/backup_log",
-                  "products/reference/system-tables/backups",
-                  "products/reference/system-tables/blob_storage_log",
-                  "products/reference/system-tables/build_options",
-                  "products/reference/system-tables/clusters",
-                  "products/reference/system-tables/codecs",
-                  "products/reference/system-tables/columns",
-                  "products/reference/system-tables/contributors",
-                  "products/reference/system-tables/crash_log",
-                  "products/reference/system-tables/current_roles",
-                  "products/reference/system-tables/dashboards",
-                  "products/reference/system-tables/data_skipping_indices",
-                  "products/reference/system-tables/data_type_families",
-                  "products/reference/system-tables/database_engines",
-                  "products/reference/system-tables/database_replicas",
-                  "products/reference/system-tables/databases",
-                  "products/reference/system-tables/dead_letter_queue",
-                  "products/reference/system-tables/delta_metadata_log",
-                  "products/reference/system-tables/detached_parts",
-                  "products/reference/system-tables/detached_tables",
-                  "products/reference/system-tables/dictionaries",
-                  "products/reference/system-tables/dimensional_metrics",
-                  "products/reference/system-tables/disks",
-                  "products/reference/system-tables/distributed_ddl_queue",
-                  "products/reference/system-tables/distribution_queue",
-                  "products/reference/system-tables/dns_cache",
-                  "products/reference/system-tables/dropped_tables",
-                  "products/reference/system-tables/dropped_tables_parts",
-                  "products/reference/system-tables/enabled_roles",
-                  "products/reference/system-tables/error_log",
-                  "products/reference/system-tables/errors",
-                  "products/reference/system-tables/events",
-                  "products/reference/system-tables/functions",
-                  "products/reference/system-tables/grants",
-                  "products/reference/system-tables/graphite_retentions",
-                  "products/reference/system-tables/histogram_metrics",
-                  "products/reference/system-tables/iceberg_history",
-                  "products/reference/system-tables/iceberg_metadata_log",
-                  "products/reference/system-tables/information_schema",
-                  "products/reference/system-tables/jemalloc_bins",
-                  "products/reference/system-tables/kafka_consumers",
-                  "products/reference/system-tables/licenses",
-                  "products/reference/system-tables/merge_tree_settings",
-                  "products/reference/system-tables/merges",
-                  "products/reference/system-tables/metric_log",
-                  "products/reference/system-tables/metrics",
-                  "products/reference/system-tables/moves",
-                  "products/reference/system-tables/mutations",
-                  "products/reference/system-tables/numbers",
-                  "products/reference/system-tables/numbers_mt",
-                  "products/reference/system-tables/one",
-                  "products/reference/system-tables/opentelemetry_span_log",
-                  "products/reference/system-tables/part_log",
-                  "products/reference/system-tables/parts",
-                  "products/reference/system-tables/parts_columns",
-                  "products/reference/system-tables/processes",
-                  "products/reference/system-tables/processors_profile_log",
-                  "products/reference/system-tables/projection_parts",
-                  "products/reference/system-tables/projection_parts_columns",
-                  "products/reference/system-tables/projections",
-                  "products/reference/system-tables/query_cache",
-                  "products/reference/system-tables/query_condition_cache",
-                  "products/reference/system-tables/query_log",
-                  "products/reference/system-tables/query_metric_log",
-                  "products/reference/system-tables/query_thread_log",
-                  "products/reference/system-tables/query_views_log",
-                  "products/reference/system-tables/quota_limits",
-                  "products/reference/system-tables/quota_usage",
-                  "products/reference/system-tables/quotas",
-                  "products/reference/system-tables/quotas_usage",
-                  "products/reference/system-tables/replicas",
-                  "products/reference/system-tables/replicated_fetches",
-                  "products/reference/system-tables/replication_queue",
-                  "products/reference/system-tables/resources",
-                  "products/reference/system-tables/role_grants",
-                  "products/reference/system-tables/roles",
-                  "products/reference/system-tables/row_policies",
-                  "products/reference/system-tables/s3_queue_settings",
-                  "products/reference/system-tables/scheduler",
-                  "products/reference/system-tables/schema_inference_cache",
-                  "products/reference/system-tables/server_settings",
-                  "products/reference/system-tables/session_log",
-                  "products/reference/system-tables/settings",
-                  "products/reference/system-tables/settings_changes",
-                  "products/reference/system-tables/settings_profile_elements",
-                  "products/reference/system-tables/settings_profiles",
-                  "products/reference/system-tables/stack_trace",
-                  "products/reference/system-tables/storage_policies",
-                  "products/reference/system-tables/symbols",
-                  "products/reference/system-tables/system_warnings",
-                  "products/reference/system-tables/table_engines",
-                  "products/reference/system-tables/tables",
-                  "products/reference/system-tables/text_log",
-                  "products/reference/system-tables/time_zones",
-                  "products/reference/system-tables/trace_log",
-                  "products/reference/system-tables/user_processes",
-                  "products/reference/system-tables/users",
-                  "products/reference/system-tables/view_refreshes",
-                  "products/reference/system-tables/workloads",
-                  "products/reference/system-tables/zookeeper",
-                  "products/reference/system-tables/zookeeper_connection",
-                  "products/reference/system-tables/zookeeper_connection_log",
-                  "products/reference/system-tables/zookeeper_log"
+                  "docs/reference/system-tables/index",
+                  "docs/reference/system-tables/asynchronous_insert_log",
+                  "docs/reference/system-tables/asynchronous_inserts",
+                  "docs/reference/system-tables/asynchronous_loader",
+                  "docs/reference/system-tables/asynchronous_metric_log",
+                  "docs/reference/system-tables/asynchronous_metrics",
+                  "docs/reference/system-tables/azure_queue_settings",
+                  "docs/reference/system-tables/backup_log",
+                  "docs/reference/system-tables/backups",
+                  "docs/reference/system-tables/blob_storage_log",
+                  "docs/reference/system-tables/build_options",
+                  "docs/reference/system-tables/clusters",
+                  "docs/reference/system-tables/codecs",
+                  "docs/reference/system-tables/columns",
+                  "docs/reference/system-tables/contributors",
+                  "docs/reference/system-tables/crash_log",
+                  "docs/reference/system-tables/current_roles",
+                  "docs/reference/system-tables/dashboards",
+                  "docs/reference/system-tables/data_skipping_indices",
+                  "docs/reference/system-tables/data_type_families",
+                  "docs/reference/system-tables/database_engines",
+                  "docs/reference/system-tables/database_replicas",
+                  "docs/reference/system-tables/databases",
+                  "docs/reference/system-tables/dead_letter_queue",
+                  "docs/reference/system-tables/delta_metadata_log",
+                  "docs/reference/system-tables/detached_parts",
+                  "docs/reference/system-tables/detached_tables",
+                  "docs/reference/system-tables/dictionaries",
+                  "docs/reference/system-tables/dimensional_metrics",
+                  "docs/reference/system-tables/disks",
+                  "docs/reference/system-tables/distributed_ddl_queue",
+                  "docs/reference/system-tables/distribution_queue",
+                  "docs/reference/system-tables/dns_cache",
+                  "docs/reference/system-tables/dropped_tables",
+                  "docs/reference/system-tables/dropped_tables_parts",
+                  "docs/reference/system-tables/enabled_roles",
+                  "docs/reference/system-tables/error_log",
+                  "docs/reference/system-tables/errors",
+                  "docs/reference/system-tables/events",
+                  "docs/reference/system-tables/functions",
+                  "docs/reference/system-tables/grants",
+                  "docs/reference/system-tables/graphite_retentions",
+                  "docs/reference/system-tables/histogram_metrics",
+                  "docs/reference/system-tables/iceberg_history",
+                  "docs/reference/system-tables/iceberg_metadata_log",
+                  "docs/reference/system-tables/information_schema",
+                  "docs/reference/system-tables/jemalloc_bins",
+                  "docs/reference/system-tables/kafka_consumers",
+                  "docs/reference/system-tables/licenses",
+                  "docs/reference/system-tables/merge_tree_settings",
+                  "docs/reference/system-tables/merges",
+                  "docs/reference/system-tables/metric_log",
+                  "docs/reference/system-tables/metrics",
+                  "docs/reference/system-tables/moves",
+                  "docs/reference/system-tables/mutations",
+                  "docs/reference/system-tables/numbers",
+                  "docs/reference/system-tables/numbers_mt",
+                  "docs/reference/system-tables/one",
+                  "docs/reference/system-tables/opentelemetry_span_log",
+                  "docs/reference/system-tables/part_log",
+                  "docs/reference/system-tables/parts",
+                  "docs/reference/system-tables/parts_columns",
+                  "docs/reference/system-tables/processes",
+                  "docs/reference/system-tables/processors_profile_log",
+                  "docs/reference/system-tables/projection_parts",
+                  "docs/reference/system-tables/projection_parts_columns",
+                  "docs/reference/system-tables/projections",
+                  "docs/reference/system-tables/query_cache",
+                  "docs/reference/system-tables/query_condition_cache",
+                  "docs/reference/system-tables/query_log",
+                  "docs/reference/system-tables/query_metric_log",
+                  "docs/reference/system-tables/query_thread_log",
+                  "docs/reference/system-tables/query_views_log",
+                  "docs/reference/system-tables/quota_limits",
+                  "docs/reference/system-tables/quota_usage",
+                  "docs/reference/system-tables/quotas",
+                  "docs/reference/system-tables/quotas_usage",
+                  "docs/reference/system-tables/replicas",
+                  "docs/reference/system-tables/replicated_fetches",
+                  "docs/reference/system-tables/replication_queue",
+                  "docs/reference/system-tables/resources",
+                  "docs/reference/system-tables/role_grants",
+                  "docs/reference/system-tables/roles",
+                  "docs/reference/system-tables/row_policies",
+                  "docs/reference/system-tables/s3_queue_settings",
+                  "docs/reference/system-tables/scheduler",
+                  "docs/reference/system-tables/schema_inference_cache",
+                  "docs/reference/system-tables/server_settings",
+                  "docs/reference/system-tables/session_log",
+                  "docs/reference/system-tables/settings",
+                  "docs/reference/system-tables/settings_changes",
+                  "docs/reference/system-tables/settings_profile_elements",
+                  "docs/reference/system-tables/settings_profiles",
+                  "docs/reference/system-tables/stack_trace",
+                  "docs/reference/system-tables/storage_policies",
+                  "docs/reference/system-tables/symbols",
+                  "docs/reference/system-tables/system_warnings",
+                  "docs/reference/system-tables/table_engines",
+                  "docs/reference/system-tables/tables",
+                  "docs/reference/system-tables/text_log",
+                  "docs/reference/system-tables/time_zones",
+                  "docs/reference/system-tables/trace_log",
+                  "docs/reference/system-tables/user_processes",
+                  "docs/reference/system-tables/users",
+                  "docs/reference/system-tables/view_refreshes",
+                  "docs/reference/system-tables/workloads",
+                  "docs/reference/system-tables/zookeeper",
+                  "docs/reference/system-tables/zookeeper_connection",
+                  "docs/reference/system-tables/zookeeper_connection_log",
+                  "docs/reference/system-tables/zookeeper_log"
                 ]
               }
             ]
@@ -2167,7 +2167,7 @@
             "tab": "Home",
             "icon": "house",
             "pages": [
-              "products/support/pages/support_home"
+              "docs/support/home"
             ]
           }
         ]

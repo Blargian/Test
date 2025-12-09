@@ -162,8 +162,18 @@ html:not(.dark) .hero-action-shortcut {
 
 .docs-tour-card-content h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
+}
+
+/* Light mode - black title text */
+html:not(.dark) .docs-tour-card-content h3 {
+    color: #000000;
+}
+
+/* Dark mode - white title text */
+.dark .docs-tour-card-content h3 {
+    color: #ffffff;
 }
 
 .docs-tour-card-content p {
