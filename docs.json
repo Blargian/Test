@@ -646,6 +646,7 @@
               {
                 "group": "MongoDB",
                 "expanded": false,
+                "icon": "rectangle-beta",
                 "pages": [
                   "docs/clickpipes/database-datalake/mongodb/index",
                   "docs/clickpipes/database-datalake/mongodb/datatypes",

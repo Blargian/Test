@@ -5,6 +5,7 @@ slug: /integrations/clickpipes/postgres/source/timescale
 title: 'Postgres with TimescaleDB source setup guide'
 keywords: ['TimescaleDB']
 doc_type: 'guide'
+icon: "rectangle-beta"
 ---
 
 import {BetaBadge} from '/snippets/components/BetaBadge/BetaBadge.jsx'

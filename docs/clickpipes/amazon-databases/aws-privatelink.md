@@ -44,9 +44,11 @@ To set up PrivateLink with VPC resource:
 2. Create a resource configuration
 3. Create a resource share
 
-<Steps headerLevel="h4">
+<Steps>
 
-#### Create a resource gateway [#create-resource-gateway]
+<Step>
+
+#### Create a resource gateway
 
 Resource gateway is the point that receives traffic for specified resources in your VPC.
 
@@ -77,7 +79,11 @@ aws vpc-lattice get-resource-gateway \
     --resource-gateway-identifier <RESOURCE_GATEWAY_ID>
 ```
 
-#### Create a VPC Resource-Configuration [#create-resource-configuration]
+</Step>
+
+<Step>
+
+#### Create a VPC Resource-Configuration
 
 Resource-Configuration is associated with resource gateway to make your resource accessible.
 
@@ -113,7 +119,11 @@ For more information, see the [AWS documentation](https://docs.aws.amazon.com/vp
 
 The output will contain a Resource-Configuration ARN, which you will need for the next step. It will also contain a Resource-Configuration ID, which you will need to set up a ClickPipe connection with VPC resource.
 
-#### Create a Resource-Share [#create-resource-share]
+</Step>
+
+<Step>
+
+#### Create a Resource-Share
 
 Sharing your resource requires a Resource-Share. This is facilitated through the Resource Access Manager (RAM).
 
@@ -134,6 +144,8 @@ You are ready to [create a ClickPipe with Reverse private endpoint](#creating-cl
 - Set `Resource share ARN` to the ARN of the Resource-Share created in step 3.
 
 For more details on PrivateLink with VPC resource, see [AWS documentation](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-resources.html).
+
+</Step>
 
 </Steps>
 
@@ -182,25 +194,43 @@ can be configured for ClickPipes. Add [your ClickPipe region](#aws-privatelink-r
 
 ## Creating a ClickPipe with reverse private endpoint [#creating-clickpipe]
 
-<Steps headerLevel="list">
+<Steps>
 
-1. Access the SQL Console for your ClickHouse Cloud Service.
+<Step>
+
+Access the SQL Console for your ClickHouse Cloud Service.
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_service.png" alt="ClickPipes service"/>
 
-2. Select the `Data Sources` button on the left-side menu and click on "Set up a ClickPipe"
+</Step>
+
+<Step>
+
+Select the `Data Sources` button on the left-side menu and click on "Set up a ClickPipe"
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_step0.png" alt="Select imports"/>
 
-3. Select either Kafka or Postgres as a data source.
+</Step>
+
+<Step>
+
+Select either Kafka or Postgres as a data source.
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_select.png" alt="Select data source"/>
 
-4. Select the `Reverse private endpoint` option.
+</Step>
+
+<Step>
+
+Select the `Reverse private endpoint` option.
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_step0.png" alt="Select reverse private endpoint"/>
 
-5. Select any of existing reverse private endpoints or create a new one.
+</Step>
+
+<Step>
+
+Select any of existing reverse private endpoints or create a new one.
 
 <Note>
 If cross-region access is required for RDS, you need to create a VPC endpoint service and
@@ -211,32 +241,46 @@ For same-region access, creating a VPC Resource is the recommended approach.
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_step1.png" alt="Select reverse private endpoint"/>
 
-6. Provide the required parameters for the selected endpoint type.
+</Step>
+
+<Step>
+
+Provide the required parameters for the selected endpoint type.
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_step2.png" alt="Select reverse private endpoint"/>
 
-    - For VPC resource, provide the configuration share ARN and configuration ID.
-    - For MSK multi-VPC, provide the cluster ARN and authentication method used with a created endpoint.
-    - For VPC endpoint service, provide the service name.
+- For VPC resource, provide the configuration share ARN and configuration ID.
+- For MSK multi-VPC, provide the cluster ARN and authentication method used with a created endpoint.
+- For VPC endpoint service, provide the service name.
 
-7. Click on `Create` and wait for the reverse private endpoint to be ready.
+</Step>
 
-   If you are creating a new endpoint, it will take some time to set up the endpoint.
-   The page will refresh automatically once the endpoint is ready.
-   VPC endpoint service might require accepting the connection request in your AWS console.
+<Step>
+
+Click on `Create` and wait for the reverse private endpoint to be ready.
+
+If you are creating a new endpoint, it will take some time to set up the endpoint.
+The page will refresh automatically once the endpoint is ready.
+VPC endpoint service might require accepting the connection request in your AWS console.
 
 <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_step3.png" alt="Select reverse private endpoint"/>
 
-8. Once the endpoint is ready, you can use a DNS name to connect to the data source.
+</Step>
 
-   On a list of endpoints, you can see the DNS name for the available endpoint.
-   It can be either an internally ClickPipes provisioned DNS name or a private DNS name supplied by a PrivateLink service.
-   DNS name is not a complete network address.
-   Add the port according to the data source.
+<Step>
 
-   MSK connection string can be accessed in the AWS console.
+Once the endpoint is ready, you can use a DNS name to connect to the data source.
 
-   To see a full list of DNS names, access it in the cloud service settings.
+On a list of endpoints, you can see the DNS name for the available endpoint.
+It can be either an internally ClickPipes provisioned DNS name or a private DNS name supplied by a PrivateLink service.
+DNS name is not a complete network address.
+Add the port according to the data source.
+
+MSK connection string can be accessed in the AWS console.
+
+To see a full list of DNS names, access it in the cloud service settings.
+
+</Step>
 
 </Steps>
 
@@ -244,19 +288,27 @@ For same-region access, creating a VPC Resource is the recommended approach.
 
 You can manage existing reverse private endpoints in the ClickHouse Cloud service settings:
 
-<Steps headerLevel="list">
+<Steps>
 
-1. On a sidebar find the `Settings` button and click on it.
+<Step>
 
-    <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_settings0.png" alt="ClickHouse Cloud settings"/>
+On a sidebar find the `Settings` button and click on it.
 
-2. Click on `Reverse private endpoints` in a `ClickPipe reverse private endpoints` section.
+<img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_settings0.png" alt="ClickHouse Cloud settings"/>
 
-    <img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_settings1.png" alt="ClickHouse Cloud settings"/>
+</Step>
 
-   Reverse private endpoint extended information is shown in the flyout.
+<Step>
 
-   Endpoint can be removed from here. It will affect any ClickPipes using this endpoint.
+Click on `Reverse private endpoints` in a `ClickPipe reverse private endpoints` section.
+
+<img src="/images/integrations/data-ingestion/clickpipes/cp_rpe_settings1.png" alt="ClickHouse Cloud settings"/>
+
+Reverse private endpoint extended information is shown in the flyout.
+
+Endpoint can be removed from here. It will affect any ClickPipes using this endpoint.
+
+</Step>
 
 </Steps>
 

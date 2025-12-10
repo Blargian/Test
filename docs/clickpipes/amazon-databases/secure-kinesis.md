@@ -23,27 +23,30 @@ Before diving into the setup for secure Kinesis access, it's important to unders
 
 Using this approach, customers can manage all access to their Kinesis data streams in a single place (the IAM policy of the assumed-role) without having to modify each stream's access policy individually.
 
-## Setup [#setup]
+## Setup
 
-<Steps headerLevel="h3"/>
+<Steps>
 
-### Obtaining the ClickHouse service IAM role Arn [#obtaining-the-clickhouse-service-iam-role-arn]
+<Step>
+### Obtaining the ClickHouse service IAM role Arn
 
-- 1. Login to your ClickHouse cloud account.
-- 2. Select the ClickHouse service you want to create the integration
-- 3. Select the **Settings** tab
-- 4. Scroll down to the **Network security information** section at the bottom of the page
-- 5. Copy the **Service role ID (IAM)** value belong to the service as shown below.
+1. Login to your ClickHouse cloud account.
+2. Select the ClickHouse service you want to create the integration
+3. Select the **Settings** tab
+4. Scroll down to the **Network security information** section at the bottom of the page
+5. Copy the **Service role ID (IAM)** value belong to the service as shown below.
 
 <img src="/images/cloud/security/secures3_arn.png" alt="Secure S3 ARN"/>
+</Step>
 
-### Setting up IAM assume role [#setting-up-iam-assume-role]
+<Step>
+### Setting up IAM assume role
 
-#### Manually create IAM role. [#manually-create-iam-role]
+#### Manually create IAM role
 
-- 1. Login to your AWS Account in the web browser with an IAM user that has permission to create & manage IAM role.
-- 2. Browse to IAM Service Console
-- 3. Create a new IAM role with Trusted Entity Type of `AWS account`. Note that the name of the IAM role **must start with** `ClickHouseAccessRole-` for this to work.
+1. Login to your AWS Account in the web browser with an IAM user that has permission to create & manage IAM role.
+2. Browse to IAM Service Console
+3. Create a new IAM role with Trusted Entity Type of `AWS account`. Note that the name of the IAM role **must start with** `ClickHouseAccessRole-` for this to work.
 
    **i. Configure the Trust Policy**
 
@@ -111,4 +114,7 @@ Using this approach, customers can manage all access to their Kinesis data strea
    }
    ```
 
-- 4. Copy the new **IAM Role Arn** after creation. This is what is needed to access your Kinesis stream.
+4. Copy the new **IAM Role Arn** after creation. This is what is needed to access your Kinesis stream.
+</Step>
+
+</Steps>

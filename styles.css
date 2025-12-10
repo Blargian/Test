@@ -1,3 +1,7 @@
+html.dark .code-block-background {
+    background-color: #161616 !important;
+}
+
 .nav-logo {
     height: 3rem;
 }
@@ -1008,7 +1012,7 @@ a[href*="/reference"] .nav-dropdown-products-selector-item::before {
 
 /* Support center - Light */
 a[href*="/support"] .nav-dropdown-products-selector-item::before {
-    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/support-light.svg") !important;
+    background-image: url("https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/support-dark.svg") !important;
 }
 
 

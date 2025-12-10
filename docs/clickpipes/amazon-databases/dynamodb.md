@@ -7,6 +7,7 @@ keywords: ['DynamoDB']
 title: 'CDC from DynamoDB to ClickHouse'
 show_related_blogs: true
 doc_type: 'guide'
+icon: "flask"
 ---
 
 import {CloudNotSupportedBadge} from '/snippets/components/CloudNotSupportedBadge/CloudNotSupportedBadge.jsx'
