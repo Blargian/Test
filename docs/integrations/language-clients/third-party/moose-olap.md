@@ -37,7 +37,9 @@ Or follow this guide to get up and running with Moose OLAP on an existing ClickH
 - **Docker Desktop** - For local development environment
 - **macOS/Linux** - Windows works via WSL2
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Install Moose [#step-1-install-moose]
 
@@ -46,6 +48,10 @@ Install the Moose CLI globally to your system:
 ```bash
 bash -i <(curl -fsSL https://fiveonefour.com/install.sh) moose
 ```
+
+</Step>
+
+<Step>
 
 ### Set up your project [#step-2-set-up-project]
 
@@ -79,6 +85,10 @@ moose init my-project --from-remote https://explorer:@play.clickhouse.com:443/?d
 moose init my-project --from-remote https://explorer:@play.clickhouse.com:443/?database=default --language python
 ```
 
+</Step>
+
+<Step>
+
 ### Install dependencies [#step-3-install-dependencies]
 
 ```bash
@@ -95,11 +105,19 @@ pip install -r requirements.txt
 
 You should see: `Successfully generated X models from ClickHouse tables`
 
+</Step>
+
+<Step>
+
 ### Explore your generated models [#step-4-explore-models]
 
 The Moose CLI automatically generates TypeScript interfaces or Python Pydantic models from your existing ClickHouse tables.
 
 Check out your new data models in the `app/index.ts` file.
+
+</Step>
+
+<Step>
 
 ### Start development [#step-5-start-development]
 
@@ -110,6 +128,10 @@ moose dev
 ```
 
 **Important**: Your production ClickHouse will remain untouched. This creates a local development environment.
+
+</Step>
+
+<Step>
 
 ### Seed your local database [#step-6-seed-database]
 
@@ -127,12 +149,18 @@ moose seed --connection-string <YOUR_CLICKHOUSE_CONNECTION_STRING> --limit 100
 moose seed --connection-string https://explorer:@play.clickhouse.com:443/?database=default --limit 100
 ```
 
+</Step>
+
+<Step>
+
 ### Building with Moose OLAP [#step-7-building-with-moose-olap]
 
 Now that you have your Tables defined in code, you get the same benefits as ORM data models in web apps - type safety and autocomplete when building APIs and Materialized Views on top of your analytical data. As a next step, you could try:
 * Building a REST API with [Moose API](https://docs.fiveonefour.com/moose/apis)
 * Ingesting or transforming data with [Moose Workflows](https://docs.fiveonefour.com/moose/workflows) or [Moose Streaming](https://docs.fiveonefour.com/moose/workflows)
 * Explore going to production with [Moose Build](https://docs.fiveonefour.com/moose/deploying/summary) and [Moose Migrate](https://docs.fiveonefour.com/moose/migrate)
+
+</Step>
 
 </Steps>
 

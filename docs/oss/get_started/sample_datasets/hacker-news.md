@@ -12,8 +12,9 @@ keywords: ['example dataset', 'hacker news', 'sample data', 'text analysis', 've
 
 ## CSV [#csv]
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Download CSV [#download]
 
 A CSV version of the dataset can be downloaded from our public [S3 bucket](https://datasets-documentation.s3.eu-west-3.amazonaws.com/hackernews/hacknernews.csv.gz), or by running this command:
@@ -24,6 +25,9 @@ wget https://datasets-documentation.s3.eu-west-3.amazonaws.com/hackernews/hackne
 
 At 4.6GB, and 28m rows, this compressed file should take 5-10 minutes to download.
 
+</Step>
+
+<Step>
 ### Sample the data [#sampling]
 
 [`clickhouse-local`](/operations/utilities/clickhouse-local/) allows users to perform fast processing on local files without
@@ -90,6 +94,9 @@ Most importantly, the schema is automatically inferred for you from the file con
 Note also how `clickhouse-local` is able to read the compressed file, inferring the gzip format from the extension.
 The `Vertical` format is used to more easily see the data for each column.
 
+</Step>
+
+<Step>
 ### Load the data with schema inference [#loading-the-data]
 
 The simplest and most powerful tool for data loading is the `clickhouse-client`: a feature-rich native command-line client.
@@ -141,6 +148,9 @@ FROM url('https://datasets-documentation.s3.eu-west-3.amazonaws.com/hackernews/h
 
 You've successfully inserted 28 million rows into ClickHouse with a single command!
 
+</Step>
+
+<Step>
 ### Explore the data [#explore]
 
 Sample the Hacker News stories and specific columns by running the following query:
@@ -192,8 +202,11 @@ url:   http://articles.chicagotribune.com/2011-05-27/business/sc-cons-0526-start
 score: 1
 ```
 
-While schema inference is a great tool for initial data exploration, it is “best effort” and not a long-term substitute for defining an optimal schema for your data.
+While schema inference is a great tool for initial data exploration, it is "best effort" and not a long-term substitute for defining an optimal schema for your data.
 
+</Step>
+
+<Step>
 ### Define a schema [#define-a-schema]
 
 An obvious immediate optimization is to define a type for each field. 
@@ -237,6 +250,9 @@ Again using `clickhouse-client`, insert the file using the `INFILE` clause with 
 INSERT INTO hackernews FROM INFILE '/data/hacknernews.csv.gz' FORMAT CSVWithNames
 ```
 
+</Step>
+
+<Step>
 ### Run sample queries [#run-sample-queries]
 
 Some sample queries are presented below to give you inspiration for writing your
@@ -413,6 +429,9 @@ LIMIT 5
 └─────────────┴──────────┘
 ```
 
+</Step>
+
+<Step>
 #### Which comments generate the most interest? [#comments-by-most-interest]
 
 ```sql title="Query"
@@ -437,6 +456,8 @@ LIMIT 5
 └──────────┴─────────────┴────────────────────┘
 ```
 
+</Step>
+
 </Steps>
 
 ## Parquet [#parquet]
@@ -449,8 +470,9 @@ Next, you'll load the data from a Parquet file which is an efficient column-orie
 Parquet has minimal types, which ClickHouse needs to respect, and this type information is encoded in the format itself.
 Type inference on a Parquet file will invariably lead to a slightly different schema than the one for the CSV file.
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Insert the data [#insert-the-data]
 
 Run the following query to read the same data in Parquet format, again using the url function to read the remote data:
@@ -541,6 +563,9 @@ SELECT * FROM s3(
          descendants UInt32');
 ```
 
+</Step>
+
+<Step>
 ### Add a skipping-index to speed up queries [#add-skipping-index]
 
 To find out how many comments mention "ClickHouse", run the following query:
@@ -648,5 +673,7 @@ WHERE hasToken(lower(comment), 'avx') AND hasToken(lower(comment), 'sve');
 │      22 │
 └─────────┘
 ```
+
+</Step>
 
 </Steps>

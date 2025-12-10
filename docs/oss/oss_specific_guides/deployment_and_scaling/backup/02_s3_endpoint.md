@@ -45,8 +45,9 @@ The destination for a backup is specified as:
 S3('<s3 endpoint>/<directory>', '<access key id>', '<secret access key>', '<extra_credentials>')
 ```
 <br/>
-<Steps headerLevel="h4">
+<Steps>
 
+<Step>
 #### Setup [#create-a-table]
 
 Create the following database and table and insert some random data into it:
@@ -69,6 +70,9 @@ FROM generateRandom('key Int, value String, array Array(String)')
 LIMIT 1000
 ```
 
+</Step>
+
+<Step>
 #### Create a base backup [#create-a-base-initial-backup]
 
 Incremental backups require a _base_ backup to start from. The first parameter of
@@ -91,6 +95,9 @@ BACKUP TABLE test_db.test_table TO S3(
 └──────────────────────────────────────┴────────────────┘
 ```
 
+</Step>
+
+<Step>
 #### Add more data [#add-more-data]
 
 Incremental backups are populated with the difference between the base backup and
@@ -103,6 +110,9 @@ FROM generateRandom('key Int, value String, array Array(String)')
 LIMIT 100
 ```
 
+</Step>
+
+<Step>
 #### Take an incremental backup [#take-an-incremental-backup]
 
 This backup command is similar to the base backup, but adds `SETTINGS base_backup` and the location of the base backup.  Note that the destination for the incremental backup is not the same directory as the base, it is the same endpoint with a different target directory within the bucket.  The base backup is in `my_backup`, and the incremental will be written to `my_incremental`:
@@ -126,6 +136,9 @@ SETTINGS base_backup = S3(
 └──────────────────────────────────────┴────────────────┘
 ```
 
+</Step>
+
+<Step>
 #### Restore from the incremental backup [#restore-from-the-incremental-backup]
 
 This command restores the incremental backup into a new table, `test_table_restored`.  
@@ -146,6 +159,9 @@ RESTORE TABLE data AS test_db.test_table_restored FROM S3(
 └──────────────────────────────────────┴──────────┘
 ```
 
+</Step>
+
+<Step>
 #### Verify the count [#verify-the-count]
 
 There were two inserts into the original table `data`, one with 1,000 rows and one with 100 rows, for a total of 1,100. 
@@ -162,6 +178,9 @@ FROM test_db.test_table_restored
 └─────────┘
 ```
 
+</Step>
+
+<Step>
 #### Verify the content [#verify-the-content]
 
 This compares the content of the original table, `test_table` with the restored table `test_table_restored`:
@@ -175,5 +194,7 @@ SELECT throwIf((
    FROM test_db.test_table_restored
 ), 'Data does not match after BACKUP/RESTORE')
 ```
+
+</Step>
 
 </Steps>

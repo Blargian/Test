@@ -20,8 +20,9 @@ This page describes the process for enabling deployment of HIPAA compliant servi
 
 ## Enable and deploy HIPAA compliant services [#enable-hipaa-compliant-services]
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Sign up for Enterprise services [#sign-up-for-enterprise]
 
 1. Select your organization name in the lower left corner of the console.
@@ -30,6 +31,9 @@ This page describes the process for enabling deployment of HIPAA compliant servi
 4. If your **Plan** is **Enterprise**, then go to the next section. If not, click **Change plan**.
 5. Select **Switch to Enterprise**.
 
+</Step>
+
+<Step>
 ### Enable HIPAA for your organization [#enable-hipaa]
 
 1. Select your organization name in the lower left corner of the console.
@@ -58,6 +62,9 @@ This page describes the process for enabling deployment of HIPAA compliant servi
 
 <br />
 
+</Step>
+
+<Step>
 ### Deploy services to HIPAA compliant regions [#deploy-hippa-services]
 
 1. Select **New service** in the upper left corner of the home screen in the console
@@ -72,6 +79,8 @@ This page describes the process for enabling deployment of HIPAA compliant servi
 3. Enter a name for the service and enter the remaining information
 
 For a complete listing of HIPAA compliant cloud providers and services, review our [Supported cloud regions](/cloud/reference/supported-regions) page.
+
+</Step>
 
 </Steps>
 

@@ -20,24 +20,36 @@ ClickHouse Government is designed for government agencies, public sector organiz
 
 The following features differentiate ClickHouse Government from self-managed open source deployments:
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Enhanced performance [#enhanced-performance]
 - Native separation of compute and storage
 - Proprietary cloud features such as [shared merge tree](/cloud/reference/shared-merge-tree) and [warehouse](/cloud/reference/warehouses) functionality
 
+</Step>
+
+<Step>
 ### Tested and proven through a variety of use cases and conditions [#tested-proven]
 - Fully tested and validated in ClickHouse Cloud
 
+</Step>
+
+<Step>
 ### Compliance package [#compliance-package]
 - [NIST Risk Management Framework (RMF)](https://csrc.nist.gov/projects/risk-management/about-rmf) documentation to accelerate your Authorization to Operate (ATO)
 
+</Step>
+
+<Step>
 ### Full featured roadmap with new features added regularly [#full-featured-roadmap]
 Additional features that are coming soon include:
 - API to programmatically manage resources
   - Automated backups
   - Automated vertical scaling operations
 - Identity provider integration
+
+</Step>
 
 </Steps>
 

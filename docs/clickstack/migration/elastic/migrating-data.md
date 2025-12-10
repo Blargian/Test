@@ -111,8 +111,9 @@ This approach is only viable for datasets under 10 million rows, as Elasticsearc
 
 The following steps allow the migration of a single Elasticsearch index from ClickHouse.
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Migrate schema [#migrate-scheme]
 
 Create a table in ClickHouse for the index being migrated from Elasticsearch. Users can map [Elasticsearch types to their ClickHouse](/use-cases/observability/clickstack/migration/elastic/types) equivalent. Alternatively, users can simply rely on the JSON data type in ClickHouse, which will dynamically create columns of the appropriate type as data is inserted.
@@ -121,7 +122,8 @@ Consider the following Elasticsearch mapping for an index containing `syslog` da
 
 <AccordionGroup>
 <Accordion title="Elasticsearch mapping">
-```javascripton
+
+```javascript
 GET .ds-logs-system.syslog-default-2025.06.03-000001/_mapping
 {
   ".ds-logs-system.syslog-default-2025.06.03-000001": {
@@ -428,6 +430,7 @@ The equivalent ClickHouse table schema:
 
 <AccordionGroup>
 <Accordion title="ClickHouse schema">
+
 ```sql
 SET enable_json_type = 1;
 
@@ -547,7 +550,9 @@ We provide a type hint for the `host.name` and `timestamp` columns in the JSON d
 This latter approach, while simpler, is best for prototyping and data engineering tasks. For production, use `JSON` only for dynamic sub structures where necessary.
 
 For more details on using the JSON type in schemas, and how to efficiently apply it, we recommend the guide ["Designing your schema"](/integrations/data-formats/json/schema).
+</Step>
 
+<Step>
 ### Install `elasticdump` [#install-elasticdump]
 
 We recommend [`elasticdump`](https://github.com/elasticsearch-dump/elasticsearch-dump) for exporting data from Elasticsearch. This tool requires `node` and should be installed on a machine with network proximity to both Elasticsearch and ClickHouse. We recommend a dedicated server with at least 4 cores and 16GB of RAM for most exports.
@@ -563,11 +568,15 @@ npm install elasticdump -g
 - Exports data directly to JSON format, which can be streamed to the ClickHouse client for insertion.
 
 Where possible, we recommend running both ClickHouse, Elasticsearch, and `elastic dump` in the same availability zone or data center to minimize network egress and maximize throughput.
+</Step>
 
+<Step>
 ### Install ClickHouse client [#install-clickhouse-client]
 
 Ensure ClickHouse is [installed on the server](/install) on which `elasticdump` is located. **Do not start a ClickHouse server** - these steps only require the client.
+</Step>
 
+<Step>
 ### Stream data [#stream-data]
 
 To stream data between Elasticsearch and ClickHouse, use the `elasticdump` command - piping the output directly to the ClickHouse client. The following inserts the data into our well structured table `logs_system_syslog`.
@@ -617,7 +626,9 @@ clickhouse-client --host ${CLICKHOUSE_HOST} --secure --password ${CLICKHOUSE_PAS
 
 See ["Reading JSON as an object"](/integrations/data-formats/json/other-formats#reading-json-as-an-object) for further details.
 </Note>
+</Step>
 
+<Step>
 ### Transform data (optional) [#transform-data]
 
 The above commands assume a 1:1 mapping of Elasticsearch fields to ClickHouse columns. Users often need to filter and transform Elasticsearch data before insertion into ClickHouse.
@@ -645,5 +656,6 @@ clickhouse-client --host ${CLICKHOUSE_HOST} --secure --password ${CLICKHOUSE_PAS
 ```
 
 Note the need to escape the `@timestamp` field name and use the `JSONAsObject` input format.
+</Step>
 
 </Steps>

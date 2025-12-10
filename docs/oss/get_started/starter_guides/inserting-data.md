@@ -165,8 +165,10 @@ In this example you'll see how to insert a CSV file into ClickHouse from the com
 
 We'll be using the [Hacker News dataset](/getting-started/example-datasets/hacker-news) for this example, which contains 28 million rows of Hacker News data.
 
-<Steps headerLevel="h3">
-    
+<Steps>
+
+<Step>
+
 ### Download the CSV [#download-csv]
 
 Run the following command to download a CSV version of the dataset from our public S3 bucket:
@@ -176,6 +178,10 @@ wget https://datasets-documentation.s3.eu-west-3.amazonaws.com/hackernews/hackne
 ```
 
 At 4.6GB, and 28m rows, this compressed file should take 5-10 minutes to download.
+
+</Step>
+
+<Step>
 
 ### Create the table [#create-table]
 
@@ -205,7 +211,11 @@ ORDER BY id
 _EOF
 ```
 
-If there are no errors, then the table has been successfully created. In the command above single quotes are used around the heredoc delimiter (`_EOF`) to prevent any interpolation. Without single quotes it would be necessary to escape the backticks around the column names. 
+If there are no errors, then the table has been successfully created. In the command above single quotes are used around the heredoc delimiter (`_EOF`) to prevent any interpolation. Without single quotes it would be necessary to escape the backticks around the column names.
+
+</Step>
+
+<Step>
 
 ### Insert the data from the command line [#insert-data-via-cmd]
 
@@ -234,6 +244,10 @@ clickhouse-client --query "SELECT formatReadableQuantity(count(*)) FROM hackerne
 28.74 million
 ```
 
+</Step>
+
+<Step>
+
 ### inserting data via command line with curl [#insert-using-curl]
 
 In the previous steps you first downloaded the csv file to your local machine using `wget`. It is also possible to directly insert the data from the remote URL using a single command.
@@ -256,5 +270,7 @@ You can now run the same command as previously to verify that the data was inser
 clickhouse-client --query "SELECT formatReadableQuantity(count(*)) FROM hackernews"
 28.74 million
 ```
+
+</Step>
 
 </Steps>

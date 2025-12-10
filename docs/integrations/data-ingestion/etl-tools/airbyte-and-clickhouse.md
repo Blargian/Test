@@ -22,7 +22,9 @@ Please note that the Airbyte source and destination for ClickHouse are currently
 
 <a href="https://www.airbyte.com/" target="_blank">Airbyte</a> is an open-source data integration platform. It allows the creation of <a href="https://airbyte.com/blog/why-the-future-of-etl-is-not-elt-but-el" target="_blank">ELT</a> data pipelines and is shipped with more than 140 out-of-the-box connectors. This step-by-step tutorial shows how to connect Airbyte to ClickHouse as a destination and load a sample dataset.
 
-<Steps headerLevel="h2">
+<Steps>
+
+<Step>
 
 ## Download and run Airbyte [#1-download-and-run-airbyte]
 
@@ -43,6 +45,10 @@ Please note that the Airbyte source and destination for ClickHouse are currently
         :::note
         Alternatively, you can signup and use <a href="https://docs.airbyte.com/deploying-airbyte/on-cloud" target="_blank">Airbyte Cloud</a>
         :::
+
+</Step>
+
+<Step>
 
 ## Add ClickHouse as a destination [#2-add-clickhouse-as-a-destination]
 
@@ -74,6 +80,10 @@ GRANT CREATE ON * TO my_airbyte_user;
 ```
 </Note>
 
+</Step>
+
+<Step>
+
 ## Add a dataset as a source [#3-add-a-dataset-as-a-source]
 
 The example dataset we will use is the <a href="https://clickhouse.com/docs/getting-started/example-datasets/nyc-taxi/" target="_blank">New York City Taxi Data</a> (on <a href="https://github.com/toddwschneider/nyc-taxi-data" target="_blank">Github</a>). For this tutorial, we will use a subset of this dataset which corresponds to the month of Jan 2022.
@@ -91,6 +101,10 @@ The example dataset we will use is the <a href="https://clickhouse.com/docs/gett
     <img src="/images/integrations/data-ingestion/etl-tools/airbyte_05.png" alt="ClickHouse source creation in Airbyte"/>
 
 3. Congratulations! You have now added a source file in Airbyte.
+
+</Step>
+
+<Step>
 
 ## Create a connection and load the dataset into ClickHouse [#4-create-a-connection-and-load-the-dataset-into-clickhouse]
 
@@ -164,5 +178,7 @@ The example dataset we will use is the <a href="https://clickhouse.com/docs/gett
         Now that the dataset is loaded on your ClickHouse instance, you can create an new table and use more suitable ClickHouse data types (<a href="https://clickhouse.com/docs/getting-started/example-datasets/nyc-taxi/" target="_blank">more details</a>).
 
 8. Congratulations - you have successfully loaded the NYC taxi data into ClickHouse using Airbyte!
+
+</Step>
 
 </Steps>

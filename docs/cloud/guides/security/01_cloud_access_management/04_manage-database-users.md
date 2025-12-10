@@ -16,10 +16,11 @@ SQL console users are created for each session and authenticated using X.509 cer
 
 Basic SQL console roles can be assigned to users with Service Read Only and Service Admin permissions. For more information, refer to [Manage SQL Console Role Assignments](/cloud/guides/sql-console/manage-sql-console-role-assignments). This guide demonstrates how to create a custom role for a SQL console user.
 
-To create a custom role for a SQL console user and grant it a general role, run the following commands. The email address must match the user's email address in the console. 
+To create a custom role for a SQL console user and grant it a general role, run the following commands. The email address must match the user's email address in the console.
 
-<Steps headerLevel="h4">
+<Steps>
 
+<Step>
 #### Create `database_developer` and grant permissions [#create-role-grant-permissions] 
 
 Create the `database_developer` role and grant `SHOW`, `CREATE`, `ALTER`, and `DELETE` permissions.
@@ -32,6 +33,9 @@ GRANT ALTER ON * TO database_developer;
 GRANT DELETE ON * TO database_developer;
 ```
 
+</Step>
+
+<Step>
 #### Create SQL console user role [#create-sql-console-user-role] 
 
 Create a role for the SQL console user my.user@domain.com and assign it the database_developer role.
@@ -41,9 +45,14 @@ CREATE ROLE OR REPLACE `sql-console-role:my.user@domain.com`;
 GRANT database_developer TO `sql-console-role:my.user@domain.com`;
 ```
 
+</Step>
+
+<Step>
 #### The user is assigned the new role when they use SQL console [#use-assigned-new-role]
 
-The user will be assigned the role associated with their email address whenever they use SQL console. 
+The user will be assigned the role associated with their email address whenever they use SQL console.
+
+</Step>
 
 </Steps>
 
@@ -108,8 +117,9 @@ Users can use a SHA256 hash generator or code function such as `hashlib` in Pyth
 ### Database access listings with SQL console users [#database-access-listings-with-sql-console-users]
 The following process can be used to generate a complete access listing across the SQL console and databases in your organization.
 
-<Steps headerLevel="h4">
+<Steps>
 
+<Step>
 #### Get a list of all database grants [#get-a-list-of-all-database-grants]
 
 Run the following queries to get a list of all grants in the database. 
@@ -136,6 +146,9 @@ FROM system.role_grants LEFT OUTER JOIN system.grants ON role_grants.granted_rol
 WHERE role_grants.user_name is null;
 ```
 
+</Step>
+
+<Step>
 #### Associate grant list to Console users with access to SQL console [#associate-grant-list-to-console-users-with-access-to-sql-console]
 
 Associate this list with Console users that have access to SQL console.
@@ -149,6 +162,8 @@ c. Select Settings on the left.
 d. Scroll to the SQL console access section.
 
 e. Click the link for the number of users with access to the database `There are # users with access to this service.` to see the user listing.
+
+</Step>
 
 </Steps>
 

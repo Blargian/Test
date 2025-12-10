@@ -23,8 +23,9 @@ The steps below will easily work on a local install of ClickHouse too. The only 
 
 ## Step-by-step instructions [#step-by-step-instructions]
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Data exploration [#data-exploration]
 
 Let's see what the data looks like. The `s3cluster` table function returns a table, so we can `DESCRIBE` the result:
@@ -64,6 +65,9 @@ ClickHouse infers the following schema from the JSON file:
 └─────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────┴────────────────────┴─────────┴──────────────────┴────────────────┘
 ```
 
+</Step>
+
+<Step>
 ### Create the table [#create-the-table]
 
 Based on the inferred schema, we cleaned up the data types and added a primary key.
@@ -98,6 +102,9 @@ ENGINE = MergeTree
 ORDER BY (uploader, upload_date)
 ```
 
+</Step>
+
+<Step>
 ### Insert data [#insert-data]
 
 The following command streams the records from the S3 files into the `youtube` table.
@@ -143,6 +150,9 @@ Some comments about our `INSERT` command:
 - The `upload_date` column contains valid dates, but it also contains strings like "4 hours ago" - which is certainly not a valid date. We decided to store the original value in `upload_date_str` and attempt to parse it with `toDate(parseDateTimeBestEffortUSOrZero(upload_date::String))`. If the parsing fails we just get `0`
 - We used `ifNull` to avoid getting `NULL` values in our table. If an incoming value is `NULL`, the `ifNull` function is setting the value to an empty string
 
+</Step>
+
+<Step>
 ### Count the number of rows [#count-row-numbers]
 
 Open a new tab in the SQL Console of ClickHouse Cloud (or a new `clickhouse-client` window) and watch the count increase.
@@ -159,6 +169,9 @@ FROM youtube
 └─────────────────────────────────┘
 ```
 
+</Step>
+
+<Step>
 ### Explore the data [#explore-the-data]
 
 Once the data is inserted, go ahead and count the number of dislikes of your favorite videos or channels. Let's see how many videos were uploaded by ClickHouse:
@@ -498,3 +511,7 @@ ARRAY JOIN
 │ 10th       │       6 │
 └────────────┴─────────┘
 ```
+
+</Step>
+
+</Steps>

@@ -28,7 +28,9 @@ The steps below are similar for tailing any type of log file.
 - You already have ClickHouse up and running
 - You have Vector installed
 
-<Steps headerLevel="h2">
+<Steps>
+
+<Step>
 
 ## Create a database and table [#1-create-a-database-and-table]
 
@@ -53,6 +55,10 @@ ORDER BY tuple()
 <Note>
 **ORDER BY** is set to **tuple()** (an empty tuple) as there is no need for a primary key yet.
 </Note>
+
+</Step>
+
+<Step>
 
 ## Configure Nginx [#2--configure-nginx]
 
@@ -82,6 +88,10 @@ Logs in the **combined** format look as follows:
  192.168.208.1 - - [12/Oct/2021:03:31:44 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
  192.168.208.1 - - [12/Oct/2021:03:31:49 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36"
  ```
+
+</Step>
+
+<Step>
 
 ## Configure Vector [#3-configure-vector]
 
@@ -114,6 +124,10 @@ SELECT * FROM nginxdb.access_logs
 ```
 
 <img src="/images/integrations/data-ingestion/etl-tools/vector_01.png" alt="View ClickHouse logs in table format"/>
+
+</Step>
+
+<Step>
 
 ## Parse the Logs [#4-parse-the-logs]
 
@@ -222,6 +236,8 @@ SELECT * FROM nginxdb.access_logs_view
 The lesson above stored the data in two tables, but you could change the initial `nginxdb.access_logs` table to use the [`Null`](/engines/table-engines/special/null) table engine.
 The parsed data will still end up in the `nginxdb.access_logs_view` table, but the raw data will not be stored in a table.
 </Note>
+
+</Step>
 
 </Steps>
 

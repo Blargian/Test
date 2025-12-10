@@ -17,8 +17,9 @@ Before proceeding, ensure you have:
 
 You can follow this guide to [create an API key](/cloud/manage/openapi) if you don't yet have one.
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Create a saved query [#creating-a-saved-query]
 
 If you have a saved query, you can skip this step.
@@ -66,6 +67,9 @@ Next, save the query:
 
 More documentation around saved queries can be found in section ["Saving a query"](/cloud/get-started/sql-console#saving-a-query).
 
+</Step>
+
+<Step>
 ### Configuring the query API endpoint [#configuring-the-query-api-endpoint]
 
 Query API endpoints can be configured directly from query view by clicking the **Share** button and selecting `API Endpoint`.
@@ -89,10 +93,16 @@ The curl command displayed in the interface is given below for convenience:
 curl -H "Content-Type: application/json" -s --user '<key_id>:<key_secret>' '<API-endpoint>?format=JSONEachRow&param_year=<value>'
 ```
 
+</Step>
+
+<Step>
 ### Query API parameters [#query-api-parameters]
 
 Query parameters in a query can be specified with the syntax `{parameter_name: type}`. These parameters will be automatically detected and the example request payload will contain a `queryVariables` object through which you can pass these parameters.
 
+</Step>
+
+<Step>
 ### Testing and monitoring [#testing-and-monitoring]
 
 Once a Query API endpoint is created, you can test that it works by using `curl` or any other HTTP client:
@@ -102,6 +112,8 @@ Once a Query API endpoint is created, you can test that it works by using `curl`
 After you've sent your first request, a new button should appear immediately to the right of the **Share** button. Clicking it will open a flyout containing monitoring data about the query:
 
 <img src="/images/cloud/sqlconsole/endpoints-monitoring.png" alt="Endpoint monitoring"/>
+
+</Step>
 
 </Steps>
 
