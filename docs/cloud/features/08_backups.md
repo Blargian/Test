@@ -77,7 +77,9 @@ See ["Export backups to your own Cloud account"](/cloud/manage/backups/export-ba
 
 To export backups to your own cloud account, you have two options:
 
-<Steps headerLevel="h5">
+<Steps>
+
+<Step>
 
 ##### Via Cloud Console UI [#via-ui]
 
@@ -86,9 +88,15 @@ By default, backups will then be taken daily (as specified in the [default backu
 However, we also support [configurable](/cloud/manage/backups/configurable-backups) backups to your own cloud account, which allows for setting a custom schedule.
 It is important to note that all backups to your bucket are full backups with no relationship to other previous or future backups.
 
+</Step>
+
+<Step>
+
 ##### Using SQL commands [#using-commands]
 
 You can use [SQL commands](/cloud/manage/backups/backup-restore-via-commands) to export backups to your bucket.
+
+</Step>
 
 </Steps>
 

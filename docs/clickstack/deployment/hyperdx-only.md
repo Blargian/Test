@@ -28,25 +28,35 @@ In this mode, data ingestion is left entirely to the user. You can ingest data i
 ## Deployment steps [#deployment-steps]
 <br/>
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Deploy with Docker [#deploy-hyperdx-with-docker]
 
-Run the following command, modifying `YOUR_MONGODB_URI` as required. 
+Run the following command, modifying `YOUR_MONGODB_URI` as required.
 
 ```shell
 docker run -e MONGO_URI=mongodb://YOUR_MONGODB_URI -p 8080:8080 docker.hyperdx.io/hyperdx/hyperdx
 ```
 
+</Step>
+
+<Step>
+
 ### Navigate to the HyperDX UI [#navigate-to-hyperdx-ui]
 
 Visit [http://localhost:8080](http://localhost:8080) to access the HyperDX UI.
 
-Create a user, providing a username and password which meets the requirements. 
+Create a user, providing a username and password which meets the requirements.
 
 On clicking `Create` you'll be prompted for connection details.
 
 <img src="/images/use-cases/observability/hyperdx-login.png" alt="HyperDX UI"/>
+
+</Step>
+
+<Step>
 
 ### Complete connection details [#complete-connection-details]
 
@@ -59,6 +69,8 @@ If prompted to create a source, retain all default values and complete the `Tabl
 <Note title="Creating a source">
 Creating a source requires tables to exist in ClickHouse. If you don't have data, we recommend deploying the ClickStack OpenTelemetry collector to create tables.
 </Note>
+
+</Step>
 
 </Steps>
 

@@ -89,13 +89,27 @@ The backup could be up to 24 hours old if using the default backup policy, or up
 
 To restore from an existing backup
 
-<Steps headerLevel="list">
+<Steps>
 
-1. Go to the “Backups” section of the ClickHouse Cloud console.
-2. Click on the three dots under “Actions” for the specific backup that you want to restore from.
-3. Give the new service a specific name and restore from this backup
+<Step>
+
+Go to the "Backups" section of the ClickHouse Cloud console.
+
+</Step>
+
+<Step>
+
+Click on the three dots under "Actions" for the specific backup that you want to restore from.
+
+</Step>
+
+<Step>
+
+Give the new service a specific name and restore from this backup
 
 <img src="/images/cloud/guides/restore_backup.png" alt="Restore from backup"/>
+
+</Step>
 
 </Steps>
 

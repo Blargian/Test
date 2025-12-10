@@ -56,8 +56,9 @@ Even though Redshift is based on PostgreSQL, using the ClickHouse PostgreSQL tab
 
 To use this option, you need to set up a ClickHouse JDBC Bridge. ClickHouse JDBC Bridge is a standalone Java application that handles JDBC connectivity and acts as a proxy between the ClickHouse instance and the data sources. For this tutorial, we used a pre-populated Redshift instance with a [sample database](https://docs.aws.amazon.com/redshift/latest/dg/c_sampledb.html).
 
-<Steps headerLevel="h4">
+<Steps>
 
+<Step>
 #### Deploy ClickHouse JDBC Bridge [#deploy-clickhouse-jdbc-bridge]
 
 Deploy the ClickHouse JDBC Bridge. For more details, see our user guide on [JDBC for External Data sources](/integrations/data-ingestion/dbms/jdbc-with-clickhouse.md)
@@ -65,7 +66,9 @@ Deploy the ClickHouse JDBC Bridge. For more details, see our user guide on [JDBC
 <Note>
 If you are using ClickHouse Cloud, you will need to run your ClickHouse JDBC Bridge on a separate environment and connect to ClickHouse Cloud using the [remoteSecure](/sql-reference/table-functions/remote/) function
 </Note>
+</Step>
 
+<Step>
 #### Configure your Redshift datasource [#configure-your-redshift-datasource]
 
 Configure your Redshift datasource for ClickHouse JDBC Bridge. For example, `/etc/clickhouse-jdbc-bridge/config/datasources/redshift.json `
@@ -87,7 +90,9 @@ Configure your Redshift datasource for ClickHouse JDBC Bridge. For example, `/et
  }
 }
 ```
+</Step>
 
+<Step>
 #### Query your Redshift instance from ClickHouse [#query-your-redshift-instance-from-clickhouse]
 
 Once ClickHouse JDBC Bridge deployed and running, you can start querying your Redshift instance from ClickHouse
@@ -125,7 +130,9 @@ Query id: 2d0f957c-8f4e-43b2-a66a-cc48cc96237b
 
 1 rows in set. Elapsed: 0.304 sec.
 ```
+</Step>
 
+<Step>
 #### Import Data from Redshift to ClickHouse [#import-data-from-redshift-to-clickhouse]
 
 In the following, we display importing data using an `INSERT INTO ... SELECT` statement
@@ -161,6 +168,7 @@ Ok.
 
 0 rows in set. Elapsed: 4.498 sec. Processed 49.99 thousand rows, 2.49 MB (11.11 thousand rows/s., 554.27 KB/s.)
 ```
+</Step>
 
 </Steps>
 
@@ -183,8 +191,9 @@ In this scenario, we export data to S3 in an intermediary pivot format and, in a
 
 ### Tutorial [#tutorial-1]
 
-<Steps headerLevel="h4">
+<Steps>
 
+<Step>
 #### Export data into an S3 bucket using UNLOAD [#export-data-into-an-s3-bucket-using-unload]
 
 Using Redshift's [UNLOAD](https://docs.aws.amazon.com/redshift/latest/dg/r_UNLOAD.html) feature, export the data into an existing private S3 bucket:
@@ -194,7 +203,9 @@ Using Redshift's [UNLOAD](https://docs.aws.amazon.com/redshift/latest/dg/r_UNLOA
 It will generate part files containing the raw data in S3
 
 <img src="/images/integrations/data-ingestion/redshift/s3-2.png" alt="Data in S3"/>
+</Step>
 
+<Step>
 #### Create the table in ClickHouse [#create-the-table-in-clickhouse]
 
 Create the table in ClickHouse:
@@ -220,7 +231,9 @@ SELECT * FROM s3('https://your-bucket.s3.amazonaws.com/unload/users/*', '<aws_ac
 ```
 
 This works especially well when the data is in a format that contains information about data types, like Parquet.
+</Step>
 
+<Step>
 #### Load S3 files into ClickHouse [#load-s3-files-into-clickhouse]
 
 Load the S3 files into ClickHouse using an `INSERT INTO ... SELECT` statement:
@@ -241,5 +254,6 @@ Ok.
 <Note>
 This example used CSV as the pivot format. However, for production workloads we recommend Apache Parquet as the best option for large migrations since it comes with compression and can save some storage costs while reducing transfer times. (By default, each row group is compressed using SNAPPY). ClickHouse also leverages Parquet's column orientation to speed up data ingestion.
 </Note>
+</Step>
 
 </Steps>

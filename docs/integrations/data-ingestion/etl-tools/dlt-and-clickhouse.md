@@ -22,7 +22,9 @@ pip install "dlt[clickhouse]"
 
 ## Setup guide [#setup-guide]
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Initialize the dlt Project [#1-initialize-the-dlt-project]
 
@@ -42,6 +44,10 @@ pip install -r requirements.txt
 
 or with `pip install dlt[clickhouse]`, which installs the `dlt` library and the necessary dependencies for working with ClickHouse as a destination.
 
+</Step>
+
+<Step>
+
 ### Setup ClickHouse Database [#2-setup-clickhouse-database]
 
 To load data into ClickHouse, you need to create a ClickHouse database. Here's a rough outline of what should you do:
@@ -59,6 +65,10 @@ GRANT CREATE, ALTER, SELECT, DELETE, DROP, TRUNCATE, OPTIMIZE, SHOW, INSERT, dic
 GRANT SELECT ON INFORMATION_SCHEMA.COLUMNS TO dlt;
 GRANT CREATE TEMPORARY TABLE, S3 ON *.* TO dlt;
 ```
+
+</Step>
+
+<Step>
 
 ### Add credentials [#3-add-credentials]
 
@@ -92,6 +102,8 @@ You can pass a database connection string similar to the one used by the `clickh
 # keep it at the top of your toml file, before any section starts.
 destination.clickhouse.credentials="clickhouse://dlt:Dlt*12345789234567@localhost:9000/dlt?secure=1"
 ```
+
+</Step>
 
 </Steps>
 

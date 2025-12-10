@@ -30,7 +30,9 @@ The example below shows a finished dashboard powered by data from ClickHouse.
 
 <img src="/images/integrations/data-visualization/lightdash_02.png" alt="Lightdash dashboard example" />
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Gather connection data [#connection-data-required]
 
@@ -48,7 +50,9 @@ When setting up your connection between Lightdash and ClickHouse, you’ll need 
 
 <GatherYourDetailsHttp />
 
----
+</Step>
+
+<Step>
 
 ### Configure your dbt profile for ClickHouse [#configuring-your-dbt-profile-for-clickhouse]
 
@@ -59,6 +63,10 @@ For example:
 
 <img src="/images/integrations/data-visualization/lightdash_01.png" alt="Example profiles.yml configuration for a lightdash-clickhouse project" />
 
+</Step>
+
+<Step>
+
 ### Create a Lightdash project connected to ClickHouse [#creating-a-lightdash-project-connected-to-clickhouse]
 
 Once your dbt profile is configured for ClickHouse, you’ll also need to connect your **dbt project** to Lightdash.
@@ -67,9 +75,11 @@ Because this process is the same for all data warehouses, we won’t go into det
 
 [Import a dbt project → Lightdash Docs](https://docs.lightdash.com/get-started/setup-lightdash/connect-project#2-import-a-dbt-project?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)
 
-After connecting your dbt project, Lightdash will automatically detect your ClickHouse configuration from the `profiles.yml` file. Once the connection test succeeds, you’ll be able to start exploring your dbt models and building dashboards powered by ClickHouse.
+After connecting your dbt project, Lightdash will automatically detect your ClickHouse configuration from the `profiles.yml` file. Once the connection test succeeds, you'll be able to start exploring your dbt models and building dashboards powered by ClickHouse.
 
----
+</Step>
+
+<Step>
 
 ### Explore your ClickHouse data in Lightdash [#exploring-your-clickhouse-data-in-lightdash]
 
@@ -81,7 +91,9 @@ Once connected, Lightdash automatically syncs your dbt models and exposes:
 
 You can now build dashboards, share insights, and even use **Ask AI** to generate visualizations directly on top of ClickHouse — no manual SQL required.
 
----
+</Step>
+
+<Step>
 
 ### Define metrics and dimensions in Lightdash [#defining-metrics-and-dimensions-in-lightdash]
 
@@ -92,10 +104,12 @@ In Lightdash, all **metrics** and **dimensions** are defined directly in your db
 Defining these in YAML ensures your team is using the same definitions across dashboards and analyses. For example, you can create reusable metrics like `total_order_count`, `total_revenue`, or `avg_order_value` right next to your dbt models — no duplication required in the UI.
 
 To learn more about how to define these, see the following Lightdash guides:  
-- [How to create metrics](https://docs.lightdash.com/guides/how-to-create-metrics?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)  
+- [How to create metrics](https://docs.lightdash.com/guides/how-to-create-metrics?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)
 - [How to create dimensions](https://docs.lightdash.com/guides/how-to-create-dimensions?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)
 
----
+</Step>
+
+<Step>
 
 ### Query your data from tables [#querying-your-data-from-tables]
 
@@ -114,10 +128,12 @@ The **Explore** page is made up of five main areas:
 
 From here, you can build and adjust queries interactively — dragging and dropping fields, adding filters, and switching between visualization types such as tables, bar charts, or time series.
 
-For a deeper look at explores and how to query from your tables, see:  
+For a deeper look at explores and how to query from your tables, see:
 [An intro to tables and the Explore page → Lightdash Docs](https://docs.lightdash.com/get-started/exploring-data/using-explores#an-intro-to-tables-and-the-explore-page?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)
 
----
+</Step>
+
+<Step>
 
 ### Build dashboards [#building-dashboards]
 
@@ -135,10 +151,12 @@ To create a dashboard-only chart:
 
 <img src="/images/integrations/data-visualization/lightdash_05.png" alt="Creating and organizing charts within a Lightdash dashboard" />
 
-Learn more about how to create and organize dashboards here:  
+Learn more about how to create and organize dashboards here:
 [Building dashboards → Lightdash Docs](https://docs.lightdash.com/get-started/exploring-data/dashboards?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)
 
----
+</Step>
+
+<Step>
 
 ### Ask AI: self-serve analytics powered by dbt [#ask-ai]
 
@@ -152,6 +170,9 @@ It’s powered by the same semantic layer you use in dbt, meaning every answer s
 <Tip>
 Learn more about AI Agents here: [AI Agents → Lightdash Docs](https://docs.lightdash.com/guides/ai-agents?utm_source=clickhouse&utm_medium=partner&utm_campaign=integration_docs)
 </Tip>
+
+</Step>
+
 </Steps>
 
 ## Learn more [#learn-more]

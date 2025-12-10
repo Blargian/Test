@@ -30,7 +30,9 @@ Similar to the [all-in-one image](/use-cases/observability/clickstack/deployment
 ## Deployment steps [#deployment-steps]
 <br/>
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Deploy with Docker [#deploy-with-docker]
 
@@ -39,6 +41,10 @@ Local mode deploys the HyperDX UI on port 8080.
 ```shell
 docker run -p 8080:8080 docker.hyperdx.io/hyperdx/hyperdx-local
 ```
+
+</Step>
+
+<Step>
 
 ### Navigate to the HyperDX UI [#navigate-to-hyperdx-ui]
 
@@ -53,6 +59,8 @@ Connect to your own external ClickHouse cluster e.g. ClickHouse Cloud.
 Create a source, retain all default values, and complete the `Table` field with the value `otel_logs`. All other settings should be auto-detected, allowing you to click `Save New Source`.
 
 <img src="/images/use-cases/observability/hyperdx-logs.png" alt="Create logs source"/>
+
+</Step>
 
 </Steps>
 

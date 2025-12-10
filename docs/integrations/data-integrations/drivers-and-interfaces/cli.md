@@ -544,25 +544,37 @@ ai:
 
 The AI SQL generator uses a multi-step process:
 
-<Steps headerLevel="list">
+<Steps>
 
-1. **Schema Discovery**
+<Step>
+
+**Schema Discovery**
 
 The AI uses built-in tools to explore your database
 - Lists available databases
 - Discovers tables within relevant databases
 - Examines table structures via `CREATE TABLE` statements
 
-2. **Query Generation**
+</Step>
+
+<Step>
+
+**Query Generation**
 
 Based on the discovered schema, the AI generates SQL that:
 - Matches your natural language intent
 - Uses correct table and column names
 - Applies appropriate joins and aggregations
 
-3. **Execution**
+</Step>
+
+<Step>
+
+**Execution**
 
 The generated SQL is automatically executed and results are displayed
+
+</Step>
 
 </Steps>
 

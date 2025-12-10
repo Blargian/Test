@@ -15,8 +15,9 @@ such as S3, as an intermediate storage for transfer. The migration process also
 relies on using the commands `COPY INTO` from Snowflake and `INSERT INTO SELECT` 
 of ClickHouse.
 
-<Steps headerLevel="h2">
+<Steps>
 
+<Step>
 ## Export data from Snowflake [#1-exporting-data-from-snowflake]
 
 <img src="/images/migrations/migrate_snowflake_clickhouse.png" alt="Migrating from Snowflake to ClickHouse"/>
@@ -53,6 +54,9 @@ COPY INTO @external_stage/mydataset from mydataset max_file_size=157286400 heade
 ```
 
 For a dataset around 5TB of data with a maximum file size of 150MB, and using a 2X-Large Snowflake warehouse located in the same AWS `us-east-1` region, copying data to the S3 bucket will take around 30 minutes.
+
+</Step>
+<Step>
 
 ## Import to ClickHouse [#2-importing-to-clickhouse]
 
@@ -100,6 +104,9 @@ The `VARIANT` and `OBJECT` columns in the original Snowflake table schema will b
 Nested structures such as `some_file` are converted to JSON strings on copy by Snowflake. Importing this data requires us to transform these structures to Tuples at insert time in ClickHouse, using the [JSONExtract function](/sql-reference/functions/json-functions#JSONExtract) as shown above.
 </Note>
 
+</Step>
+
+<Step>
 ## Test successful data export [#3-testing-successful-data-export]
 
 To test whether your data was properly inserted, simply run a `SELECT` query on your new table:
@@ -107,5 +114,7 @@ To test whether your data was properly inserted, simply run a `SELECT` query on 
 ```sql
 SELECT * FROM mydataset LIMIT 10;
 ```
+
+</Step>
 
 </Steps>

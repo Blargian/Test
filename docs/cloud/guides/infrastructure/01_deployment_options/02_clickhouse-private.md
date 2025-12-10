@@ -20,21 +20,30 @@ ClickHouse Private is designed for large enterprises with the most rigorous comp
 
 The following features differentiate ClickHouse Private from self-managed open source deployments:
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Enhanced performance [#enhanced-performance]
 - Native separation of compute and storage
 - Proprietary cloud features such as [shared merge tree](/cloud/reference/shared-merge-tree) and [warehouse](/cloud/reference/warehouses) functionality
 
+</Step>
+
+<Step>
 ### Tested and proven through a variety of use cases and conditions [#tested-proven-through-variety-of-use-cases]
 - Fully tested and validated in ClickHouse Cloud
 
+</Step>
+
+<Step>
 ### Full featured roadmap with new features added regularly [#full-featured-roadmap]
 Additional features that are coming soon include:
 - API to programmatically manage resources
   - Automated backups
   - Automated vertical scaling operations
 - Identity provider integration
+
+</Step>
 
 </Steps>
 

@@ -55,7 +55,9 @@ We illustrate both of these architectures below.
 
 In the following example, we provide the initial steps to configure Vector to receive log events from Filebeat via the Lumberjack protocol. We provide VRL for mapping the inbound ECS events to OTel specification, before sending these to the ClickStack OpenTelemetry collector via OTLP. Users consuming events from Kafka can replace the Vector Logstash source with the [Kafka source](https://vector.dev/docs/reference/configuration/sources/kafka/) - all other steps remain the same.
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Install vector [#install-vector]
 
@@ -64,6 +66,10 @@ Install Vector using the [official installation guide](https://vector.dev/docs/s
 This can be installed on the same instance as your Elastic Stack OTel collector.
 
 Users can follow best practices with regards to architecture and security when [moving Vector to production](https://vector.dev/docs/setup/going-to-prod/).
+
+</Step>
+
+<Step>
 
 ### Configure vector [#configure-vector]
 
@@ -279,6 +285,10 @@ sinks:
         content-type: application/json
 ```
 
+</Step>
+
+<Step>
+
 ### Configure Filebeat [#configure-filebeat]
 
 Existing Filebeat installations simply need to be modified to send their events to Vector. This requires the configuration of a Logstash output - again, TLS can be optionally configured:
@@ -300,6 +310,8 @@ output.logstash:
   #ssl.key: "/etc/pki/client/cert.key"
 ```
 
+</Step>
+
 </Steps>
 
 ## Migrating from Elastic Agent [#migrating-from-elastic-agent]
@@ -315,11 +327,17 @@ We demonstrate both of these options below.
 
 ### Sending data via Vector [#sending-data-via-vector]
 
-<Steps headerLevel="h4">
+<Steps>
+
+<Step>
 
 #### Install and configure Vector [#install-configure-vector]
 
 Install and configure Vector using the [same steps](#install-vector) as those documented for migrating from Filebeat.
+
+</Step>
+
+<Step>
 
 #### Configure Elastic Agent [#configure-elastic-agent]
 
@@ -343,13 +361,15 @@ sources:
     type: logstash
     address: 0.0.0.0:5044
     tls:
-      enabled: true  # Set to true if you're using TLS. 
+      enabled: true  # Set to true if you're using TLS.
       # The files below are generated from the steps at https://www.elastic.co/docs/reference/fleet/secure-logstash-connections#generate-logstash-certs
       crt_file: logstash.crt
       key_file: logstash.key
       ca_file: ca.crt
       verify_certificate: true
 ```
+
+</Step>
 
 </Steps>
 

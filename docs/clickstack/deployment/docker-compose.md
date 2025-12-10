@@ -41,7 +41,9 @@ These ports enable integrations with a variety of telemetry sources and make the
 ## Deployment steps [#deployment-steps]
 <br/>
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Clone the repo [#clone-the-repo]
 
@@ -55,11 +57,15 @@ git checkout v2
 docker compose up
 ```
 
+</Step>
+
+<Step>
+
 ### Navigate to the HyperDX UI [#navigate-to-hyperdx-ui]
 
 Visit [http://localhost:8080](http://localhost:8080) to access the HyperDX UI.
 
-Create a user, providing a username and password which meets the requirements. 
+Create a user, providing a username and password which meets the requirements.
 
 On clicking `Create` data sources will be created for the ClickHouse instance deployed with the Helm chart.
 
@@ -71,15 +77,21 @@ You can override the default connection to the integrated ClickHouse instance. F
 
 For an example of using an alternative ClickHouse instance, see ["Create a ClickHouse Cloud connection"](/use-cases/observability/clickstack/getting-started#create-a-cloud-connection).
 
+</Step>
+
+<Step>
+
 ### Complete connection details [#complete-connection-details]
 
-To connect to the deployed ClickHouse instance, simply click **Create** and accept the default settings.  
+To connect to the deployed ClickHouse instance, simply click **Create** and accept the default settings.
 
 If you prefer to connect to your own **external ClickHouse cluster** e.g. ClickHouse Cloud, you can manually enter your connection credentials.
 
 If prompted to create a source, retain all default values and complete the `Table` field with the value `otel_logs`. All other settings should be auto-detected, allowing you to click `Save New Source`.
 
 <img src="/images/use-cases/observability/hyperdx-logs.png" alt="Create logs source"/>
+
+</Step>
 
 </Steps>
 

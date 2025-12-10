@@ -38,13 +38,19 @@ The chart supports standard Kubernetes best practices, including:
 ## Deployment steps [#deployment-steps]
 <br/>
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Prerequisites [#prerequisites]
 
 - [Helm](https://helm.sh/) v3+
 - Kubernetes cluster (v1.20+ recommended)
 - `kubectl` configured to interact with your cluster
+
+</Step>
+
+<Step>
 
 ### Add the HyperDX Helm repository [#add-the-hyperdx-helm-repository]
 
@@ -55,6 +61,10 @@ helm repo add hyperdx https://hyperdxio.github.io/helm-charts
 helm repo update
 ```
 
+</Step>
+
+<Step>
+
 ### Installing HyperDX [#installing-hyperdx]
 
 To install the HyperDX chart with default values:
@@ -62,6 +72,10 @@ To install the HyperDX chart with default values:
 ```shell
 helm install my-hyperdx hyperdx/hdx-oss-v2
 ```
+
+</Step>
+
+<Step>
 
 ### Verify the installation [#verify-the-installation]
 
@@ -73,6 +87,10 @@ kubectl get pods -l "app.kubernetes.io/name=hdx-oss-v2"
 
 When all pods are ready, proceed.
 
+</Step>
+
+<Step>
+
 ### Forward ports [#forward-ports]
 
 Port forwarding allows us to access and set up HyperDX. Users deploying to production should instead expose the service via an ingress or load balancer to ensure proper network access, TLS termination, and scalability. Port forwarding is best suited for local development or one-off administrative tasks, not long-term or high-availability environments.
@@ -83,11 +101,15 @@ kubectl port-forward \
   8080:3000
 ```
 
+</Step>
+
+<Step>
+
 ### Navigate to the UI [#navigate-to-the-ui]
 
 Visit [http://localhost:8080](http://localhost:8080) to access the HyperDX UI.
 
-Create a user, providing a username and password which means the requirements. 
+Create a user, providing a username and password which means the requirements.
 
 <img src="/images/use-cases/observability/hyperdx-login.png" alt="HyperDX UI"/>
 
@@ -99,12 +121,17 @@ You can override the default connection to the integrated ClickHouse instance. F
 
 For an example of using an alternative ClickHouse instance, see ["Create a ClickHouse Cloud connection"](/use-cases/observability/clickstack/getting-started#create-a-cloud-connection).
 
+</Step>
+
+<Step>
+
 ### Customizing values (optional) [#customizing-values]
 
 You can customize settings by using `--set` flags. For example:
 
 ```shell
 helm install my-hyperdx hyperdx/hdx-oss-v2 --set key=value
+```
 
 Alternatively, edit the `values.yaml`. To retrieve the default values:
 
@@ -137,6 +164,10 @@ ingress:
 ```shell
 helm install my-hyperdx hyperdx/hdx-oss-v2 -f values.yaml
 ```
+
+</Step>
+
+<Step>
 
 ### Using secrets (optional) [#using-secrets]
 
@@ -187,6 +218,8 @@ hyperdx:
         name: hyperdx-secret
         key: API_KEY
 ```
+
+</Step>
 
 </Steps>
 

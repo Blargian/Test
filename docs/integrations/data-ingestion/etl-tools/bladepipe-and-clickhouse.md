@@ -29,7 +29,10 @@ Currently BladePipe supports for data integration to ClickHouse from the followi
 
 More sources are to be supported.
 
-<Steps headerLevel="h2">
+<Steps>
+
+<Step>
+
 ## Download and run BladePipe [#1-run-bladepipe]
 1. Log in to <a href="https://www.bladepipe.com/" target="_blank">BladePipe Cloud</a>.
 
@@ -38,6 +41,10 @@ More sources are to be supported.
   :::note
   Alternatively, you can download and deploy <a href="https://doc.bladepipe.com/productOP/onPremise/installation/install_all_in_one_binary" target="_blank">BladePipe Enterprise</a>.
   :::
+
+</Step>
+
+<Step>
 
 ## Add ClickHouse as a target [#2-add-clickhouse-as-a-target]
 
@@ -54,6 +61,10 @@ More sources are to be supported.
 
 3. Click "Add DataSource" at the bottom, and a ClickHouse instance is added.
 
+</Step>
+
+<Step>
+
 ## Add MySQL as a source [#3-add-mysql-as-a-source]
 In this tutorial, we use a MySQL instance as the source, and explain the process of loading MySQL data to ClickHouse.
 
@@ -68,6 +79,10 @@ To use MySQL as a source, make sure that the user has the <a href="https://doc.b
     <img src="/images/integrations/data-ingestion/etl-tools/bp_ck_2.png" alt="Add MySQL as a source"/>
 
 3. Click "Add DataSource" at the bottom, and a MySQL instance is added.
+
+</Step>
+
+<Step>
 
 ## Create a pipeline [#4-create-a-pipeline]
 
@@ -88,6 +103,10 @@ To use MySQL as a source, make sure that the user has the <a href="https://doc.b
 6. Confirm the DataJob creation, and the DataJob runs automatically.
     <img src="/images/integrations/data-ingestion/etl-tools/bp_ck_8.png" alt="DataJob is running"/>
 
+</Step>
+
+<Step>
+
 ## Verify the data [#5-verify-the-data]
 1. Stop data write in MySQL instance and wait for ClickHouse to merge data.
 <Note>
@@ -98,5 +117,7 @@ Alternatively, you can run the `CREATE VIEW xxx_v AS SELECT * FROM xxx FINAL;` c
 
 2. Create a <a href="https://doc.bladepipe.com/operation/job_manage/create_job/create_period_verification_correction_job" target="_blank">Verification DataJob</a>. Once the Verification DataJob is completed, review the results to confirm that the data in ClickHouse is the same as the data in MySQL.
    <img src="/images/integrations/data-ingestion/etl-tools/bp_ck_9.png" alt="Verify data"/>
-   
+
+</Step>
+
 </Steps>

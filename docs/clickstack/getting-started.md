@@ -21,7 +21,9 @@ The simplest option is a **single-image distribution** that includes all core co
 
 This all-in-one image allows you to launch the full stack with a single command, making it ideal for testing, experimentation, or quick local deployments.
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Deploy stack with docker [#deploy-stack-with-docker]
 
@@ -32,7 +34,7 @@ docker run -p 8080:8080 -p 4317:4317 -p 4318:4318 docker.hyperdx.io/hyperdx/hype
 ```
 
 <Note title="Persisting data and settings">
-To persist data and settings across restarts of the container, users can modify the above docker command to mount the paths `/data/db`, `/var/lib/clickhouse` and `/var/log/clickhouse-server`. 
+To persist data and settings across restarts of the container, users can modify the above docker command to mount the paths `/data/db`, `/var/lib/clickhouse` and `/var/log/clickhouse-server`.
 
 For example:
 
@@ -49,15 +51,23 @@ docker run \
 ```
 </Note>
 
+</Step>
+
+<Step>
+
 ### Navigate to the HyperDX UI [#navigate-to-hyperdx-ui]
 
 Visit [http://localhost:8080](http://localhost:8080) to access the HyperDX UI.
 
-Create a user, providing a username and password that meets the complexity requirements. 
+Create a user, providing a username and password that meets the complexity requirements.
 
 <img src="/images/use-cases/observability/hyperdx-login.png" alt="HyperDX UI"/>
 
 HyperDX will automatically connect to the local cluster and create data sources for the logs, traces, metrics, and sessions - allowing you to explore the product immediately.
+
+</Step>
+
+<Step>
 
 ### Explore the product [#explore-the-product]
 
@@ -69,9 +79,11 @@ To continue using the local cluster:
 - [Local files and metrics](/use-cases/observability/clickstack/getting-started/local-data) - Load local files and monitor system on OSX or Linux using a local OTel collector.
 
 <br/>
-Alternatively, you can connect to a demo cluster where you can explore a larger dataset: 
+Alternatively, you can connect to a demo cluster where you can explore a larger dataset:
 
 - [Remote demo dataset](/use-cases/observability/clickstack/getting-started/remote-demo-data) - Explore a demo dataset in our demo ClickHouse service.
+
+</Step>
 
 </Steps>
 
@@ -79,15 +91,21 @@ Alternatively, you can connect to a demo cluster where you can explore a larger 
 
 Users can deploy ClickStack against ClickHouse Cloud, benefiting from a fully managed, secure backend while retaining complete control over ingestion, schema, and observability workflows.
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Create a ClickHouse Cloud service [#create-a-service]
 
 Follow the [getting started guide for ClickHouse Cloud](/getting-started/quick-start/cloud#1-create-a-clickhouse-service) to create a service.
 
+</Step>
+
+<Step>
+
 ### Copy connection details [#copy-cloud-connection-details]
 
-To find the connection details for HyperDX, navigate to the ClickHouse Cloud console and click the <b>Connect</b> button on the sidebar. 
+To find the connection details for HyperDX, navigate to the ClickHouse Cloud console and click the <b>Connect</b> button on the sidebar.
 
 Copy the HTTP connection details, specifically the HTTPS endpoint (`endpoint`) and password.
 
@@ -96,6 +114,10 @@ Copy the HTTP connection details, specifically the HTTPS endpoint (`endpoint`) a
 <Note title="Deploying to production">
 While we will use the `default` user to connect HyperDX, we recommend creating a dedicated user when [going to production](/use-cases/observability/clickstack/production#create-a-user).
 </Note>
+
+</Step>
+
+<Step>
 
 ### Deploy with docker [#deploy-with-docker]
 
@@ -115,13 +137,21 @@ docker run -e CLICKHOUSE_ENDPOINT=${CLICKHOUSE_ENDPOINT} -e CLICKHOUSE_USER=defa
 
 This will expose an OpenTelemetry collector (on port 4317 and 4318), and the HyperDX UI (on port 8080).
 
+</Step>
+
+<Step>
+
 ### Navigate to the HyperDX UI [#navigate-to-hyperdx-ui-cloud]
 
 Visit [http://localhost:8080](http://localhost:8080) to access the HyperDX UI.
 
-Create a user, providing a username and password which meets the complexity requirements. 
+Create a user, providing a username and password which meets the complexity requirements.
 
 <img src="/images/use-cases/observability/hyperdx-login.png" alt="HyperDX Login"/>
+
+</Step>
+
+<Step>
 
 ### Create a ClickHouse Cloud connection [#create-a-cloud-connection]
 
@@ -133,12 +163,18 @@ Rename the connection to `Cloud` and complete the subsequent form with your Clic
 
 <img src="/images/use-cases/observability/edit_cloud_connection.png" alt="Create Cloud connection"/>
 
+</Step>
+
+<Step>
+
 ### Explore the product [#explore-the-product-cloud]
 
 With the stack deployed, try one of our same datasets.
 
 - [Example dataset](/use-cases/observability/clickstack/getting-started/sample-data) - Load an example dataset from our public demo. Diagnose a simple issue.
 - [Local files and metrics](/use-cases/observability/clickstack/getting-started/local-data) - Load local files and monitor the system on OSX or Linux using a local OTel collector.
+
+</Step>
 
 </Steps>
 
@@ -156,7 +192,9 @@ You can use a hosted version of HyperDX in local mode available at [play.hyperdx
 
 ### Self-hosted version [#self-hosted-version]
 
-<Steps headerLevel="h3">
+<Steps>
+
+<Step>
 
 ### Run with docker [#run-local-with-docker]
 
@@ -168,6 +206,10 @@ docker run -p 8080:8080 docker.hyperdx.io/hyperdx/hyperdx-local
 
 You will not be promoted to create a user as local mode does not include authentication.
 
+</Step>
+
+<Step>
+
 ### Complete connection credentials [#complete-connection-credentials]
 
 To connect to your own **external ClickHouse cluster**, you can manually enter your connection credentials.
@@ -177,5 +219,7 @@ Alternatively, for a quick exploration of the product, you can also click **Conn
 <img src="/images/use-cases/observability/hyperdx-2.png" alt="Credentials"/>
 
 If connecting to the demo server, users can explore the dataset with the [demo dataset instructions](/use-cases/observability/clickstack/getting-started/remote-demo-data).
+
+</Step>
 
 </Steps>

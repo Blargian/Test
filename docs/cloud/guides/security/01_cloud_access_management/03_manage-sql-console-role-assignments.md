@@ -11,8 +11,9 @@ keywords: ['sql console', 'role assignments', 'access management', 'permissions'
 determine console-wide access permissions and the features that a user can
 access within Cloud console.
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Access service settings [#access-service-settings]
 
 From the services page, click the menu in the top right corner of the service for which you want to adjust SQL console access settings.
@@ -23,12 +24,18 @@ Select `settings` from the popup menu.
 
 <img src="/images/cloud/guides/sql_console/service_level_access/2_service_settings.png"/>
 
+</Step>
+
+<Step>
 ### Adjust SQL console access [#adjust-sql-console-access]
 
 Under the "Security" section, find the "SQL console access" area:
 
 <img src="/images/cloud/guides/sql_console/service_level_access/3_service_settings.png"/>
 
+</Step>
+
+<Step>
 ### Update the settings for Service Admin [#update-settings-for-service-admin]
 
 Select the drop-down menu for Service Admin to change the access control settings for Service Admin roles:
@@ -43,6 +50,9 @@ You can choose from the following roles:
 | `Read only`   |
 | `Full access` |
 
+</Step>
+
+<Step>
 ### Update the settings for Service Read Only [#update-settings-for-service-read-only]
 
 Select the drop-down menu for Service Read Only to change the access control settings for Service Read Only roles:
@@ -57,6 +67,9 @@ You can choose from the following roles:
 | `Read only`   |
 | `Full access` |
 
+</Step>
+
+<Step>
 ### Review users with access [#review-users-with-access]
 
 An overview of users for the service can be viewed by selecting the user count:
@@ -66,5 +79,7 @@ An overview of users for the service can be viewed by selecting the user count:
 A tab will open to the right of the page showing the total number of users and their roles:
 
 <img src="/images/cloud/guides/sql_console/service_level_access/7_service_settings.png"/>
+
+</Step>
 
 </Steps>

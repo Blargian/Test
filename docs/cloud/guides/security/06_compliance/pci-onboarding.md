@@ -18,8 +18,9 @@ For more information about ClickHouse's compliance program and third party audit
 
 This page describes the process for enabling deployment of PCI compliant services in ClickHouse Cloud.
 
-<Steps headerLevel="h3">
+<Steps>
 
+<Step>
 ### Sign up for Enterprise services [#sign-up-for-enterprise]
 
 1. Select your organization name in the lower left corner of the console.
@@ -28,6 +29,9 @@ This page describes the process for enabling deployment of PCI compliant service
 4. If your **Plan** is **Enterprise**, then go to the next section. If not, click **Change plan**.
 5. Select **Switch to Enterprise**.
 
+</Step>
+
+<Step>
 ### Enable PCI for your organization [#enable-hipaa]
 
 1. Select your organization name in the lower left corner of the console.
@@ -48,6 +52,9 @@ This page describes the process for enabling deployment of PCI compliant service
 
 <br />
 
+</Step>
+
+<Step>
 ### Deploy services to PCI compliant regions [#deploy-pci-regions]
 
 1. Select **New service** in the upper left corner of the home screen in the console
@@ -62,6 +69,8 @@ This page describes the process for enabling deployment of PCI compliant service
 3. Enter a name for the service and enter the remaining information
 
 For a complete listing of PCI compliant cloud providers and services, review our [Supported cloud regions](/cloud/reference/supported-regions) page.
+
+</Step>
 
 </Steps>
 
