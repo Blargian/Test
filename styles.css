@@ -178,6 +178,15 @@ html:not(.dark) .hero h1 .tilted-content {
     color: #ffffff !important;
 }
 
+/* Light mode override for tilted-yellow */
+html:not(.dark) .tilted-yellow::before {
+    background-color: #000000 !important;
+}
+
+html:not(.dark) .tilted-yellow .tilted-content {
+    color: #ffffff !important;
+}
+
 .hero p {
     margin-bottom: 1rem !important;
     margin-left: auto !important;
