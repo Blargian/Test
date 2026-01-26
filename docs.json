@@ -395,14 +395,13 @@
               {
                 "item": "Guides",
                 "icon": "map",
-                "dropdowns": [
+                "pages": [
                   {
-                    "dropdown": "Core (OSS + Cloud)",
+                    "group": "Core (OSS + Cloud)",
                     "icon": "book",
-                    "groups": [
+                    "pages": [
                       {
                         "group": "Data modelling",
-                        "icon": "sitemap",
                         "pages": [
                           "docs/guides/data_modelling/schema-design",
                           "docs/guides/data_modelling/sparse-primary-indexes",
@@ -420,7 +419,6 @@
                       },
                       {
                         "group": "Performance & monitoring",
-                        "icon": "gauge-high",
                         "pages": [
                           "docs/guides/performance_and_monitoring/query-optimization",
                           "docs/guides/performance_and_monitoring/analyzer",
@@ -429,7 +427,6 @@
                       },
                       {
                         "group": "Use cases",
-                        "icon": "lightbulb-on",
                         "pages": [
                           {
                             "group": "Time series",
@@ -533,12 +530,10 @@
                     ]
                   },
                   {
-                    "dropdown": "Self-managed (OSS)",
-                    "icon": "server",
-                    "groups": [
+                    "group": "Self-managed (OSS)",
+                    "pages": [
                       {
                         "group": "Best practices",
-                        "icon": "badge-check",
                         "pages": [
                           "docs/guides/oss/best_practices/sizing-and-hardware-recommendations",
                           "docs/guides/oss/best_practices/tips"
@@ -583,12 +578,11 @@
                     ]
                   },
                   {
-                    "dropdown": "ClickHouse Cloud",
+                    "group": "ClickHouse Cloud",
                     "icon": "cloud",
-                    "groups": [
+                    "pages": [
                       {
                         "group": "Best practices",
-                        "icon": "badge-check",
                         "pages": [
                           "docs/guides/cloud/best_practices/multitenancy",
                           "docs/guides/cloud/best_practices/usagelimits"
@@ -603,7 +597,6 @@
                       },
                       {
                         "group": "SQL console",
-                        "icon": "rectangle-code",
                         "expanded": false,
                         "pages": [
                           "docs/guides/cloud/SQL_console/connection_details",
@@ -612,7 +605,6 @@
                       },
                       {
                         "group": "Backups",
-                        "icon": "copy",
                         "expanded": false,
                         "pages": [
                           "docs/guides/cloud/backups/01_review-and-restore-backups",
@@ -630,7 +622,6 @@
                       },
                       {
                         "group": "Data sources",
-                        "icon": "sourcetree",
                         "expanded": false,
                         "pages": [
                           "docs/guides/cloud/data_sources/01_cloud-endpoints-api",
@@ -639,7 +630,6 @@
                       },
                       {
                         "group": "Infrastructure",
-                        "icon": "triangle",
                         "expanded": false,
                         "pages": [
                           {
@@ -683,7 +673,6 @@
                       },
                       {
                         "group": "Security",
-                        "icon": "lock",
                         "expanded": false,
                         "pages": [
                           {
@@ -749,13 +738,13 @@
                     "pages": [
                       "docs/reference/statements/index",
                       {
-                        "group" : "Statements",
-                        "expanded" : false,
-                        "pages" : [
+                        "group": "Statements",
+                        "expanded": false,
+                        "pages": [
                           {
-                            "group" : "ALTER",
-                            "expanded" : false,
-                            "pages" : [
+                            "group": "ALTER",
+                            "expanded": false,
+                            "pages": [
                               "docs/reference/statements/alter/index",
                               "docs/reference/statements/alter/apply-deleted-mask",
                               "docs/reference/statements/alter/column",
@@ -785,9 +774,9 @@
                           "docs/reference/statements/check-grant",
                           "docs/reference/statements/check-table",
                           {
-                            "group" : "CREATE",
-                            "expanded" : false,
-                            "pages" : [
+                            "group": "CREATE",
+                            "expanded": false,
+                            "pages": [
                               "docs/reference/statements/create/index",
                               "docs/reference/statements/create/database",
                               "docs/reference/statements/create/dictionary",
@@ -821,9 +810,9 @@
                           "docs/reference/statements/rename",
                           "docs/reference/statements/revoke",
                           {
-                            "group" : "SELECT",
-                            "expanded" : false,
-                            "pages" : [
+                            "group": "SELECT",
+                            "expanded": false,
+                            "pages": [
                               "docs/reference/statements/select/index",
                               "docs/reference/statements/select/all",
                               "docs/reference/statements/select/apply_modifier",
@@ -861,7 +850,7 @@
                           "docs/reference/statements/watch"
                         ]
                       }
-                      ]
+                    ]
                   },
                   {
                     "group": "Data Types",
@@ -1808,7 +1797,11 @@
                     "icon": "cloud",
                     "pages": [
                       "docs/cloud/reference/06_service-uptime",
-                      "docs/cloud/reference/11_account-close"
+                      "docs/cloud/reference/11_account-close",
+                      "docs/cloud/reference/09_security/01_console-roles",
+                      "docs/cloud/reference/09_security/02_audit-logging",
+                      "docs/cloud/reference/09_security/03_compliance-overview",
+                      "docs/cloud/reference/10_personal-data-access"
                     ]
                   },
                   {
@@ -1841,66 +1834,6 @@
                       "docs/cloud/reference/03_billing/04_network-data-transfer",
                       "docs/cloud/reference/03_billing/05_payment-thresholds",
                       "docs/cloud/reference/03_billing/06_billing_compliance"
-                    ]
-                  },
-                  {
-                    "group": "Security",
-                    "icon": "lock",
-                    "groups": [
-                      {
-                        "group": "Cloud access management",
-                        "expanded": false,
-                        "pages": [
-                          "docs/guides/cloud/security/01_cloud_access_management/01_manage-my-account",
-                          "docs/guides/cloud/security/01_cloud_access_management/02_manage-cloud-users",
-                          "docs/guides/cloud/security/01_cloud_access_management/03_manage-sql-console-role-assignments",
-                          "docs/guides/cloud/security/01_cloud_access_management/04_manage-database-users",
-                          "docs/guides/cloud/security/01_cloud_access_management/04_saml-sso-setup",
-                          "docs/guides/cloud/security/01_cloud_access_management/05_common-access-management-queries"
-                        ]
-                      },
-                      {
-                        "group": "Connectivity",
-                        "expanded": false,
-                        "pages": [
-                          "docs/guides/cloud/security/02_connectivity/01_setting-ip-filters",
-                          {
-                            "group": "Private networking",
-                            "expanded": false,
-                            "pages": [
-                              "docs/guides/cloud/security/02_connectivity/private_networking/02_aws-privatelink",
-                              "docs/guides/cloud/security/02_connectivity/private_networking/03_gcp-private-service-connect",
-                              "docs/guides/cloud/security/02_connectivity/private_networking/04_azure-privatelink"
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "group": "Data security",
-                        "expanded": false,
-                        "pages": [
-                          "docs/guides/cloud/security/03_data-masking",
-                          "docs/guides/cloud/security/04_cmek"
-                        ]
-                      },
-                      {
-                        "group": "Compliance",
-                        "expanded": false,
-                        "pages": [
-                          "docs/guides/cloud/security/06_compliance/hipaa-onboarding",
-                          "docs/guides/cloud/security/06_compliance/pci-onboarding"
-                        ]
-                      },
-                      {
-                        "group": "Reference",
-                        "expanded": false,
-                        "pages": [
-                          "docs/cloud/reference/09_security/01_console-roles",
-                          "docs/cloud/reference/09_security/02_audit-logging",
-                          "docs/cloud/reference/09_security/03_compliance-overview",
-                          "docs/cloud/reference/10_personal-data-access"
-                        ]
-                      }
                     ]
                   },
                   {
@@ -2580,6 +2513,124 @@
                     "icon": "house",
                     "pages": [
                       "docs/support/home"
+                    ]
+                  },
+                  {
+                    "group": "Knowledge base",
+                    "icon": "book-open",
+                    "pages": [
+                      "docs/support/knowledge-base/Insert_select_settings_tuning",
+                      "docs/support/knowledge-base/ODBC-authentication-failed-error-using-PowerBI-CH-connector",
+                      "docs/support/knowledge-base/about-quotas-and-query-complexity",
+                      "docs/support/knowledge-base/add-column",
+                      "docs/support/knowledge-base/alter-user-settings-exception",
+                      "docs/support/knowledge-base/are_materialized_views_inserted_asynchronously",
+                      "docs/support/knowledge-base/async_vs_optimize_read_in_order",
+                      "docs/support/knowledge-base/aws-privatelink-setup-for-clickpipes",
+                      "docs/support/knowledge-base/aws-privatelink-setup-for-msk-clickpipes",
+                      "docs/support/knowledge-base/backing_up_a_specific_partition",
+                      "docs/support/knowledge-base/calculate-pi-using-sql",
+                      "docs/support/knowledge-base/calculate_ratio_of_zero_sparse_serialization",
+                      "docs/support/knowledge-base/cannot-append-data-to-parquet-format",
+                      "docs/support/knowledge-base/certificate_verify_failed_error",
+                      "docs/support/knowledge-base/change-billing-email",
+                      "docs/support/knowledge-base/change-the-prompt-in-clickhouse-client",
+                      "docs/support/knowledge-base/check-query-cache-in-use",
+                      "docs/support/knowledge-base/check_query_processing_time_only",
+                      "docs/support/knowledge-base/check_users_roles",
+                      "docs/support/knowledge-base/clickhouse_cloud_api_usage",
+                      "docs/support/knowledge-base/columnar-database",
+                      "docs/support/knowledge-base/common-rbac-queries",
+                      "docs/support/knowledge-base/compare_resultsets",
+                      "docs/support/knowledge-base/comparing-metrics-between-queries",
+                      "docs/support/knowledge-base/configure-a-user-setting",
+                      "docs/support/knowledge-base/configure_cap_ipc_lock_and_cap_sys_nice_in_docker",
+                      "docs/support/knowledge-base/connection_timeout_remote_remoteSecure",
+                      "docs/support/knowledge-base/custom-dns-alias-for-instance",
+                      "docs/support/knowledge-base/dbms-naming",
+                      "docs/support/knowledge-base/delete-old-data",
+                      "docs/support/knowledge-base/dictionaries-consistent-state",
+                      "docs/support/knowledge-base/dictionary_using_strings",
+                      "docs/support/knowledge-base/difference_between_official_builds_and_3rd_party",
+                      "docs/support/knowledge-base/enabling-ssl-with-lets-encrypt",
+                      "docs/support/knowledge-base/exception-too-many-parts",
+                      "docs/support/knowledge-base/exchangeStatementToSwitchTables",
+                      "docs/support/knowledge-base/execute-system-queries-in-cloud",
+                      "docs/support/knowledge-base/file-export",
+                      "docs/support/knowledge-base/filtered-aggregates",
+                      "docs/support/knowledge-base/find-expensive-queries",
+                      "docs/support/knowledge-base/finding_expensive_queries_by_memory_usage",
+                      "docs/support/knowledge-base/fix-developer-verification-error-in-macos",
+                      "docs/support/knowledge-base/generate-har-file",
+                      "docs/support/knowledge-base/how-do-i-contribute-code-to-clickhouse",
+                      "docs/support/knowledge-base/how-to-check-my-clickhouse-cloud-sevice-state",
+                      "docs/support/knowledge-base/how-to-connect-to-ch-cloud-using-ssh-keys",
+                      "docs/support/knowledge-base/how-to-create-table-to-query-multiple-remote-clusters",
+                      "docs/support/knowledge-base/how-to-filter-a-clickhouse-table-by-an-array-column",
+                      "docs/support/knowledge-base/how-to-increase-thread-pool-size",
+                      "docs/support/knowledge-base/how-to-insert-all-rows-from-another-table",
+                      "docs/support/knowledge-base/how-to-set-up-ch-on-docker-odbc-connect-mssql",
+                      "docs/support/knowledge-base/how_to_display_queries_using_MV",
+                      "docs/support/knowledge-base/how_to_use_parametrised_views",
+                      "docs/support/knowledge-base/ignoring-incorrect-settings",
+                      "docs/support/knowledge-base/importing-geojason-with-nested-object-array",
+                      "docs/support/knowledge-base/importing_and_working_with_JSON_array_objects",
+                      "docs/support/knowledge-base/improve-map-performance",
+                      "docs/support/knowledge-base/ingest-failures-23-9-release",
+                      "docs/support/knowledge-base/ingest-parquet-files-in-s3",
+                      "docs/support/knowledge-base/install-clickhouse-windows10",
+                      "docs/support/knowledge-base/json-import",
+                      "docs/support/knowledge-base/json_extract_example",
+                      "docs/support/knowledge-base/json_simple_example",
+                      "docs/support/knowledge-base/kafka-clickhouse-json",
+                      "docs/support/knowledge-base/kafka-to-clickhouse-setup",
+                      "docs/support/knowledge-base/key-value",
+                      "docs/support/knowledge-base/llvm-clang-up-to-date",
+                      "docs/support/knowledge-base/mapping-of-system-metrics-to-prometheus-metrics",
+                      "docs/support/knowledge-base/mapreduce",
+                      "docs/support/knowledge-base/maximum_number_of_tables_and_databases",
+                      "docs/support/knowledge-base/memory-limit-exceeded-for-query",
+                      "docs/support/knowledge-base/multi-region-replication",
+                      "docs/support/knowledge-base/mysql-to-parquet-csv-json",
+                      "docs/support/knowledge-base/node-js-example",
+                      "docs/support/knowledge-base/olap",
+                      "docs/support/knowledge-base/optimize_final_vs_final",
+                      "docs/support/knowledge-base/oracle-odbc",
+                      "docs/support/knowledge-base/outputSendLogsLevelTracesToFile",
+                      "docs/support/knowledge-base/parquet-to-csv-json",
+                      "docs/support/knowledge-base/part_intersects_previous_part",
+                      "docs/support/knowledge-base/pivot",
+                      "docs/support/knowledge-base/postgresql-to-parquet-csv-json",
+                      "docs/support/knowledge-base/production",
+                      "docs/support/knowledge-base/profiling-clickhouse-with-llvm-xray",
+                      "docs/support/knowledge-base/projection_example",
+                      "docs/support/knowledge-base/python-clickhouse-connect-example",
+                      "docs/support/knowledge-base/python_http_requests",
+                      "docs/support/knowledge-base/query_max_execution_time",
+                      "docs/support/knowledge-base/read_consistency",
+                      "docs/support/knowledge-base/recreate_table_across_terminals",
+                      "docs/support/knowledge-base/remove-default-user",
+                      "docs/support/knowledge-base/row-column-policy",
+                      "docs/support/knowledge-base/s3_export_data_year_month_folders",
+                      "docs/support/knowledge-base/schema_migration_tools",
+                      "docs/support/knowledge-base/search-across-node-for-tables-with-a-wildcard",
+                      "docs/support/knowledge-base/send_logs_level",
+                      "docs/support/knowledge-base/terraform_example",
+                      "docs/support/knowledge-base/time-series",
+                      "docs/support/knowledge-base/tips-tricks-optimizing-basic-data-types-in-clickhouse",
+                      "docs/support/knowledge-base/unable-to-access-cloud-service",
+                      "docs/support/knowledge-base/use-clickhouse-for-log-analytics",
+                      "docs/support/knowledge-base/useful-queries-for-troubleshooting",
+                      "docs/support/knowledge-base/using-array-join-to-extract-and-query-attributes",
+                      "docs/support/knowledge-base/vector-search",
+                      "docs/support/knowledge-base/view_number_of_active_mutations",
+                      "docs/support/knowledge-base/when_is_ttl_applied",
+                      "docs/support/knowledge-base/which-processes-are-currently-running",
+                      "docs/support/knowledge-base/who-is-using-clickhouse",
+                      "docs/support/knowledge-base/why_default_logging_verbose",
+                      "docs/support/knowledge-base/why_is_my_primary_key_not_used",
+                      "docs/support/knowledge-base/why_recommend_clickhouse_keeper_over_zookeeper",
+                      "docs/support/knowledge-base/windows_active_directory_to_ch_roles"
                     ]
                   }
                 ]
