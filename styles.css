@@ -1,4 +1,49 @@
 /* ============================================
+   Global Border Radius
+   ============================================ */
+
+/* Apply smaller border radius globally */
+.card, .code-block, .accordion, .callout {
+  border-radius: 4px;
+}
+
+/* Override code block background border radius */
+.code-block-background,
+[data-component-part="code-block-root"],
+.code-block-background.rounded-2xl,
+[data-component-part="code-block-root"].rounded-2xl {
+  border-radius: 4px !important;
+}
+
+/* Code block background color in dark mode */
+.dark .code-block-background,
+.dark [data-component-part="code-block-root"],
+:is(.dark) .code-block-background,
+:is(.dark) [data-component-part="code-block-root"] {
+  background-color: #282828 !important;
+  --shiki-dark-bg: #282828 !important;
+}
+
+/* Override Shiki pre background in dark mode */
+.dark pre.shiki,
+:is(.dark) pre.shiki {
+  background-color: #282828 !important;
+  --shiki-dark-bg: #282828 !important;
+}
+
+/* Override fade overlay color to match code block background in dark mode */
+.dark [data-fade-overlay="true"],
+:is(.dark) [data-fade-overlay="true"] {
+  --fade-color-dark: #282828 !important;
+}
+
+/* Copy code button checkmark icon (success state) - yellow in dark mode */
+.dark [data-testid="copy-code-button"] svg[viewBox="0 0 16 11"],
+:is(.dark) [data-testid="copy-code-button"] svg[viewBox="0 0 16 11"] {
+  fill: #FAFF69 !important;
+}
+
+/* ============================================
    Float Navigation Menu Left
    ============================================ */
 
@@ -1596,4 +1641,304 @@ h5#sidebar-title {
         top left,
         top right;
     background-repeat: no-repeat;
+}
+
+/* ============================================
+   Mark Element Styling
+   ============================================ */
+
+/* Dark mode - ClickHouse yellow highlight */
+.dark mark,
+:is(.dark) mark {
+    background-color: #FAFF69 !important;
+    color: #000000 !important;
+}
+
+/* ============================================
+   Navigation Dropdown Item Icon Hover
+   ============================================ */
+
+/* Light mode - remove gray-800 text color from nav tabs (let it inherit naturally) */
+html:not(.dark) .nav-tabs button[class*="text-gray-800"] > div,
+html:not(.dark) button.nav-tabs-item[class*="text-gray-800"] > div {
+    color: inherit;
+}
+
+/* Remove focus outline on nav tabs */
+.nav-tabs-item:focus,
+.nav-tabs button:focus,
+button.nav-tabs-item:focus {
+    outline: none !important;
+    outline-color: transparent !important;
+}
+
+/* ============================================
+   Use Case Images - Light Grey Background in Light Mode
+   ============================================ */
+
+/* Target use case images specifically by their filenames */
+html:not(.dark) img[src*="rt-analytics"],
+html:not(.dark) img[src*="observability"],
+html:not(.dark) img[src*="data-warehousing"],
+html:not(.dark) img[src*="machine-learning"] {
+    background-color: #d1d5db !important;
+}
+
+/* ============================================
+   Callout Styling
+   ============================================ */
+
+/* Remove callout borders */
+[data-callout-type] {
+    border: none !important;
+}
+
+/* Center align callout icon vertically */
+[data-component-part="callout-icon"] {
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Light Mode Callouts */
+
+/* Note (Neutral) */
+html:not(.dark) [data-callout-type="note"] {
+    background-color: rgb(41.176% 43.137% 47.451% / 0.1);
+}
+
+html:not(.dark) [data-callout-type="note"] [data-component-part="callout-content"] {
+    color: #53575f !important;
+}
+
+html:not(.dark) [data-callout-type="note"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+html:not(.dark) [data-callout-type="note"] [data-component-part="callout-icon"] svg {
+    color: lch(36.838 5.2307 266.96 / 0.75);
+}
+
+/* Info - Blue */
+html:not(.dark) [data-callout-type="info"] {
+    background-color: rgb(26.275% 49.412% 93.725% / 0.1);
+}
+
+html:not(.dark) [data-callout-type="info"] [data-component-part="callout-content"] {
+    color: rgb(83, 87, 95) !important;
+}
+
+html:not(.dark) [data-callout-type="info"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+html:not(.dark) [data-callout-type="info"] [data-component-part="callout-icon"] svg {
+    color: lch(53.426 64.605 278.98 / 0.75);
+}
+
+/* Tip/Success/Check - Green */
+html:not(.dark) [data-callout-type="tip"],
+html:not(.dark) [data-callout-type="success"],
+html:not(.dark) [data-callout-type="check"] {
+    background-color: rgb(20% 100% 26.667% / 0.1);
+}
+
+html:not(.dark) [data-callout-type="tip"] [data-component-part="callout-content"],
+html:not(.dark) [data-callout-type="success"] [data-component-part="callout-content"],
+html:not(.dark) [data-callout-type="check"] [data-component-part="callout-content"] {
+    color: #008a0b !important;
+}
+
+html:not(.dark) [data-callout-type="tip"] [data-component-part="callout-icon"],
+html:not(.dark) [data-callout-type="success"] [data-component-part="callout-icon"],
+html:not(.dark) [data-callout-type="check"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+html:not(.dark) [data-callout-type="tip"] [data-component-part="callout-icon"] svg,
+html:not(.dark) [data-callout-type="success"] [data-component-part="callout-icon"] svg,
+html:not(.dark) [data-callout-type="check"] [data-component-part="callout-icon"] svg {
+    color: lch(49.786 70.246 135.31 / 0.75);
+}
+
+/* Warning - Orange */
+html:not(.dark) [data-callout-type="warning"] {
+    background-color: rgb(100% 46.667% 16.078% / 0.1);
+}
+
+html:not(.dark) [data-callout-type="warning"] [data-component-part="callout-content"] {
+    color: #a33c00 !important;
+}
+
+html:not(.dark) [data-callout-type="warning"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+html:not(.dark) [data-callout-type="warning"] [data-component-part="callout-icon"] svg {
+    color: lch(40.227 66.602 51.059 / 0.75);
+}
+
+/* Danger/Error - Red */
+html:not(.dark) [data-callout-type="danger"],
+html:not(.dark) [data-callout-type="error"] {
+    background-color: rgb(100% 13.725% 13.725% / 0.1);
+}
+
+html:not(.dark) [data-callout-type="danger"] [data-component-part="callout-content"],
+html:not(.dark) [data-callout-type="error"] [data-component-part="callout-content"] {
+    color: #c10000 !important;
+}
+
+html:not(.dark) [data-callout-type="danger"] [data-component-part="callout-icon"],
+html:not(.dark) [data-callout-type="error"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+html:not(.dark) [data-callout-type="danger"] [data-component-part="callout-icon"] svg,
+html:not(.dark) [data-callout-type="error"] [data-component-part="callout-icon"] svg {
+    color: lch(41.001 86.638 40.858 / 0.75);
+}
+
+/* Dark Mode Callouts */
+
+/* Note (Neutral) */
+.dark [data-callout-type="note"],
+:is(.dark) [data-callout-type="note"] {
+    background-color: rgb(62.745% 62.745% 62.745% / 0.2);
+}
+
+.dark [data-callout-type="note"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="note"] [data-component-part="callout-content"] {
+    color: #c0c0c0 !important;
+}
+
+.dark [data-callout-type="note"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="note"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+.dark [data-callout-type="note"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="note"] [data-component-part="callout-icon"] svg {
+    color: lch(77.704 0 none / 0.75);
+}
+
+/* Info - Blue */
+.dark [data-callout-type="info"],
+:is(.dark) [data-callout-type="info"] {
+    background-color: rgb(26.275% 49.412% 93.725% / 0.2);
+}
+
+.dark [data-callout-type="info"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="info"] [data-component-part="callout-content"] {
+    color: #d0dffb !important;
+}
+
+.dark [data-callout-type="info"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="info"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+.dark [data-callout-type="info"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="info"] [data-component-part="callout-icon"] svg {
+    color: lch(88.343 15.514 266.4 / 0.75);
+}
+
+/* Tip/Success/Check - Green */
+.dark [data-callout-type="tip"],
+.dark [data-callout-type="success"],
+.dark [data-callout-type="check"],
+:is(.dark) [data-callout-type="tip"],
+:is(.dark) [data-callout-type="success"],
+:is(.dark) [data-callout-type="check"] {
+    background-color: rgb(20% 100% 26.667% / 0.2);
+}
+
+.dark [data-callout-type="tip"] [data-component-part="callout-content"],
+.dark [data-callout-type="success"] [data-component-part="callout-content"],
+.dark [data-callout-type="check"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="tip"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="success"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="check"] [data-component-part="callout-content"] {
+    color: #ccffd0 !important;
+}
+
+.dark [data-callout-type="tip"] [data-component-part="callout-icon"],
+.dark [data-callout-type="success"] [data-component-part="callout-icon"],
+.dark [data-callout-type="check"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="tip"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="success"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="check"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+.dark [data-callout-type="tip"] [data-component-part="callout-icon"] svg,
+.dark [data-callout-type="success"] [data-component-part="callout-icon"] svg,
+.dark [data-callout-type="check"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="tip"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="success"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="check"] [data-component-part="callout-icon"] svg {
+    color: lch(95.558 28.893 143.93 / 0.75);
+}
+
+/* Warning - Orange */
+.dark [data-callout-type="warning"],
+:is(.dark) [data-callout-type="warning"] {
+    background-color: rgb(100% 46.667% 16.078% / 0.2);
+}
+
+.dark [data-callout-type="warning"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="warning"] [data-component-part="callout-content"] {
+    color: #ffb88f !important;
+}
+
+.dark [data-callout-type="warning"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="warning"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+.dark [data-callout-type="warning"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="warning"] [data-component-part="callout-icon"] svg {
+    color: lch(80.892 39.042 53.918 / 0.75);
+}
+
+/* Danger/Error - Red */
+.dark [data-callout-type="danger"],
+.dark [data-callout-type="error"],
+:is(.dark) [data-callout-type="danger"],
+:is(.dark) [data-callout-type="error"] {
+    background-color: rgb(100% 13.725% 13.725% / 0.2);
+}
+
+.dark [data-callout-type="danger"] [data-component-part="callout-content"],
+.dark [data-callout-type="error"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="danger"] [data-component-part="callout-content"],
+:is(.dark) [data-callout-type="error"] [data-component-part="callout-content"] {
+    color: #ffbaba !important;
+}
+
+.dark [data-callout-type="danger"] [data-component-part="callout-icon"],
+.dark [data-callout-type="error"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="danger"] [data-component-part="callout-icon"],
+:is(.dark) [data-callout-type="error"] [data-component-part="callout-icon"] {
+    background-color: transparent;
+}
+
+.dark [data-callout-type="danger"] [data-component-part="callout-icon"] svg,
+.dark [data-callout-type="error"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="danger"] [data-component-part="callout-icon"] svg,
+:is(.dark) [data-callout-type="error"] [data-component-part="callout-icon"] svg {
+    color: lch(82.069 27.695 22.026 / 0.75);
+}
+
+/* Keep icons dark on hover in light mode */
+html:not(.dark) .nav-dropdown-item:hover svg,
+html:not(.dark) a.nav-dropdown-item:hover svg {
+    background-color: #1a1a1a !important;
+}
+
+/* Make icons yellow on hover in dark mode */
+.dark .nav-dropdown-item:hover svg,
+.dark a.nav-dropdown-item:hover svg,
+:is(.dark) .nav-dropdown-item:hover svg,
+:is(.dark) a.nav-dropdown-item:hover svg {
+    background-color: #FAFF69 !important;
 }

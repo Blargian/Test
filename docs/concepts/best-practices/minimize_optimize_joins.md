@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/minimize-optimize-joins
 sidebar_position: 10
-sidebarTitle: '④ Minimize and optimize JOINs'
+sidebarTitle: 'Minimize and optimize JOINs'
 title: 'Minimize and optimize JOINs'
 description: 'Page describing best practices for JOINs'
 keywords: ['JOIN', 'Parallel Hash JOIN']

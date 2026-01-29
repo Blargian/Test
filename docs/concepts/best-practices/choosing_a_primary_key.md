@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/choosing-a-primary-key
 sidebar_position: 10
-sidebarTitle: '① Choosing a primary key'
+sidebarTitle: 'Choosing a primary key'
 title: 'Choosing a Primary Key'
 description: 'Page describing how to choose a primary key in ClickHouse'
 keywords: ['primary key']

@@ -1,8 +1,8 @@
 > It is recommended to use official pre-compiled `deb` packages for **Debian** or **Ubuntu**.
 
-<Steps>
-
-## Setup the Debian repository [#setup-the-debian-repository]
+<Steps titleSize="h2">
+<Step>
+## Setup the Debian repository
 
 To install ClickHouse run the following commands:
 
@@ -25,7 +25,7 @@ sudo apt-get update
 
 - You can replace `stable` with `lts` to use different [release kinds](/knowledgebase/production) based on your needs.
 - You can download and install packages manually from [packages.clickhouse.com](https://packages.clickhouse.com/deb/pool/main/c/).
-<br/>
+
 <AccordionGroup>
 <Accordion title="Old distributions method for installing the deb-packages">
 ```bash
@@ -53,13 +53,18 @@ clickhouse-client # or "clickhouse-client --password" if you set up a password.
 ```
 </Accordion>
 </AccordionGroup>
-## Install ClickHouse server and client [#install-clickhouse-server-and-client]
+</Step>
+
+<Step>
+## Install ClickHouse server and client
 
 ```bash
 sudo apt-get install -y clickhouse-server clickhouse-client
 ```
+</Step>
 
-## Start ClickHouse [#start-clickhouse-server]
+<Step>
+## Start ClickHouse
 
 To start the ClickHouse server, run:
 
@@ -78,8 +83,10 @@ If you set up a password for your server, then you will need to run:
 ```bash
 clickhouse-client --password
 ```
+</Step>
 
-## Install standalone ClickHouse Keeper [#install-standalone-clickhouse-keeper]
+<Step>
+## Install standalone ClickHouse Keeper
 
 <Tip>
 In production environments we strongly recommend running ClickHouse Keeper on dedicated nodes.
@@ -92,18 +99,20 @@ To install `clickhouse-keeper` on standalone ClickHouse Keeper servers, run:
 ```bash
 sudo apt-get install -y clickhouse-keeper
 ```
+</Step>
 
-## Enable and start ClickHouse Keeper [#enable-and-start-clickhouse-keeper]
+<Step>
+## Enable and start ClickHouse Keeper
 
 ```bash
 sudo systemctl enable clickhouse-keeper
 sudo systemctl start clickhouse-keeper
 sudo systemctl status clickhouse-keeper
 ```
-
+</Step>
 </Steps>
 
-## Packages [#packages]
+## Packages
 
 The various deb packages available are detailed below:
 
