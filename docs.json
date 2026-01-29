@@ -2516,121 +2516,205 @@
                     ]
                   },
                   {
-                    "group": "Knowledge base",
-                    "icon": "book-open",
+                    "group": "Knowledgebase",
+                    "icon": "book",
                     "pages": [
-                      "docs/support/knowledge-base/Insert_select_settings_tuning",
-                      "docs/support/knowledge-base/ODBC-authentication-failed-error-using-PowerBI-CH-connector",
-                      "docs/support/knowledge-base/about-quotas-and-query-complexity",
-                      "docs/support/knowledge-base/add-column",
-                      "docs/support/knowledge-base/alter-user-settings-exception",
-                      "docs/support/knowledge-base/are_materialized_views_inserted_asynchronously",
-                      "docs/support/knowledge-base/async_vs_optimize_read_in_order",
-                      "docs/support/knowledge-base/aws-privatelink-setup-for-clickpipes",
-                      "docs/support/knowledge-base/aws-privatelink-setup-for-msk-clickpipes",
-                      "docs/support/knowledge-base/backing_up_a_specific_partition",
-                      "docs/support/knowledge-base/calculate-pi-using-sql",
-                      "docs/support/knowledge-base/calculate_ratio_of_zero_sparse_serialization",
-                      "docs/support/knowledge-base/cannot-append-data-to-parquet-format",
-                      "docs/support/knowledge-base/certificate_verify_failed_error",
-                      "docs/support/knowledge-base/change-billing-email",
-                      "docs/support/knowledge-base/change-the-prompt-in-clickhouse-client",
-                      "docs/support/knowledge-base/check-query-cache-in-use",
-                      "docs/support/knowledge-base/check_query_processing_time_only",
-                      "docs/support/knowledge-base/check_users_roles",
-                      "docs/support/knowledge-base/clickhouse_cloud_api_usage",
-                      "docs/support/knowledge-base/columnar-database",
-                      "docs/support/knowledge-base/common-rbac-queries",
-                      "docs/support/knowledge-base/compare_resultsets",
-                      "docs/support/knowledge-base/comparing-metrics-between-queries",
-                      "docs/support/knowledge-base/configure-a-user-setting",
-                      "docs/support/knowledge-base/configure_cap_ipc_lock_and_cap_sys_nice_in_docker",
-                      "docs/support/knowledge-base/connection_timeout_remote_remoteSecure",
-                      "docs/support/knowledge-base/custom-dns-alias-for-instance",
-                      "docs/support/knowledge-base/dbms-naming",
-                      "docs/support/knowledge-base/delete-old-data",
-                      "docs/support/knowledge-base/dictionaries-consistent-state",
-                      "docs/support/knowledge-base/dictionary_using_strings",
-                      "docs/support/knowledge-base/difference_between_official_builds_and_3rd_party",
-                      "docs/support/knowledge-base/enabling-ssl-with-lets-encrypt",
-                      "docs/support/knowledge-base/exception-too-many-parts",
-                      "docs/support/knowledge-base/exchangeStatementToSwitchTables",
-                      "docs/support/knowledge-base/execute-system-queries-in-cloud",
-                      "docs/support/knowledge-base/file-export",
-                      "docs/support/knowledge-base/filtered-aggregates",
-                      "docs/support/knowledge-base/find-expensive-queries",
-                      "docs/support/knowledge-base/finding_expensive_queries_by_memory_usage",
-                      "docs/support/knowledge-base/fix-developer-verification-error-in-macos",
-                      "docs/support/knowledge-base/generate-har-file",
-                      "docs/support/knowledge-base/how-do-i-contribute-code-to-clickhouse",
-                      "docs/support/knowledge-base/how-to-check-my-clickhouse-cloud-sevice-state",
-                      "docs/support/knowledge-base/how-to-connect-to-ch-cloud-using-ssh-keys",
-                      "docs/support/knowledge-base/how-to-create-table-to-query-multiple-remote-clusters",
-                      "docs/support/knowledge-base/how-to-filter-a-clickhouse-table-by-an-array-column",
-                      "docs/support/knowledge-base/how-to-increase-thread-pool-size",
-                      "docs/support/knowledge-base/how-to-insert-all-rows-from-another-table",
-                      "docs/support/knowledge-base/how-to-set-up-ch-on-docker-odbc-connect-mssql",
-                      "docs/support/knowledge-base/how_to_display_queries_using_MV",
-                      "docs/support/knowledge-base/how_to_use_parametrised_views",
-                      "docs/support/knowledge-base/ignoring-incorrect-settings",
-                      "docs/support/knowledge-base/importing-geojason-with-nested-object-array",
-                      "docs/support/knowledge-base/importing_and_working_with_JSON_array_objects",
-                      "docs/support/knowledge-base/improve-map-performance",
-                      "docs/support/knowledge-base/ingest-failures-23-9-release",
-                      "docs/support/knowledge-base/ingest-parquet-files-in-s3",
-                      "docs/support/knowledge-base/install-clickhouse-windows10",
-                      "docs/support/knowledge-base/json-import",
-                      "docs/support/knowledge-base/json_extract_example",
-                      "docs/support/knowledge-base/json_simple_example",
-                      "docs/support/knowledge-base/kafka-clickhouse-json",
-                      "docs/support/knowledge-base/kafka-to-clickhouse-setup",
-                      "docs/support/knowledge-base/key-value",
-                      "docs/support/knowledge-base/llvm-clang-up-to-date",
-                      "docs/support/knowledge-base/mapping-of-system-metrics-to-prometheus-metrics",
-                      "docs/support/knowledge-base/mapreduce",
-                      "docs/support/knowledge-base/maximum_number_of_tables_and_databases",
-                      "docs/support/knowledge-base/memory-limit-exceeded-for-query",
-                      "docs/support/knowledge-base/multi-region-replication",
-                      "docs/support/knowledge-base/mysql-to-parquet-csv-json",
-                      "docs/support/knowledge-base/node-js-example",
-                      "docs/support/knowledge-base/olap",
-                      "docs/support/knowledge-base/optimize_final_vs_final",
-                      "docs/support/knowledge-base/oracle-odbc",
-                      "docs/support/knowledge-base/outputSendLogsLevelTracesToFile",
-                      "docs/support/knowledge-base/parquet-to-csv-json",
-                      "docs/support/knowledge-base/part_intersects_previous_part",
-                      "docs/support/knowledge-base/pivot",
-                      "docs/support/knowledge-base/postgresql-to-parquet-csv-json",
-                      "docs/support/knowledge-base/production",
-                      "docs/support/knowledge-base/profiling-clickhouse-with-llvm-xray",
-                      "docs/support/knowledge-base/projection_example",
-                      "docs/support/knowledge-base/python-clickhouse-connect-example",
-                      "docs/support/knowledge-base/python_http_requests",
-                      "docs/support/knowledge-base/query_max_execution_time",
-                      "docs/support/knowledge-base/read_consistency",
-                      "docs/support/knowledge-base/recreate_table_across_terminals",
-                      "docs/support/knowledge-base/remove-default-user",
-                      "docs/support/knowledge-base/row-column-policy",
-                      "docs/support/knowledge-base/s3_export_data_year_month_folders",
-                      "docs/support/knowledge-base/schema_migration_tools",
-                      "docs/support/knowledge-base/search-across-node-for-tables-with-a-wildcard",
-                      "docs/support/knowledge-base/send_logs_level",
-                      "docs/support/knowledge-base/terraform_example",
-                      "docs/support/knowledge-base/time-series",
-                      "docs/support/knowledge-base/tips-tricks-optimizing-basic-data-types-in-clickhouse",
-                      "docs/support/knowledge-base/unable-to-access-cloud-service",
-                      "docs/support/knowledge-base/use-clickhouse-for-log-analytics",
-                      "docs/support/knowledge-base/useful-queries-for-troubleshooting",
-                      "docs/support/knowledge-base/using-array-join-to-extract-and-query-attributes",
-                      "docs/support/knowledge-base/vector-search",
-                      "docs/support/knowledge-base/view_number_of_active_mutations",
-                      "docs/support/knowledge-base/when_is_ttl_applied",
-                      "docs/support/knowledge-base/which-processes-are-currently-running",
-                      "docs/support/knowledge-base/who-is-using-clickhouse",
-                      "docs/support/knowledge-base/why_default_logging_verbose",
-                      "docs/support/knowledge-base/why_is_my_primary_key_not_used",
-                      "docs/support/knowledge-base/why_recommend_clickhouse_keeper_over_zookeeper",
-                      "docs/support/knowledge-base/windows_active_directory_to_ch_roles"
+                      {
+                        "group": "Performance & Optimization",
+                        "icon": "gauge-high",
+                        "pages": [
+                          "docs/support/knowledge-base/performance-optimization/Insert_select_settings_tuning",
+                          "docs/support/knowledge-base/performance-optimization/async_vs_optimize_read_in_order",
+                          "docs/support/knowledge-base/performance-optimization/check_query_processing_time_only",
+                          "docs/support/knowledge-base/performance-optimization/find-expensive-queries",
+                          "docs/support/knowledge-base/performance-optimization/finding_expensive_queries_by_memory_usage",
+                          "docs/support/knowledge-base/performance-optimization/improve-map-performance",
+                          "docs/support/knowledge-base/performance-optimization/memory-limit-exceeded-for-query",
+                          "docs/support/knowledge-base/performance-optimization/optimize_final_vs_final",
+                          "docs/support/knowledge-base/performance-optimization/query_max_execution_time",
+                          "docs/support/knowledge-base/performance-optimization/tips-tricks-optimizing-basic-data-types-in-clickhouse",
+                          "docs/support/knowledge-base/performance-optimization/why_is_my_primary_key_not_used"
+                        ]
+                      },
+                      {
+                        "group": "Cloud",
+                        "icon": "cloud",
+                        "pages": [
+                          "docs/support/knowledge-base/cloud-services/aws-privatelink-setup-for-clickpipes",
+                          "docs/support/knowledge-base/cloud-services/aws-privatelink-setup-for-msk-clickpipes",
+                          "docs/support/knowledge-base/cloud-services/change-billing-email",
+                          "docs/support/knowledge-base/cloud-services/clickhouse_cloud_api_usage",
+                          "docs/support/knowledge-base/cloud-services/custom-dns-alias-for-instance",
+                          "docs/support/knowledge-base/cloud-services/execute-system-queries-in-cloud",
+                          "docs/support/knowledge-base/cloud-services/how-to-check-my-clickhouse-cloud-sevice-state",
+                          "docs/support/knowledge-base/cloud-services/how-to-connect-to-ch-cloud-using-ssh-keys",
+                          "docs/support/knowledge-base/cloud-services/ingest-failures-23-9-release",
+                          "docs/support/knowledge-base/cloud-services/multi-region-replication",
+                          "docs/support/knowledge-base/cloud-services/unable-to-access-cloud-service"
+                        ]
+                      },
+                      {
+                        "group": "Data Import & Export",
+                        "icon": "arrow-right-arrow-left",
+                        "pages": [
+                          "docs/support/knowledge-base/data-import-export/cannot-append-data-to-parquet-format",
+                          "docs/support/knowledge-base/data-import-export/file-export",
+                          "docs/support/knowledge-base/data-import-export/importing-geojason-with-nested-object-array",
+                          "docs/support/knowledge-base/data-import-export/importing_and_working_with_JSON_array_objects",
+                          "docs/support/knowledge-base/data-import-export/ingest-parquet-files-in-s3",
+                          "docs/support/knowledge-base/data-import-export/json-import",
+                          "docs/support/knowledge-base/data-import-export/json_extract_example",
+                          "docs/support/knowledge-base/data-import-export/json_simple_example",
+                          "docs/support/knowledge-base/data-import-export/kafka-clickhouse-json",
+                          "docs/support/knowledge-base/data-import-export/kafka-to-clickhouse-setup",
+                          "docs/support/knowledge-base/data-import-export/mysql-to-parquet-csv-json",
+                          "docs/support/knowledge-base/data-import-export/parquet-to-csv-json",
+                          "docs/support/knowledge-base/data-import-export/postgresql-to-parquet-csv-json",
+                          "docs/support/knowledge-base/data-import-export/s3_export_data_year_month_folders"
+                        ]
+                      },
+                      {
+                        "group": "Configuration & Settings",
+                        "icon": "sliders",
+                        "pages": [
+                          "docs/support/knowledge-base/configuration-settings/about-quotas-and-query-complexity",
+                          "docs/support/knowledge-base/configuration-settings/alter-user-settings-exception",
+                          "docs/support/knowledge-base/configuration-settings/change-the-prompt-in-clickhouse-client",
+                          "docs/support/knowledge-base/configuration-settings/configure-a-user-setting",
+                          "docs/support/knowledge-base/configuration-settings/configure_cap_ipc_lock_and_cap_sys_nice_in_docker",
+                          "docs/support/knowledge-base/configuration-settings/ignoring-incorrect-settings",
+                          "docs/support/knowledge-base/configuration-settings/maximum_number_of_tables_and_databases"
+                        ]
+                      },
+                      {
+                        "group": "Integrations & Client Libraries",
+                        "icon": "puzzle-piece",
+                        "pages": [
+                          "docs/support/knowledge-base/integrations/node-js-example",
+                          "docs/support/knowledge-base/integrations/ODBC-authentication-failed-error-using-PowerBI-CH-connector",
+                          "docs/support/knowledge-base/integrations/oracle-odbc",
+                          "docs/support/knowledge-base/integrations/how-to-set-up-ch-on-docker-odbc-connect-mssql",
+                          "docs/support/knowledge-base/integrations/python-clickhouse-connect-example",
+                          "docs/support/knowledge-base/integrations/python_http_requests",
+                          "docs/support/knowledge-base/integrations/terraform_example"
+                        ]
+                      },
+                      {
+                        "group": "Troubleshooting & Errors",
+                        "icon": "triangle-exclamation",
+                        "pages": [
+                          "docs/support/knowledge-base/troubleshooting/certificate_verify_failed_error",
+                          "docs/support/knowledge-base/troubleshooting/connection_timeout_remote_remoteSecure",
+                          "docs/support/knowledge-base/troubleshooting/exception-too-many-parts",
+                          "docs/support/knowledge-base/troubleshooting/fix-developer-verification-error-in-macos",
+                          "docs/support/knowledge-base/troubleshooting/part_intersects_previous_part"
+                        ]
+                      },
+                      {
+                        "group": "Tables & Schema",
+                        "icon": "table",
+                        "pages": [
+                          "docs/support/knowledge-base/tables-schema/add-column",
+                          "docs/support/knowledge-base/tables-schema/delete-old-data",
+                          "docs/support/knowledge-base/tables-schema/exchangeStatementToSwitchTables",
+                          "docs/support/knowledge-base/tables-schema/how-to-create-table-to-query-multiple-remote-clusters",
+                          "docs/support/knowledge-base/tables-schema/recreate_table_across_terminals",
+                          "docs/support/knowledge-base/tables-schema/schema_migration_tools",
+                          "docs/support/knowledge-base/tables-schema/search-across-node-for-tables-with-a-wildcard"
+                        ]
+                      },
+                      {
+                        "group": "Queries & SQL",
+                        "icon": "code",
+                        "pages": [
+                          "docs/support/knowledge-base/queries-sql/calculate-pi-using-sql",
+                          "docs/support/knowledge-base/queries-sql/compare_resultsets",
+                          "docs/support/knowledge-base/queries-sql/comparing-metrics-between-queries",
+                          "docs/support/knowledge-base/queries-sql/filtered-aggregates",
+                          "docs/support/knowledge-base/queries-sql/how-to-filter-a-clickhouse-table-by-an-array-column",
+                          "docs/support/knowledge-base/queries-sql/how-to-insert-all-rows-from-another-table",
+                          "docs/support/knowledge-base/queries-sql/pivot",
+                          "docs/support/knowledge-base/queries-sql/useful-queries-for-troubleshooting",
+                          "docs/support/knowledge-base/queries-sql/using-array-join-to-extract-and-query-attributes"
+                        ]
+                      },
+                      {
+                        "group": "Materialized Views & Projections",
+                        "icon": "layer-group",
+                        "pages": [
+                          "docs/support/knowledge-base/materialized-views/are_materialized_views_inserted_asynchronously",
+                          "docs/support/knowledge-base/materialized-views/how_to_display_queries_using_MV",
+                          "docs/support/knowledge-base/materialized-views/how_to_use_parametrised_views",
+                          "docs/support/knowledge-base/materialized-views/projection_example"
+                        ]
+                      },
+                      {
+                        "group": "Monitoring & Debugging",
+                        "icon": "chart-line",
+                        "pages": [
+                          "docs/support/knowledge-base/monitoring-debugging/check-query-cache-in-use",
+                          "docs/support/knowledge-base/monitoring-debugging/generate-har-file",
+                          "docs/support/knowledge-base/monitoring-debugging/mapping-of-system-metrics-to-prometheus-metrics",
+                          "docs/support/knowledge-base/monitoring-debugging/outputSendLogsLevelTracesToFile",
+                          "docs/support/knowledge-base/monitoring-debugging/profiling-clickhouse-with-llvm-xray",
+                          "docs/support/knowledge-base/monitoring-debugging/send_logs_level",
+                          "docs/support/knowledge-base/monitoring-debugging/which-processes-are-currently-running",
+                          "docs/support/knowledge-base/monitoring-debugging/view_number_of_active_mutations",
+                          "docs/support/knowledge-base/monitoring-debugging/why_default_logging_verbose"
+                        ]
+                      },
+                      {
+                        "group": "Security & Access Control",
+                        "icon": "lock",
+                        "pages": [
+                          "docs/support/knowledge-base/security/check_users_roles",
+                          "docs/support/knowledge-base/security/common-rbac-queries",
+                          "docs/support/knowledge-base/security/remove-default-user",
+                          "docs/support/knowledge-base/security/row-column-policy",
+                          "docs/support/knowledge-base/security/windows_active_directory_to_ch_roles"
+                        ]
+                      },
+                      {
+                        "group": "Data Management",
+                        "icon": "database",
+                        "pages": [
+                          "docs/support/knowledge-base/data-management/backing_up_a_specific_partition",
+                          "docs/support/knowledge-base/data-management/calculate_ratio_of_zero_sparse_serialization",
+                          "docs/support/knowledge-base/data-management/dictionaries-consistent-state",
+                          "docs/support/knowledge-base/data-management/dictionary_using_strings",
+                          "docs/support/knowledge-base/data-management/read_consistency",
+                          "docs/support/knowledge-base/data-management/when_is_ttl_applied"
+                        ]
+                      },
+                      {
+                        "group": "Setup & Installation",
+                        "icon": "download",
+                        "pages": [
+                          "docs/support/knowledge-base/setup-installation/difference_between_official_builds_and_3rd_party",
+                          "docs/support/knowledge-base/setup-installation/enabling-ssl-with-lets-encrypt",
+                          "docs/support/knowledge-base/setup-installation/how-to-increase-thread-pool-size",
+                          "docs/support/knowledge-base/setup-installation/install-clickhouse-windows10",
+                          "docs/support/knowledge-base/setup-installation/llvm-clang-up-to-date",
+                          "docs/support/knowledge-base/setup-installation/production"
+                        ]
+                      },
+                      {
+                        "group": "General & FAQs",
+                        "icon": "circle-question",
+                        "pages": [
+                          "docs/support/knowledge-base/general-faqs/columnar-database",
+                          "docs/support/knowledge-base/general-faqs/dbms-naming",
+                          "docs/support/knowledge-base/general-faqs/how-do-i-contribute-code-to-clickhouse",
+                          "docs/support/knowledge-base/general-faqs/key-value",
+                          "docs/support/knowledge-base/general-faqs/mapreduce",
+                          "docs/support/knowledge-base/general-faqs/olap",
+                          "docs/support/knowledge-base/general-faqs/time-series",
+                          "docs/support/knowledge-base/general-faqs/use-clickhouse-for-log-analytics",
+                          "docs/support/knowledge-base/general-faqs/vector-search",
+                          "docs/support/knowledge-base/general-faqs/who-is-using-clickhouse",
+                          "docs/support/knowledge-base/general-faqs/why_recommend_clickhouse_keeper_over_zookeeper"
+                        ]
+                      }
                     ]
                   }
                 ]
