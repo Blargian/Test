@@ -36,10 +36,16 @@
                     "group": "About",
                     "icon": "circle-info",
                     "pages": [
-                      "docs/get-started/about/intro",
-                      "docs/get-started/about/olap",
-                      "docs/get-started/about/why-clickhouse-is-so-fast",
-                      "docs/get-started/about/distinctive-features",
+                      {
+                        "group": "FAQ",
+                        "expanded": false,
+                        "pages": [
+                          "docs/get-started/about/intro",
+                          "docs/get-started/about/olap",
+                          "docs/get-started/about/why-clickhouse-is-so-fast",
+                          "docs/get-started/about/distinctive-features"
+                        ]
+                      },
                       "docs/get-started/about/deployment-modes",
                       {
                         "group": "Use cases",

@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/avoid-optimize-final
 sidebar_position: 10
-sidebarTitle: '⑨ Avoid optimize final'
+sidebarTitle: 'Avoid optimize final'
 title: 'Avoid OPTIMIZE FINAL'
 description: 'Page describing why you should avoid the OPTIMIZE FINAL clause in ClickHouse'
 keywords: ['avoid OPTIMIZE FINAL', 'background merges']

@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/select-data-types
 sidebar_position: 10
-sidebarTitle: '② Selecting data types'
+sidebarTitle: 'Selecting data types'
 title: 'Selecting data types'
 description: 'Page describing how to choose data types in ClickHouse'
 keywords: ['data types']

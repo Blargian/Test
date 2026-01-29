@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/avoid-mutations
 sidebar_position: 10
-sidebarTitle: '⑧ Avoid mutations'
+sidebarTitle: 'Avoid mutations'
 title: 'Avoid mutations'
 description: 'Page describing why to avoid mutations in ClickHouse'
 keywords: ['mutations']

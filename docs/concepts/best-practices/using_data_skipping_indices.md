@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/use-data-skipping-indices-where-appropriate
 sidebar_position: 10
-sidebarTitle: '⑦ Data skipping indices'
+sidebarTitle: 'Data skipping indices'
 title: 'Use data skipping indices where appropriate'
 description: 'Page describing how and when to use data skipping indices'
 keywords: ['data skipping index', 'skip index']

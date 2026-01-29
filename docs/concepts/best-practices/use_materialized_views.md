@@ -1,7 +1,7 @@
 ---
 slug: /best-practices/use-materialized-views
 sidebar_position: 10
-sidebarTitle: '③ Use materialized views'
+sidebarTitle: 'Use materialized views'
 title: 'Use Materialized Views'
 description: 'Page describing Materialized Views'
 keywords: ['materialized views', 'medallion architecture']

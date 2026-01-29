@@ -160,9 +160,9 @@ export const HeroCard = ({ filename, title, description, href, links, icon }) =>
 export const ContentSwitcher = () => {
     const [selected, setSelected] = useState(() => {
         if (typeof window !== 'undefined') {
-            return localStorage.getItem('contentSwitcherTab') || 'usecase';
+            return localStorage.getItem('contentSwitcherTab') || 'goal';
         }
-        return 'usecase';
+        return 'goal';
     });
 
     const handleSelection = (value) => {
