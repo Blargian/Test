@@ -61,10 +61,10 @@ export const HeroCard = ({ filename, title, description, href, links, icon }) =>
         }
     }, []);
 
-    const darkFilename = filename ? filename.replace(/(\.[^.]+)$/, "--dark$1") : null;
+    const darkFilename = filename ? filename.replace('-light.', '-dark.') : null;
 
     const cardStyle = {
-        padding: '32px 16px 16px 16px',
+        padding: '16px 16px 16px 16px',
         borderRadius: '8px',
         backgroundColor: isDark ? '#1b1b18' : '#f9f9f9',
         border: isDark ? '1px solid #3c3c3c' : '1px solid #e5e7eb',
@@ -82,7 +82,8 @@ export const HeroCard = ({ filename, title, description, href, links, icon }) =>
             ) : (
                 <>
                     <img
-                        src={`https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/${filename}`}
+                        src={`/images/${filename}`}
+                        alt={title}
                         style={{
                             display: isDark ? 'none' : 'block',
                             width: '100%',
@@ -94,14 +95,14 @@ export const HeroCard = ({ filename, title, description, href, links, icon }) =>
                         }}
                     />
                     <img
-                        src={`https://ch-docs-product-selector.s3.eu-central-1.amazonaws.com/${darkFilename}`}
+                        src={`/images/${darkFilename}`}
+                        alt={title}
                         style={{
                             display: isDark ? 'block' : 'none',
                             width: '100%',
                             height: '192px',
                             objectFit: 'cover',
                             borderRadius: '8px',
-                            border: '1px solid #494949',
                             pointerEvents: 'none'
                         }}
                     />
@@ -279,19 +280,19 @@ export const ContentSwitcher = () => {
             {selected === 'product' && (
                 <div className="px-6 lg:px-0 mt-12 lg:mt-6 grid sm:grid-cols-3 gap-x-6 gap-y-4">
                     <HeroCard
-                        filename="sql-console.svg"
+                        filename="product-cloud-light.svg"
                         title="ClickHouse Cloud"
                         description="Explore product docs for ClickHouse Cloud, a serverless offering that takes care of the details so you can spend more time getting insight out of the fastest database on earth."
                         href="/docs/cloud/getting-started/intro"
                     />
                     <HeroCard
-                        filename="clickstack.png"
+                        filename="product-clickstack-light.svg"
                         title="ClickStack"
                         description="Explore product docs for ClickStack - the all in one observability stack powered by ClickHouse, giving you lightning-fast queries and powerful aggregations on logs, metrics, traces, session replays and errors with unmatched resource efficiency for even your highest-cardinality OTel data."
                         href="/docs/clickstack/overview"
                     />
                     <HeroCard
-                        filename="chdb.svg"
+                        filename="product-chdb-light.svg"
                         title="chDB"
                         description="Explore product docs for chDB - a fast, reliable, and scalable in-process database. Experience the power of ClickHouse, in-process. With unparalleled performance, reliability, and scalability for any data-intensive application."
                         href="/docs/chdb/home"

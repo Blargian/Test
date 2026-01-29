@@ -1,5 +1,28 @@
+/* ============================================
+   Float Navigation Menu Left
+   ============================================ */
+
+/* Override the default right-aligned navigation */
+/* Target the container that holds the nav-tabs */
+.flex-1.relative.hidden.lg\:flex.items-center.ml-auto.justify-end,
+.flex-1.relative.hidden.lg\:flex.items-center[class*="ml-auto"][class*="justify-end"] {
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+}
+
+/* Alternative: target by finding the nav-tabs parent */
+.nav-tabs {
+    margin-left: 0 !important;
+}
+
+/* Ensure the nav-tabs container itself is left-aligned */
+div:has(> .nav-tabs) {
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+}
 
 .nav-logo {
+
     height: 2rem;
 }
 
@@ -930,6 +953,45 @@ body.clickpipes_home .hero-text {
     color: inherit !important;
 }
 
+/* Prevent dropdown menu icons from turning yellow on hover */
+[data-theme='dark'] .product-selector-radio-group a svg,
+[data-theme='dark'] [role="radiogroup"] a svg,
+[data-theme='dark'] .nav-dropdown-products-selector-content a svg,
+[data-theme='dark'] .nav-dropdown-products-selector-item svg,
+.dark .product-selector-radio-group a svg,
+.dark [role="radiogroup"] a svg,
+.dark .nav-dropdown-products-selector-content a svg,
+.dark .nav-dropdown-products-selector-item svg,
+:is(.dark) .product-selector-radio-group a svg,
+:is(.dark) [role="radiogroup"] a svg,
+:is(.dark) .nav-dropdown-products-selector-content a svg,
+:is(.dark) .nav-dropdown-products-selector-item svg,
+[data-theme='dark'] .product-selector-radio-group a:hover svg,
+[data-theme='dark'] [role="radiogroup"] a:hover svg,
+[data-theme='dark'] .nav-dropdown-products-selector-content a:hover svg,
+[data-theme='dark'] .nav-dropdown-products-selector-item:hover svg,
+.dark .product-selector-radio-group a:hover svg,
+.dark [role="radiogroup"] a:hover svg,
+.dark .nav-dropdown-products-selector-content a:hover svg,
+.dark .nav-dropdown-products-selector-item:hover svg,
+:is(.dark) .product-selector-radio-group a:hover svg,
+:is(.dark) [role="radiogroup"] a:hover svg,
+:is(.dark) .nav-dropdown-products-selector-content a:hover svg,
+:is(.dark) .nav-dropdown-products-selector-item:hover svg {
+    color: currentColor !important;
+}
+
+/* Also prevent the ::before pseudo-elements (product icons) from turning yellow */
+[data-theme='dark'] .nav-dropdown-products-selector-item::before,
+.dark .nav-dropdown-products-selector-item::before,
+:is(.dark) .nav-dropdown-products-selector-item::before,
+[data-theme='dark'] .nav-dropdown-products-selector-item:hover::before,
+.dark .nav-dropdown-products-selector-item:hover::before,
+:is(.dark) .nav-dropdown-products-selector-item:hover::before {
+    color: inherit !important;
+}
+
+
 /* Beta Badge */
 .betaBadge {
     background-color: #E5FFFB;
@@ -1376,12 +1438,12 @@ div.mt-2.text-lg.prose.prose-gray.dark\:prose-invert {
 
 /* Hide the circular flag icons in localization menu items */
 [id^="localization-select-item-"] .relative.size-4.rounded-full.shrink-0,
-[role="menuitem"][id^="localization-select-item-"] > div.relative.size-4.rounded-full {
+[role="menuitem"][id^="localization-select-item-"]>div.relative.size-4.rounded-full {
     display: none !important;
 }
 
 /* Hide the flag icon in the localization trigger button */
-#localization-select-trigger > div.relative.size-4.rounded-full {
+#localization-select-trigger>div.relative.size-4.rounded-full {
     display: none !important;
 }
 
