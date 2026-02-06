@@ -4,27 +4,6 @@
     // Track if we've moved the element to avoid unnecessary operations
     let hasMoved = false;
 
-    // Function to move the localization select to topbar right container
-    function moveLocalizationSelect() {
-        const localizationSelect = document.getElementById('localization-select-trigger');
-        const topbarRightContainer = document.querySelector('.topbar-right-container');
-
-        if (localizationSelect && topbarRightContainer) {
-            // Check if already in the right place
-            if (topbarRightContainer.contains(localizationSelect)) {
-                hasMoved = true;
-                return true;
-            }
-
-            // Move the element to the topbar right container
-            topbarRightContainer.appendChild(localizationSelect);
-            hasMoved = true;
-            console.log('Localization select moved to topbar right container');
-            return true;
-        }
-        return false;
-    }
-
     // Function to add Beta tag to sidebar titles
     // Configure which titles should get the Beta tag
     const betaTitles = ['MongoDB'];
@@ -83,18 +62,15 @@
     }
 
     // Try to move elements immediately
-    moveLocalizationSelect();
     addBetaTagsToSidebarTitles();
 
     // Try again on DOMContentLoaded
     document.addEventListener('DOMContentLoaded', function() {
-        moveLocalizationSelect();
         addBetaTagsToSidebarTitles();
     });
 
     // Try again on window load (after all resources are loaded)
     window.addEventListener('load', function() {
-        moveLocalizationSelect();
         addBetaTagsToSidebarTitles();
     });
 
@@ -102,11 +78,6 @@
     const observer = new MutationObserver(function(mutations) {
         const localizationSelect = document.getElementById('localization-select-trigger');
         const topbarRightContainer = document.querySelector('.topbar-right-container');
-
-        // If element exists but is not in the right container, move it
-        if (localizationSelect && topbarRightContainer && !topbarRightContainer.contains(localizationSelect)) {
-            moveLocalizationSelect();
-        }
 
         // Always try to add beta tags to sidebar titles
         addBetaTagsToSidebarTitles();

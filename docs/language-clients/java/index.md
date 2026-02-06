@@ -8,8 +8,8 @@ doc_type: 'reference'
 
 
 
-- [Client 0.8+](./client/client.mdx)
-- [JDBC 0.8+](./jdbc/jdbc.mdx)
+- [Client 0.8+](./client.mdx)
+- [JDBC 0.8+](./jdbc/_v0_8.mdx)
 - [R2DBC Driver](./r2dbc.md)
 
 ## ClickHouse client 

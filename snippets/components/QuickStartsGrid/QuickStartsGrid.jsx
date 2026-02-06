@@ -234,12 +234,12 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="px-4">
         {/* Main content area with sidebar */}
         <div className="flex flex-col lg:flex-row gap-8 my-8">
-          {/* Left sidebar - Search and filters */}
+          {/* Left sidebar - Search and filters (fixed position) */}
           <div className="lg:w-64 flex-shrink-0">
-            <div className="sticky top-4 space-y-6">
+            <div className="lg:fixed lg:w-64 space-y-6" style={{ top: '6.5rem' }}>
               {/* Search input */}
               <div>
                 <label className="block text-sm font-semibold text-gray-900 dark:text-zinc-50 mb-3">
@@ -278,9 +278,6 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
 
               {/* Filters */}
               <div>
-                <label className="block text-sm font-semibold text-gray-900 dark:text-zinc-50 mb-3">
-                  Filters
-                </label>
                 <div className="space-y-3">
                   <Dropdown
                     label="Use cases"
