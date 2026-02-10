@@ -2189,7 +2189,6 @@
                     "group": "JavaScript",
                     "icon": "/images/integrations/logos/node_js.svg",
                     "pages": [
-                      "/docs/language-clients/js",
                       "docs/language-clients/javascript/overview",
                       "docs/language-clients/javascript/usage",
                       "docs/language-clients/javascript/examples",
@@ -2207,7 +2206,6 @@
                       {
                         "group": "Reference",
                         "pages": [
-                          "docs/language-clients/python/index",
                           "docs/language-clients/python/reference/driver-api",
                           "docs/language-clients/python/reference/additional-options",
                           "docs/language-clients/python/reference/advanced-querying",
@@ -2234,53 +2232,10 @@
                   {
                     "group": "Java",
                     "icon": "/images/integrations/logos/java.svg",
-                    "versions": [
-                      {
-                        "version": "v0.8",
-                        "groups": [
-                          {
-                            "group": "Client",
-                            "pages": [
-                              "docs/language-clients/java/client/_v0_8"
-                            ]
-                          },
-                          {
-                            "group": "JDBC",
-                            "pages": [
-                              "docs/language-clients/java/jdbc/_v0_8"
-                            ]
-                          },
-                          {
-                            "group": "R2DBC",
-                            "pages": [
-                              "docs/language-clients/java/r2dbc"
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "version": "v0.7",
-                        "groups": [
-                          {
-                            "group": "Client",
-                            "pages": [
-                              "docs/language-clients/java/client/_v0_7"
-                            ]
-                          },
-                          {
-                            "group": "JDBC",
-                            "pages": [
-                              "docs/language-clients/java/jdbc/_v0_7"
-                            ]
-                          },
-                          {
-                            "group": "R2DBC",
-                            "pages": [
-                              "docs/language-clients/java/r2dbc"
-                            ]
-                          }
-                        ]
-                      }
+                    "pages": [
+                      "docs/language-clients/java/client",
+                      "docs/language-clients/java/jdbc",
+                      "docs/language-clients/java/r2dbc"
                     ]
                   },
                   {
