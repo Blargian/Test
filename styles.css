@@ -947,18 +947,40 @@ body.clickpipes_home .hero-text {
     max-width: 50% !important;
 }
 
-/* ClickHouse yellow links in dark mode */
-[data-theme='dark'] a,
-.dark a,
-:is(.dark) a {
-    color: #FAFF69;
+/* Dark mode - white body text for document content */
+[data-theme='dark'] .prose,
+.dark .prose,
+:is(.dark) .prose,
+[data-theme='dark'] .prose p,
+.dark .prose p,
+:is(.dark) .prose p,
+[data-theme='dark'] .prose li,
+.dark .prose li,
+:is(.dark) .prose li,
+[data-theme='dark'] .prose td,
+.dark .prose td,
+:is(.dark) .prose td,
+[data-theme='dark'] .prose th,
+.dark .prose th,
+:is(.dark) .prose th {
+    color: #ffffff !important;
 }
 
-[data-theme='dark'] a:hover,
-.dark a:hover,
-:is(.dark) a:hover {
-    color: #FAFF69;
-    opacity: 0.8;
+/* ClickHouse yellow links in dark mode - content area only, excluding cards */
+[data-theme='dark'] .prose a:not(.card):not(.card *),
+.dark .prose a:not(.card):not(.card *),
+:is(.dark) .prose a:not(.card):not(.card *) {
+    color: #FAFF69 !important;
+    font-weight: normal !important;
+    text-decoration: none;
+}
+
+[data-theme='dark'] .prose a:not(.card):not(.card *):hover,
+.dark .prose a:not(.card):not(.card *):hover,
+:is(.dark) .prose a:not(.card):not(.card *):hover {
+    color: #FAFF69 !important;
+    text-decoration: underline;
+    opacity: 1;
 }
 
 /* Override yellow links for product selector items */
@@ -1602,8 +1624,26 @@ h5#sidebar-title {
     color: #93c5fd !important;
 }
 
+/* ============================================
+   Content Area Width & Padding
+   ============================================ */
+
+/* Widen the content area beyond default max-w-xl (576px) */
+#content-area {
+    max-width: 48rem !important; /* 768px */
+}
+
+/* Reduce outer container padding */
 #content-container {
     border-radius: 15px;
+    padding-left: 2rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Reduce inner flex gap and left padding */
+#content-container > .flex.flex-row-reverse {
+    gap: 2rem !important;
+    padding-left: 1rem !important;
 }
 
 .dark #content-container {
