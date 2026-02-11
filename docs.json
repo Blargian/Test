@@ -1957,9 +1957,9 @@
               {
                 "item": "Agentic Data Stack",
                 "icon": "robot",
-                "groups": [
+                "dropdowns": [
                   {
-                    "group": "Cloud",
+                    "dropdown": "Cloud (Hosted)",
                     "icon": "cloud",
                     "pages": [
                       "docs/agentic-data-stack/cloud/overview",
@@ -1967,7 +1967,7 @@
                     ]
                   },
                   {
-                    "group": "Self-managed",
+                    "dropdown": "Self-managed",
                     "icon": "server",
                     "pages": [
                       "docs/agentic-data-stack/self-managed/overview",
