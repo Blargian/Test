@@ -1955,6 +1955,28 @@
                 ]
               },
               {
+                "item": "Agentic Data Stack",
+                "icon": "robot",
+                "groups": [
+                  {
+                    "group": "Cloud",
+                    "icon": "cloud",
+                    "pages": [
+                      "docs/agentic-data-stack/cloud/overview",
+                      "docs/agentic-data-stack/cloud/getting-started"
+                    ]
+                  },
+                  {
+                    "group": "Self-managed",
+                    "icon": "server",
+                    "pages": [
+                      "docs/agentic-data-stack/self-managed/overview",
+                      "docs/agentic-data-stack/self-managed/getting-started"
+                    ]
+                  }
+                ]
+              },
+              {
                 "item": "chDB",
                 "icon": "database",
                 "groups": [
