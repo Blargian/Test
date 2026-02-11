@@ -43,32 +43,29 @@
   fill: #FAFF69 !important;
 }
 
-/* ============================================
-   Float Navigation Menu Left
-   ============================================ */
-
-/* Override the default right-aligned navigation */
-/* Target the container that holds the nav-tabs */
-.flex-1.relative.hidden.lg\:flex.items-center.ml-auto.justify-end,
-.flex-1.relative.hidden.lg\:flex.items-center[class*="ml-auto"][class*="justify-end"] {
-    margin-left: 0 !important;
-    justify-content: flex-start !important;
-}
-
-/* Alternative: target by finding the nav-tabs parent */
-.nav-tabs {
-    margin-left: 0 !important;
-}
-
-/* Ensure the nav-tabs container itself is left-aligned */
-div:has(> .nav-tabs) {
-    margin-left: 0 !important;
-    justify-content: flex-start !important;
-}
 
 .nav-logo {
-
     height: 2rem;
+}
+
+/* Give navbar a solid background so content doesn't show through when scrolling */
+#navbar {
+    background-color: #f7f7f7 !important;
+}
+
+.dark #navbar,
+:is(.dark) #navbar {
+    background-color: #000000 !important;
+}
+
+/* Fix sticky search/filter column overlapping the top nav */
+.mint-sticky.mint-top-4 {
+    top: 5rem !important;
+}
+
+/* Align quickstarts grid to the left instead of centered */
+.max-w-7xl.mx-auto:has(.mint-sticky) {
+    margin-left: 0 !important;
 }
 
 /* Product selector trigger button text size */
@@ -208,7 +205,7 @@ html:not(.dark) .gemini-nav-btn.active {
 
 .tilted-content {
     position: relative;
-    padding: 1.25rem 1.25rem;
+    padding: 0.3rem 0.35rem;
 }
 
 .tilted-yellow {
@@ -724,42 +721,6 @@ html:not([data-theme="dark"]) .nav-dropdown-products-selector-item .flex.flex-co
     color: #a3a3a3 !important;
 }
 
-/* ============================================
-   Page Title Alignment Fix
-   ============================================ */
-
-/* Parent container - make it a row layout */
-#page-title:has(+ #page-context-menu) {
-    align-self: flex-start !important;
-    width: auto !important;
-    text-align: left !important;
-}
-
-/* If they share a parent, make the parent a row */
-#page-title {
-    align-self: flex-start !important;
-    text-align: left !important;
-}
-
-/* Parent should be row layout with space between */
-#page-title:is(:first-child) {
-    flex: 1 !important;
-}
-
-#page-context-menu {
-    margin-left: auto !important;
-    align-self: center !important;
-}
-
-/* If parent contains both, make it row */
-:has(> #page-title):has(> #page-context-menu) {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding-bottom: 16px !important;
-}
-
 
 /* ============================================
    Navigation Link Text Shadow
@@ -917,11 +878,26 @@ button.rounded-xl {
    Page Title Alignment
    ============================================ */
 
-/* Left-align h1 elements with id="page-title" */
-#page-title,
-h1#page-title,
-h1[id="page-title"] {
+/* Left-align page title and context menu in a row */
+#page-title {
     text-align: left !important;
+}
+
+:has(> #page-title) {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+:has(> #page-title) > #page-title {
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+:has(> #page-title) > #page-context-menu {
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
 }
 
 /* ============================================
@@ -1647,11 +1623,17 @@ h5#sidebar-title {
    Mark Element Styling
    ============================================ */
 
-/* Dark mode - ClickHouse yellow highlight */
+/* Dark mode - yellow text without background */
 .dark mark,
 :is(.dark) mark {
-    background-color: #FAFF69 !important;
-    color: #000000 !important;
+    background-color: transparent !important;
+    color: #FAFF69 !important;
+}
+
+/* Light mode - yellow text without background */
+html:not(.dark) mark {
+    background-color: transparent !important;
+    color: #d4a005 !important;
 }
 
 /* ============================================
@@ -1941,4 +1923,48 @@ html:not(.dark) a.nav-dropdown-item:hover svg {
 :is(.dark) .nav-dropdown-item:hover svg,
 :is(.dark) a.nav-dropdown-item:hover svg {
     background-color: #FAFF69 !important;
+}
+
+/* ============================================
+   Update Component (Changelog) Layout Fix
+   ============================================ */
+
+/* Force two-column layout at lg breakpoint since lg:flex-row is not applied */
+@media (min-width: 1024px) {
+    .update-container {
+        flex-direction: row !important;
+    }
+}
+
+/* ============================================
+   Banner Styling
+   ============================================ */
+
+/* Light mode: black background, white text, yellow link */
+html:not(.dark) #banner {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+html:not(.dark) #banner a {
+    color: #FAFF69 !important;
+    font-weight: 700 !important;
+}
+
+/* Dark mode: yellow background, black text, white link */
+html.dark #banner,
+:is(.dark) #banner {
+    background-color: #FAFF69 !important;
+    color: #1a1a1a !important;
+}
+
+html.dark #banner *,
+:is(.dark) #banner * {
+    color: #1a1a1a !important;
+}
+
+html.dark #banner a,
+:is(.dark) #banner a {
+    color: #1a1a1a !important;
+    font-weight: 700 !important;
 }

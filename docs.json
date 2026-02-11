@@ -14,6 +14,10 @@
     }
   },
   "favicon": "/favicon.svg",
+  "banner": {
+    "content": "Introducing Managed ClickStack: Observability for OpenTelemetry at scale [Read more →](https://clickhouse.com/blog)",
+    "dismissible": true
+  },
   "scripts": [
     {
       "src": "/inject-product-headers.js"
@@ -2182,97 +2186,97 @@
                 "pages": [
                   "docs/language-clients/index",
                   {
-                    "group": "Go",
-                    "icon": "golang",
-                    "pages": [
-                      "/docs/language-clients/go/index"
-                    ]
-                  },
-                  {
-                    "group": "Java",
-                    "icon": "java",
-                    "dropdowns": [
-                      {
-                        "dropdown": "Client",
-                        "icon": "star",
-                        "versions": [
-                          {
-                            "version": "0.8.0",
-                            "pages": [
-                              "/docs/language-clients/java/client/_v0_8"
-                            ]
-                          },
-                          {
-                            "version": "0.7.0",
-                            "pages": [
-                              "/docs/language-clients/java/client/_v0_7"
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "dropdown": "JDBC",
-                        "versions": [
-                          {
-                            "version": "0.8.0",
-                            "pages": [
-                              "/docs/language-clients/java/jdbc/_v0_8"
-                            ]
-                          },
-                          {
-                            "version": "0.7.0",
-                            "pages": [
-                              "/docs/language-clients/java/jdbc/_v0_7"
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "dropdown": "R2DBC",
-                        "pages": [
-                          "/docs/language-clients/java/r2dbc"
-                        ]
-                      }
-                    ]
-                  },
-                  {
                     "group": "JavaScript",
+                    "icon": "/images/integrations/logos/node_js.svg",
                     "pages": [
-                      "/docs/language-clients/js"
+                      "docs/language-clients/javascript/overview",
+                      "docs/language-clients/javascript/usage",
+                      "docs/language-clients/javascript/examples",
+                      "docs/language-clients/javascript/reference",
+                      "docs/language-clients/javascript/release-notes"
                     ]
                   },
                   {
                     "group": "Python",
+                    "icon": "/images/integrations/logos/python.svg",
                     "pages": [
-                      "/docs/language-clients/python/index",
-                      "/docs/language-clients/python/driver-api",
-                      "/docs/language-clients/python/additional-options",
-                      "/docs/language-clients/python/advanced-querying",
-                      "/docs/language-clients/python/advanced-inserting",
-                      "/docs/language-clients/python/advanced-usage",
-                      "/docs/language-clients/python/sqlalchemy"
+                      "docs/language-clients/python/overview",
+                      "docs/language-clients/python/usage",
+                      "docs/language-clients/python/examples",
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "docs/language-clients/python/reference/driver-api",
+                          "docs/language-clients/python/reference/additional-options",
+                          "docs/language-clients/python/reference/advanced-querying",
+                          "docs/language-clients/python/reference/advanced-inserting",
+                          "docs/language-clients/python/reference/advanced-usage",
+                          "docs/language-clients/python/sqlalchemy"
+                        ]
+                      },
+                      "docs/language-clients/python/release-notes"
                     ]
                   },
                   {
-                    "group": "Rust",
+                    "group": "Go",
+                    "icon": "/images/integrations/logos/golang.svg",
                     "pages": [
-                      "/docs/language-clients/rust"
+                      "docs/language-clients/go/overview",
+                      "docs/language-clients/go/usage",
+                      "docs/language-clients/go/examples",
+                      "docs/language-clients/go/index",
+                      "docs/language-clients/go/reference",
+                      "docs/language-clients/go/release-notes"
+                    ]
+                  },
+                  {
+                    "group": "Java",
+                    "icon": "/images/integrations/logos/java.svg",
+                    "pages": [
+                      "docs/language-clients/java/client",
+                      "docs/language-clients/java/jdbc",
+                      "docs/language-clients/java/r2dbc"
                     ]
                   },
                   {
                     "group": "C#",
+                    "icon": "/images/integrations/logos/csharp.svg",
                     "pages": [
-                      "/docs/language-clients/csharp"
+                      "docs/language-clients/csharp/overview",
+                      "docs/language-clients/csharp/usage",
+                      "docs/language-clients/csharp/examples",
+                      "docs/language-clients/csharp",
+                      "docs/language-clients/csharp/reference",
+                      "docs/language-clients/csharp/release-notes"
+                    ]
+                  },
+                  {
+                    "group": "Rust",
+                    "icon": "/images/integrations/logos/rust.png",
+                    "pages": [
+                      "docs/language-clients/rust/overview",
+                      "docs/language-clients/rust/usage",
+                      "docs/language-clients/rust/examples",
+                      "docs/language-clients/rust",
+                      "docs/language-clients/rust/reference",
+                      "docs/language-clients/rust/release-notes"
                     ]
                   },
                   {
                     "group": "C++",
+                    "icon": "/images/integrations/logos/logo_cpp.svg",
                     "pages": [
-                      "/docs/language-clients/cpp"
+                      "docs/language-clients/cpp/overview",
+                      "docs/language-clients/cpp/usage",
+                      "docs/language-clients/cpp/examples",
+                      "docs/language-clients/cpp",
+                      "docs/language-clients/cpp/reference",
+                      "docs/language-clients/cpp/release-notes"
                     ]
                   },
                   {
                     "group": "Third-party clients",
+                    "icon": "users",
                     "pages": [
                       "/docs/language-clients/third-party/moose-olap",
                       "/docs/language-clients/third-party/client-libraries"
