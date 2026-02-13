@@ -828,6 +828,12 @@ html.dark .dark\:bg-primary-light,
     border-radius: 4px !important;
 }
 
+/* Search results – highlighted matches should be yellow in dark mode */
+.dark [role="listbox"] mark b,
+:is(.dark) [role="listbox"] mark b {
+    color: #FAFF69 !important;
+}
+
 /* Page context menu styling */
 #page-context-menu .rounded-l-xl {
     border-top-left-radius: 4px !important;
