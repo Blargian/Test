@@ -20,7 +20,7 @@
   },
   "scripts": [
     {
-      "src": "/inject-product-headers.js"
+      "src": "/kapa-widget.js"
     }
   ],
   "navigation": {

@@ -2008,3 +2008,126 @@ html.dark #banner a,
     color: #1a1a1a !important;
     font-weight: 700 !important;
 }
+
+/* ============================================
+   Kapa AI – Injected Topbar "Ask AI" Button
+   ============================================ */
+
+.kapa-ask-ai-btn {
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* ============================================
+   Kapa AI – Native Panel Integration
+   ============================================
+   We piggyback on Mintlify's native assistant
+   panel for the content-push layout, then overlay
+   Kapa's modal on top. Hide native UI we replace.
+   ============================================ */
+
+/* Hide the sidebar Ask AI button visually but keep it
+   clickable for programmatic .click() sync.            */
+#sidebar-content [id="assistant-entry"] {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Hide the mobile Ask AI button entirely */
+#assistant-entry-mobile {
+    display: none !important;
+}
+
+/* Hide ALL native panel content so the panel is just an
+   empty shell providing the flex-sibling content push.
+   Kapa's fixed sidebar overlay sits on top visually.      */
+#chat-assistant-sheet > * {
+    display: none !important;
+}
+
+/* Hide the floating input that appears on some pages */
+.chat-assistant-floating-input {
+    display: none !important;
+}
+
+/* ============================================
+   Kapa AI – Panel Appearance
+   ============================================ */
+
+/* Dialog background + subtle left shadow */
+[id*="kapa-widget-container"] [role="dialog"] {
+    background-color: #f7f7f7 !important;
+    box-shadow: -1px 0 3px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dark [id*="kapa-widget-container"] [role="dialog"],
+:is(.dark) [id*="kapa-widget-container"] [role="dialog"] {
+    background-color: #09090B !important;
+    box-shadow: -1px 0 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Chat input area — Mintlify-style rounded + backdrop blur */
+[id*="kapa-widget-container"] textarea,
+[id*="kapa-widget-container"] [class*="mantine-Textarea"],
+[id*="kapa-widget-container"] [class*="mantine-Input"],
+[id*="kapa-widget-container"] [class*="Textarea"],
+[id*="kapa-widget-container"] [class*="Input-wrapper"] {
+    border-radius: 16px !important;
+    border: 1px solid #e5e7eb !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+    font-size: 0.875rem !important;
+    transition: border-color 0.2s !important;
+}
+
+[id*="kapa-widget-container"] textarea:focus,
+[id*="kapa-widget-container"] [class*="Textarea"]:focus-within,
+[id*="kapa-widget-container"] [class*="Input"]:focus-within {
+    border-color: var(--primary, #fdff75) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dark [id*="kapa-widget-container"] textarea,
+:is(.dark) [id*="kapa-widget-container"] textarea,
+.dark [id*="kapa-widget-container"] [class*="Textarea"],
+:is(.dark) [id*="kapa-widget-container"] [class*="Textarea"],
+.dark [id*="kapa-widget-container"] [class*="Input"],
+:is(.dark) [id*="kapa-widget-container"] [class*="Input"] {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background-color: rgba(15, 15, 15, 0.9) !important;
+    color: #f3f4f6 !important;
+}
+
+.dark [id*="kapa-widget-container"] textarea:focus,
+:is(.dark) [id*="kapa-widget-container"] textarea:focus,
+.dark [id*="kapa-widget-container"] [class*="Textarea"]:focus-within,
+:is(.dark) [id*="kapa-widget-container"] [class*="Textarea"]:focus-within,
+.dark [id*="kapa-widget-container"] [class*="Input"]:focus-within,
+:is(.dark) [id*="kapa-widget-container"] [class*="Input"]:focus-within {
+    border-color: var(--primary-light, #fdff75) !important;
+}
+
+/* Disclaimer text — subtle like Mintlify's */
+[id*="kapa-widget-container"] [class*="disclaimer"],
+[id*="kapa-widget-container"] [class*="Disclaimer"] {
+    background-color: transparent !important;
+    font-size: 0.75rem !important;
+    color: #9ca3af !important;
+    text-align: center !important;
+}
+
+.dark [id*="kapa-widget-container"] [class*="disclaimer"],
+:is(.dark) [id*="kapa-widget-container"] [class*="disclaimer"],
+.dark [id*="kapa-widget-container"] [class*="Disclaimer"],
+:is(.dark) [id*="kapa-widget-container"] [class*="Disclaimer"] {
+    color: #4b5563 !important;
+}
