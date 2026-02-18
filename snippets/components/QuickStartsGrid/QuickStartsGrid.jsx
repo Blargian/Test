@@ -239,7 +239,7 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
         <div className="flex flex-col lg:flex-row gap-8 my-8">
           {/* Left sidebar - Search and filters (fixed position) */}
           <div className="lg:w-64 flex-shrink-0">
-            <div className="lg:fixed lg:w-64 space-y-6" style={{ top: '6.5rem' }}>
+            <div className="lg:fixed lg:w-64 space-y-6" style={{ top: '8.5rem' }}>
               {/* Search input */}
               <div>
                 <label className="block text-sm font-semibold text-gray-900 dark:text-zinc-50 mb-3">
