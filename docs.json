@@ -1997,6 +1997,64 @@
                     ]
                   }
                 ]
+              },
+              {
+                "item": "Managed Postgres",
+                "icon": "/images/icons/icon-postgres.svg",
+                "groups": [
+                  {
+                    "group": "Get started",
+                    "icon": "rocket",
+                    "pages": [
+                      "docs/managed-postgres/overview",
+                      "docs/managed-postgres/quickstart"
+                    ]
+                  },
+                  {
+                    "group": "Features",
+                    "icon": "list-check",
+                    "pages": [
+                      "docs/managed-postgres/connection",
+                      "docs/managed-postgres/settings",
+                      "docs/managed-postgres/scaling",
+                      "docs/managed-postgres/security",
+                      "docs/managed-postgres/high-availability",
+                      "docs/managed-postgres/read-replicas",
+                      "docs/managed-postgres/backup-and-restore",
+                      "docs/managed-postgres/extensions"
+                    ]
+                  },
+                  {
+                    "group": "Benchmarks",
+                    "icon": "chart-line",
+                    "pages": [
+                      "docs/managed-postgres/benchmarks"
+                    ]
+                  },
+                  {
+                    "group": "ClickHouse Integration",
+                    "icon": "link",
+                    "pages": [
+                      "docs/managed-postgres/clickhouse-integration"
+                    ]
+                  },
+                  {
+                    "group": "Migrations",
+                    "icon": "right-left",
+                    "pages": [
+                      "docs/managed-postgres/migrations/pg_dump-pg_restore",
+                      "docs/managed-postgres/migrations/logical-replication",
+                      "docs/managed-postgres/migrations/peerdb"
+                    ]
+                  },
+                  {
+                    "group": "FAQ",
+                    "icon": "circle-question",
+                    "pages": [
+                      "docs/managed-postgres/faq"
+                    ]
+                  }
+                ]
               }
             ]
           },
