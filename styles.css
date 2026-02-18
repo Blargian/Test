@@ -1636,8 +1636,14 @@ h5#sidebar-title {
 /* Reduce outer container padding */
 #content-container {
     border-radius: 15px;
-    padding-left: 2rem !important;
+    padding-left: 1rem !important;
     padding-right: 1rem !important;
+}
+
+@media (min-width: 1024px) {
+    #content-container {
+        padding-left: 2rem !important;
+    }
 }
 
 /* Reduce inner flex gap and left padding */
@@ -2007,4 +2013,26 @@ html.dark #banner a,
 :is(.dark) #banner a {
     color: #1a1a1a !important;
     font-weight: 700 !important;
+}
+
+/* ============================================
+   Goal Card Link Hover
+   ============================================ */
+
+.goal-card-link:hover span {
+    text-decoration: underline;
+}
+
+/* ============================================
+   Sidebar Section Spacing
+   ============================================ */
+
+/* 24px between sidebar groups */
+#navigation-items > div.mt-6 {
+    margin-top: 24px !important;
+}
+
+/* 8px text-to-text between menu items (accounting for 6px py-1.5 padding on each item) */
+#navigation-items ul.sidebar-group.space-y-px > :not([hidden]) ~ :not([hidden]) {
+    margin-top: -4px !important;
 }
