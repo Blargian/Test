@@ -249,31 +249,31 @@ export const ContentSwitcher = () => {
             )}
 
             {selected === 'usecase' && (
-                <div className="mt-12 lg:mt-6 grid min-[480px]:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4">
+                <div className="mt-12 lg:mt-6 grid sm:grid-cols-2 min-[1300px]:grid-cols-4 gap-x-6 gap-y-4">
                     <HeroCard
-                        filename="use-cases/rt-analytics-light.svg"
-                        darkFilename="use-cases/rt-analytics.svg"
+                        filename="use-cases/rt-analytics-light.png"
+                        darkFilename="use-cases/rt-analytics.png"
                         title="Real-time analytics"
                         description="Deliver instant insights and dashboards at scale. Analyze billions of rows in real time with millisecond results."
                         href="/docs/get-started/use_cases/real-time-analytics"
                     />
                     <HeroCard
-                        filename="use-cases/observability-light.svg"
-                        darkFilename="use-cases/observability.svg"
+                        filename="use-cases/observability-light.png"
+                        darkFilename="use-cases/observability.png"
                         title="Observability"
                         description="Store and query logs, metrics and traces at scale using ClickStack, the open source observability stack powered by ClickHouse."
                         href="/docs/clickstack/overview"
                     />
                     <HeroCard
-                        filename="use-cases/data-warehousing-light.svg"
-                        darkFilename="use-cases/data-warehousing.svg"
+                        filename="use-cases/data-warehousing-light.png"
+                        darkFilename="use-cases/data-warehousing.png"
                         title="Data warehousing"
                         description="Analyze and explore data instantly for insights and apps. Scale faster by offloading heavy workloads."
                         href="/docs/get-started/use_cases/data_warehousing"
                     />
                     <HeroCard
-                        filename="use-cases/machine-learning-light.svg"
-                        darkFilename="use-cases/machine-learning.svg"
+                        filename="use-cases/machine-learning-light.png"
+                        darkFilename="use-cases/machine-learning.png"
                         title="Machine Learning & GenAI"
                         description="Power machine learning and GenAI with blazing-fast vector search, instant aggregations, and scalable training."
                         href="/docs/guides/use-case-guides/AI_ML"
@@ -282,7 +282,7 @@ export const ContentSwitcher = () => {
             )}
 
             {selected === 'product' && (
-                <div className="mt-12 lg:mt-6 grid md:grid-cols-3 gap-x-6 gap-y-4">
+                <div className="mt-12 lg:mt-6 grid sm:grid-cols-2 min-[1300px]:grid-cols-4 gap-x-6 gap-y-4">
                     <HeroCard
                         filename="product-cloud-light.svg"
                         title="ClickHouse Cloud"
