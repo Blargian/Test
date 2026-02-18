@@ -37,12 +37,13 @@
                 "pages": [
                   "/index",
                   {
-                    "group": "About",
-                    "icon": "circle-info",
+                    "group": "Get started",
+                    "icon": "bolt-lightning",
                     "pages": [
                       {
                         "group": "FAQ",
-                        "expanded": false,
+                        "expandable": true,
+                        "expanded": true,
                         "pages": [
                           "docs/get-started/about/intro",
                           "docs/get-started/about/olap",
@@ -67,7 +68,8 @@
                             ]
                           }
                         ]
-                      }
+                      },
+                      "docs/get-started/quick-starts/home"
                     ]
                   },
                   {
@@ -92,13 +94,7 @@
                           "docs/get-started/install/quick-install-curl",
                           "docs/get-started/install/advanced"
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "group": "Migrate",
-                    "icon": "arrow-down-from-arc",
-                    "pages": [
+                      },
                       {
                         "group": "Migration guides",
                         "pages": [
@@ -164,13 +160,6 @@
                           }
                         ]
                       }
-                    ]
-                  },
-                  {
-                    "group": "Quickstarts",
-                    "icon": "bolt-lightning",
-                    "pages": [
-                      "docs/get-started/quick-starts/home"
                     ]
                   },
                   {
@@ -663,7 +652,7 @@
                                   },
                                   {
                                     "group": "FAQ",
-                                    "expanded": false,
+                                    "expanded": true,
                                     "pages": [
                                       "docs/guides/cloud/infrastructure/01_deployment_options/byoc/04_faq/01_aws"
                                     ]
