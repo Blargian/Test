@@ -1334,6 +1334,13 @@ h5#sidebar-title {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 640px) {
+    .dark #content-container {
+        border-top: 1px solid !important;
+        border-image: linear-gradient(to right, transparent, rgba(250, 255, 105, 0.5) 50%, transparent) 1 0 0 0 !important;
+    }
+}
+
 /* ============================================
    Mark Element Styling
    ============================================ */
