@@ -2027,9 +2027,10 @@ html.dark #banner a,
 /* ============================================
    Kapa AI – Native Panel Integration
    ============================================
-   We piggyback on Mintlify's native assistant
-   panel for the content-push layout, then overlay
-   Kapa's modal on top. Hide native UI we replace.
+   We open Mintlify's native assistant panel for
+   the slide-in / content-push animation, then
+   transplant the Kapa widget container into it
+   so it physically rides along with the panel.
    ============================================ */
 
 /* Hide the sidebar Ask AI button visually but keep it
@@ -2051,15 +2052,52 @@ html.dark #banner a,
     display: none !important;
 }
 
-/* Hide ALL native panel content so the panel is just an
-   empty shell providing the flex-sibling content push.
-   Kapa's fixed sidebar overlay sits on top visually.      */
-#chat-assistant-sheet > * {
+/* Hide Mintlify's own panel children — but NOT the
+   transplanted Kapa container we move in via JS.      */
+#chat-assistant-sheet > *:not([id*="kapa-widget-container"]) {
     display: none !important;
 }
 
 /* Hide the floating input that appears on some pages */
 .chat-assistant-floating-input {
+    display: none !important;
+}
+
+/* ============================================
+   Kapa AI – Inside-panel layout overrides
+   ============================================
+   Kapa renders as a fixed-position modal by
+   default. Once transplanted into the panel we
+   reset positioning so it fills the container.
+   ============================================ */
+
+/* The outermost Kapa container */
+#chat-assistant-sheet [id*="kapa-widget-container"] {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+    inset: auto !important;
+}
+
+/* Kapa's inner dialog — fill the panel, no rounded corners needed */
+#chat-assistant-sheet [id*="kapa-widget-container"] [role="dialog"] {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    inset: auto !important;
+    transform: none !important;
+    border-radius: 0 !important;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+/* Hide any backdrop Kapa adds at the body level after transplant */
+body > [id*="kapa-widget-container"] [class*="overlay"],
+body > [id*="kapa-widget-container"] [class*="Overlay"],
+body > [id*="kapa-widget-container"] [class*="backdrop"],
+body > [id*="kapa-widget-container"] [class*="Backdrop"] {
     display: none !important;
 }
 
