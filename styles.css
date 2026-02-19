@@ -1327,7 +1327,6 @@ h5#sidebar-title {
 .dark #content-container {
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, rgba(250, 255, 105, 0.5) 50%, transparent) 1 0 0 0;
-    clip-path: inset(0 round 15px);
     background-image:
         linear-gradient(to bottom, transparent 0%, rgba(250, 255, 105, 0.5) 50%, transparent 100%);
     background-size: 1px 100%;
