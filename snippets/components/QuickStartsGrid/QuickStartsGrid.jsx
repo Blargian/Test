@@ -288,7 +288,7 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
                     setIsOpen={setUseCasesDropdownOpen}
                   />
                   <Dropdown
-                    label="Products"
+                    label="Features"
                     options={productOptions}
                     selectedOptions={selectedProducts}
                     onToggle={toggleProduct}

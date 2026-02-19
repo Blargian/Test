@@ -33,7 +33,7 @@
             "menu": [
               {
                 "item": "Get started",
-                "icon": "rocket",
+                "icon": "/images/icons/icon-get-started.svg",
                 "pages": [
                   "/index",
                   {
@@ -208,10 +208,10 @@
               },
               {
                 "item": "Concepts",
-                "icon": "lightbulb",
+                "icon": "/images/icons/icon-concepts.svg",
                 "pages": [
                   {
-                    "group": "Core concepts",
+                    "group": "ClickHouse fundamentals",
                     "pages": [
                       "docs/concepts/core-concepts/glossary",
                       "docs/concepts/core-concepts/parts",
@@ -393,11 +393,11 @@
               },
               {
                 "item": "Guides",
-                "icon": "map",
+                "icon": "/images/icons/icon-guides.svg",
                 "pages": [
                   {
-                    "group": "Core (OSS + Cloud)",
-                    "icon": "book",
+                    "group": "Cloud / OSS",
+                    "icon": "/images/icons/icon-cloud-oss.svg",
                     "pages": [
                       {
                         "group": "Data modelling",
@@ -426,6 +426,7 @@
                       },
                       {
                         "group": "Use cases",
+                        "expanded": true,
                         "pages": [
                           {
                             "group": "Time series",
@@ -529,56 +530,8 @@
                     ]
                   },
                   {
-                    "group": "Self-managed (OSS)",
-                    "pages": [
-                      {
-                        "group": "Best practices",
-                        "pages": [
-                          "docs/guides/oss/best_practices/sizing-and-hardware-recommendations",
-                          "docs/guides/oss/best_practices/tips"
-                        ]
-                      },
-                      {
-                        "group": "Deployment and scaling",
-                        "expanded": false,
-                        "pages": [
-                          "docs/guides/oss/deployment_and_scaling/terminology",
-                          "docs/guides/oss/deployment_and_scaling/shards",
-                          "docs/guides/oss/deployment_and_scaling/scaling-clusters",
-                          "docs/guides/oss/deployment_and_scaling/separation-storage-compute",
-                          "docs/guides/oss/deployment_and_scaling/cluster-discovery",
-                          {
-                            "group": "Keeper",
-                            "expanded": false,
-                            "pages": [
-                              "docs/guides/oss/deployment_and_scaling/keeper/index",
-                              "docs/guides/oss/deployment_and_scaling/keeper/ssl-zookeeper"
-                            ]
-                          },
-                          {
-                            "group": "Monitoring",
-                            "expanded": false,
-                            "pages": [
-                              "docs/guides/oss/deployment_and_scaling/monitoring/monitoring",
-                              "docs/guides/oss/deployment_and_scaling/monitoring/opentelemetry"
-                            ]
-                          },
-                          {
-                            "group": "Examples",
-                            "expanded": false,
-                            "pages": [
-                              "docs/guides/oss/deployment_and_scaling/examples/01_1_shard_2_replicas",
-                              "docs/guides/oss/deployment_and_scaling/examples/02_2_shards_1_replica",
-                              "docs/guides/oss/deployment_and_scaling/examples/03_2_shards_2_replicas"
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "group": "ClickHouse Cloud",
-                    "icon": "cloud",
+                    "group": "Cloud",
+                    "icon": "/images/icon/icon-clickhouse-cloud.svg",
                     "pages": [
                       {
                         "group": "Best practices",
@@ -721,12 +674,61 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "group": "OSS",
+                    "icon": "/images/icons/icon-server.svg",
+                    "pages": [
+                      {
+                        "group": "Best practices",
+                        "pages": [
+                          "docs/guides/oss/best_practices/sizing-and-hardware-recommendations",
+                          "docs/guides/oss/best_practices/tips"
+                        ]
+                      },
+                      {
+                        "group": "Deployment and scaling",
+                        "expanded": false,
+                        "pages": [
+                          "docs/guides/oss/deployment_and_scaling/terminology",
+                          "docs/guides/oss/deployment_and_scaling/shards",
+                          "docs/guides/oss/deployment_and_scaling/scaling-clusters",
+                          "docs/guides/oss/deployment_and_scaling/separation-storage-compute",
+                          "docs/guides/oss/deployment_and_scaling/cluster-discovery",
+                          {
+                            "group": "Keeper",
+                            "expanded": false,
+                            "pages": [
+                              "docs/guides/oss/deployment_and_scaling/keeper/index",
+                              "docs/guides/oss/deployment_and_scaling/keeper/ssl-zookeeper"
+                            ]
+                          },
+                          {
+                            "group": "Monitoring",
+                            "expanded": false,
+                            "pages": [
+                              "docs/guides/oss/deployment_and_scaling/monitoring/monitoring",
+                              "docs/guides/oss/deployment_and_scaling/monitoring/opentelemetry"
+                            ]
+                          },
+                          {
+                            "group": "Examples",
+                            "expanded": false,
+                            "pages": [
+                              "docs/guides/oss/deployment_and_scaling/examples/01_1_shard_2_replicas",
+                              "docs/guides/oss/deployment_and_scaling/examples/02_2_shards_1_replica",
+                              "docs/guides/oss/deployment_and_scaling/examples/03_2_shards_2_replicas"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
               {
                 "item": "Reference",
-                "icon": "book-open",
+                "icon": "/images/icons/icon-reference.svg",
                 "pages": [
                   "docs/reference/home",
                   "docs/reference/syntax",
@@ -1716,7 +1718,7 @@
             "menu": [
               {
                 "item": "Cloud",
-                "icon": "cloud",
+                "icon": "/images/icons/icon-clickhouse-cloud.svg",
                 "groups": [
                   {
                     "group": "Get started",
@@ -1844,7 +1846,7 @@
               },
               {
                 "item": "ClickStack",
-                "icon": "layer-group",
+                "icon": "/images/icons/icon-clickstack.svg",
                 "groups": [
                   {
                     "group": "Get started",
@@ -1944,61 +1946,6 @@
                 ]
               },
               {
-                "item": "chDB",
-                "icon": "database",
-                "groups": [
-                  {
-                    "group": "Home",
-                    "icon": "house",
-                    "pages": [
-                      "docs/chdb/home"
-                    ]
-                  },
-                  {
-                    "group": "Get started",
-                    "icon": "rocket",
-                    "pages": [
-                      "docs/chdb/index",
-                      "docs/chdb/getting-started"
-                    ]
-                  },
-                  {
-                    "group": "Language integrations",
-                    "icon": "laptop-code",
-                    "pages": [
-                      "docs/chdb/install/python",
-                      "docs/chdb/install/nodejs",
-                      "docs/chdb/install/go",
-                      "docs/chdb/install/rust",
-                      "docs/chdb/install/bun",
-                      "docs/chdb/install/c"
-                    ]
-                  },
-                  {
-                    "group": "Developer guides",
-                    "icon": "book",
-                    "pages": [
-                      "docs/chdb/guides/jupysql",
-                      "docs/chdb/guides/querying-pandas",
-                      "docs/chdb/guides/querying-apache-arrow",
-                      "docs/chdb/guides/querying-s3-bucket",
-                      "docs/chdb/guides/querying-parquet",
-                      "docs/chdb/guides/query-remote-clickhouse",
-                      "docs/chdb/guides/clickhouse-local"
-                    ]
-                  },
-                  {
-                    "group": "Technical reference",
-                    "icon": "gears",
-                    "pages": [
-                      "docs/chdb/reference/data-formats",
-                      "docs/chdb/reference/sql-reference",
-                      "docs/chdb/api/python"
-                    ]
-                  }
-                ]
-              },
-              {
                 "item": "Managed Postgres",
                 "icon": "/images/icons/icon-postgres.svg",
                 "groups": [
@@ -2055,6 +2002,74 @@
                     ]
                   }
                 ]
+              },
+              {
+                "item": "chDB",
+                "icon": "/images/icons/icon-chdb.svg",
+                "groups": [
+                  {
+                    "group": "Home",
+                    "icon": "house",
+                    "pages": [
+                      "docs/chdb/home"
+                    ]
+                  },
+                  {
+                    "group": "Get started",
+                    "icon": "rocket",
+                    "pages": [
+                      "docs/chdb/index",
+                      "docs/chdb/getting-started"
+                    ]
+                  },
+                  {
+                    "group": "Language integrations",
+                    "icon": "laptop-code",
+                    "pages": [
+                      "docs/chdb/install/python",
+                      "docs/chdb/install/nodejs",
+                      "docs/chdb/install/go",
+                      "docs/chdb/install/rust",
+                      "docs/chdb/install/bun",
+                      "docs/chdb/install/c"
+                    ]
+                  },
+                  {
+                    "group": "Developer guides",
+                    "icon": "book",
+                    "pages": [
+                      "docs/chdb/guides/jupysql",
+                      "docs/chdb/guides/querying-pandas",
+                      "docs/chdb/guides/querying-apache-arrow",
+                      "docs/chdb/guides/querying-s3-bucket",
+                      "docs/chdb/guides/querying-parquet",
+                      "docs/chdb/guides/query-remote-clickhouse",
+                      "docs/chdb/guides/clickhouse-local"
+                    ]
+                  },
+                  {
+                    "group": "Technical reference",
+                    "icon": "gears",
+                    "pages": [
+                      "docs/chdb/reference/data-formats",
+                      "docs/chdb/reference/sql-reference",
+                      "docs/chdb/api/python"
+                    ]
+                  }
+                ]
+              },
+              {
+                "item": "Agentic Data Stack",
+                "icon": "/images/icons/icon-agentic-data-stack.svg",
+                "groups": [
+                  {
+                    "group": "Overview",
+                    "icon": "house",
+                    "pages": [
+                      "docs/agentic-data-stack/overview"
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -2063,7 +2078,7 @@
             "menu": [
               {
                 "item": "ClickPipes",
-                "icon": "pipe-section",
+                "icon": "/images/icons/icon-clickpipes.svg",
                 "groups": [
                   {
                     "group": "Cloud object stores",
@@ -2229,7 +2244,7 @@
               },
               {
                 "item": "Language clients",
-                "icon": "code",
+                "icon": "/images/icons/icon-language-clients.svg",
                 "pages": [
                   "docs/language-clients/index",
                   {
@@ -2333,7 +2348,7 @@
               },
               {
                 "item": "Connectors",
-                "icon": "link",
+                "icon": "/images/icons/icon-connectors.svg",
                 "groups": [
                   {
                     "group": "Home",
@@ -2563,7 +2578,7 @@
             "menu": [
               {
                 "item": "Support center",
-                "icon": "headset",
+                "icon": "/images/icons/icon-support-center.svg",
                 "groups": [
                   {
                     "group": "Home",
@@ -2778,7 +2793,7 @@
               },
               {
                 "item": "Contribute",
-                "icon": "code-pull-request",
+                "icon": "/images/icons/icon-contribute.svg",
                 "groups": [
                   {
                     "group": "Introduction",
@@ -2821,7 +2836,7 @@
               },
               {
                 "item": "Changelogs",
-                "icon": "clock-rotate-left",
+                "icon": "/images/icons/icon-changelogs.svg",
                 "groups": [
                   {
                     "group": "Cloud",
