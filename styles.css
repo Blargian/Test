@@ -3,8 +3,11 @@
    ============================================ */
 
 /* Apply smaller border radius globally */
-.card, .code-block, .accordion, .callout {
-  border-radius: 4px;
+.card,
+.code-block,
+.accordion,
+.callout {
+    border-radius: 4px;
 }
 
 /* Override code block background border radius */
@@ -12,7 +15,7 @@
 [data-component-part="code-block-root"],
 .code-block-background.rounded-2xl,
 [data-component-part="code-block-root"].rounded-2xl {
-  border-radius: 4px !important;
+    border-radius: 4px !important;
 }
 
 /* Code block background color in dark mode */
@@ -20,27 +23,27 @@
 .dark [data-component-part="code-block-root"],
 :is(.dark) .code-block-background,
 :is(.dark) [data-component-part="code-block-root"] {
-  background-color: #282828 !important;
-  --shiki-dark-bg: #282828 !important;
+    background-color: #282828 !important;
+    --shiki-dark-bg: #282828 !important;
 }
 
 /* Override Shiki pre background in dark mode */
 .dark pre.shiki,
 :is(.dark) pre.shiki {
-  background-color: #282828 !important;
-  --shiki-dark-bg: #282828 !important;
+    background-color: #282828 !important;
+    --shiki-dark-bg: #282828 !important;
 }
 
 /* Override fade overlay color to match code block background in dark mode */
 .dark [data-fade-overlay="true"],
 :is(.dark) [data-fade-overlay="true"] {
-  --fade-color-dark: #282828 !important;
+    --fade-color-dark: #282828 !important;
 }
 
 /* Copy code button checkmark icon (success state) - yellow in dark mode */
 .dark [data-testid="copy-code-button"] svg[viewBox="0 0 16 11"],
 :is(.dark) [data-testid="copy-code-button"] svg[viewBox="0 0 16 11"] {
-  fill: #FAFF69 !important;
+    fill: #FAFF69 !important;
 }
 
 
@@ -55,7 +58,26 @@
 
 .dark #navbar,
 :is(.dark) #navbar {
-    background-color: #000000 !important;
+    background-color: #151515 !important;
+}
+
+/* Override the Almond theme's dark sidebar background to match the navbar */
+.dark #almond-background-color,
+:is(.dark) #almond-background-color {
+    background-color: #151515 !important;
+}
+
+/* When banner is present, reduce content area height to account for the extra banner space */
+/* Mobile: base is 100dvh-8rem, subtract ~2.5rem for banner */
+body:has(#banner) .rounded-2xl:has(> #content-container) {
+    height: calc(100dvh - 10.5rem) !important;
+}
+
+/* Desktop: base is 100dvh-4.5rem, subtract ~2.5rem for banner */
+@media (min-width: 1024px) {
+    body:has(#banner) .rounded-2xl:has(> #content-container) {
+        height: calc(100dvh - 7rem) !important;
+    }
 }
 
 /* Fix sticky search/filter column overlapping the top nav */
@@ -562,12 +584,12 @@ button.rounded-xl {
     width: 100% !important;
 }
 
-:has(> #page-title) > #page-title {
+:has(> #page-title)>#page-title {
     flex: 1 !important;
     min-width: 0 !important;
 }
 
-:has(> #page-title) > #page-context-menu {
+:has(> #page-title)>#page-context-menu {
     margin-left: auto !important;
     flex-shrink: 0 !important;
 }
@@ -1302,7 +1324,8 @@ h5#sidebar-title {
 
 /* Widen the content area beyond default max-w-xl (576px) */
 #content-area {
-    max-width: 48rem !important; /* 768px */
+    max-width: 48rem !important;
+    /* 768px */
 }
 
 /* Reduce outer container padding */
@@ -1319,7 +1342,7 @@ h5#sidebar-title {
 }
 
 /* Reduce inner flex gap and left padding */
-#content-container > .flex.flex-row-reverse {
+#content-container>.flex.flex-row-reverse {
     gap: 2rem !important;
     padding-left: 1rem !important;
 }
@@ -1362,8 +1385,8 @@ html:not(.dark) mark {
    ============================================ */
 
 /* Light mode - remove gray-800 text color from nav tabs (let it inherit naturally) */
-html:not(.dark) .nav-tabs button[class*="text-gray-800"] > div,
-html:not(.dark) button.nav-tabs-item[class*="text-gray-800"] > div {
+html:not(.dark) .nav-tabs button[class*="text-gray-800"]>div,
+html:not(.dark) button.nav-tabs-item[class*="text-gray-800"]>div {
     color: inherit;
 }
 
@@ -1703,11 +1726,11 @@ html.dark #banner a,
    ============================================ */
 
 /* 24px between sidebar groups */
-#navigation-items > div.mt-6 {
+#navigation-items>div.mt-6 {
     margin-top: 24px !important;
 }
 
 /* 8px text-to-text between menu items (accounting for 6px py-1.5 padding on each item) */
-#navigation-items ul.sidebar-group.space-y-px > :not([hidden]) ~ :not([hidden]) {
+#navigation-items ul.sidebar-group.space-y-px> :not([hidden])~ :not([hidden]) {
     margin-top: -4px !important;
 }
