@@ -3,8 +3,11 @@
    ============================================ */
 
 /* Apply smaller border radius globally */
-.card, .code-block, .accordion, .callout {
-  border-radius: 4px;
+.card,
+.code-block,
+.accordion,
+.callout {
+    border-radius: 4px;
 }
 
 /* Override code block background border radius */
@@ -12,7 +15,7 @@
 [data-component-part="code-block-root"],
 .code-block-background.rounded-2xl,
 [data-component-part="code-block-root"].rounded-2xl {
-  border-radius: 4px !important;
+    border-radius: 4px !important;
 }
 
 /* Code block background color in dark mode */
@@ -20,27 +23,27 @@
 .dark [data-component-part="code-block-root"],
 :is(.dark) .code-block-background,
 :is(.dark) [data-component-part="code-block-root"] {
-  background-color: #282828 !important;
-  --shiki-dark-bg: #282828 !important;
+    background-color: #282828 !important;
+    --shiki-dark-bg: #282828 !important;
 }
 
 /* Override Shiki pre background in dark mode */
 .dark pre.shiki,
 :is(.dark) pre.shiki {
-  background-color: #282828 !important;
-  --shiki-dark-bg: #282828 !important;
+    background-color: #282828 !important;
+    --shiki-dark-bg: #282828 !important;
 }
 
 /* Override fade overlay color to match code block background in dark mode */
 .dark [data-fade-overlay="true"],
 :is(.dark) [data-fade-overlay="true"] {
-  --fade-color-dark: #282828 !important;
+    --fade-color-dark: #282828 !important;
 }
 
 /* Copy code button checkmark icon (success state) - yellow in dark mode */
 .dark [data-testid="copy-code-button"] svg[viewBox="0 0 16 11"],
 :is(.dark) [data-testid="copy-code-button"] svg[viewBox="0 0 16 11"] {
-  fill: #FAFF69 !important;
+    fill: #FAFF69 !important;
 }
 
 
@@ -896,12 +899,12 @@ button.rounded-xl {
     width: 100% !important;
 }
 
-:has(> #page-title) > #page-title {
+:has(> #page-title)>#page-title {
     flex: 1 !important;
     min-width: 0 !important;
 }
 
-:has(> #page-title) > #page-context-menu {
+:has(> #page-title)>#page-context-menu {
     margin-left: auto !important;
     flex-shrink: 0 !important;
 }
@@ -1636,7 +1639,8 @@ h5#sidebar-title {
 
 /* Widen the content area beyond default max-w-xl (576px) */
 #content-area {
-    max-width: 48rem !important; /* 768px */
+    max-width: 48rem !important;
+    /* 768px */
 }
 
 /* Reduce outer container padding */
@@ -1647,7 +1651,7 @@ h5#sidebar-title {
 }
 
 /* Reduce inner flex gap and left padding */
-#content-container > .flex.flex-row-reverse {
+#content-container>.flex.flex-row-reverse {
     gap: 2rem !important;
     padding-left: 1rem !important;
 }
@@ -1687,8 +1691,8 @@ html:not(.dark) mark {
    ============================================ */
 
 /* Light mode - remove gray-800 text color from nav tabs (let it inherit naturally) */
-html:not(.dark) .nav-tabs button[class*="text-gray-800"] > div,
-html:not(.dark) button.nav-tabs-item[class*="text-gray-800"] > div {
+html:not(.dark) .nav-tabs button[class*="text-gray-800"]>div,
+html:not(.dark) button.nav-tabs-item[class*="text-gray-800"]>div {
     color: inherit;
 }
 
@@ -2016,162 +2020,115 @@ html.dark #banner a,
 }
 
 /* ============================================
-   Kapa AI – Injected Topbar "Ask AI" Button
+   Kapa AI – Hide Mintlify's Built-in AI Elements
    ============================================ */
 
-.kapa-ask-ai-btn {
-    cursor: pointer;
-    margin-left: 0.5rem;
-}
-
-/* ============================================
-   Kapa AI – Native Panel Integration
-   ============================================
-   We open Mintlify's native assistant panel for
-   the slide-in / content-push animation, then
-   transplant the Kapa widget container into it
-   so it physically rides along with the panel.
-   ============================================ */
-
-/* Hide the sidebar Ask AI button visually but keep it
-   clickable for programmatic .click() sync.            */
+/* Hide the sidebar-nav Ask AI button but keep the one next to search bar */
 #sidebar-content [id="assistant-entry"] {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
+    display: none !important;
 }
 
-/* Hide the mobile Ask AI button entirely */
+/* Hide the mobile Ask AI button */
 #assistant-entry-mobile {
     display: none !important;
 }
 
-/* Hide Mintlify's own panel children — but NOT the
-   transplanted Kapa container we move in via JS.      */
-#chat-assistant-sheet > *:not([id*="kapa-widget-container"]) {
-    display: none !important;
-}
-
-/* Hide the floating input that appears on some pages */
+/* Hide the floating AI input */
 .chat-assistant-floating-input {
     display: none !important;
 }
 
-/* ============================================
-   Kapa AI – Inside-panel layout overrides
-   ============================================
-   Kapa renders as a fixed-position modal by
-   default. Once transplanted into the panel we
-   reset positioning so it fills the container.
-   ============================================ */
-
-/* The outermost Kapa container */
-#chat-assistant-sheet [id*="kapa-widget-container"] {
-    position: static !important;
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    height: 100% !important;
-    inset: auto !important;
-}
-
-/* Kapa's inner dialog — fill the panel, no rounded corners needed */
-#chat-assistant-sheet [id*="kapa-widget-container"] [role="dialog"] {
-    position: static !important;
-    width: 100% !important;
-    height: 100% !important;
-    inset: auto !important;
-    transform: none !important;
-    border-radius: 0 !important;
-    max-width: none !important;
-    max-height: none !important;
-}
-
-/* Hide any backdrop Kapa adds at the body level after transplant */
-body > [id*="kapa-widget-container"] [class*="overlay"],
-body > [id*="kapa-widget-container"] [class*="Overlay"],
-body > [id*="kapa-widget-container"] [class*="backdrop"],
-body > [id*="kapa-widget-container"] [class*="Backdrop"] {
+/* Hide Mintlify's native assistant panel */
+#chat-assistant-sheet {
     display: none !important;
+    width: 0 !important;
 }
 
 /* ============================================
-   Kapa AI – Panel Appearance
+   Kapa AI – Ask AI Button (next to search bar)
    ============================================ */
 
-/* Dialog background + subtle left shadow */
-[id*="kapa-widget-container"] [role="dialog"] {
-    background-color: #f7f7f7 !important;
-    box-shadow: -1px 0 3px rgba(0, 0, 0, 0.08) !important;
+#kapa-ask-ai-btn {
+    cursor: pointer;
 }
 
-.dark [id*="kapa-widget-container"] [role="dialog"],
-:is(.dark) [id*="kapa-widget-container"] [role="dialog"] {
-    background-color: #09090B !important;
-    box-shadow: -1px 0 3px rgba(0, 0, 0, 0.3) !important;
+#kapa-ask-ai-btn.active {
+    ring: 2px;
+    --tw-ring-color: var(--primary, rgba(0, 0, 0, 0.2));
 }
 
-/* Chat input area — Mintlify-style rounded + backdrop blur */
-[id*="kapa-widget-container"] textarea,
-[id*="kapa-widget-container"] [class*="mantine-Textarea"],
-[id*="kapa-widget-container"] [class*="mantine-Input"],
-[id*="kapa-widget-container"] [class*="Textarea"],
-[id*="kapa-widget-container"] [class*="Input-wrapper"] {
-    border-radius: 16px !important;
-    border: 1px solid #e5e7eb !important;
-    background-color: rgba(255, 255, 255, 0.9) !important;
-    backdrop-filter: blur(24px) !important;
-    -webkit-backdrop-filter: blur(24px) !important;
-    font-size: 0.875rem !important;
-    transition: border-color 0.2s !important;
+/* ============================================
+   Kapa AI – Right Sidebar Panel
+   ============================================
+   Our sidebar is injected as a flex sibling of
+   #content-container. The flex layout naturally
+   shrinks content when the sidebar expands.
+   ============================================ */
+
+/* Spacer — pushes content when Kapa sidebar is open */
+#kapa-sidebar {
+    width: 0;
+    min-width: 0;
+    flex-shrink: 0;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                min-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-[id*="kapa-widget-container"] textarea:focus,
-[id*="kapa-widget-container"] [class*="Textarea"]:focus-within,
-[id*="kapa-widget-container"] [class*="Input"]:focus-within {
-    border-color: var(--primary, #fdff75) !important;
-    outline: none !important;
-    box-shadow: none !important;
+#kapa-sidebar.kapa-sidebar-open {
+    width: 400px;
+    min-width: 400px;
 }
 
-.dark [id*="kapa-widget-container"] textarea,
-:is(.dark) [id*="kapa-widget-container"] textarea,
-.dark [id*="kapa-widget-container"] [class*="Textarea"],
-:is(.dark) [id*="kapa-widget-container"] [class*="Textarea"],
-.dark [id*="kapa-widget-container"] [class*="Input"],
-:is(.dark) [id*="kapa-widget-container"] [class*="Input"] {
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    background-color: rgba(15, 15, 15, 0.9) !important;
-    color: #f3f4f6 !important;
+/* Ensure content area shrinks when sidebar opens */
+#content-container {
+    min-width: 0;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.dark [id*="kapa-widget-container"] textarea:focus,
-:is(.dark) [id*="kapa-widget-container"] textarea:focus,
-.dark [id*="kapa-widget-container"] [class*="Textarea"]:focus-within,
-:is(.dark) [id*="kapa-widget-container"] [class*="Textarea"]:focus-within,
-.dark [id*="kapa-widget-container"] [class*="Input"]:focus-within,
-:is(.dark) [id*="kapa-widget-container"] [class*="Input"]:focus-within {
-    border-color: var(--primary-light, #fdff75) !important;
+
+/* ============================================
+   Kapa AI – Mobile Bottom Sheet
+   ============================================ */
+
+@media (max-width: 1023px) {
+    #kapa-sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100% !important;
+        min-width: 100% !important;
+        height: 80vh;
+        max-height: 80vh;
+        border-radius: 1rem 1rem 0 0;
+        border-left: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.08);
+        z-index: 50;
+        transform: translateY(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dark #kapa-sidebar,
+    :is(.dark) #kapa-sidebar {
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #kapa-sidebar.kapa-sidebar-open {
+        transform: translateY(0);
+        width: 100% !important;
+        min-width: 100% !important;
+    }
 }
 
-/* Disclaimer text — subtle like Mintlify's */
-[id*="kapa-widget-container"] [class*="disclaimer"],
-[id*="kapa-widget-container"] [class*="Disclaimer"] {
-    background-color: transparent !important;
-    font-size: 0.75rem !important;
-    color: #9ca3af !important;
-    text-align: center !important;
+/* Mobile overlay backdrop */
+#kapa-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 49;
+    transition: background 0.3s ease;
 }
 
-.dark [id*="kapa-widget-container"] [class*="disclaimer"],
-:is(.dark) [id*="kapa-widget-container"] [class*="disclaimer"],
-.dark [id*="kapa-widget-container"] [class*="Disclaimer"],
-:is(.dark) [id*="kapa-widget-container"] [class*="Disclaimer"] {
-    color: #4b5563 !important;
+#kapa-overlay.visible {
+    background: rgba(0, 0, 0, 0.4);
 }
