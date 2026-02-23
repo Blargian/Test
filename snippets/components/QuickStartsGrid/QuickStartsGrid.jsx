@@ -31,6 +31,9 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
     return ['All'];
   });
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
   const [useCasesDropdownOpen, setUseCasesDropdownOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [levelsDropdownOpen, setLevelsDropdownOpen] = useState(false);
@@ -110,6 +113,11 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
       }
     });
   };
+
+  // Reset page when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedUseCases, selectedProducts, selectedLevels]);
 
   // Reset all filters
   const resetFilters = () => {
@@ -332,7 +340,7 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
                       icon={quickStart.icon}
                       href={quickStart.href}
                     >
-                      {quickStart.description}
+                      <span className="block mt-6">{quickStart.description}</span>
                     </Card>
                   ))}
                 </div>
@@ -343,18 +351,56 @@ export const QuickStartsGrid = ({ quickStartsData, featuredIds = [] }) => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-zinc-50 mb-6">Explore quickstarts</h2>
               {filteredQuickStarts.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredQuickStarts.map(quickStart => (
-                    <Card
-                      key={quickStart.id}
-                      title={quickStart.title}
-                      icon={quickStart.icon}
-                      href={quickStart.href}
-                    >
-                      {quickStart.description}
-                    </Card>
-                  ))}
-                </div>
+                <>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {filteredQuickStarts
+                      .slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
+                      .map(quickStart => (
+                        <Card
+                          key={quickStart.id}
+                          title={quickStart.title}
+                          icon={quickStart.icon}
+                          href={quickStart.href}
+                        >
+                          <span className="block mt-6">{quickStart.description}</span>
+                        </Card>
+                      ))}
+                  </div>
+                  {/* Pagination */}
+                  {(() => {
+                    const totalPages = Math.ceil(filteredQuickStarts.length / itemsPerPage);
+                    if (totalPages <= 1) return null;
+                    return (
+                      <div className="flex items-center justify-center gap-3 mt-8">
+                        {currentPage > 1 && (
+                          <button
+                            onClick={() => setCurrentPage(prev => prev - 1)}
+                            className="p-2 rounded-lg border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1B1B18] text-black dark:text-white hover:border-[#FAFF69] transition-all cursor-pointer"
+                            aria-label="Previous page"
+                          >
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </button>
+                        )}
+                        <span className="text-sm text-gray-600 dark:text-gray-400">
+                          Page {currentPage} / {totalPages}
+                        </span>
+                        {currentPage < totalPages && (
+                          <button
+                            onClick={() => setCurrentPage(prev => prev + 1)}
+                            className="p-2 rounded-lg border border-gray-300 dark:border-white/20 bg-white dark:bg-[#1B1B18] text-black dark:text-white hover:border-[#FAFF69] transition-all cursor-pointer"
+                            aria-label="Next page"
+                          >
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6 4L10 8L6 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
+                    );
+                  })()}
+                </>
               ) : (
                 <div className="text-center py-12 flex flex-col items-center">
                   <p className="text-gray-600 dark:text-gray-400 text-lg block">

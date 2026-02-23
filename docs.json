@@ -69,7 +69,7 @@
                           }
                         ]
                       },
-                      "docs/get-started/quick-starts/home"
+                      "docs/get-started/quickstarts/home"
                     ]
                   },
                   {
@@ -2004,6 +2004,19 @@
                 ]
               },
               {
+                "item": "Agentic Data Stack",
+                "icon": "/images/icons/icon-agentic-data-stack.svg",
+                "groups": [
+                  {
+                    "group": "Overview",
+                    "icon": "house",
+                    "pages": [
+                      "docs/agentic-data-stack/overview"
+                    ]
+                  }
+                ]
+              },
+              {
                 "item": "chDB",
                 "icon": "/images/icons/icon-chdb.svg",
                 "groups": [
@@ -2054,19 +2067,6 @@
                       "docs/chdb/reference/data-formats",
                       "docs/chdb/reference/sql-reference",
                       "docs/chdb/api/python"
-                    ]
-                  }
-                ]
-              },
-              {
-                "item": "Agentic Data Stack",
-                "icon": "/images/icons/icon-agentic-data-stack.svg",
-                "groups": [
-                  {
-                    "group": "Overview",
-                    "icon": "house",
-                    "pages": [
-                      "docs/agentic-data-stack/overview"
                     ]
                   }
                 ]
