@@ -2,7 +2,7 @@
 """
 Script to automatically extract quick-start metadata and update home.mdx
 
-This script scans the docs/get-started/quick-starts/ directory for .mdx files,
+This script scans the docs/get-started/quickstarts/ directory for .mdx files,
 extracts metadata from their frontmatter, and updates the quickStartsData array
 in home.mdx.
 
@@ -106,7 +106,7 @@ def find_quickstart_files(quickstarts_dir: Path) -> List[Path]:
     Find all quick-start MD/MDX files (excluding home.mdx).
 
     Args:
-        quickstarts_dir: Path to the quick-starts directory
+        quickstarts_dir: Path to the quickstarts directory
 
     Returns:
         List of Path objects for quick-start files
@@ -116,9 +116,12 @@ def find_quickstart_files(quickstarts_dir: Path) -> List[Path]:
     # Find both .md and .mdx files
     for pattern in ['**/*.mdx', '**/*.md']:
         for file_path in quickstarts_dir.glob(pattern):
-            # Skip home.mdx
-            if file_path.name != 'home.mdx':
-                files.append(file_path)
+            # Skip home.mdx and files in underscore-prefixed directories
+            if file_path.name == 'home.mdx':
+                continue
+            if any(part.startswith('_') for part in file_path.relative_to(quickstarts_dir).parts[:-1]):
+                continue
+            files.append(file_path)
 
     # Remove duplicates and sort
     files = sorted(set(files))
@@ -138,7 +141,7 @@ def generate_badges(use_cases: List[str], products: List[str], level: str = 'Beg
         Badge components as a string
     """
     # First line: link badge
-    first_line = '<a href="/docs/get-started/quick-starts/home"><Badge size="lg" color="gray" icon="arrow-left">All quickstarts</Badge></a>'
+    first_line = '<a href="/docs/get-started/quickstarts/home"><Badge size="lg" color="gray" icon="arrow-left">All quickstarts</Badge></a>'
 
     # Second line: all other badges
     second_line_badges = []
@@ -236,7 +239,7 @@ def generate_javascript_array(quickstarts: List[Dict[str, Any]]) -> str:
 
 def update_home_mdx(home_path: Path, quickstarts_data: str) -> None:
     """
-    Update the home.mdx file with new quick-starts data.
+    Update the home.mdx file with new quickstarts data.
 
     Args:
         home_path: Path to home.mdx
@@ -280,7 +283,7 @@ def main():
     project_root = script_dir.parent
 
     # Paths
-    quickstarts_dir = project_root / 'docs' / 'get-started' / 'quick-starts'
+    quickstarts_dir = project_root / 'docs' / 'get-started' / 'quickstarts'
     home_path = quickstarts_dir / 'home.mdx'
     docs_dir = project_root / 'docs'
 
